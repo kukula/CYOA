@@ -1,3 +1,16 @@
-baseURL = "http://example.org/"
+baseURL = "https://ozeukes.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "AFUO - СУОА"
+theme = "hyde"
+
+[Menus]
+  main = [
+      {Name = "Ласкаво просимо до Австралії", URL = "/newcomers/"},
+      {Name = "About", URL = "/about/"},
+      {Name = "Contact us", URL = "/contact-us/"},
+      {Name = "Partners", URL = "/partners/"},
+  ]
+
+[Params]
+  description = "The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії"
+  copyright = "Copyright"
