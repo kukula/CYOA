@@ -1,0 +1,255 @@
+---
+author: bazj
+date: 2013-11-07 02:51:45+00:00
+draft: false
+title: Календар 2013/2014 - Вікторія
+type: post
+url: /community/calendar-2013-2014-victoria/
+categories:
+- Community
+---
+
+[![AUV Colour thumb](http://www.ozeukes.com/wp-content/uploads/2013/11/AUV-Colour-thumb.jpg)
+](http://www.ozeukes.com/wp-content/uploads/2013/11/AUV-Colour-thumb.jpg)Календар 2013/2014 - Вікторія
+
+Calendar 2013/2014 – Victoria
+<table cellpadding="0" width="730" cellspacing="0" border="1" >
+<tbody >
+<tr >
+
+<td width="104" valign="top" >**Дата / Date**
+</td>
+
+<td width="189" valign="top" >**Подія**
+</td>
+
+<td width="189" valign="top" >**Event**
+</td>
+
+<td width="248" valign="top" >** **
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >**2013**
+</td>
+
+<td width="189" valign="top" > 
+</td>
+
+<td width="189" valign="top" > 
+</td>
+
+<td width="248" valign="top" > 
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+10.11.2013
+
+
+
+</td>
+
+<td width="189" valign="top" >Весняний концерт
+</td>
+
+<td width="189" valign="top" >Spring Concert
+</td>
+
+<td width="248" valign="top" >_СУМ – Верховина__
+__SUM – Verchovyna_
+Essendon
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+16.11.2013
+
+
+
+</td>
+
+<td width="189" valign="top" >Відзначення 100-ліття Лесі Українки
+</td>
+
+<td width="189" valign="top" >100th Anniversary of Lesia Ukrayinka
+</td>
+
+<td width="248" valign="top" >_Союз Українок
+__Ukrainian Women’s Assoc.
+_Noble Park
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+17.11.2013
+
+
+
+</td>
+
+<td width="189" valign="top" >Свято Михаїла
+</td>
+
+<td width="189" valign="top" >St. Michael’s Feast Day
+</td>
+
+<td width="248" valign="top" >_CYM
+SUM (Ukrainian Youth Assoc.)__
+_“Karpaty”, Buxton
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+24.11.2013
+
+
+
+</td>
+
+<td width="189" valign="top" >Відзначення Голодомору
+</td>
+
+<td width="189" valign="top" >Holodomor Commemoration 
+</td>
+
+<td width="248" valign="top" >_СУОА / УГВ
+__AFUO / AUV
+_Federation Square, Melbourne
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+15.12.2013
+
+
+
+</td>
+
+<td width="189" valign="top" >Свято Миколая
+</td>
+
+<td width="189" valign="top" >St Nicholas Feast Day
+</td>
+
+<td width="248" valign="top" >_Укр. Школа / УГКЦ
+Ukrainian school / Church
+_Cathedral, North Melbourne
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >**2014**
+</td>
+
+<td width="189" valign="top" > 
+</td>
+
+<td width="189" valign="top" > 
+</td>
+
+<td width="248" valign="top" > 
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+06.01.2014
+
+
+
+</td>
+
+<td width="189" valign="top" >Свят Вечір
+</td>
+
+<td width="189" valign="top" >Christmas Eve
+</td>
+
+<td width="248" valign="top" > 
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+07.01.2014
+
+
+
+</td>
+
+<td width="189" valign="top" >Різдво
+</td>
+
+<td width="189" valign="top" >Christmas Day
+</td>
+
+<td width="248" valign="top" > 
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+10.01.2014
+
+
+
+</td>
+
+<td width="189" valign="top" >Маланка 2014 - Джілонґ
+</td>
+
+<td width="189" valign="top" >Malanka 2014 - Geelong
+</td>
+
+<td width="248" valign="top" >_СУМ / УГВ
+SUM / AUV
+_Geelong
+</td>
+</tr>
+<tr >
+
+<td width="104" valign="top" >
+
+
+11.01.2014
+
+
+
+</td>
+
+<td width="189" valign="top" >Маланка 2014 - Мельбурн
+</td>
+
+<td width="189" valign="top" >Malanka 2014 - Melbourne
+</td>
+
+<td width="248" valign="top" >_УГВ
+AUV
+_Tullamarine
+</td>
+</tr>
+</tbody>
+</table>

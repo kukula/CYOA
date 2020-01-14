@@ -4,7 +4,7 @@ date: 2019-10-19T18:40:49+11:00
 draft: false
 ---
 
-A few months ago, we introduced you to Kirrily Manning, an Australian Occupational Therapist (OT) playing a key role working to develop the OT profession in Ukraine. You can read more about her story here in English and here in Ukrainian. 
+A few months ago, we introduced you to Kirrily Manning, an Australian Occupational Therapist (OT) playing a key role working to develop the OT profession in Ukraine. You can read more about her story here in English and here in Ukrainian.
 
 Throughout the years that Go Global, Ukraine ran at Curtin University (2009-2013) led by Kirrily, over 70 students from occupational therapy, speech therapy, physiotherapy and nutrition travelled to Ukraine. The key focus of this program was to up-skill orphanage care staff for children with disabilities so that every day care practices could become more therapeutic in nature.
 
