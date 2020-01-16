@@ -5,10 +5,11 @@ theme = "hyde"
 
 [Menus]
   main = [
-      {Name = "Ласкаво просимо до Австралії", URL = "/newcomers/"},
+      {Name = "Ласкаво просимо до Австралії", URL = "/welcome-to-australia/"},
       {Name = "About", URL = "/about/"},
       {Name = "Contact us", URL = "/contact-us/"},
-      {Name = "Partners", URL = "/partners/"},
+      {Name = "Organisations", URL = "/about/member-organisations/"},
+      {Name = "Blog", URL = "/"},
   ]
 
 [Params]
