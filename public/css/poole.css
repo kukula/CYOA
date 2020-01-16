@@ -361,44 +361,46 @@ tbody tr:nth-child(odd) th {
 
 .pagination {
   overflow: hidden; /* clearfix */
-  margin-left: -1rem;
-  margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
   text-align: center;
+  display: inline;
 }
 
-/* Pagination items can be `span`s or `a`s */
-.pagination-item {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #eee;
-}
-.pagination-item:first-child {
-  margin-bottom: -1px;
-}
+.pagination li { display: inline; }
 
-/* Only provide a hover state for linked pagination items */
-a.pagination-item:hover {
+.page-item {
   background-color: #f5f5f5;
+  padding: 0.3rem 0.5rem;
+}
+
+.page-item:hover {
+  background-color: #CCC;
+}
+
+.page-item a, .page-item a:hover, .page-item span {
+  display: block;
+  text-decoration: none;
+  color: #555;
+}
+.page-item.disabled span {
+  color: #CCC;
 }
 
 @media (min-width: 30em) {
   .pagination {
     margin: 3rem 0;
   }
-  .pagination-item {
+  .page-item {
     float: left;
-    width: 50%;
   }
-  .pagination-item:first-child {
+  .page-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
-  .pagination-item:last-child {
+  .page-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 }

@@ -10,7 +10,7 @@ categories:
 - Media Releases
 - Politics
 tags:
-- '#FreeSavchenko'
+- FreeSavchenko
 ---
 
 ![Labor](http://www.ozeukes.com/wp-content/uploads/2016/03/Labor.png)

@@ -9,7 +9,7 @@ categories:
 - Education
 - International Events
 tags:
-- '#GoCamp2017'
+- GoCamp2017
 ---
 
 [![goglobal](http://www.ozeukes.com/wp-content/uploads/2016/10/GoGlobal.png)

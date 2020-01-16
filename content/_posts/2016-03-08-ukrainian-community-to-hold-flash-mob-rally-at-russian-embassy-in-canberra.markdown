@@ -12,7 +12,7 @@ categories:
 - Media Releases
 - Politics
 tags:
-- '#FreeSavchenko'
+- FreeSavchenko
 ---
 
 **March 9,  2016 **

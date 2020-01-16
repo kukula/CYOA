@@ -1,5 +1,5 @@
 ---
-author: cyoasu
+author: cyoa
 date: 2016-02-25 10:56:08+00:00
 draft: false
 title: Ukrainian Diaspora Investment Study - The Survey is Ready!
@@ -8,7 +8,7 @@ url: /finance/ukrainian-diaspora-investment-study-the-survey-is-ready/
 categories:
 - Finance
 tags:
-- '#FORUKRAINESURVEY'
+- FORUKRAINESURVEY
 ---
 
 Thank you for your continued support of the US Agency for International Development’s Ukrainian Diaspora Investment Study.  **_The survey is ready!_**  Please show your love for Ukraine this week by taking and distributing the survey **FAR AND WIDE** throughout the Ukrainian diaspora community and encourage people to take the survey before March 7, 2016.

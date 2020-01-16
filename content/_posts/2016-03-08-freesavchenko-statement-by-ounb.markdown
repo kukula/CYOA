@@ -11,7 +11,7 @@ categories:
 - Media Releases
 - Politics
 tags:
-- '#FreeSavchenko'
+- FreeSavchenko
 ---
 
 ![OUN](http://www.ozeukes.com/wp-content/uploads/2015/08/OUN.png)
