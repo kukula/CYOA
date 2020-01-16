@@ -9,7 +9,7 @@ categories:
 - Media Releases
 - Politics
 tags:
-- '#crimea'
+- Crimea
 ---
 
 ![Australian Federation of Ukrainian Organisations](http://www.ozeukes.com/wp-content/uploads/2014/10/image001.png)
