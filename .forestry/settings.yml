@@ -1,0 +1,146 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/welcome-to-australia
+  label: Welcome to australia
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/wayforward
+  label: Wayforward
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/voice-of-australian-ukrainians
+  label: Voice of australian ukrainians
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/voice-of-australian-ukrainians-ukrainian-version
+  label: Voice of australian ukrainians ukrainian version
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/ukrainians-in-australia
+  label: Ukrainians in australia
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/ukrainian-independence-day
+  label: Ukrainian independence day
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/ukraine-crisis-appeal
+  label: Ukraine crisis appeal
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/u-help-your-chance-to-help-ukraine
+  label: U help your chance to help ukraine
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/terms-of-use
+  label: Terms of use
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/putin-does-not-deserve-to-be-at-g20
+  label: Putin does not deserve to be at g20
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/protest-against-putin-at-g20
+  label: Protest against putin at g20
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/privacy
+  label: Privacy
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/post
+  label: Post
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/independence-day-ukrainian-version
+  label: Independence day ukrainian version
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/holodomor
+  label: Holodomor
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/help-ukraine-crisis-appeal
+  label: Help ukraine crisis appeal
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/disclaimer
+  label: Disclaimer
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/contact-us
+  label: Contact us
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/contact-thankyou
+  label: Contact thankyou
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/call-to-action-protest-rally-october-26-2014-canberra
+  label: Call to action protest rally october 26 2014 canberra
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/andrii_kholomenyuk
+  label: Andrii kholomenyuk
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/advertise-on-ozeukes
+  label: Advertise on ozeukes
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/about
+  label: About
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/_posts
+  label: Posts
+  create: all
+  match: "**/*"
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.71.1
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+version: 0.71.1
