@@ -4,7 +4,7 @@ categories = []
 date = 2020-07-21T14:00:00Z
 title = "Visa free to Ukraine! Great news for Australia"
 type = ""
-url = "visa-free-regime-australia-ukraine/"
+url = "current-affairs/visa-free-regime-australia-ukraine/"
 
 +++
 The Australian Federation of Ukrainian Organisations welcomes the wonderful news, that Australians have been granted a visa free regime to travel to Ukraine. President Zelensky signed the decree on 21.7.2020. The AFUO together with our Ukrainian Embassy in Canberra, the Australian Embassy in Kyiv and the Ministry of Foreign Affairs in Ukraine have advocated for this important decision. Great partnerships have delivered!
