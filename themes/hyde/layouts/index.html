@@ -1,4 +1,8 @@
 {{ define "main" -}}
+<h2 class="lead">
+  {{ with .Site.Params.description }} {{.}} {{ else }}<3{{end}}
+</h2>
+
 <div class="posts">
   {{ range .Paginator.Pages -}}
     <article class="post">
@@ -18,4 +22,6 @@
 
   {{ template "_internal/pagination.html" . }}
 </div>
+
+<p>&copy; {{ .Site.Params.copyright }} {{ now.Format "2006"}}</p>
 {{- end }}
