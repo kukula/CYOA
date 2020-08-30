@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/media-release-protestors-killed-in-kyiv/">Media Release: Protestors killed in Kyiv</a>
+        <a href="https://ukrainians.org.au/politics/support-ukraine-act-now/">Support Ukraine – ACT NOW!</a>
+      </h1>
+      <time datetime="2014-01-23T02:10:27Z" class="post-date">Thu, Jan 23, 2014</time>
+      **[ ](http://www.ozeukes.com/wp-content/uploads/2014/01/Call-to-Australian-Government.jpg)**
+Support Ukraine – ACT NOW! The Australian Federation of Ukrainian Organisations (AFUO) calls on all Australians of Ukrainian and other backgrounds to support pro-democracy efforts in Ukraine.
+Союз Українських Органгзацій Австралії (СУОА) закликує австралійців українського та різного походження підтримувати демократицний рух в Україні.
+Background information (English): Background on anti-democratic laws
+Основна інформація (по українському): Основна інформація щодо українських законів підписаних Президентом Януковичем
+Suggestions to act – Contact your Federal MP: ACTION AGENDA
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/media-release-protestors-killed-in-kyiv/">Media Release: Protestors killed in Kyiv</a>
       </h1>
       <time datetime="2014-01-23T00:18:36Z" class="post-date">Thu, Jan 23, 2014</time>
       The state-sanctioned violence by the regime of President Yanukovych against the Ukrainian people has now resulted in at least three confirmed fatalities. The Australian Federation of Ukrainian Organisations (AFUO) has issued the following statement condemning the brutality of the Yanukovych regime and calling on the Australian government to add its voice in condemnation of these increasingly aggressive and deadly anti-democratic actions of the Ukrainian government.
@@ -60,28 +141,28 @@ media release Ukraine protestors killed
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/ukrainians-in-australia-against-dictatorship-in-ukraine-videos/">Ukrainians in Australia against dictatorship in Ukraine – Videos</a>
+        <a href="https://ukrainians.org.au/media/ukrainians-in-australia-against-dictatorship-in-ukraine-videos/">Ukrainians in Australia against dictatorship in Ukraine – Videos</a>
       </h1>
       <time datetime="2014-01-22T06:53:09Z" class="post-date">Wed, Jan 22, 2014</time>
-      Victoria's Ukrainian community held a rally on Tuesday night November 21, 2014 to protest against the actions of Ukraine’s President Victor Yanukovych, who has approved a series of laws severely curtailing civil liberties and political rights in Ukraine.
+      Victoria&rsquo;s Ukrainian community held a rally on Tuesday night November 21, 2014 to protest against the actions of Ukraine’s President Victor Yanukovych, who has approved a series of laws severely curtailing civil liberties and political rights in Ukraine.
 Short video clips:
   
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainians-in-australia-against-dictatorship-in-ukraine-photos/">Ukrainians in Australia against dictatorship in Ukraine – Photos</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainians-in-australia-against-dictatorship-in-ukraine-photos/">Ukrainians in Australia against dictatorship in Ukraine – Photos</a>
       </h1>
       <time datetime="2014-01-22T05:42:05Z" class="post-date">Wed, Jan 22, 2014</time>
-      Victoria's Ukrainian community held a rally on Tuesday night November 21, 2014 to protest against the actions of Ukraine’s President Victor Yanukovych, who has approved a series of laws severely curtailing civil liberties and political rights in Ukraine.
+      Victoria&rsquo;s Ukrainian community held a rally on Tuesday night November 21, 2014 to protest against the actions of Ukraine’s President Victor Yanukovych, who has approved a series of laws severely curtailing civil liberties and political rights in Ukraine.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainians-in-australia-against-dictatorship-in-ukraine/">Ukrainians in Australia against dictatorship in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainians-in-australia-against-dictatorship-in-ukraine/">Ukrainians in Australia against dictatorship in Ukraine</a>
       </h1>
       <time datetime="2014-01-22T05:02:40Z" class="post-date">Wed, Jan 22, 2014</time>
       January 22, 2014
 UKRAINIAN COMMUNITY IN AUSTRALIA DEMONSTRATES AGAINST DICTATORSHIP IN UKRAINE AND CALLS ON THE AUSTRALIAN GOVERNMENT TO TAKE A STRONGER STAND
-Victoria's Ukrainian community on Tuesday night November 21, 2014 rallied to protest the actions of Ukraine’s President Victor Yanukovych, who last week signed a series of laws that curb freedom of speech, freedom of assembly, the right to legal due process and freedom of association; severely curtailing civil liberties and political rights in Ukraine.
+Victoria&rsquo;s Ukrainian community on Tuesday night November 21, 2014 rallied to protest the actions of Ukraine’s President Victor Yanukovych, who last week signed a series of laws that curb freedom of speech, freedom of assembly, the right to legal due process and freedom of association; severely curtailing civil liberties and political rights in Ukraine.
       
         <div class="read-more-link">
           <a href="/events/victoria/ukrainians-in-australia-against-dictatorship-in-ukraine/">Read More…</a>
@@ -89,7 +170,7 @@ Victoria's Ukrainian community on Tuesday night November 21, 2014 rallied to 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/west-condemns-ukrainian-anti-protest-laws/">West condemns Ukrainian anti-protest laws</a>
+        <a href="https://ukrainians.org.au/politics/west-condemns-ukrainian-anti-protest-laws/">West condemns Ukrainian anti-protest laws</a>
       </h1>
       <time datetime="2014-01-18T03:00:05Z" class="post-date">Sat, Jan 18, 2014</time>
       The US, several EU countries and western rights groups have condemned the new anti-protest legislation pushed through Ukraine’s parliament on Thursday and signed into law by Ukrainian President Viktor Yanukovych on Friday 17th January 2014.
@@ -102,7 +183,7 @@ Stefan Füle, EU enlargement commissioner, said he was “shocked”, adding: �
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/ukrainian-parliament-passes-comprehensive-anti-protest-law/">Ukrainian parliament passes comprehensive anti-protest law</a>
+        <a href="https://ukrainians.org.au/current-affairs/ukrainian-parliament-passes-comprehensive-anti-protest-law/">Ukrainian parliament passes comprehensive anti-protest law</a>
       </h1>
       <time datetime="2014-01-17T07:20:38Z" class="post-date">Fri, Jan 17, 2014</time>
       Late on Thursday 16 January 2014, members of the Party of Regions (President Yanukovych’s party) and their allies passed a couple of draft laws in the Verkhovna Rada (Ukraine’s Parliament) with severe anti-democratic connotations. The first bill allows the National Commission for the State Regulation of Communications and Information to restrict access to the Internet, including news agencies and other resources solely on the basis of “experts&rsquo; conclusions”.
@@ -114,11 +195,11 @@ The second draft law, an amendment to the Criminal Code which ran to more than 1
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukrainians-in-australia-call-on-australian-government-to-condemn-threats-to-religious-freedom-in-ukraine/">Ukrainians in Australia call on Australian Government to condemn threats to religious freedom in Ukraine</a>
+        <a href="https://ukrainians.org.au/politics/ukrainians-in-australia-call-on-australian-government-to-condemn-threats-to-religious-freedom-in-ukraine/">Ukrainians in Australia call on Australian Government to condemn threats to religious freedom in Ukraine</a>
       </h1>
       <time datetime="2014-01-15T03:53:15Z" class="post-date">Wed, Jan 15, 2014</time>
       14 January 2014
-MEDIA RELEASE UKRAINIANS IN AUSTRALIA CALL ON AUSTRALIAN GOVERNMENT TO CONDEMN YANUKOVYCH REGIME'S THREATS TO RELIGIOUS FREEDOM  The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns the Government of Ukraine's threatening of the Ukrainian Greek Catholic Church (UGCC) with court action and being banned from carrying out its religious activity.
+MEDIA RELEASE UKRAINIANS IN AUSTRALIA CALL ON AUSTRALIAN GOVERNMENT TO CONDEMN YANUKOVYCH REGIME&rsquo;S THREATS TO RELIGIOUS FREEDOM  The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns the Government of Ukraine&rsquo;s threatening of the Ukrainian Greek Catholic Church (UGCC) with court action and being banned from carrying out its religious activity.
 The Deputy Minister for Culture Mr Kochan in a letter dated January 3, 2014 to the head of the UGCC Patriarch Sviatoslav warned the Church faced court action and being banned from performing religious activity in Ukraine if it did not cease its religious activity at the Euromaidan.
       
         <div class="read-more-link">
@@ -127,13 +208,13 @@ The Deputy Minister for Culture Mr Kochan in a letter dated January 3, 2014 to 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/st-nicholas-visits-homebush/">ПРИХІД СВ. МИКОЛАЯ до СВ. ПОКРОВСЬКОЇ ЦЕРКВИ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/st-nicholas-visits-homebush/">ПРИХІД СВ. МИКОЛАЯ до СВ. ПОКРОВСЬКОЇ ЦЕРКВИ</a>
       </h1>
       <time datetime="2014-01-15T03:37:00Z" class="post-date">Wed, Jan 15, 2014</time>
       МAРІЧКA ГAЛAБУРДA – ЧИГРИН
 ПРИХІД СВ. МИКОЛАЯ до СВ. ПОКРОВСЬКОЇ ЦЕРКВИ в ГОМБУШ  Cіднейська св. Покровська Парафія УAПЦ вітала в себе в неділю 12.1.2014 року цікавого гостя - св. Миколая.
 Парафіяльна Рада, а зокрема Cестрицтво на чолі з пані Павлою Зелінською приготовлявся дуже ретельно до його приходу.
-Відправив Службу Божу настоятель (парох) о. Михайло Смолинець, прислуговував Андрійко Лило. Співав хор під диригентурою Лaриси Ковальчук. Отець Михайло запросив всіх присутніх на Парафіяльний Різдв'яний обід до святочно прибраної залі, де пишалася ялинка, а на столі стояв дуже гарний малюнок-триптих, на тему Різдва.
+Відправив Службу Божу настоятель (парох) о. Михайло Смолинець, прислуговував Андрійко Лило. Співав хор під диригентурою Лaриси Ковальчук. Отець Михайло запросив всіх присутніх на Парафіяльний Різдв&rsquo;яний обід до святочно прибраної залі, де пишалася ялинка, а на столі стояв дуже гарний малюнок-триптих, на тему Різдва.
       
         <div class="read-more-link">
           <a href="/events/new-south-wales/st-nicholas-visits-homebush/">Read More…</a>
@@ -141,24 +222,11 @@ The Deputy Minister for Culture Mr Kochan in a letter dated January 3, 2014 to 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/maidan-digest-no-3/">Maidan Digest no.3</a>
+        <a href="https://ukrainians.org.au/current-affairs/maidan-digest-no-3/">Maidan Digest no.3</a>
       </h1>
       <time datetime="2014-01-15T03:24:29Z" class="post-date">Wed, Jan 15, 2014</time>
       The coordinating group of the continuing EuroMaidan Movement has released a further news digest of related events in its Newsletter #3.
 EuroMaidan_Newsletter No 3_English
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/funeral-of-fr-lulka/">Похорон бл. п. отця Володимира Люльки</a>
-      </h1>
-      <time datetime="2014-01-09T00:20:24Z" class="post-date">Thu, Jan 9, 2014</time>
-      МАРІЧКА ГАЛАБУРДА-ЧИГРИН СІДНЕЙ неділя 5.1.2014
-ПОХОРОН БЛ. П. ОТЦЯ ВОЛОДИМИРА ЛЮЛЬКИ «Ти [ ](http://www.ozeukes.com/wp-content/uploads/2014/01/Fr-Lulka.jpg)прощай, прощавай, Не сумуй, не чекай, І червону жоржину У саду не зривай.»
-Тяжко прощати близьку людину в вічність, у “засвіти”, бо смерть, зокрема священика, є справді невіджалованою втратою для нашої спільноти. А таких, яким був отець архипресвітер Володимир Люлька, у нас, вже на жаль, не залишилося. Віддійшов у вічність останний з тзв сіднейської «старої ґвардії» священиків.
-      
-        <div class="read-more-link">
-          <a href="/events/new-south-wales/funeral-of-fr-lulka/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1368,6 +1436,8 @@ EuroMaidan_Newsletter No 3_English
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

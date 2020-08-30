@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/webcast-of-easter-services/">Webcast of Easter Services / Великодніх Богослужінь</a>
+        <a href="https://ukrainians.org.au/events/international-events/ukraine-beats-australia-in-fed-cup-tie/">Ukraine beats Australia in Fed Cup tie</a>
+      </h1>
+      <time datetime="2011-04-17T11:30:57Z" class="post-date">Sun, Apr 17, 2011</time>
+      In an upset result Ukraine’s women tennis players have defeated Australia in a Fed Cup tie. The win gives Ukraine the right to remain in the elite Fed Cup World Group and relegates Australia to the lower tier World Group II.
+Scores were level after the first two singles matches played at Glen Iris Valley Recreation Club in Mt. Waverley, Melbourne on Saturday 16 April 2011, and were level again after the two reverse singles rubbers on Sunday.
+      
+        <div class="read-more-link">
+          <a href="/events/international-events/ukraine-beats-australia-in-fed-cup-tie/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/webcast-of-easter-services/">Webcast of Easter Services / Великодніх Богослужінь</a>
       </h1>
       <time datetime="2011-04-17T04:48:05Z" class="post-date">Sun, Apr 17, 2011</time>
       Webcast За старанням голови Парафіяльної Ради, український старечий дім &ldquo;Калина Care&rdquo; став спонсором показу у системі &ldquo;вебкаст&rdquo; у прямому ефірі урочистих Великодніх Богослужінь з катедри Святих Верховних Апостолів Петра і Павла в Мельбурні, Австралії.
@@ -67,10 +148,10 @@ http://www.learnbywebcam.com.au/webcasting/stream.php?id=10
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/herald-sun-article-about-hopak-in-the-park/">Herald Sun article about Hopak in the Park</a>
+        <a href="https://ukrainians.org.au/media/herald-sun-article-about-hopak-in-the-park/">Herald Sun article about Hopak in the Park</a>
       </h1>
       <time datetime="2011-04-12T10:26:50Z" class="post-date">Tue, Apr 12, 2011</time>
-      One of Australia's largest circulation newspapers, the Melbourne Herald Sun, has included a short article with photographs in its April 12 2011 edition about the upcoming “Hopak in the Park” event.
+      One of Australia&rsquo;s largest circulation newspapers, the Melbourne Herald Sun, has included a short article with photographs in its April 12 2011 edition about the upcoming “Hopak in the Park” event.
 Craig Williams, the famous jockey whose wife is Ukrainian, promotes the “Hopak in the Park” festival and comments on the fitness levels required to perform Ukrainian dance routines!!!
 “Hopak in the Park” will be staged at the Sidney Myer Music Bowl in Melbourne on April 30, 2011 from 1.
       
@@ -80,7 +161,7 @@ Craig Williams, the famous jockey whose wife is Ukrainian, promotes the “Hopak
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/stefan-romaniw-ukraine-april-2011/">Стефан Романів: „Якби Схід і Захід був разом – влада була б бідною”</a>
+        <a href="https://ukrainians.org.au/interviews/stefan-romaniw-ukraine-april-2011/">Стефан Романів: „Якби Схід і Захід був разом – влада була б бідною”</a>
       </h1>
       <time datetime="2011-04-12T02:08:21Z" class="post-date">Tue, Apr 12, 2011</time>
       Стефан Романів: „Якби Схід і Захід був разом – влада була б бідною”
@@ -93,7 +174,7 @@ _Керівник Світового конгресу Українців, та �
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/ukrainian-association-of-western-australia-uawa-social-get-together/">Ukrainian Association of Western Australia (UAWA) Social Get Together</a>
+        <a href="https://ukrainians.org.au/events/western-australia/ukrainian-association-of-western-australia-uawa-social-get-together/">Ukrainian Association of Western Australia (UAWA) Social Get Together</a>
       </h1>
       <time datetime="2011-04-12T02:02:13Z" class="post-date">Tue, Apr 12, 2011</time>
       TABLE TENNIS** and a BBQ**
@@ -109,7 +190,7 @@ But please RSVP (for catering purposes): Myk Mowczan 0412 228056 or uawaperth@g
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/press-release-25-years-since-chornobyl/">Пресове повідомлення - 25–ліття Трагедії в Україні</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/press-release-25-years-since-chornobyl/">Пресове повідомлення - 25–ліття Трагедії в Україні</a>
       </h1>
       <time datetime="2011-04-07T07:06:15Z" class="post-date">Thu, Apr 7, 2011</time>
       Наближається 25-ліття з дня вибуху реактора на Чорнобильській АЕС. Управа Союзу Українських Організацій Австралії (СУОА) закликає всю yкраїнську спільноту вшанувати пам’ять всіх загиблих і потерпілих внаслідок Чорнобильської Катастрофи.
@@ -132,7 +213,7 @@ But please RSVP (for catering purposes): Myk Mowczan 0412 228056 or uawaperth@g
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/chornobyl-1986-facts/">ЧОРНОБИЛЬ 1986 - Деякі Факти</a>
+        <a href="https://ukrainians.org.au/current-affairs/chornobyl-1986-facts/">ЧОРНОБИЛЬ 1986 - Деякі Факти</a>
       </h1>
       <time datetime="2011-04-07T06:33:14Z" class="post-date">Thu, Apr 7, 2011</time>
       ЧОРНОБИЛЬ 1986 - Деякі Факти
@@ -146,7 +227,7 @@ But please RSVP (for catering purposes): Myk Mowczan 0412 228056 or uawaperth@g
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d1%96-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%97-%c2%ab%d0%86%d1%81%d1%82%d0%be%d1%80%d1%96%d1%8f-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8%c2%bb-ukr/">Громадські лекції «Історія України». Ukrainian History Public Lecture Series</a>
+        <a href="https://ukrainians.org.au/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d1%96-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%97-%c2%ab%d0%86%d1%81%d1%82%d0%be%d1%80%d1%96%d1%8f-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8%c2%bb-ukr/">Громадські лекції «Історія України». Ukrainian History Public Lecture Series</a>
       </h1>
       <time datetime="2011-04-05T05:29:59Z" class="post-date">Tue, Apr 5, 2011</time>
       Українська історія – цікава та суперечлива, тільки-но відкрита та добре знана, переповідана від дідів до внуків - історiя мого народу. Усіх, хто любить та шанує українську історію, цікавиться нею, бажає поділитися своїми думками щодо історичних подій, явищ, згадати яскраві постаті нашої історії, запрошуємо на громадські відкриті лекції.
@@ -159,10 +240,10 @@ But please RSVP (for catering purposes): Myk Mowczan 0412 228056 or uawaperth@g
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/new-chornobyl-film-by-sydney-filmmaker/">New Chornobyl film by Sydney filmmaker</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/new-chornobyl-film-by-sydney-filmmaker/">New Chornobyl film by Sydney filmmaker</a>
       </h1>
       <time datetime="2011-04-04T11:29:19Z" class="post-date">Mon, Apr 4, 2011</time>
-      Merilyn Fairskye, Associate Professor at the Sydney College of the Arts, has completed a documentary film about the aftermath of the explosion at Chornobyl, the world's first full-scale nuclear reactor disaster. The film, Precarious, will be screened on 26 April to mark the 25th anniversary of the Chornobyl explosion. A preview screening of Precarious will be shown on Friday 18 March at 7pm.
+      Merilyn Fairskye, Associate Professor at the Sydney College of the Arts, has completed a documentary film about the aftermath of the explosion at Chornobyl, the world&rsquo;s first full-scale nuclear reactor disaster. The film, Precarious, will be screened on 26 April to mark the 25th anniversary of the Chornobyl explosion. A preview screening of Precarious will be shown on Friday 18 March at 7pm.
 Full details can be found at http://www.
       
         <div class="read-more-link">
@@ -171,7 +252,7 @@ Full details can be found at http://www.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/goya-dmytryshchak-wins-quill-award/">Goya Dmytryshchak wins Quill Award</a>
+        <a href="https://ukrainians.org.au/community/goya-dmytryshchak-wins-quill-award/">Goya Dmytryshchak wins Quill Award</a>
       </h1>
       <time datetime="2011-04-04T02:43:46Z" class="post-date">Mon, Apr 4, 2011</time>
       The Australian Federation of Ukrainian Organisations (AFUO) has issued a media release congratulating Goya Dmytryshchak on winning the Best Suburban Report in Print Quill for her stories on the use of methyl bromide, a chemical banned in many OECD countries.
@@ -183,20 +264,6 @@ Another Proud Ukrainian
       
         <div class="read-more-link">
           <a href="/community/goya-dmytryshchak-wins-quill-award/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/%d0%a4%d0%b5%d0%bd%d0%be%d0%bc%d0%b5%d0%bd-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d1%83%d0%b7%d0%b8%d0%ba%d0%b8-%d0%bd%d0%b0-womadelaide/">Феномен української музики на Womadelaide</a>
-      </h1>
-      <time datetime="2011-04-01T10:23:03Z" class="post-date">Fri, Apr 1, 2011</time>
-      **Феномен української музики на Womadelaide**** **
- Зібрав матеріали та автор статтї, Ростислав Бекер
-Цього-річний WOMADelaide фестиваль, котрий проходив з 11ого до 14ого березня, приніс море приємних вражень. Прекрасна погода, 85,000 глядачів, 500 артистів з 30 держав. Між ними виступав відомий ансамбль «Даха Браха», з України.
-«Даха Браха» та Амаду і Маріям із Малі були запрошені відкрити фестиваль в п’ятницю 11ого березня перед представниками уряду та дуже великої кількості журналістів зі всіх галузів мідії.
-      
-        <div class="read-more-link">
-          <a href="/events/international-events/%d0%a4%d0%b5%d0%bd%d0%be%d0%bc%d0%b5%d0%bd-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d1%83%d0%b7%d0%b8%d0%ba%d0%b8-%d0%bd%d0%b0-womadelaide/">Read More…</a>
         </div>
       
     </article>
@@ -1407,6 +1474,8 @@ Another Proud Ukrainian
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

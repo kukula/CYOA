@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Education &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,258 +23,324 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/categories/education/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/categories/education/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <ul class="posts">
 <li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-1-2018/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2018</a> <time class="pull-right post-list" datetime="2018-02-01T06:13:59Z">Thu, Feb 1, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-1-2018/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2018</a> <time class="pull-right post-list" datetime="2018-02-01T06:13:59Z">Thu, Feb 1, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-4-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2017</a> <time class="pull-right post-list" datetime="2017-10-11T06:41:07Z">Wed, Oct 11, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-4-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2017</a> <time class="pull-right post-list" datetime="2017-10-11T06:41:07Z">Wed, Oct 11, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-3-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2017</a> <time class="pull-right post-list" datetime="2017-07-11T07:16:12Z">Tue, Jul 11, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-3-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2017</a> <time class="pull-right post-list" datetime="2017-07-11T07:16:12Z">Tue, Jul 11, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-2-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 2 2017</a> <time class="pull-right post-list" datetime="2017-04-09T06:36:08Z">Sun, Apr 9, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-2-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 2 2017</a> <time class="pull-right post-list" datetime="2017-04-09T06:36:08Z">Sun, Apr 9, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/war-and-memory-new-cultures-of-commemoration-in-eastern-europe/">War and Memory: New Cultures of Commemoration in Eastern Europe</a> <time class="pull-right post-list" datetime="2017-02-05T10:41:41Z">Sun, Feb 5, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/events/war-and-memory-new-cultures-of-commemoration-in-eastern-europe/">War and Memory: New Cultures of Commemoration in Eastern Europe</a> <time class="pull-right post-list" datetime="2017-02-05T10:41:41Z">Sun, Feb 5, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-1-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2017</a> <time class="pull-right post-list" datetime="2017-01-27T06:23:19Z">Fri, Jan 27, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-1-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2017</a> <time class="pull-right post-list" datetime="2017-01-27T06:23:19Z">Fri, Jan 27, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/soyuz-ukrayinok-avstralyy-laureat-premiyi-im-yevhena-chykalenka/">Cоюз українок Австралії – лауреат премії ім. Євгена Чикаленка</a> <time class="pull-right post-list" datetime="2016-11-15T05:59:46Z">Tue, Nov 15, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/soyuz-ukrayinok-avstralyy-laureat-premiyi-im-yevhena-chykalenka/">Cоюз українок Австралії – лауреат премії ім. Євгена Чикаленка</a> <time class="pull-right post-list" datetime="2016-11-15T05:59:46Z">Tue, Nov 15, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/nakaz-1262/">ІІІ Міжнародний конкурс &#34;Найкращий учитель української мови за кордоном&#34;</a> <time class="pull-right post-list" datetime="2016-10-30T02:53:30Z">Sun, Oct 30, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/nakaz-1262/">ІІІ Міжнародний конкурс &#34;Найкращий учитель української мови за кордоном&#34;</a> <time class="pull-right post-list" datetime="2016-10-30T02:53:30Z">Sun, Oct 30, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/ukraine-is-calling-for-international-volunteers/">Ukraine is calling for international volunteers!</a> <time class="pull-right post-list" datetime="2016-10-13T10:39:33Z">Thu, Oct 13, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/ukraine-is-calling-for-international-volunteers/">Ukraine is calling for international volunteers!</a> <time class="pull-right post-list" datetime="2016-10-13T10:39:33Z">Thu, Oct 13, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukraine-day-at-ukrainian-central-school/">Ukraine Day at Ukrainian Central School</a> <time class="pull-right post-list" datetime="2016-09-30T20:44:09Z">Fri, Sep 30, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukraine-day-at-ukrainian-central-school/">Ukraine Day at Ukrainian Central School</a> <time class="pull-right post-list" datetime="2016-09-30T20:44:09Z">Fri, Sep 30, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-4-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2016</a> <time class="pull-right post-list" datetime="2016-09-28T05:38:03Z">Wed, Sep 28, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-4-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2016</a> <time class="pull-right post-list" datetime="2016-09-28T05:38:03Z">Wed, Sep 28, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/iv-miok-conference/">IV МІЖНАРОДНА НАУКОВО-ПРАКТИЧНА КОНФЕРЕНЦІЯ “УКРАЇНСЬКА МОВА У СВІТІ”</a> <time class="pull-right post-list" datetime="2016-07-06T06:38:24Z">Wed, Jul 6, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/events/iv-miok-conference/">IV МІЖНАРОДНА НАУКОВО-ПРАКТИЧНА КОНФЕРЕНЦІЯ “УКРАЇНСЬКА МОВА У СВІТІ”</a> <time class="pull-right post-list" datetime="2016-07-06T06:38:24Z">Wed, Jul 6, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-3-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2016</a> <time class="pull-right post-list" datetime="2016-06-23T11:13:34Z">Thu, Jun 23, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-3-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2016</a> <time class="pull-right post-list" datetime="2016-06-23T11:13:34Z">Thu, Jun 23, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/what-is-happening-in-ukraine-now-and-who-should-be-interested/">WHAT IS HAPPENING IN UKRAINE NOW AND WHO SHOULD BE INTERESTED?</a> <time class="pull-right post-list" datetime="2016-06-01T07:21:10Z">Wed, Jun 1, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/events/what-is-happening-in-ukraine-now-and-who-should-be-interested/">WHAT IS HAPPENING IN UKRAINE NOW AND WHO SHOULD BE INTERESTED?</a> <time class="pull-right post-list" datetime="2016-06-01T07:21:10Z">Wed, Jun 1, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-2-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 2 2016</a> <time class="pull-right post-list" datetime="2016-03-28T06:46:35Z">Mon, Mar 28, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-2-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 2 2016</a> <time class="pull-right post-list" datetime="2016-03-28T06:46:35Z">Mon, Mar 28, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/novashkola/">Перший дзвоник</a> <time class="pull-right post-list" datetime="2016-01-28T10:38:44Z">Thu, Jan 28, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/education/novashkola/">Перший дзвоник</a> <time class="pull-right post-list" datetime="2016-01-28T10:38:44Z">Thu, Jan 28, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-literature-in-english/">UKRAINIAN LITERATURE IN ENGLISH</a> <time class="pull-right post-list" datetime="2015-12-21T06:19:24Z">Mon, Dec 21, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-literature-in-english/">UKRAINIAN LITERATURE IN ENGLISH</a> <time class="pull-right post-list" datetime="2015-12-21T06:19:24Z">Mon, Dec 21, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/ukrainian-school-noble-park-concert-st-nicholas/">Закінчення Української суботньої школи в Нобл Парку і Св. Миколай</a> <time class="pull-right post-list" datetime="2015-12-04T06:28:58Z">Fri, Dec 4, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/ukrainian-school-noble-park-concert-st-nicholas/">Закінчення Української суботньої школи в Нобл Парку і Св. Миколай</a> <time class="pull-right post-list" datetime="2015-12-04T06:28:58Z">Fri, Dec 4, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-1-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2016</a> <time class="pull-right post-list" datetime="2015-11-20T10:40:48Z">Fri, Nov 20, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-1-2016/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2016</a> <time class="pull-right post-list" datetime="2015-11-20T10:40:48Z">Fri, Nov 20, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/ukrainian-national-unity-dictation/">Радіодиктант національної єдності, 09 листопада 2015 р</a> <time class="pull-right post-list" datetime="2015-11-03T09:52:56Z">Tue, Nov 3, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/ukrainian-national-unity-dictation/">Радіодиктант національної єдності, 09 листопада 2015 р</a> <time class="pull-right post-list" datetime="2015-11-03T09:52:56Z">Tue, Nov 3, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-4-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2015</a> <time class="pull-right post-list" datetime="2015-09-29T22:19:56Z">Tue, Sep 29, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-4-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2015</a> <time class="pull-right post-list" datetime="2015-09-29T22:19:56Z">Tue, Sep 29, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-3-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2015</a> <time class="pull-right post-list" datetime="2015-07-15T07:23:16Z">Wed, Jul 15, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-3-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2015</a> <time class="pull-right post-list" datetime="2015-07-15T07:23:16Z">Wed, Jul 15, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/19th-ukrainian-teachers-australia-conference/">19-ий з’їзд учителів українських шкіл Австралії / 19th Ukrainian Teachers Australia Conference</a> <time class="pull-right post-list" datetime="2015-06-04T11:50:04Z">Thu, Jun 4, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/19th-ukrainian-teachers-australia-conference/">19-ий з’їзд учителів українських шкіл Австралії / 19th Ukrainian Teachers Australia Conference</a> <time class="pull-right post-list" datetime="2015-06-04T11:50:04Z">Thu, Jun 4, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-2-2015/">Курс української мови для дорослих - Ukrainian language classes for adults - Term 2 2015</a> <time class="pull-right post-list" datetime="2015-04-12T11:39:28Z">Sun, Apr 12, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-2-2015/">Курс української мови для дорослих - Ukrainian language classes for adults - Term 2 2015</a> <time class="pull-right post-list" datetime="2015-04-12T11:39:28Z">Sun, Apr 12, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/litni-movni-tabory-ministerstvo-osviti-i-nauky-ukrayiny-shukaye-volonteriv/">Літні мовні табори - міністерство освіти і науки України шукає волонтерів</a> <time class="pull-right post-list" datetime="2015-04-04T06:41:53Z">Sat, Apr 4, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/litni-movni-tabory-ministerstvo-osviti-i-nauky-ukrayiny-shukaye-volonteriv/">Літні мовні табори - міністерство освіти і науки України шукає волонтерів</a> <time class="pull-right post-list" datetime="2015-04-04T06:41:53Z">Sat, Apr 4, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults/">Курс української мови для дорослих - Ukrainian language classes for adults</a> <time class="pull-right post-list" datetime="2015-02-04T05:52:08Z">Wed, Feb 4, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults/">Курс української мови для дорослих - Ukrainian language classes for adults</a> <time class="pull-right post-list" datetime="2015-02-04T05:52:08Z">Wed, Feb 4, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/project-management-for-the-not-for-profit-sector/">Project Management for the Not-for-Profit Sector</a> <time class="pull-right post-list" datetime="2014-08-15T00:10:20Z">Fri, Aug 15, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/education/project-management-for-the-not-for-profit-sector/">Project Management for the Not-for-Profit Sector</a> <time class="pull-right post-list" datetime="2014-08-15T00:10:20Z">Fri, Aug 15, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/learn-ukrainian-in-lviv/">Summer courses in new Lviv, in new Ukraine!!</a> <time class="pull-right post-list" datetime="2014-06-22T11:44:01Z">Sun, Jun 22, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/education/learn-ukrainian-in-lviv/">Summer courses in new Lviv, in new Ukraine!!</a> <time class="pull-right post-list" datetime="2014-06-22T11:44:01Z">Sun, Jun 22, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-dance-national-winter-workshop/">Ukrainian Dance National Winter Workshop</a> <time class="pull-right post-list" datetime="2014-05-13T07:09:03Z">Tue, May 13, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-dance-national-winter-workshop/">Ukrainian Dance National Winter Workshop</a> <time class="pull-right post-list" datetime="2014-05-13T07:09:03Z">Tue, May 13, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/ukrainian-school-noble-park-60th-anniversary/">Ukrainian School Noble Park 60th Anniversary</a> <time class="pull-right post-list" datetime="2014-05-02T01:58:42Z">Fri, May 2, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/ukrainian-school-noble-park-60th-anniversary/">Ukrainian School Noble Park 60th Anniversary</a> <time class="pull-right post-list" datetime="2014-05-02T01:58:42Z">Fri, May 2, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/my-shevchenko-competition/">Виставка-конкурс дитячого малюнку “Мій Шевченко&#34;</a> <time class="pull-right post-list" datetime="2014-04-01T06:02:05Z">Tue, Apr 1, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/my-shevchenko-competition/">Виставка-конкурс дитячого малюнку “Мій Шевченко&#34;</a> <time class="pull-right post-list" datetime="2014-04-01T06:02:05Z">Tue, Apr 1, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/children-festival-2014/">CHILDREN FESTIVAL 2014</a> <time class="pull-right post-list" datetime="2014-04-01T00:50:07Z">Tue, Apr 1, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/children-festival-2014/">CHILDREN FESTIVAL 2014</a> <time class="pull-right post-list" datetime="2014-04-01T00:50:07Z">Tue, Apr 1, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/free-seminar-at-monash-university-ukraine-between-the-eu-and-russia/">Free Seminar at Monash University - Ukraine: Between the EU and Russia</a> <time class="pull-right post-list" datetime="2014-03-29T00:43:42Z">Sat, Mar 29, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/free-seminar-at-monash-university-ukraine-between-the-eu-and-russia/">Free Seminar at Monash University - Ukraine: Between the EU and Russia</a> <time class="pull-right post-list" datetime="2014-03-29T00:43:42Z">Sat, Mar 29, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/act/free-lecture-in-canberra-ukraine-between-the-eu-and-russia/">Free Lecture in Canberra - Ukraine: Between the EU and Russia</a> <time class="pull-right post-list" datetime="2014-03-29T00:39:49Z">Sat, Mar 29, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/act/free-lecture-in-canberra-ukraine-between-the-eu-and-russia/">Free Lecture in Canberra - Ukraine: Between the EU and Russia</a> <time class="pull-right post-list" datetime="2014-03-29T00:39:49Z">Sat, Mar 29, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/sydney-children-read-the-works-of-shevchenko/">ДІТИ СІДНЕЮ ЧИТАЮТЬ твори ТАРАСА ШЕВЧЕНКА</a> <time class="pull-right post-list" datetime="2014-03-25T05:37:24Z">Tue, Mar 25, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/sydney-children-read-the-works-of-shevchenko/">ДІТИ СІДНЕЮ ЧИТАЮТЬ твори ТАРАСА ШЕВЧЕНКА</a> <time class="pull-right post-list" datetime="2014-03-25T05:37:24Z">Tue, Mar 25, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/comparative-data-on-ethnic-minority-rights/">Порівняльна характеристика забезпечення прав меншостей / Comparative Data on Ethnic Minority Rights</a> <time class="pull-right post-list" datetime="2014-03-18T08:42:00Z">Tue, Mar 18, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/comparative-data-on-ethnic-minority-rights/">Порівняльна характеристика забезпечення прав меншостей / Comparative Data on Ethnic Minority Rights</a> <time class="pull-right post-list" datetime="2014-03-18T08:42:00Z">Tue, Mar 18, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/my-shevchenko-childrens-drawing-competition/">Виставка-конкурс дитячого малюнку &#34;Мій Шевченко&#34; у Мельбурні</a> <time class="pull-right post-list" datetime="2014-03-14T04:46:56Z">Fri, Mar 14, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/my-shevchenko-childrens-drawing-competition/">Виставка-конкурс дитячого малюнку &#34;Мій Шевченко&#34; у Мельбурні</a> <time class="pull-right post-list" datetime="2014-03-14T04:46:56Z">Fri, Mar 14, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/parish-feastday-in-sydney/">ПAРAФІЯЛЬНЕ CВЯТО в CІДНЕЇ</a> <time class="pull-right post-list" datetime="2013-12-17T08:46:33Z">Tue, Dec 17, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/parish-feastday-in-sydney/">ПAРAФІЯЛЬНЕ CВЯТО в CІДНЕЇ</a> <time class="pull-right post-list" datetime="2013-12-17T08:46:33Z">Tue, Dec 17, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/competition-i-am-from-an-insurgent-family/">Конкурс «Я з повстанського роду!»</a> <time class="pull-right post-list" datetime="2013-11-24T02:46:02Z">Sun, Nov 24, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/competition-i-am-from-an-insurgent-family/">Конкурс «Я з повстанського роду!»</a> <time class="pull-right post-list" datetime="2013-11-24T02:46:02Z">Sun, Nov 24, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/st-andrews-school-says-thank-you/">Школа ім. св. Андрія дякує</a> <time class="pull-right post-list" datetime="2013-09-12T10:29:33Z">Thu, Sep 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/st-andrews-school-says-thank-you/">Школа ім. св. Андрія дякує</a> <time class="pull-right post-list" datetime="2013-09-12T10:29:33Z">Thu, Sep 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-language-course-in-ukraineukrainian-language-course-in-ukraine/">Ukrainian Language course in Ukraine / Курси української мови в Україні</a> <time class="pull-right post-list" datetime="2013-08-31T05:39:19Z">Sat, Aug 31, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-language-course-in-ukraineukrainian-language-course-in-ukraine/">Ukrainian Language course in Ukraine / Курси української мови в Україні</a> <time class="pull-right post-list" datetime="2013-08-31T05:39:19Z">Sat, Aug 31, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-course-for-adults-2013-ukr/">КУРС УКРАЇНСЬКОЇ МОВИ ДЛЯ ДОРОСЛИХ 2013</a> <time class="pull-right post-list" datetime="2013-08-19T02:17:00Z">Mon, Aug 19, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-course-for-adults-2013-ukr/">КУРС УКРАЇНСЬКОЇ МОВИ ДЛЯ ДОРОСЛИХ 2013</a> <time class="pull-right post-list" datetime="2013-08-19T02:17:00Z">Mon, Aug 19, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-2013/">UKRAINIAN LANGUAGE CLASSES FOR ADULTS 2013</a> <time class="pull-right post-list" datetime="2013-08-19T02:09:43Z">Mon, Aug 19, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-2013/">UKRAINIAN LANGUAGE CLASSES FOR ADULTS 2013</a> <time class="pull-right post-list" datetime="2013-08-19T02:09:43Z">Mon, Aug 19, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/vce-ukrainian-to-continue/">VCE Ukrainian to continue</a> <time class="pull-right post-list" datetime="2013-07-27T02:20:00Z">Sat, Jul 27, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/vce-ukrainian-to-continue/">VCE Ukrainian to continue</a> <time class="pull-right post-list" datetime="2013-07-27T02:20:00Z">Sat, Jul 27, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/sydney-ukrainian-students-visit-drohobych/">Учні з Сіднею (Австралія) завітали до дрогобицької школи</a> <time class="pull-right post-list" datetime="2013-07-07T05:14:21Z">Sun, Jul 7, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/sydney-ukrainian-students-visit-drohobych/">Учні з Сіднею (Австралія) завітали до дрогобицької школи</a> <time class="pull-right post-list" datetime="2013-07-07T05:14:21Z">Sun, Jul 7, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/lets-learn-ukrainian-3/">Let’s learn Ukrainian</a> <time class="pull-right post-list" datetime="2013-07-06T01:01:59Z">Sat, Jul 6, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/lets-learn-ukrainian-3/">Let’s learn Ukrainian</a> <time class="pull-right post-list" datetime="2013-07-06T01:01:59Z">Sat, Jul 6, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/open-forum-with-orysia-tracz/">Open Forum with Orysia Tracz</a> <time class="pull-right post-list" datetime="2013-06-13T10:56:38Z">Thu, Jun 13, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/open-forum-with-orysia-tracz/">Open Forum with Orysia Tracz</a> <time class="pull-right post-list" datetime="2013-06-13T10:56:38Z">Thu, Jun 13, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/sbs-radio-petro-jacyk-international-ukrainian-language-competition-in-australia/">SBS Radio - Міжнародний конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2013-04-12T03:33:16Z">Fri, Apr 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/sbs-radio-petro-jacyk-international-ukrainian-language-competition-in-australia/">SBS Radio - Міжнародний конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2013-04-12T03:33:16Z">Fri, Apr 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/lets-speak-ukrainia/">Давайте говорити українською!</a> <time class="pull-right post-list" datetime="2013-03-12T05:55:46Z">Tue, Mar 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/lets-speak-ukrainia/">Давайте говорити українською!</a> <time class="pull-right post-list" datetime="2013-03-12T05:55:46Z">Tue, Mar 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/lets-learn-ukrainian-2/">Let’s learn Ukrainian</a> <time class="pull-right post-list" datetime="2013-02-27T01:29:14Z">Wed, Feb 27, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/lets-learn-ukrainian-2/">Let’s learn Ukrainian</a> <time class="pull-right post-list" datetime="2013-02-27T01:29:14Z">Wed, Feb 27, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/end-school-year-st-andrews/">ЗАКІНЧЕННЯ ШКІЛЬНОГО РОКУ БРАТСЬКОЇ РІДНОЇ ШКОЛИ ім. св. АНДРІЯ</a> <time class="pull-right post-list" datetime="2013-01-04T09:09:17Z">Fri, Jan 4, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/end-school-year-st-andrews/">ЗАКІНЧЕННЯ ШКІЛЬНОГО РОКУ БРАТСЬКОЇ РІДНОЇ ШКОЛИ ім. св. АНДРІЯ</a> <time class="pull-right post-list" datetime="2013-01-04T09:09:17Z">Fri, Jan 4, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%b7%d0%b0%d0%ba%d1%96%d0%bd%d1%87%d0%b5%d0%bd%d0%bd%d1%8f-%d1%88%d0%ba%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d1%80%d0%be%d0%ba%d1%83-%d0%b2-%d0%bb%d1%96%d0%b4%d0%ba%d0%be%d0%bc%d0%b1%d1%96/">Закінчення шкільного року в Лідкомбі</a> <time class="pull-right post-list" datetime="2013-01-03T03:36:01Z">Thu, Jan 3, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%b7%d0%b0%d0%ba%d1%96%d0%bd%d1%87%d0%b5%d0%bd%d0%bd%d1%8f-%d1%88%d0%ba%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d1%80%d0%be%d0%ba%d1%83-%d0%b2-%d0%bb%d1%96%d0%b4%d0%ba%d0%be%d0%bc%d0%b1%d1%96/">Закінчення шкільного року в Лідкомбі</a> <time class="pull-right post-list" datetime="2013-01-03T03:36:01Z">Thu, Jan 3, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/summer-courses-in-ukraine-for-ukrainian-diaspora/">Києво-Могилянська Академія - програма для діаспори</a> <time class="pull-right post-list" datetime="2012-12-19T06:33:37Z">Wed, Dec 19, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/summer-courses-in-ukraine-for-ukrainian-diaspora/">Києво-Могилянська Академія - програма для діаспори</a> <time class="pull-right post-list" datetime="2012-12-19T06:33:37Z">Wed, Dec 19, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-free-university/">Український Вільний Університет</a> <time class="pull-right post-list" datetime="2012-12-08T01:53:50Z">Sat, Dec 8, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-free-university/">Український Вільний Університет</a> <time class="pull-right post-list" datetime="2012-12-08T01:53:50Z">Sat, Dec 8, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/ukraine-language-culture-identity/">Ukraine: Language, Culture, Identity</a> <time class="pull-right post-list" datetime="2012-10-18T00:56:49Z">Thu, Oct 18, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/ukraine-language-culture-identity/">Ukraine: Language, Culture, Identity</a> <time class="pull-right post-list" datetime="2012-10-18T00:56:49Z">Thu, Oct 18, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/rudewych-ukrainian-language-scholarships-2013/">Rudewych Ukrainian Language Scholarships 2013 </a> <time class="pull-right post-list" datetime="2012-10-18T00:45:39Z">Thu, Oct 18, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/rudewych-ukrainian-language-scholarships-2013/">Rudewych Ukrainian Language Scholarships 2013 </a> <time class="pull-right post-list" datetime="2012-10-18T00:45:39Z">Thu, Oct 18, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-available-online/">Ukrainian available online</a> <time class="pull-right post-list" datetime="2012-10-18T00:39:13Z">Thu, Oct 18, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-available-online/">Ukrainian available online</a> <time class="pull-right post-list" datetime="2012-10-18T00:39:13Z">Thu, Oct 18, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/support-monash-ukrainian/">Support Monash Ukrainian</a> <time class="pull-right post-list" datetime="2012-09-23T03:19:16Z">Sun, Sep 23, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/support-monash-ukrainian/">Support Monash Ukrainian</a> <time class="pull-right post-list" datetime="2012-09-23T03:19:16Z">Sun, Sep 23, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/lets-learn-ukrainian/">Lets Learn Ukrainian</a> <time class="pull-right post-list" datetime="2012-08-12T10:11:25Z">Sun, Aug 12, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/lets-learn-ukrainian/">Lets Learn Ukrainian</a> <time class="pull-right post-list" datetime="2012-08-12T10:11:25Z">Sun, Aug 12, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-central-school-council-protests-against-language-bill/">Лист протесту УЦШР проти Законопроекту «Про засади державної мовної політики»</a> <time class="pull-right post-list" datetime="2012-08-04T01:25:05Z">Sat, Aug 4, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-central-school-council-protests-against-language-bill/">Лист протесту УЦШР проти Законопроекту «Про засади державної мовної політики»</a> <time class="pull-right post-list" datetime="2012-08-04T01:25:05Z">Sat, Aug 4, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/karpaty-foundation-press-release-2/">Karpaty Foundation Press Release</a> <time class="pull-right post-list" datetime="2012-07-12T00:26:23Z">Thu, Jul 12, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/karpaty-foundation-press-release-2/">Karpaty Foundation Press Release</a> <time class="pull-right post-list" datetime="2012-07-12T00:26:23Z">Thu, Jul 12, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/national-ukrainian-teachers-conference-2012/">National Ukrainian Teachers Conference 2012</a> <time class="pull-right post-list" datetime="2012-06-12T10:38:42Z">Tue, Jun 12, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/national-ukrainian-teachers-conference-2012/">National Ukrainian Teachers Conference 2012</a> <time class="pull-right post-list" datetime="2012-06-12T10:38:42Z">Tue, Jun 12, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/meeting-with-dr-kvit-in-sydney/">Meeting with Dr Kvit in Sydney / ЗУCТРІЧ др. CЕРГІЄМ КВІТОМ В CІДНЕЇ</a> <time class="pull-right post-list" datetime="2012-04-25T02:25:53Z">Wed, Apr 25, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/meeting-with-dr-kvit-in-sydney/">Meeting with Dr Kvit in Sydney / ЗУCТРІЧ др. CЕРГІЄМ КВІТОМ В CІДНЕЇ</a> <time class="pull-right post-list" datetime="2012-04-25T02:25:53Z">Wed, Apr 25, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/18-%d0%b8%d0%b9-%d0%97%d0%87%d0%97%d0%94-%d0%a3%d0%a7%d0%98%d0%a2%d0%95%d0%9b%d0%86%d0%92-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%98%d0%a5-%d0%a8%d0%9a%d0%86%d0%9b-%d0%90/">18-ий З’ЇЗД УЧИТЕЛІВ УКРАЇНСЬКИХ ШКІЛ АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2012-04-23T06:08:10Z">Mon, Apr 23, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/18-%d0%b8%d0%b9-%d0%97%d0%87%d0%97%d0%94-%d0%a3%d0%a7%d0%98%d0%a2%d0%95%d0%9b%d0%86%d0%92-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%98%d0%a5-%d0%a8%d0%9a%d0%86%d0%9b-%d0%90/">18-ий З’ЇЗД УЧИТЕЛІВ УКРАЇНСЬКИХ ШКІЛ АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2012-04-23T06:08:10Z">Mon, Apr 23, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/%d0%9c%d0%86%d0%96%d0%9d%d0%90%d0%a0%d0%9e%d0%94%d0%9d%d0%98%d0%99-%d0%9a%d0%9e%d0%9d%d0%9a%d0%a3%d0%a0%d0%a1-%d0%97-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%9e%d0%87-%d0%9c%d0%9e/">МІЖНАРОДНИЙ КОНКУРС З УКРАЇНСЬКОЇ МОВИ ІМ. ПЕТРА ЯЦИКА  В АВСТРАЛІЇ 2012 р.</a> <time class="pull-right post-list" datetime="2012-04-23T05:18:08Z">Mon, Apr 23, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/%d0%9c%d0%86%d0%96%d0%9d%d0%90%d0%a0%d0%9e%d0%94%d0%9d%d0%98%d0%99-%d0%9a%d0%9e%d0%9d%d0%9a%d0%a3%d0%a0%d0%a1-%d0%97-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%9e%d0%87-%d0%9c%d0%9e/">МІЖНАРОДНИЙ КОНКУРС З УКРАЇНСЬКОЇ МОВИ ІМ. ПЕТРА ЯЦИКА  В АВСТРАЛІЇ 2012 р.</a> <time class="pull-right post-list" datetime="2012-04-23T05:18:08Z">Mon, Apr 23, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/jacyk-international-ukrainian-language-competition-in-australia/">Jacyk International Ukrainian Language Competition in Australia</a> <time class="pull-right post-list" datetime="2012-04-23T05:12:57Z">Mon, Apr 23, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/jacyk-international-ukrainian-language-competition-in-australia/">Jacyk International Ukrainian Language Competition in Australia</a> <time class="pull-right post-list" datetime="2012-04-23T05:12:57Z">Mon, Apr 23, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/western-australia/dr-serhiy-kvit-in-western-australia/">Dr Serhiy Kvit in Western Australia</a> <time class="pull-right post-list" datetime="2012-04-19T02:19:59Z">Thu, Apr 19, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/western-australia/dr-serhiy-kvit-in-western-australia/">Dr Serhiy Kvit in Western Australia</a> <time class="pull-right post-list" datetime="2012-04-19T02:19:59Z">Thu, Apr 19, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/dr-serhiy-kvit-at-monash-university/">Д-р Сергій Квіт в Університеті ім. Монаша / Dr Serhiy Kvit at Monash University</a> <time class="pull-right post-list" datetime="2012-04-09T08:35:40Z">Mon, Apr 9, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/dr-serhiy-kvit-at-monash-university/">Д-р Сергій Квіт в Університеті ім. Монаша / Dr Serhiy Kvit at Monash University</a> <time class="pull-right post-list" datetime="2012-04-09T08:35:40Z">Mon, Apr 9, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/dr-kvit-coming-to-australia/">Д-р Сергій Квіт приїде до Австралії</a> <time class="pull-right post-list" datetime="2012-04-08T07:01:51Z">Sun, Apr 8, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/dr-kvit-coming-to-australia/">Д-р Сергій Квіт приїде до Австралії</a> <time class="pull-right post-list" datetime="2012-04-08T07:01:51Z">Sun, Apr 8, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/shevchenko-art-competition-melbourne/">Виставка-конкурс дитячого малюнку &#34;Читаючи поезію Шевченка&#34;</a> <time class="pull-right post-list" datetime="2012-03-28T01:35:10Z">Wed, Mar 28, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/shevchenko-art-competition-melbourne/">Виставка-конкурс дитячого малюнку &#34;Читаючи поезію Шевченка&#34;</a> <time class="pull-right post-list" datetime="2012-03-28T01:35:10Z">Wed, Mar 28, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/karpaty-foundation-press-release/">Karpaty Foundation Press Release</a> <time class="pull-right post-list" datetime="2012-03-24T03:32:02Z">Sat, Mar 24, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/culture/karpaty-foundation-press-release/">Karpaty Foundation Press Release</a> <time class="pull-right post-list" datetime="2012-03-24T03:32:02Z">Sat, Mar 24, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/ukrainian-childrens-books-launch/">ПРЕЗЕНТAЦІЯ КНИЖОЧОК ДИТЯЧИХ КAЗОК</a> <time class="pull-right post-list" datetime="2012-03-05T03:27:10Z">Mon, Mar 5, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/ukrainian-childrens-books-launch/">ПРЕЗЕНТAЦІЯ КНИЖОЧОК ДИТЯЧИХ КAЗОК</a> <time class="pull-right post-list" datetime="2012-03-05T03:27:10Z">Mon, Mar 5, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/community-languages-australia-to-reignite-national-languages-policy-debate/">Community Languages Australia to reignite National Languages Policy debate</a> <time class="pull-right post-list" datetime="2012-02-27T03:38:08Z">Mon, Feb 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/community-languages-australia-to-reignite-national-languages-policy-debate/">Community Languages Australia to reignite National Languages Policy debate</a> <time class="pull-right post-list" datetime="2012-02-27T03:38:08Z">Mon, Feb 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/intercultural-understanding-with-ukraine/">Intercultural understanding with Ukraine - Victorian education (DEECD)  and Ukraine Build bridges</a> <time class="pull-right post-list" datetime="2012-02-24T08:21:05Z">Fri, Feb 24, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/culture/intercultural-understanding-with-ukraine/">Intercultural understanding with Ukraine - Victorian education (DEECD)  and Ukraine Build bridges</a> <time class="pull-right post-list" datetime="2012-02-24T08:21:05Z">Fri, Feb 24, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/2012-international-mother-language-day/">2012 International Mother Language Day</a> <time class="pull-right post-list" datetime="2012-02-21T01:56:05Z">Tue, Feb 21, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/2012-international-mother-language-day/">2012 International Mother Language Day</a> <time class="pull-right post-list" datetime="2012-02-21T01:56:05Z">Tue, Feb 21, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/start-of-ukrainian-school-year-2012-sydney/">РОЗПОЧAЛОCЯ НAВЧAННЯ</a> <time class="pull-right post-list" datetime="2012-02-08T03:25:37Z">Wed, Feb 8, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/education/start-of-ukrainian-school-year-2012-sydney/">РОЗПОЧAЛОCЯ НAВЧAННЯ</a> <time class="pull-right post-list" datetime="2012-02-08T03:25:37Z">Wed, Feb 8, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%b0-%d0%bc%d0%be%d0%b2%d0%b0-%d0%bf%d1%96%d0%b4-%d0%b7%d0%b0%d0%b3%d1%80%d0%be%d0%b7%d0%be%d1%8e-%d0%93%d0%b0%d1%80%d1%8f%d1%87%d0%b5-%d0%bf/">Українська мова під загрозою. Гаряче повідомлення</a> <time class="pull-right post-list" datetime="2012-01-27T08:17:27Z">Fri, Jan 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%b0-%d0%bc%d0%be%d0%b2%d0%b0-%d0%bf%d1%96%d0%b4-%d0%b7%d0%b0%d0%b3%d1%80%d0%be%d0%b7%d0%be%d1%8e-%d0%93%d0%b0%d1%80%d1%8f%d1%87%d0%b5-%d0%bf/">Українська мова під загрозою. Гаряче повідомлення</a> <time class="pull-right post-list" datetime="2012-01-27T08:17:27Z">Fri, Jan 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/lote-ukrainian-in-danger/">LOTE Ukrainian in danger</a> <time class="pull-right post-list" datetime="2012-01-27T08:06:07Z">Fri, Jan 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/lote-ukrainian-in-danger/">LOTE Ukrainian in danger</a> <time class="pull-right post-list" datetime="2012-01-27T08:06:07Z">Fri, Jan 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%b4%d1%96%d1%82%d0%b5%d0%b9-%d1%96-%d0%b4/">Українські школи запрошують дітей і дорослих на навчання </a> <time class="pull-right post-list" datetime="2012-01-27T07:53:51Z">Fri, Jan 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%b4%d1%96%d1%82%d0%b5%d0%b9-%d1%96-%d0%b4/">Українські школи запрошують дітей і дорослих на навчання </a> <time class="pull-right post-list" datetime="2012-01-27T07:53:51Z">Fri, Jan 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/ukrainian-schools-accepting-enrolments-for-childrens-and-adult-classes/">Ukrainian Schools accepting enrolments for children&#39;s and adult classes</a> <time class="pull-right post-list" datetime="2012-01-27T07:49:25Z">Fri, Jan 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/ukrainian-schools-accepting-enrolments-for-childrens-and-adult-classes/">Ukrainian Schools accepting enrolments for children&#39;s and adult classes</a> <time class="pull-right post-list" datetime="2012-01-27T07:49:25Z">Fri, Jan 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/happy-90th-birthday-mrs-tetiana-slipetsky/">Многії літа - Happy 90th Birthday Mrs Tetiana Slipetsky</a> <time class="pull-right post-list" datetime="2011-12-24T00:20:53Z">Sat, Dec 24, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/happy-90th-birthday-mrs-tetiana-slipetsky/">Многії літа - Happy 90th Birthday Mrs Tetiana Slipetsky</a> <time class="pull-right post-list" datetime="2011-12-24T00:20:53Z">Sat, Dec 24, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/end-of-school-year-in-sydney/">ЗAКІНЧЕННЯ ШКІЛЬНОГО РОКУ В CІДНЕЇ</a> <time class="pull-right post-list" datetime="2011-12-21T04:04:28Z">Wed, Dec 21, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/end-of-school-year-in-sydney/">ЗAКІНЧЕННЯ ШКІЛЬНОГО РОКУ В CІДНЕЇ</a> <time class="pull-right post-list" datetime="2011-12-21T04:04:28Z">Wed, Dec 21, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-foundations-institutions-offering-grants-or-sponsorships/">Ukrainian Foundations and Institutions Offering Grants or Sponsorships</a> <time class="pull-right post-list" datetime="2011-12-17T04:33:00Z">Sat, Dec 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-foundations-institutions-offering-grants-or-sponsorships/">Ukrainian Foundations and Institutions Offering Grants or Sponsorships</a> <time class="pull-right post-list" datetime="2011-12-17T04:33:00Z">Sat, Dec 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/%d0%9f%d1%80%d0%b5%d0%b7%d0%b5%d0%bd%d1%82%d0%b0%d1%86%d1%96%d1%8f-%d0%ba%d0%bd%d0%b8%d0%b6%d0%ba%d0%b8-%c2%ab%d0%9d%d0%b5%d0%bc%d0%b0%d1%94-%d0%b2%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d1%97-%d0%9f%d0%be/">Презентація книжки «Немає вільної Польщі без вільної України»</a> <time class="pull-right post-list" datetime="2011-12-15T10:53:18Z">Thu, Dec 15, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/%d0%9f%d1%80%d0%b5%d0%b7%d0%b5%d0%bd%d1%82%d0%b0%d1%86%d1%96%d1%8f-%d0%ba%d0%bd%d0%b8%d0%b6%d0%ba%d0%b8-%c2%ab%d0%9d%d0%b5%d0%bc%d0%b0%d1%94-%d0%b2%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d1%97-%d0%9f%d0%be/">Презентація книжки «Немає вільної Польщі без вільної України»</a> <time class="pull-right post-list" datetime="2011-12-15T10:53:18Z">Thu, Dec 15, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/monash-book-launch-no-free-poland-without-a-free-ukraine/">Monash Book Launch: No Free Poland Without a Free Ukraine </a> <time class="pull-right post-list" datetime="2011-12-15T10:49:33Z">Thu, Dec 15, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/monash-book-launch-no-free-poland-without-a-free-ukraine/">Monash Book Launch: No Free Poland Without a Free Ukraine </a> <time class="pull-right post-list" datetime="2011-12-15T10:49:33Z">Thu, Dec 15, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/australian-presentation-and-launch-of-the-book-holodomor-the-great-famine-in-ukraine-1932-1933-and-the-book-series-%e2%80%9cpoland-and-ukraine-in-the-1930s-and-1940s%e2%80%9d/">Australian Presentation and Launch of the book &#34;Holodomor. The Great Famine in Ukraine 1932-1933&#34;  and the book series “Poland and Ukraine in the 1930s and 1940s” </a> <time class="pull-right post-list" datetime="2011-10-31T02:48:27Z">Mon, Oct 31, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/australian-presentation-and-launch-of-the-book-holodomor-the-great-famine-in-ukraine-1932-1933-and-the-book-series-%e2%80%9cpoland-and-ukraine-in-the-1930s-and-1940s%e2%80%9d/">Australian Presentation and Launch of the book &#34;Holodomor. The Great Famine in Ukraine 1932-1933&#34;  and the book series “Poland and Ukraine in the 1930s and 1940s” </a> <time class="pull-right post-list" datetime="2011-10-31T02:48:27Z">Mon, Oct 31, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/scholarships-to-study-the-ukrainian-language-and-other-grants/">Scholarships to Study the Ukrainian Language and Other Grants</a> <time class="pull-right post-list" datetime="2011-09-07T07:53:07Z">Wed, Sep 7, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/scholarships-to-study-the-ukrainian-language-and-other-grants/">Scholarships to Study the Ukrainian Language and Other Grants</a> <time class="pull-right post-list" datetime="2011-09-07T07:53:07Z">Wed, Sep 7, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/60th-anniversary-of-ukrainian-schools-in-australia-saturday-sept-10th/">60th anniversary of Ukrainian schools in Australia Saturday Sept. 10th</a> <time class="pull-right post-list" datetime="2011-09-04T04:44:57Z">Sun, Sep 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/60th-anniversary-of-ukrainian-schools-in-australia-saturday-sept-10th/">60th anniversary of Ukrainian schools in Australia Saturday Sept. 10th</a> <time class="pull-right post-list" datetime="2011-09-04T04:44:57Z">Sun, Sep 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%92%d1%96%d0%b4%d0%b1%d1%83%d0%b2%d1%81%d1%8f-%d0%9a%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d1%96/">Відбувся Конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2011-08-12T13:21:35Z">Fri, Aug 12, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%92%d1%96%d0%b4%d0%b1%d1%83%d0%b2%d1%81%d1%8f-%d0%9a%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d1%96/">Відбувся Конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2011-08-12T13:21:35Z">Fri, Aug 12, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/2011-petro-jacyk-international-ukrainian-language-competition-in-australia/">2011 Petro Jacyk International Ukrainian Language Competition in Australia </a> <time class="pull-right post-list" datetime="2011-08-12T13:14:40Z">Fri, Aug 12, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/2011-petro-jacyk-international-ukrainian-language-competition-in-australia/">2011 Petro Jacyk International Ukrainian Language Competition in Australia </a> <time class="pull-right post-list" datetime="2011-08-12T13:14:40Z">Fri, Aug 12, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/petro-jacyk-international-ukrainian-language-competition-in-australia/">Petro Jacyk International Ukrainian Language Competition in Australia</a> <time class="pull-right post-list" datetime="2011-06-17T07:35:18Z">Fri, Jun 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/petro-jacyk-international-ukrainian-language-competition-in-australia/">Petro Jacyk International Ukrainian Language Competition in Australia</a> <time class="pull-right post-list" datetime="2011-06-17T07:35:18Z">Fri, Jun 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/%d0%9a%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d1%96%d0%bc-%d0%9f%d0%b5%d1%82%d1%80%d0%b0-%d0%af%d1%86/">Конкурс з української мови ім. Петра Яцика в Австралії 25.6.2011</a> <time class="pull-right post-list" datetime="2011-06-17T07:26:14Z">Fri, Jun 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/%d0%9a%d0%be%d0%bd%d0%ba%d1%83%d1%80%d1%81-%d0%b7-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d1%96%d0%bc-%d0%9f%d0%b5%d1%82%d1%80%d0%b0-%d0%af%d1%86/">Конкурс з української мови ім. Петра Яцика в Австралії 25.6.2011</a> <time class="pull-right post-list" datetime="2011-06-17T07:26:14Z">Fri, Jun 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/medical-training-in-ukraine/">Медичне Cтажування в Україні</a> <time class="pull-right post-list" datetime="2011-06-08T00:52:37Z">Wed, Jun 8, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/medical-training-in-ukraine/">Медичне Cтажування в Україні</a> <time class="pull-right post-list" datetime="2011-06-08T00:52:37Z">Wed, Jun 8, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d0%b0-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%8f-%d0%b7-%d1%96%d1%81%d1%82%d0%be%d1%80%d1%96%d1%97-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8/">Громадська лекція з історії України</a> <time class="pull-right post-list" datetime="2011-05-27T06:17:04Z">Fri, May 27, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d0%b0-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%8f-%d0%b7-%d1%96%d1%81%d1%82%d0%be%d1%80%d1%96%d1%97-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8/">Громадська лекція з історії України</a> <time class="pull-right post-list" datetime="2011-05-27T06:17:04Z">Fri, May 27, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/st-catherines-early-education-centre/">St. Catherine&#39;s Early Education Centre / Початкова Школа Св. Катерини</a> <time class="pull-right post-list" datetime="2011-05-17T04:48:10Z">Tue, May 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/st-catherines-early-education-centre/">St. Catherine&#39;s Early Education Centre / Початкова Школа Св. Катерини</a> <time class="pull-right post-list" datetime="2011-05-17T04:48:10Z">Tue, May 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d1%96-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%97-%c2%ab%d0%86%d1%81%d1%82%d0%be%d1%80%d1%96%d1%8f-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8%c2%bb-ukr/">Громадські лекції «Історія України». Ukrainian History Public Lecture Series</a> <time class="pull-right post-list" datetime="2011-04-05T05:29:59Z">Tue, Apr 5, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/%d0%93%d1%80%d0%be%d0%bc%d0%b0%d0%b4%d1%81%d1%8c%d0%ba%d1%96-%d0%bb%d0%b5%d0%ba%d1%86%d1%96%d1%97-%c2%ab%d0%86%d1%81%d1%82%d0%be%d1%80%d1%96%d1%8f-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8%c2%bb-ukr/">Громадські лекції «Історія України». Ukrainian History Public Lecture Series</a> <time class="pull-right post-list" datetime="2011-04-05T05:29:59Z">Tue, Apr 5, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%9a%d0%90%d0%97%d0%9a%d0%90-%d0%9c%d0%a3%d0%a5%d0%90-kazka-mukha/">КАЗКА МУХА (KAZKA MUKHA)</a> <time class="pull-right post-list" datetime="2011-03-10T23:35:28Z">Thu, Mar 10, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%9a%d0%90%d0%97%d0%9a%d0%90-%d0%9c%d0%a3%d0%a5%d0%90-kazka-mukha/">КАЗКА МУХА (KAZKA MUKHA)</a> <time class="pull-right post-list" datetime="2011-03-10T23:35:28Z">Thu, Mar 10, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/krok-1/">НАВЧАЛЬНИЙ КОМПЛЕКС З УКРАЇНСЬКОЇ МОВИ ЯК ІНОЗЕМНОЇ «КРОК-1»</a> <time class="pull-right post-list" datetime="2011-03-05T01:29:26Z">Sat, Mar 5, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/krok-1/">НАВЧАЛЬНИЙ КОМПЛЕКС З УКРАЇНСЬКОЇ МОВИ ЯК ІНОЗЕМНОЇ «КРОК-1»</a> <time class="pull-right post-list" datetime="2011-03-05T01:29:26Z">Sat, Mar 5, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%92%d0%b8%d0%b1%d0%b8%d1%80%d0%b0%d1%94%d1%82%d0%b5-%d0%bf%d1%80%d0%b5%d0%b4%d0%bc%d0%b5%d1%82%d0%b8-%d0%b4%d0%be-11-%d0%b0%d0%b1%d0%be-12-%d0%ba%d0%bb%d1%8f%d1%81%d0%b8-%d0%91%d0%b5%d1%80%d1%96/">Вибираєте предмети до 11 або 12 кляси?  Беріть українську мову!</a> <time class="pull-right post-list" datetime="2011-03-04T14:35:33Z">Fri, Mar 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%92%d0%b8%d0%b1%d0%b8%d1%80%d0%b0%d1%94%d1%82%d0%b5-%d0%bf%d1%80%d0%b5%d0%b4%d0%bc%d0%b5%d1%82%d0%b8-%d0%b4%d0%be-11-%d0%b0%d0%b1%d0%be-12-%d0%ba%d0%bb%d1%8f%d1%81%d0%b8-%d0%91%d0%b5%d1%80%d1%96/">Вибираєте предмети до 11 або 12 кляси?  Беріть українську мову!</a> <time class="pull-right post-list" datetime="2011-03-04T14:35:33Z">Fri, Mar 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%9a%d1%83%d1%80%d1%81%d0%b8-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d1%81%d0%bb%d0%b8%d1%85/">Курси української мови для дорослих</a> <time class="pull-right post-list" datetime="2011-03-04T14:16:24Z">Fri, Mar 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%9a%d1%83%d1%80%d1%81%d0%b8-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d1%81%d0%bb%d0%b8%d1%85/">Курси української мови для дорослих</a> <time class="pull-right post-list" datetime="2011-03-04T14:16:24Z">Fri, Mar 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ueca-ukrainian-language-classes-for-adults/">UECA Ukrainian Language Classes For Adults</a> <time class="pull-right post-list" datetime="2011-03-04T14:05:45Z">Fri, Mar 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/ueca-ukrainian-language-classes-for-adults/">UECA Ukrainian Language Classes For Adults</a> <time class="pull-right post-list" datetime="2011-03-04T14:05:45Z">Fri, Mar 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%bd%d0%b0-%d0%bd%d0%b0%d0%b2%d1%87%d0%b0/">Українські школи запрошують на навчання</a> <time class="pull-right post-list" datetime="2011-03-04T13:59:17Z">Fri, Mar 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%bd%d0%b0-%d0%bd%d0%b0%d0%b2%d1%87%d0%b0/">Українські школи запрошують на навчання</a> <time class="pull-right post-list" datetime="2011-03-04T13:59:17Z">Fri, Mar 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/ukrainian-schools-accepting-enrolments/">Ukrainian schools accepting enrolments</a> <time class="pull-right post-list" datetime="2011-03-04T13:44:24Z">Fri, Mar 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/ukrainian-schools-accepting-enrolments/">Ukrainian schools accepting enrolments</a> <time class="pull-right post-list" datetime="2011-03-04T13:44:24Z">Fri, Mar 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/queensland-ukrainians-resuming-community-life/">Queensland Ukrainians - Resuming Community Life</a> <time class="pull-right post-list" datetime="2011-03-01T22:24:47Z">Tue, Mar 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/queensland-ukrainians-resuming-community-life/">Queensland Ukrainians - Resuming Community Life</a> <time class="pull-right post-list" datetime="2011-03-01T22:24:47Z">Tue, Mar 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/victorian-government-reinforces-commitment-to-language-education/">Victorian Government Reinforces Commitment to Language Education</a> <time class="pull-right post-list" datetime="2011-03-01T03:16:48Z">Tue, Mar 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/victorian-government-reinforces-commitment-to-language-education/">Victorian Government Reinforces Commitment to Language Education</a> <time class="pull-right post-list" datetime="2011-03-01T03:16:48Z">Tue, Mar 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/volunteers-needed-for-ukrainian-school-in-perth/">Volunteers needed for Ukrainian School in Perth</a> <time class="pull-right post-list" datetime="2011-02-17T23:45:05Z">Thu, Feb 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/volunteers-needed-for-ukrainian-school-in-perth/">Volunteers needed for Ukrainian School in Perth</a> <time class="pull-right post-list" datetime="2011-02-17T23:45:05Z">Thu, Feb 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/%d0%9a%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82-%d0%b7%d0%b0%d0%ba%d1%96%d0%bd%d1%87%d0%b5%d0%bd%d0%bd%d1%8f-%d1%88%d0%ba%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d1%80%d0%be%d0%ba%d1%83-ukrainian-sc/">Концерт - закінчення шкільного року | Ukrainian School End of Year Concert</a> <time class="pull-right post-list" datetime="2010-12-08T10:45:24Z">Wed, Dec 8, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/events/%d0%9a%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82-%d0%b7%d0%b0%d0%ba%d1%96%d0%bd%d1%87%d0%b5%d0%bd%d0%bd%d1%8f-%d1%88%d0%ba%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d1%80%d0%be%d0%ba%d1%83-ukrainian-sc/">Концерт - закінчення шкільного року | Ukrainian School End of Year Concert</a> <time class="pull-right post-list" datetime="2010-12-08T10:45:24Z">Wed, Dec 8, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/%d0%9e%d0%b4%d0%b8%d0%bd%d0%b0%d0%b4%d1%86%d1%8f%d1%82%d0%b8%d0%b9-%e2%80%93-%d0%b2%d1%96%d0%b4%d0%ba%d1%80%d0%b8%d1%82%d0%be/">Одинадцятий – відкрито!</a> <time class="pull-right post-list" datetime="2010-11-17T07:45:42Z">Wed, Nov 17, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/education/%d0%9e%d0%b4%d0%b8%d0%bd%d0%b0%d0%b4%d1%86%d1%8f%d1%82%d0%b8%d0%b9-%e2%80%93-%d0%b2%d1%96%d0%b4%d0%ba%d1%80%d0%b8%d1%82%d0%be/">Одинадцятий – відкрито!</a> <time class="pull-right post-list" datetime="2010-11-17T07:45:42Z">Wed, Nov 17, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/jacyk-competition-ochyma-uchasnyka/">Перший в Австралії конкурс з української мови ім. П. Яцика очима учасника</a> <time class="pull-right post-list" datetime="2010-11-08T23:04:20Z">Mon, Nov 8, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/education/jacyk-competition-ochyma-uchasnyka/">Перший в Австралії конкурс з української мови ім. П. Яцика очима учасника</a> <time class="pull-right post-list" datetime="2010-11-08T23:04:20Z">Mon, Nov 8, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/golden-october-in-lviv/">Golden October in Lviv</a> <time class="pull-right post-list" datetime="2010-09-02T13:32:19Z">Thu, Sep 2, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/events/golden-october-in-lviv/">Golden October in Lviv</a> <time class="pull-right post-list" datetime="2010-09-02T13:32:19Z">Thu, Sep 2, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/learn-ukrainian-in-ukraine-and-experience-warm-september-in-lviv/">Learn Ukrainian in Ukraine and Experience &#34;Warm September in Lviv&#34;</a> <time class="pull-right post-list" datetime="2010-08-19T20:42:56Z">Thu, Aug 19, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/events/learn-ukrainian-in-ukraine-and-experience-warm-september-in-lviv/">Learn Ukrainian in Ukraine and Experience &#34;Warm September in Lviv&#34;</a> <time class="pull-right post-list" datetime="2010-08-19T20:42:56Z">Thu, Aug 19, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/petro-jacyk-international-ukrainian-language-competition-2010/">Міжнародний конкурс з української мови ім.Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2010-08-15T15:06:16Z">Sun, Aug 15, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/education/petro-jacyk-international-ukrainian-language-competition-2010/">Міжнародний конкурс з української мови ім.Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2010-08-15T15:06:16Z">Sun, Aug 15, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/2010-ethnic-schools-association-of-victoria-community-languages-conference/">2010 Ethnic Schools Association of Victoria Community Languages Conference</a> <time class="pull-right post-list" datetime="2010-07-02T20:33:07Z">Fri, Jul 2, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/education/2010-ethnic-schools-association-of-victoria-community-languages-conference/">2010 Ethnic Schools Association of Victoria Community Languages Conference</a> <time class="pull-right post-list" datetime="2010-07-02T20:33:07Z">Fri, Jul 2, 2010</time></span>
   </li>
 </ul>
     </main>

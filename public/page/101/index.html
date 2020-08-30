@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,38 +23,115 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/tasmania/tasmanian-ukrainians-celebrate-anniversary-of-ukraines-independence/">Tasmanian Ukrainians Celebrate Anniversary of Ukraine&#39;s Independence</a>
+        <a href="https://ukrainians.org.au/current-affairs/%d0%90%d0%92%d0%a1%d0%a2%d0%a0%d0%90%d0%9b%d0%86%d0%99%d0%a1%d0%ac%d0%9a%d0%86-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a6%d0%86-%d0%9f%d0%a0%d0%9e-%d0%9f%d0%a0%d0%95%d0%97%d0%98%d0%94%d0%95%d0%9d/">АВСТРАЛІЙСЬКІ УКРАЇНЦІ ПРО ПРЕЗИДЕНТА ТА УРЯД В УКРАЇНІ</a>
+      </h1>
+      <time datetime="2011-08-31T06:37:17Z" class="post-date">Wed, Aug 31, 2011</time>
+      Інтерв&rsquo;ю з Маріяном Ткачуком, заступником голови СУОА і директором референтури зовнішніх зв&rsquo;язків - Союз Українських Організацій Австралії. http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/183202/t/AUSTRALIAN-UKRAINIANS-ABOUT-THE-PRESIDENT-AND-THE-GOVERNMENT-IN-UKRAINE
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/tasmania/tasmanian-ukrainians-celebrate-anniversary-of-ukraines-independence/">Tasmanian Ukrainians Celebrate Anniversary of Ukraine&#39;s Independence</a>
       </h1>
       <time datetime="2011-08-31T01:54:41Z" class="post-date">Wed, Aug 31, 2011</time>
-      On Sunday 28th of August 2011 the Association of Ukrainians in Tasmania, one of the smaller Ukrainian communities in Australia, whole-heartedly celebrated the 20th Anniversary of Ukraine's Independence. The commemorative event included a church service, keynote speeches and cultural performances. The day was enjoyed by all present.
+      On Sunday 28th of August 2011 the Association of Ukrainians in Tasmania, one of the smaller Ukrainian communities in Australia, whole-heartedly celebrated the 20th Anniversary of Ukraine&rsquo;s Independence. The commemorative event included a church service, keynote speeches and cultural performances. The day was enjoyed by all present.
 
  Church Service prior to celebration
 
@@ -69,7 +145,7 @@ AUT Committee members: L to R: Myron Mihal ( Secretary ), Maria Baric (Preside
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/western-australia-celebrates-the-20th-anniversary-of-ukraines-independence/">Western Australia celebrates the 20th Anniversary of Ukraine&#39;s Independence</a>
+        <a href="https://ukrainians.org.au/events/western-australia/western-australia-celebrates-the-20th-anniversary-of-ukraines-independence/">Western Australia celebrates the 20th Anniversary of Ukraine&#39;s Independence</a>
       </h1>
       <time datetime="2011-08-30T08:37:24Z" class="post-date">Tue, Aug 30, 2011</time>
       The Ukrainian Community of WA celebrated the 20th anniversary of Ukraine’s Independence with a concert and lunch at the Inglewood United (Kyiv) Soccer Club on Sunday, August 28th. Approximately 200 people attended, many wearing “vyshyvani sorochky” (traditional Ukrainian embroidered shirts).
@@ -77,7 +153,7 @@ A report of the celebration can be read here: 2011 Indep Day write up 2a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/ukrainian-idependence-day-celebrations-2011-in-sydney/">Ukrainian Idependence Day Celebrations 2011 in Sydney </a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/ukrainian-idependence-day-celebrations-2011-in-sydney/">Ukrainian Idependence Day Celebrations 2011 in Sydney </a>
       </h1>
       <time datetime="2011-08-30T08:22:27Z" class="post-date">Tue, Aug 30, 2011</time>
       A spectacular concert took place on Sunday 28th August 2011 in the Ukrainian Youth Hall in Sydney to culminate a weekend of celebrations of the 20th Anniversary of Independence of Ukraine. The pictures in the following links provide a better story than a thousand words.
@@ -89,7 +165,7 @@ Photographs courtesy of Taras and Sonja Moravski and Marichka Halaburda.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/national-ukrainian-collectibles-exhibition-ucspex-2011/">National Ukrainian Collectibles Exhibition UCSPEX-2011</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/national-ukrainian-collectibles-exhibition-ucspex-2011/">National Ukrainian Collectibles Exhibition UCSPEX-2011</a>
       </h1>
       <time datetime="2011-08-30T08:01:20Z" class="post-date">Tue, Aug 30, 2011</time>
       To commemorate the 20th anniversary of Ukraine’s independence especially commissioned personalised Stamp and First Day of Issue envelope were released at the 3rd National Ukrainian Collectibles Exhibition UCSPEX-2011 in Sydney on 27 August.
@@ -101,7 +177,7 @@ Photographs courtesy of Taras and Sonja Moravski and Marichka Halaburda.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/world-forum-of-ukrainians-elects-new-leadership/">World Forum of Ukrainians elects new leadership</a>
+        <a href="https://ukrainians.org.au/community/world-forum-of-ukrainians-elects-new-leadership/">World Forum of Ukrainians elects new leadership</a>
       </h1>
       <time datetime="2011-08-24T11:05:44Z" class="post-date">Wed, Aug 24, 2011</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2011/08/uvkr.jpg)
@@ -114,7 +190,7 @@ World Forum of Ukrainians elects new leadership **Kyiv, Ukraine - August 23, 201
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/independence-day-sticker-competition/">Independence Day Sticker Competition</a>
+        <a href="https://ukrainians.org.au/events/national-events/independence-day-sticker-competition/">Independence Day Sticker Competition</a>
       </h1>
       <time datetime="2011-08-24T01:17:57Z" class="post-date">Wed, Aug 24, 2011</time>
       The Australian Federation of Ukrainian Organisations (AFUO) recently organised and received 21 entries for the 20th Anniversary of Ukraine’s Independence Sticker Competition.
@@ -128,7 +204,7 @@ Once all the votes were cast and counted there was a clear winner, with 2nd thro
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-golf-club-in-victoria/">Ukrainian Golf Club in Victoria</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-golf-club-in-victoria/">Ukrainian Golf Club in Victoria</a>
       </h1>
       <time datetime="2011-08-24T00:59:08Z" class="post-date">Wed, Aug 24, 2011</time>
       The next game of the Association of Ukrainians in Victoria Golf Club (AUVGC)is a Melbourne - Geelong challenge to be held on 28 August 2011 at Curlewis.** **
@@ -137,11 +213,10 @@ For further details check here: http://www.ukigolf.org.au/Next-Game.html
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-independence-day-celebrations-2011-in-melbourne/">Ukrainian Independence Day Celebrations 2011 in Melbourne</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-independence-day-celebrations-2011-in-melbourne/">Ukrainian Independence Day Celebrations 2011 in Melbourne</a>
       </h1>
       <time datetime="2011-08-23T02:23:59Z" class="post-date">Tue, Aug 23, 2011</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2011/08/6064852527_55540877e9_b.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2011/08/6065033502_fce5329fda_thumb.jpg) ](http://www.ozeukes.com/wp-content/uploads/2011/08/6065033502_fce5329fda_thumb.jpg)
-Українське громадянство Вікторії разом з іншими відзначили 20-ту річницю Дня Незалежности України в неділю 21-го серпня 2011р. в центрі міста Мельбурн, в залі BMW Edge на площі Federation Square.
+      Українське громадянство Вікторії разом з іншими відзначили 20-ту річницю Дня Незалежности України в неділю 21-го серпня 2011р. в центрі міста Мельбурн, в залі BMW Edge на площі Federation Square.
  Ukrainians and their friend in Victoria celebrated the 20th Anniversary of Independence Day of Ukraine on Sunday 21st August 2011 in the centre of Melbourne – in the BMW Edge hall located in Federation Square.
 Стаття про відзначення - українською мовою.
       
@@ -151,7 +226,7 @@ For further details check here: http://www.ukigolf.org.au/Next-Game.html
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/hrim-%e2%80%93-debut-album/">HRIM – Debut Album</a>
+        <a href="https://ukrainians.org.au/culture/hrim-%e2%80%93-debut-album/">HRIM – Debut Album</a>
       </h1>
       <time datetime="2011-08-20T01:31:50Z" class="post-date">Sat, Aug 20, 2011</time>
       Hrim, the Ukrainian band from New York City that performed at the Hopak in the Park festival in April 2011 is happy to announce the online release of their debut album. To purchase the album, please visit www.CDBaby.com/hrim or search &ldquo;Hrim&rdquo; on the iTunes store.
@@ -161,14 +236,6 @@ The band is excited to be coming back to Melbourne in April of 2012!
         <div class="read-more-link">
           <a href="/culture/hrim-%e2%80%93-debut-album/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/plast-press-release/">Комунікат Пласту</a>
-      </h1>
-      <time datetime="2011-08-17T23:16:27Z" class="post-date">Wed, Aug 17, 2011</time>
-      Перші пластові частини на території України були створені в 1911 р., а в квітні 1912 р. було офіційне заснування Пласту у Львові. У зв’язку з цим Головний Провід Пласту проголошує що час від 01.08.2011 до 31.08.2012 є РОКОМ ПЛАСТУ.
-Комунікат: Komunikat_Rik_Plastu
       
     </article>
 
@@ -1378,6 +1445,8 @@ The band is excited to be coming back to Melbourne in April of 2012!
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,113 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/afuo-calls-on-ukrainian-community-to-save-sbs-in-language-radio-program/">AFUO calls on Ukrainian community to save SBS in-language radio program</a>
+        <a href="https://ukrainians.org.au/politics/dyakuiemo-tobi-avstraliie/">ДЯКУЄМО ТОБІ, АВСТРАЛІЄ...</a>
+      </h1>
+      <time datetime="2016-12-12T10:58:13Z" class="post-date">Mon, Dec 12, 2016</time>
+      Богдан Рудницький веде розмову із Надзвичайним і Повноважним Послом України в Австралії д-ром Миколою Кулінічем. Дещо до підсумків року 2016-го, що минає&hellip;
+http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/dyakuiemo-tobi-avstraliie?language=uk
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/media/afuo-calls-on-ukrainian-community-to-save-sbs-in-language-radio-program/">AFUO calls on Ukrainian community to save SBS in-language radio program</a>
       </h1>
       <time datetime="2016-12-01T10:37:55Z" class="post-date">Thu, Dec 1, 2016</time>
       1 December 2016
@@ -67,10 +144,10 @@ The Ukrainian program lost out last time and was transferred to digital, with so
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/what-cannot-be-forgotten/">Те, що не підлягає забуттю - Голодомор</a>
+        <a href="https://ukrainians.org.au/politics/what-cannot-be-forgotten/">Те, що не підлягає забуттю - Голодомор</a>
       </h1>
       <time datetime="2016-11-26T22:46:15Z" class="post-date">Sat, Nov 26, 2016</time>
-      Те, що не підлягає забуттю 26 листопада відзначаємо День пам’яті жертв голодоморів – одну з найтрагічніших дат в історії України. В цей день українці в усьому світі запалять свічки в пам'ять про жертв одного найстрашніших злочинів за часів існування людства…
+      Те, що не підлягає забуттю 26 листопада відзначаємо День пам’яті жертв голодоморів – одну з найтрагічніших дат в історії України. В цей день українці в усьому світі запалять свічки в пам&rsquo;ять про жертв одного найстрашніших злочинів за часів існування людства…
 Щоб злочин не повторився, ми повинні бути принциповими й послідовними по відношенню до тих, хто намагається заперечити акт геноциду проти українського народу, намагається підмінити поняття, маніпулює цим питанням в залежності від «політичної доцільності».
       
         <div class="read-more-link">
@@ -79,7 +156,7 @@ The Ukrainian program lost out last time and was transferred to digital, with so
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-communities-around-the-world-pause-to-honour-victims-of-the-holodomor/">Ukrainian communities around the world pause to honour victims of the Holodomor – Ukraine’s genocide of 1932-33</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-communities-around-the-world-pause-to-honour-victims-of-the-holodomor/">Ukrainian communities around the world pause to honour victims of the Holodomor – Ukraine’s genocide of 1932-33</a>
       </h1>
       <time datetime="2016-11-23T00:59:18Z" class="post-date">Wed, Nov 23, 2016</time>
       23 November 2016
@@ -93,11 +170,11 @@ The Holodomor is a horrifying event in Ukraine’s history made all the more tra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/interview-sbs-ukrainian-nov-2016/">Інтерв’ю на SBS Ukrainian Radio</a>
+        <a href="https://ukrainians.org.au/media/interview-sbs-ukrainian-nov-2016/">Інтерв’ю на SBS Ukrainian Radio</a>
       </h1>
       <time datetime="2016-11-22T20:19:28Z" class="post-date">Tue, Nov 22, 2016</time>
       [ ](http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/doktor-f-karber-pro-viynu-v-ukrayini?language=uk)ДОКТОР Ф. А. КАРБЕР ПРО ВІЙНУ В УКРАЇНІ
-Анна Головченко веде розмову із доктором Філіппом Карбером, який є Президентом Потомакської науково-дослідної фундації, професор, Джорджтавн університет. Доктор Ф. А. Карбер є експертом Сполучених Штатів Америки з питань національної та міжнародної безпеки і має глибокі знання з військової справи. Його послужний список налічує багато визначних посад Він, зокрема, був радником Прем'єр- міністра Великої Британії Марґарет Тетчер та Генерального секретаря НАТО Манфреда Ворнера.
+Анна Головченко веде розмову із доктором Філіппом Карбером, який є Президентом Потомакської науково-дослідної фундації, професор, Джорджтавн університет. Доктор Ф. А. Карбер є експертом Сполучених Штатів Америки з питань національної та міжнародної безпеки і має глибокі знання з військової справи. Його послужний список налічує багато визначних посад Він, зокрема, був радником Прем&rsquo;єр- міністра Великої Британії Марґарет Тетчер та Генерального секретаря НАТО Манфреда Ворнера.
       
         <div class="read-more-link">
           <a href="/media/interview-sbs-ukrainian-nov-2016/">Read More…</a>
@@ -105,7 +182,7 @@ The Holodomor is a horrifying event in Ukraine’s history made all the more tra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/yevshan-winners-national-dance-kar-dance-competition-2016/">Yevshan - Winners – National Dance KAR Dance Competition 2016</a>
+        <a href="https://ukrainians.org.au/events/yevshan-winners-national-dance-kar-dance-competition-2016/">Yevshan - Winners – National Dance KAR Dance Competition 2016</a>
       </h1>
       <time datetime="2016-11-18T06:24:26Z" class="post-date">Fri, Nov 18, 2016</time>
       On 29 October 2016, two of Yevshan dance ensemble groups participated in a National Dance KAR competition, winning 8 awards and “All Stars” Title – see photos below – and received an invitation to attend the New York City Dance Experience in July 2017. The competition was held in Michael Murray Performing Arts Centre at Westminster School. The judges were from New York, Los Angeles and Sydney.
@@ -117,7 +194,7 @@ Competing in the National Dance KAR competition were professional dance companie
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/soyuz-ukrayinok-avstralyy-laureat-premiyi-im-yevhena-chykalenka/">Cоюз українок Австралії – лауреат премії ім. Євгена Чикаленка</a>
+        <a href="https://ukrainians.org.au/education/soyuz-ukrayinok-avstralyy-laureat-premiyi-im-yevhena-chykalenka/">Cоюз українок Австралії – лауреат премії ім. Євгена Чикаленка</a>
       </h1>
       <time datetime="2016-11-15T05:59:46Z" class="post-date">Tue, Nov 15, 2016</time>
       Лауреатом премії Ліги українських меценатів імені Євгена Чикаленка, котра присуджується за благодійництво, став Союз українок Австралії.
@@ -127,7 +204,7 @@ Competing in the National Dance KAR competition were professional dance companie
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/invitation-to-hear-dr-phillip-karber-reflecting-on-ukraines-current-war-in-the-east/">Invitation to hear Dr. Phillip Karber - Reflecting on Ukraine’s Current &#34;War in the East&#34;</a>
+        <a href="https://ukrainians.org.au/events/invitation-to-hear-dr-phillip-karber-reflecting-on-ukraines-current-war-in-the-east/">Invitation to hear Dr. Phillip Karber - Reflecting on Ukraine’s Current &#34;War in the East&#34;</a>
       </h1>
       <time datetime="2016-11-12T21:32:58Z" class="post-date">Sat, Nov 12, 2016</time>
       The Australian Federation of Ukrainian Organisations has pleasure in announcing that it has invited
@@ -141,7 +218,7 @@ He is President of the Potomac Foundation; he was named to this position in 2012
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/pert-2016-chempionat-svitu-z-legkoyi-atletiki-sered-veteraniv/">ПЕРТ-2016: ЧЕМПІОНАТ СВІТУ З ЛЕГКОЇ АТЛЕТИКИ СЕРЕД ВЕТЕРАНІВ</a>
+        <a href="https://ukrainians.org.au/sport/pert-2016-chempionat-svitu-z-legkoyi-atletiki-sered-veteraniv/">ПЕРТ-2016: ЧЕМПІОНАТ СВІТУ З ЛЕГКОЇ АТЛЕТИКИ СЕРЕД ВЕТЕРАНІВ</a>
       </h1>
       <time datetime="2016-11-08T10:24:06Z" class="post-date">Tue, Nov 8, 2016</time>
       Богдан Рудницький веде розмову із керівником Збірної спортивної дружини легкоатлетів-ветеранів України Валентиною Крепкіною. Із понад 4000 атлетів з 91-ої країни на світовій першості у Перту українські спортовці із 10 осіб сенсаційно вибороли 13 медалей&hellip;
@@ -149,7 +226,7 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/pert-2016-chempionat-svi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/stefan-romaniv-gaslo-oun-kyyiv-proty-moskvy-nabuvaye-globalnogo-vymiru1/">Стефан Романів: «Гасло ОУН «Київ проти Москви!» набуває глобального виміру»</a>
+        <a href="https://ukrainians.org.au/politics/stefan-romaniv-gaslo-oun-kyyiv-proty-moskvy-nabuvaye-globalnogo-vymiru1/">Стефан Романів: «Гасло ОУН «Київ проти Москви!» набуває глобального виміру»</a>
       </h1>
       <time datetime="2016-11-08T10:15:58Z" class="post-date">Tue, Nov 8, 2016</time>
       На актуальні питання сьогодення відповідає Голова Організації Українських Націоналістів (бандерівців) Стефан Романів.
@@ -158,21 +235,6 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/pert-2016-chempionat-svi
       
         <div class="read-more-link">
           <a href="/politics/stefan-romaniv-gaslo-oun-kyyiv-proty-moskvy-nabuvaye-globalnogo-vymiru1/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/holodomor-1932-1933/">ГОЛОДОМОР 1932 - 1933</a>
-      </h1>
-      <time datetime="2016-11-03T12:05:28Z" class="post-date">Thu, Nov 3, 2016</time>
-      ОБІЖНИК СУОА Ч. 10. 2015 - 2018
-МИ НЕ ЗАБУЛИ! МИ ПАМ’ЯТАЄМО!
-ГОЛОДОМОР 1932 – 1933** **
-ҐЕНОЦИД ЗАБУТТЮ НЕ ПІДЛЯГАЄ! УКРАЇНА ПАМ’ЯТАЄ! СВІТ ВИЗНАЄ!
-Управа Союзу Українських Організацій Австралії (СУОА) закликає кожну українську родину та всіх людей доброї волі вшанувати пам’ять жертв Голодомору і в суботу 26 листопада запалити свічку пам’яті y вікні свого будинку, a в неділю, 27 листопада у всіх церквах відслужити поминальні молебні i панахиди за упокій душ безвинно убієнних.
-      
-        <div class="read-more-link">
-          <a href="/community/holodomor-1932-1933/">Read More…</a>
         </div>
       
     </article>
@@ -1383,6 +1445,8 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/pert-2016-chempionat-svi
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

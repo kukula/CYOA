@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/shevchenko-2016-vic/">Свято Шевченка</a>
+        <a href="https://ukrainians.org.au/politics/maydan-is-not-over-oun-b/">Майдан не завершився - Провід ОУН  (б)</a>
+      </h1>
+      <time datetime="2016-02-20T10:30:19Z" class="post-date">Sat, Feb 20, 2016</time>
+      **Майдан не завершився, **
+він триває в межах всієї України
+_До 2-ї річниці завершення Революції Гідності. _
+_ _20 лютого виповнюється 2 роки перемоги Революції Гідності. Важкої перемоги. Перемоги, що коштувала нам життів Героїв Небесної Сотні. Щоб закріпити цю перемогу, найкращі сини й доньки України віддали і віддають свої життя на Донбасі у війні з російським агресором. Агресором, який дав команду вбивати мирних, беззбройних активістів Майдану в лютому 2014 року.
+      
+        <div class="read-more-link">
+          <a href="/politics/maydan-is-not-over-oun-b/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/shevchenko-2016-vic/">Свято Шевченка</a>
       </h1>
       <time datetime="2016-02-17T06:45:03Z" class="post-date">Wed, Feb 17, 2016</time>
       Українська громада Вікторії запрошує все українське громадянство на
@@ -60,7 +143,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-news-update-february-2016/">AFUO NEWS UPDATE, FEBRUARY 2016</a>
+        <a href="https://ukrainians.org.au/politics/afuo-news-update-february-2016/">AFUO NEWS UPDATE, FEBRUARY 2016</a>
       </h1>
       <time datetime="2016-02-15T06:38:40Z" class="post-date">Mon, Feb 15, 2016</time>
       AUSTRALIAN FEDERATION OF UKRAINIAN ORGANISATIONS NEWS UPDATE, FEBRUARY 2016  * MEETINGS IN CANBERRA * STATE VISITS BY AMBASSADOR OF UKRAINE, MYKOLA KULINICH * AFUO TO BESTOW FREEDOM AWARDS * CONGRATULATIONS PHILIP RUDDOCK ON STELLAR CAREER IN POLITICS * CONGRATULATES CRAIG LAUNDY ON APPOINTMENT AS MINISTER FOR MULTICULTURAL AFFAIRS IN TURNBULL LEADERSHIP TEAM * AFUO PLANNING DAY  Meetings in Canberra The Ambassador of Ukraine, Mykola Kulinich, and AFUO Chairman, Stefan Romaniw, attended a series of meetings in Canberra on Monday 8 February 2016.
@@ -71,7 +154,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/den-avstraliyi/">ДЕНЬ АВСТРАЛІЇ: ВИСІВАЙМО ЗЕРНА ГАРМОНІЇ, ІСТОРІЯ ТА УКРАЇНЦІ</a>
+        <a href="https://ukrainians.org.au/community/den-avstraliyi/">ДЕНЬ АВСТРАЛІЇ: ВИСІВАЙМО ЗЕРНА ГАРМОНІЇ, ІСТОРІЯ ТА УКРАЇНЦІ</a>
       </h1>
       <time datetime="2016-02-08T10:40:12Z" class="post-date">Mon, Feb 8, 2016</time>
       Богдан Рудницький веде розмову із Головою Комітету з відзначення Дня Австралії у Вікторії Стефаном Романівим, ОАМ
@@ -81,12 +164,12 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/den-avstraliyi-istoriya-
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/bozenna-kowalenko-rip/">Відійшла у вічність Боженна Коваленко</a>
+        <a href="https://ukrainians.org.au/community/bozenna-kowalenko-rip/">Відійшла у вічність Боженна Коваленко</a>
       </h1>
       <time datetime="2016-02-07T20:01:48Z" class="post-date">Sun, Feb 7, 2016</time>
       Ділимося з Вами сумною вісткою, що вранці 6.2.2016 в Мельборні відійшла у вічність патріотка і вірна дочка українського народу
 св.п. Боженна Коваленко з роду Радзієвська, псевдонім Олена Рябченко. Покійна народилася в 22.1.1924 р. в Києві, навчалася в Київському університеті. Під час Другої світової війни була активною в Червоному хресті в УПА, в рядах якої на Волині служив її муж Олександр.
-До Австралії сім'я Коваленків приїхала 1950р. і зразу включилася до розбудови українського життя.
+До Австралії сім&rsquo;я Коваленків приїхала 1950р. і зразу включилася до розбудови українського життя.
       
         <div class="read-more-link">
           <a href="/community/bozenna-kowalenko-rip/">Read More…</a>
@@ -94,12 +177,12 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/den-avstraliyi-istoriya-
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/lehenda-ukrainian-dance-company-school-of-dance/">Lehenda Ukrainian Dance Company, School of Dance</a>
+        <a href="https://ukrainians.org.au/culture/lehenda-ukrainian-dance-company-school-of-dance/">Lehenda Ukrainian Dance Company, School of Dance</a>
       </h1>
       <time datetime="2016-02-05T11:40:15Z" class="post-date">Fri, Feb 5, 2016</time>
       Lehenda Ukrainian Dance Company, School of Dance classes have now started! Lehenda invites all children from ages 3-17 to come and learn Ukrainian Dance!
 Gain a strong foundation in Ukrainian dance technique, build the fundamental skills across various styles/regions of Ukrainian Dance from professional, high quality, dedicated and passionate teachers ad apply these skill to experience the excitement and joy of performance!
-Classes held at Jason Coleman's Ministry of Dance, North Melbourne For further information email info@lehenda.
+Classes held at Jason Coleman&rsquo;s Ministry of Dance, North Melbourne For further information email info@lehenda.
       
         <div class="read-more-link">
           <a href="/culture/lehenda-ukrainian-dance-company-school-of-dance/">Read More…</a>
@@ -107,7 +190,7 @@ Classes held at Jason Coleman's Ministry of Dance, North Melbourne For further i
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-business-and-community-directory-seeks-to-connect-all-ukrainians-worldwide/">Ukrainian Business and Community Directory seeks to connect all Ukrainians worldwide</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-business-and-community-directory-seeks-to-connect-all-ukrainians-worldwide/">Ukrainian Business and Community Directory seeks to connect all Ukrainians worldwide</a>
       </h1>
       <time datetime="2016-02-02T11:03:47Z" class="post-date">Tue, Feb 2, 2016</time>
       The Ukrainian Directory has been developed to provide a means of communication for the Ukrainian community worldwide at the community, business, and professional levels, as well as on a personal level. The main idea is to encourage Ukrainians worldwide to support each other in our everyday activities in an endeavor to be more united and to embrace the true spirit of “Свій До Свого,” which means that Ukrainians by origin cooperate with Ukrainians by origin all over the world.
@@ -118,7 +201,7 @@ Classes held at Jason Coleman's Ministry of Dance, North Melbourne For further i
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-labourers-in-nazi-germany-1939-1945-a-public-lecture-by-stephan-telka/">Ukrainian Labourers in Nazi Germany, 1939-1945: A public lecture by Stephan Telka</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-labourers-in-nazi-germany-1939-1945-a-public-lecture-by-stephan-telka/">Ukrainian Labourers in Nazi Germany, 1939-1945: A public lecture by Stephan Telka</a>
       </h1>
       <time datetime="2016-01-31T04:30:54Z" class="post-date">Sun, Jan 31, 2016</time>
       [soundcloud url=&quot;https://api.soundcloud.com/tracks/239267507?secret_token=s-4EbLq&rdquo; params=&quot;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false&rdquo; width=&quot;100%&rdquo; height=&quot;166&rdquo; iframe=&quot;true&rdquo; /] ** This talk was given on 10 December 2015 in Melbourne, presented by the Mykola Zerov Centre for Ukrainian Studies at Monash University.**
@@ -130,7 +213,7 @@ In his lecture, Stephan Telka explores the experience of two million ethnic Ukra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/draft-agreement-approved-between-ukraine-and-australia-on-using-nuclear-energy-for-peaceful-purposes/">Draft agreement approved between Ukraine and Australia on using nuclear energy for peaceful purposes</a>
+        <a href="https://ukrainians.org.au/politics/draft-agreement-approved-between-ukraine-and-australia-on-using-nuclear-energy-for-peaceful-purposes/">Draft agreement approved between Ukraine and Australia on using nuclear energy for peaceful purposes</a>
       </h1>
       <time datetime="2016-01-30T22:20:17Z" class="post-date">Sat, Jan 30, 2016</time>
       Схвалено проект Угоди між Урядом України та Урядом Австралії про співробітництво в галузі використання ядерної енергії в мирних цілях 29.01.2016 | 13:07 ДЕПАРТАМЕНТ ІНФОРМАЦІЇ ТА КОМУНІКАЦІЙ З ГРОМАДСЬКІСТЮ СЕКРЕТАРІАТУ КМУ
@@ -144,7 +227,7 @@ In his lecture, Stephan Telka explores the experience of two million ethnic Ukra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/novashkola/">Перший дзвоник</a>
+        <a href="https://ukrainians.org.au/education/novashkola/">Перший дзвоник</a>
       </h1>
       <time datetime="2016-01-28T10:38:44Z" class="post-date">Thu, Jan 28, 2016</time>
       Початок нового навчального року. Нова українська школа класи в North Shore та Eastern Suburbs. (м. Сідней)
@@ -155,18 +238,6 @@ North Shore (Castlecove Public School (9:30–12:30)
 Eastern Suburbs (Bondi Public School. 14:00–17:00)
 Довідка: Наталія 0406 504 181 або Роксолана 0414 932 926
 www.novashkola.webs.com
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/community-announcement-re-stage-1-development-approval/">Community Announcement re Stage 1 Development Approval</a>
-      </h1>
-      <time datetime="2016-01-28T06:54:39Z" class="post-date">Thu, Jan 28, 2016</time>
-      IMPORTANT COMMUNITY ANNOUNCEMENT 24th January, 2016
- Stage 1 development approved by Moonee Valley Council Members of Victoria’s and the broader Australian Ukrainian communities would be aware that the Association of Ukrainians in Victoria (AUV) is undertaking an exciting new project of redeveloping the AUV-owned properties in Russell Street, Essendon. The Chairman and Directors of the AUV are pleased to announce that on 31st December 2015, the Victorian Civil and Administrative Tribunal (VCAT) determined that a permit for the application should be granted by Moonee Valley Council for the first stage of the redevelopment, which consists of 94 apartments over 10 levels with ground floor retail and roof top terrace.
-      
-        <div class="read-more-link">
-          <a href="/community/community-announcement-re-stage-1-development-approval/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1376,6 +1447,8 @@ www.novashkola.webs.com
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

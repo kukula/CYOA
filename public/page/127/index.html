@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,114 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/plenary-meeting-underway/">Plenary Meeting Underway</a>
+        <a href="https://ukrainians.org.au/community/cyoa-vision-for-connecting-ukrainians/">The AFUO Vision for Connecting Ukrainians </a>
+      </h1>
+      <time datetime="2010-06-25T13:45:12Z" class="post-date">Fri, Jun 25, 2010</time>
+      AFUO Communications Director Sonja van de Camp presented the AFUO vision for creating a concise and recognisable brand and increasing connections between members of the Australian Ukrainian Community using the World Wide Web.
+Points for discussion included:
+ A Website Portal to connect Ukrainians in Australia and Ukrainians overseas Communicating with community members via regular electronic mail newsletters - instant and wide-reaching  
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/plenary-meeting-underway/">Plenary Meeting Underway</a>
       </h1>
       <time datetime="2010-06-25T13:43:42Z" class="post-date">Fri, Jun 25, 2010</time>
       Ukrainian Community - A Road Map for the Future The goal of this plenary meeting is to gather together Ukrainian Organisational Leaders from around Australia to discuss and identify national and local plans and strategies for community development.
@@ -60,7 +138,7 @@ The meeting opened at approximately 9.30 and is progressing well.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/dr-borys-gudziak-visit/">Rev. Dr Borys Gudziak Forthcoming Australian Visit</a>
+        <a href="https://ukrainians.org.au/current-affairs/dr-borys-gudziak-visit/">Rev. Dr Borys Gudziak Forthcoming Australian Visit</a>
       </h1>
       <time datetime="2010-06-22T13:42:04Z" class="post-date">Tue, Jun 22, 2010</time>
       I am sure that by now you have all heard of the forthcoming visit to Australia by the Rector of the Ukrainian Catholic University in Lviv, Rev. Dr Borys Gudziak whose firm and instant reaction to attempts of the SBU (acting for the new regime) to intimidate him and threaten criminal action against the University students who participate in any form of anti government demonstrations, has reverberated through serious media around the world.
@@ -71,7 +149,7 @@ The meeting opened at approximately 9.30 and is progressing well.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/inaugural-hopak-in-the-park/">Inaugural Ukrainian Dance Festival “Hopak in the Park” April 2011</a>
+        <a href="https://ukrainians.org.au/events/inaugural-hopak-in-the-park/">Inaugural Ukrainian Dance Festival “Hopak in the Park” April 2011</a>
       </h1>
       <time datetime="2010-06-22T13:39:14Z" class="post-date">Tue, Jun 22, 2010</time>
       The Australian Federation of Ukrainian Organisations are hosting the inaugural Ukrainian Dance Festival “Hopak in the Park” at the Sidney Myer Music Bowl in April 2011.
@@ -84,16 +162,16 @@ The concept is based on a very successful festival that takes place in Canada fo
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/advertise-on-ozeukes/">Advertise on Ozeukes</a>
+        <a href="https://ukrainians.org.au/advertise-on-ozeukes/">Advertise on Ozeukes</a>
       </h1>
       <time datetime="2010-06-16T08:48:04Z" class="post-date">Wed, Jun 16, 2010</time>
       Interested in having your business featured on Ozeukes?
-The OzeUkes site holds the number one place on Google for the term &ldquo;Ukrainians in Australia&rdquo;, so if you're Ukrainian and you have a business you want to share with your fellow Ukrainian friends, advertise on Ozeukes.
+The OzeUkes site holds the number one place on Google for the term &ldquo;Ukrainians in Australia&rdquo;, so if you&rsquo;re Ukrainian and you have a business you want to share with your fellow Ukrainian friends, advertise on Ozeukes.
 Advertising packages coming soon.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d0%a1%d0%a3%d0%9e%d0%90-2010/">Пленарна Нарада - СУОА 2010</a>
+        <a href="https://ukrainians.org.au/events/%d0%a1%d0%a3%d0%9e%d0%90-2010/">Пленарна Нарада - СУОА 2010</a>
       </h1>
       <time datetime="2010-06-15T13:37:00Z" class="post-date">Tue, Jun 15, 2010</time>
       Дорогі Члени CУОA! Повідомляємо, що ПЛЕНAРНA НAРAДA CУОA відбудеться в Мельборні у суботу 26-го - і неділя 27-го червня 2010 р. в Українському Народному Домі, Ессендон
@@ -104,25 +182,25 @@ Format - Round Tables, Panels Guest speakers
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/unian-interview/">Stefan Romaniw Interviewed on &#34;Unian&#34;</a>
+        <a href="https://ukrainians.org.au/current-affairs/unian-interview/">Stefan Romaniw Interviewed on &#34;Unian&#34;</a>
       </h1>
       <time datetime="2010-06-10T17:55:42Z" class="post-date">Thu, Jun 10, 2010</time>
       Read the full interview with Stefan Romaniw on &ldquo;Unian&rdquo;
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/stefan-romaniw-interviewed-on-the-ukrainian-week/">Stefan Romaniw Interviewed on “The Ukrainian Week”</a>
+        <a href="https://ukrainians.org.au/current-affairs/stefan-romaniw-interviewed-on-the-ukrainian-week/">Stefan Romaniw Interviewed on “The Ukrainian Week”</a>
       </h1>
       <time datetime="2010-06-08T17:32:17Z" class="post-date">Tue, Jun 8, 2010</time>
       Read the full interview at &ldquo;The Ukrainian Week&rdquo;
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/movie-review-farewell/">Movie Review - &#34;Farewell&#34;</a>
+        <a href="https://ukrainians.org.au/culture/movie-review-farewell/">Movie Review - &#34;Farewell&#34;</a>
       </h1>
       <time datetime="2010-06-05T14:46:15Z" class="post-date">Sat, Jun 5, 2010</time>
       This thrilling piece of cinema is based on a remarkable true story and tells the tale of a disenchanted KGB agent who at the height of the Cold War passed classified information out of Moscow.
-FAREWELL is a thriller in the mould of &lsquo;The Lives of Others&rsquo; set during the Cold War. Directed by Christian Carion (Joyeux Noel)and starring two of Europe's most respected actors/directors Emir Kusturica and Guillaume Canet, Kusturica stars as Colonel Grigoriev of the KGB.
+FAREWELL is a thriller in the mould of &lsquo;The Lives of Others&rsquo; set during the Cold War. Directed by Christian Carion (Joyeux Noel)and starring two of Europe&rsquo;s most respected actors/directors Emir Kusturica and Guillaume Canet, Kusturica stars as Colonel Grigoriev of the KGB.
       
         <div class="read-more-link">
           <a href="/culture/movie-review-farewell/">Read More…</a>
@@ -130,7 +208,7 @@ FAREWELL is a thriller in the mould of &lsquo;The Lives of Others&rsquo; set dur
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/new-website/">A New Website for the Australian Ukrainian Community</a>
+        <a href="https://ukrainians.org.au/community/new-website/">A New Website for the Australian Ukrainian Community</a>
       </h1>
       <time datetime="2010-05-18T13:32:35Z" class="post-date">Tue, May 18, 2010</time>
       It starts with a vision and slowly but surely it progresses to a wonderful portal of information, connectivity and tool for Ukrainian Australians. The Australian Federation of Ukrainian Organisations are pleased to welcome you to your new website.
@@ -138,17 +216,6 @@ FAREWELL is a thriller in the mould of &lsquo;The Lives of Others&rsquo; set dur
       
         <div class="read-more-link">
           <a href="/community/new-website/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/holodomor-international-activity-breaking-news/">Holodomor International Activity - Breaking News</a>
-      </h1>
-      <time datetime="2010-05-17T15:46:10Z" class="post-date">Mon, May 17, 2010</time>
-      The Ukrainian World Congress Holodomor Committee in cooperation with Ukraine's Institute of Memory announced the official launch of the International Candle of Prayer Activity on June 19, in Kyiv. A candle for each oblast and country where Ukraine resides will be blessed and passed on. This candle should travel the different denominations and churches over the June - Nov period highlighting the millions that perished becks of Stalin's famine. The Council of Churches have signed a statement acknowledging the Holodomor as an act against humanity .
-      
-        <div class="read-more-link">
-          <a href="/politics/holodomor-international-activity-breaking-news/">Read More…</a>
         </div>
       
     </article>
@@ -1357,6 +1424,8 @@ FAREWELL is a thriller in the mould of &lsquo;The Lives of Others&rsquo; set dur
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

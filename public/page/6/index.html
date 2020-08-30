@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,112 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/community-meeting-sydney/">Public Address &amp; Meeting in Sydney | ГРОМАДСЬКУ ЗУСТРІЧ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/holodomor-commemoration-service-in-sydney/">Holodomor Commemoration Service in Sydney</a>
+      </h1>
+      <time datetime="2018-09-07T01:59:59Z" class="post-date">Fri, Sep 7, 2018</time>
+      
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/community-meeting-sydney/">Public Address &amp; Meeting in Sydney | ГРОМАДСЬКУ ЗУСТРІЧ</a>
       </h1>
       <time datetime="2018-09-06T12:53:17Z" class="post-date">Thu, Sep 6, 2018</time>
       Союз Українських Організацій Австралії** та**
@@ -72,7 +148,7 @@ _Доповідь Голови СУОА _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/independence-greeting-ukraine/">З днем незалежності! Happy Ukrainian Independence Day!</a>
+        <a href="https://ukrainians.org.au/community/independence-greeting-ukraine/">З днем незалежності! Happy Ukrainian Independence Day!</a>
       </h1>
       <time datetime="2018-08-24T08:05:44Z" class="post-date">Fri, Aug 24, 2018</time>
       Союз Українських Організацій Австралії (СУОА) вітає Вас з нагоди річниці Незалежності України!
@@ -85,7 +161,7 @@ _Доповідь Голови СУОА _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/join-the-invictus-flag-presentation-in-sydney/">Join the Invictus Flag Presentation in Sydney!</a>
+        <a href="https://ukrainians.org.au/community/join-the-invictus-flag-presentation-in-sydney/">Join the Invictus Flag Presentation in Sydney!</a>
       </h1>
       <time datetime="2018-08-22T11:47:40Z" class="post-date">Wed, Aug 22, 2018</time>
       The Invictus Games is coming to Sydney in October this year. As part of festivities leading up to October, an Invictus Games Flag will be presented to the Ukrainian Community by Luke Foley MP. You can be apart of the Flag Presentation, it is happening this Saturday, August 25th in Sydney, 1.30pm at the Independence Festival. More details about the festival can be found here.
@@ -97,7 +173,7 @@ Following the presentation, there will be a community photo with Luke Foley MP, 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/afuocommunique/">AFUO Communique</a>
+        <a href="https://ukrainians.org.au/current-affairs/afuocommunique/">AFUO Communique</a>
       </h1>
       <time datetime="2018-08-13T12:26:56Z" class="post-date">Mon, Aug 13, 2018</time>
       This is a Communique (Official Statement) prepared by the Australian Federation of Ukrainian Organisations, signed and supported by the State Hromady (Associations) Presidents&rsquo; Forum held in Adelaide 4 August 2018. It outlines community mission, activities, structures and policies.
@@ -109,7 +185,7 @@ Signed and endorsed by: Stefan Romaniw OAM - Chairman Australian Federation of 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/shape-the-future-of-your-community-the-way-forward-consultation/">Shape the future of your community! The Way Forward Consultation</a>
+        <a href="https://ukrainians.org.au/community/shape-the-future-of-your-community-the-way-forward-consultation/">Shape the future of your community! The Way Forward Consultation</a>
       </h1>
       <time datetime="2018-08-13T06:56:16Z" class="post-date">Mon, Aug 13, 2018</time>
       The Australian Federation of Ukrainian Organisations (AFUO) is embarking on a National consultation program. We want to be able to plan, build on the past and identify and avoid barriers that may have halted or continue to stem our progress. We invite you to make your opinions and proposals known. This is an open invitation to everyone- regardless of your activity or inactivity within the community. We encourage those who have come into the community through marriage, friendship or relationships to also provide input.
@@ -120,7 +196,7 @@ Signed and endorsed by: Stefan Romaniw OAM - Chairman Australian Federation of 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/wayforward/">National Consultation: The Way Forward</a>
+        <a href="https://ukrainians.org.au/wayforward/">National Consultation: The Way Forward</a>
       </h1>
       <time datetime="2018-08-13T06:12:25Z" class="post-date">Mon, Aug 13, 2018</time>
       CLICK HERE FOR INFORMATION IN UKRAINIAN
@@ -133,7 +209,7 @@ The Australian Federation of Ukrainian Organisations (AFUO) is embarking on a Na
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/invictus-games-tickets-now-on-sale/">Invictus Games tickets now on sale!</a>
+        <a href="https://ukrainians.org.au/events/invictus-games-tickets-now-on-sale/">Invictus Games tickets now on sale!</a>
       </h1>
       <time datetime="2018-08-06T12:27:36Z" class="post-date">Mon, Aug 6, 2018</time>
       Support Team Ukraine at the Invictus Games in Sydney!
@@ -143,7 +219,7 @@ Click here to buy tickets. 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/afuo-forum-state-presidents/">Нарада СУОА з головами Громад | AFUO Forum with State Presidents</a>
+        <a href="https://ukrainians.org.au/community/afuo-forum-state-presidents/">Нарада СУОА з головами Громад | AFUO Forum with State Presidents</a>
       </h1>
       <time datetime="2018-08-06T01:31:03Z" class="post-date">Mon, Aug 6, 2018</time>
       _AFUO Forum with State Presidents _
@@ -155,7 +231,7 @@ An AFUO-organised meeting of the Heads of State community associations was held 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/stop-revansh/">AFUO joins STOP REVANSH campaign</a>
+        <a href="https://ukrainians.org.au/current-affairs/stop-revansh/">AFUO joins STOP REVANSH campaign</a>
       </h1>
       <time datetime="2018-08-01T23:42:45Z" class="post-date">Wed, Aug 1, 2018</time>
       СУОА приєднується до міжнародної кампанії СТОП РЕВАНШ, яка закликає стримувати про- російську антиукраїнську діяльність в Україні.
@@ -163,19 +239,6 @@ An AFUO-organised meeting of the Heads of State community associations was held 
       
         <div class="read-more-link">
           <a href="/current-affairs/stop-revansh/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/statement-putin-trump-conference/">AFUO Statement on Trump-Putin Press Conference in Helsinki</a>
-      </h1>
-      <time datetime="2018-07-18T06:05:29Z" class="post-date">Wed, Jul 18, 2018</time>
-      The Trump – Putin Press conference in Helsinki on July 17, 2018 - held on the day of 4th anniversary of shooting down by Russian forces of MH17 over Ukraine can be analysed through several prisms.
-The prism of:
- * the United States * the allies within the free world * Ukraine  All three may have a different perspective; however, there are some very common themes and concerns with President Trump’s meek performance.
-      
-        <div class="read-more-link">
-          <a href="/community/statement-putin-trump-conference/">Read More…</a>
         </div>
       
     </article>
@@ -1386,6 +1449,8 @@ The prism of:
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

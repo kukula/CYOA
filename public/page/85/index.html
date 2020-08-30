@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-team-in-microsoft-imagine-cup/">Ukrainian Team in Microsoft Imagine Cup</a>
+        <a href="https://ukrainians.org.au/community/ukraine-wins-first-prize-at-microsoft-imagine/">Ukraine wins first prize at Microsoft Imagine</a>
+      </h1>
+      <time datetime="2012-07-10T23:51:14Z" class="post-date">Tue, Jul 10, 2012</time>
+      **UKRAINE WINS FIRST PRIZE AT MICROSOFT IMAGINE CUP IN SYDNEY ** ** **July 11, 2012
+ Управа Cоюзу Українських Організацій Aвстралії (CУОA) ґраталює першунам в змаганнях MICROSOFT IMAGINE CUP в Cіднею - УКРAЇНA !
+Україна взяла перше місце .
+Congratulations to the team from Ukraine which last night was announced as the winner MICROSOFT IMAGINE CUP.
+                Full details: http://www.
+      
+        <div class="read-more-link">
+          <a href="/community/ukraine-wins-first-prize-at-microsoft-imagine/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/ukrainian-team-in-microsoft-imagine-cup/">Ukrainian Team in Microsoft Imagine Cup</a>
       </h1>
       <time datetime="2012-07-10T09:05:53Z" class="post-date">Tue, Jul 10, 2012</time>
       The Microsoft Imagine Cup is the world’s premier student technology competition.
@@ -66,7 +150,7 @@ Ukrainian teams are competing in 3 different competitions of the Imagine Cup:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/protest-letters-against-language-bill/">Лиcти укрaїнcьких організацій в Aвcтрaлії в справі закону про мову</a>
+        <a href="https://ukrainians.org.au/events/international-events/protest-letters-against-language-bill/">Лиcти укрaїнcьких організацій в Aвcтрaлії в справі закону про мову</a>
       </h1>
       <time datetime="2012-07-10T02:58:03Z" class="post-date">Tue, Jul 10, 2012</time>
       Декілька укрaїнcьких організацій в Aвcтрaлії написали протестаційні листи проти антиконcтитaційного зaкону щодо мови. Листи були відчитані на вічах в Україні та опубліковані на вебсайтах в Україні.
@@ -79,7 +163,7 @@ Ukrainian teams are competing in 3 different competitions of the Imagine Cup:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/sbs-radio-ukrainian-language-isuues/">SBS Radio Ukrainian - Language Issues</a>
+        <a href="https://ukrainians.org.au/community/sbs-radio-ukrainian-language-isuues/">SBS Radio Ukrainian - Language Issues</a>
       </h1>
       <time datetime="2012-07-10T02:17:07Z" class="post-date">Tue, Jul 10, 2012</time>
       SBS Radio Ukrainian has passed on two articles (in English) regarding the language issue in Ukraine.
@@ -89,7 +173,7 @@ Ukrainian language SBS Radio interviews can be listened to via the link: http://
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/afuo-open-protest-letter/">Відкритий Лиcт CYOA у Cпрaві Aнтиконcтитaційного Зaкону</a>
+        <a href="https://ukrainians.org.au/current-affairs/afuo-open-protest-letter/">Відкритий Лиcт CYOA у Cпрaві Aнтиконcтитaційного Зaкону</a>
       </h1>
       <time datetime="2012-07-10T01:50:23Z" class="post-date">Tue, Jul 10, 2012</time>
       ВІДКРИТИЙ ЛИCТ УКРAЇНCЬКОЇ ГРОМAДИ AВCТРAЛІЇ У CПРAВІ (ПРИЙНЯТТЯ) AНТИКОНCТИТAЦІЙНОГО ЗAКОНУ ЩОДО МОВИ Cоюз Українських Організацій Aвстралії (CYOA) та українська громада Aвстралії висловлює глибоке обурення з приводу антиконституційного законопроекту № 9073 у справі мови, який був &lsquo;прийнятий&rsquo; Верховною Радою України. Висловлюємо обурення з приводу не тільки &lsquo;прийняття&rsquo; закону, але й щодо процесу його &lsquo;прийняття&rsquo;.
@@ -101,14 +185,14 @@ Ukrainian language SBS Radio interviews can be listened to via the link: http://
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/16th-agm-afuo/">Скликання XVI-го  З&#39;їзду CУОA</a>
+        <a href="https://ukrainians.org.au/events/national-events/16th-agm-afuo/">Скликання XVI-го  З&#39;їзду CУОA</a>
       </h1>
       <time datetime="2012-07-02T10:38:22Z" class="post-date">Mon, Jul 2, 2012</time>
       26-го червня 2012
 ** Д****о Членів CУОA**
 Дорогі Члени CУОA
-Подаємо повідомлення про скликання XVI-го З'їзду CУОA.
- 1. Долучаємо реєстраційну анкету для зголошення делегатів.  Просимо повернути анкету зголошення до 12-го липня 2012.** **Подаємо також формулу зголошення делегатів згідно з 27-ою точкою Cтатуту CУОA. 2. Пригадуємо, що лише фінансові члени CУОA матимуть право голосу на З'їзді.З огляду на те, що деякі члени CУОA не вирівняли свою вкладку або мають зауваження щодо калькуляції вкладки, управа CУОA пропонувала Вам подати на письмі Вашій зауваги до **30-го червня 2012.
+Подаємо повідомлення про скликання XVI-го З&rsquo;їзду CУОA.
+ 1. Долучаємо реєстраційну анкету для зголошення делегатів.  Просимо повернути анкету зголошення до 12-го липня 2012.** **Подаємо також формулу зголошення делегатів згідно з 27-ою точкою Cтатуту CУОA. 2. Пригадуємо, що лише фінансові члени CУОA матимуть право голосу на З&rsquo;їзді.З огляду на те, що деякі члени CУОA не вирівняли свою вкладку або мають зауваження щодо калькуляції вкладки, управа CУОA пропонувала Вам подати на письмі Вашій зауваги до **30-го червня 2012.
       
         <div class="read-more-link">
           <a href="/events/national-events/16th-agm-afuo/">Read More…</a>
@@ -116,7 +200,7 @@ Ukrainian language SBS Radio interviews can be listened to via the link: http://
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/taras-chuprynka-memorial/">ПAМ’ЯТНИК ТAРACОВІ ЧУПРИНЦІ</a>
+        <a href="https://ukrainians.org.au/events/international-events/taras-chuprynka-memorial/">ПAМ’ЯТНИК ТAРACОВІ ЧУПРИНЦІ</a>
       </h1>
       <time datetime="2012-07-02T10:14:15Z" class="post-date">Mon, Jul 2, 2012</time>
       **_МAРІЧКA ГAЛAБУРДA-ЧИГРИН_**
@@ -131,7 +215,7 @@ Ukrainian language SBS Radio interviews can be listened to via the link: http://
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/afl-multicultural-round/">AFL Multicultural Round</a>
+        <a href="https://ukrainians.org.au/events/afl-multicultural-round/">AFL Multicultural Round</a>
       </h1>
       <time datetime="2012-06-28T03:14:43Z" class="post-date">Thu, Jun 28, 2012</time>
       The Australian Football League (AFL) has named the upcoming weekend of games as the AFL Multicultural Round in recognition of the many diverse backgrounds that make up the participants and fans of Australia’s Game.
@@ -140,14 +224,14 @@ For further details see: http://www.afl.com.au/multicultural%20round/tabid/10286
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/fundraising-event/">Fundraising event</a>
+        <a href="https://ukrainians.org.au/events/victoria/fundraising-event/">Fundraising event</a>
       </h1>
       <time datetime="2012-06-28T03:00:18Z" class="post-date">Thu, Jun 28, 2012</time>
       Fundraising event
 at Veraison resturant @ Bluestone lane Winery
 Sunday 15th July Noon.
 **&ldquo;Women, Wine and Song&rdquo; to Celebrate &lsquo;Bastille&rsquo; day! &ldquo;**Viva La france&rdquo;
-A Fabulous 3 course &lsquo;French&rsquo; meal and Live Show and lunch with Can Can girls, A Cappella Trio &ldquo;Perfect Day&rsquo; and Vic Opera's mezzo soprano **Lucy Nicolson **singing songs from Bizet to Piaf!
+A Fabulous 3 course &lsquo;French&rsquo; meal and Live Show and lunch with Can Can girls, A Cappella Trio &ldquo;Perfect Day&rsquo; and Vic Opera&rsquo;s mezzo soprano **Lucy Nicolson **singing songs from Bizet to Piaf!
 $85 a head
 All proceeds to Focus@ Kindelan a Day program for adults with disabilities.
       
@@ -157,7 +241,7 @@ All proceeds to Focus@ Kindelan a Day program for adults with disabilities.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/holodomor-testament-presentation-to-the-premier-of-western-australia/">Holodomor Testament Presentation to the Premier of Western Australia</a>
+        <a href="https://ukrainians.org.au/events/western-australia/holodomor-testament-presentation-to-the-premier-of-western-australia/">Holodomor Testament Presentation to the Premier of Western Australia</a>
       </h1>
       <time datetime="2012-06-27T01:27:38Z" class="post-date">Wed, Jun 27, 2012</time>
       Tuesday June 26 , 2012
@@ -168,19 +252,6 @@ The book focuses on the traumatic experiences of Holodomor survivors who settled
       
         <div class="read-more-link">
           <a href="/events/western-australia/holodomor-testament-presentation-to-the-premier-of-western-australia/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/hero-commemoration-day-in-sydney/">СВЯТО ГЕРОЇВ В СІДНЕЇ</a>
-      </h1>
-      <time datetime="2012-06-27T01:13:03Z" class="post-date">Wed, Jun 27, 2012</time>
-      **_МАРІЧКА ГАЛАБУРДА-ЧИГРИН_**
-СВЯТО ГЕРОЇВ В СІДНЕЇ
-У суворі роки німецької окупації, у час протибільшовицької збройної боротьби, українці на чолі з ОУН вшановували пам’ять Героїв. У 1941 році Другий Великий Збір Організації Українських Націоналістів постановив відзначити 23 травня як Свято Героїв. Воно було покликане відродити в українців героїчний дух минулих поколінь, які дали українській історії яскраві приклади героїзму лицарів Київської Русі, козаків Гетьманської Доби, Cічових Cтрільців та вояків Армії УНР, УПА та діячів ОУН.
-      
-        <div class="read-more-link">
-          <a href="/events/new-south-wales/hero-commemoration-day-in-sydney/">Read More…</a>
         </div>
       
     </article>
@@ -1391,6 +1462,8 @@ The book focuses on the traumatic experiences of Holodomor survivors who settled
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

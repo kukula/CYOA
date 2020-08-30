@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,112 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/%d0%9a%d0%90%d0%97%d0%9a%d0%90-%d0%9c%d0%a3%d0%a5%d0%90-kazka-mukha/">КАЗКА МУХА (KAZKA MUKHA)</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/sutsvittia-concert/">Концерт жіночого ансамблю «СУЦВІТТЯ»</a>
+      </h1>
+      <time datetime="2011-03-10T23:42:59Z" class="post-date">Thu, Mar 10, 2011</time>
+      Жіночий ансамбль «СУЦВІТТЯ» запрошує всю українську громаду Сіднею на прощальний концерт диригентки Оксани Рогатин-Василик «НАШІ МАНДРІВКИ».
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/education/%d0%9a%d0%90%d0%97%d0%9a%d0%90-%d0%9c%d0%a3%d0%a5%d0%90-kazka-mukha/">КАЗКА МУХА (KAZKA MUKHA)</a>
       </h1>
       <time datetime="2011-03-10T23:35:28Z" class="post-date">Thu, Mar 10, 2011</time>
       Подала **Марічка Галабурда **(Marichka Halaburda) HOMEBUSH, NSW, AUSTRALIA
@@ -64,7 +140,7 @@ Mar 8, 2011. В понеділок 7.3.2011 в Гомбуш (CІДНЕЙ) в а
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/one-night-with-hrim/">ONE NIGHT WITH ГРІМ HRIM</a>
+        <a href="https://ukrainians.org.au/events/national-events/one-night-with-hrim/">ONE NIGHT WITH ГРІМ HRIM</a>
       </h1>
       <time datetime="2011-03-09T11:39:19Z" class="post-date">Wed, Mar 9, 2011</time>
       The Australian Federation of Ukrainians in Australia (AFUO)
@@ -75,7 +151,7 @@ HRIM (ГРІМ) will be playing Ukrainian folk music at a zabava (dance) at the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/krok-1/">НАВЧАЛЬНИЙ КОМПЛЕКС З УКРАЇНСЬКОЇ МОВИ ЯК ІНОЗЕМНОЇ «КРОК-1»</a>
+        <a href="https://ukrainians.org.au/education/krok-1/">НАВЧАЛЬНИЙ КОМПЛЕКС З УКРАЇНСЬКОЇ МОВИ ЯК ІНОЗЕМНОЇ «КРОК-1»</a>
       </h1>
       <time datetime="2011-03-05T01:29:26Z" class="post-date">Sat, Mar 5, 2011</time>
       **Міжнародний інститут освіти, культури та зв’язків з діаспорою Національного університету «Львівська політехніка» **
@@ -90,7 +166,7 @@ HRIM (ГРІМ) will be playing Ukrainian folk music at a zabava (dance) at the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/%d0%92%d0%b8%d0%b1%d0%b8%d1%80%d0%b0%d1%94%d1%82%d0%b5-%d0%bf%d1%80%d0%b5%d0%b4%d0%bc%d0%b5%d1%82%d0%b8-%d0%b4%d0%be-11-%d0%b0%d0%b1%d0%be-12-%d0%ba%d0%bb%d1%8f%d1%81%d0%b8-%d0%91%d0%b5%d1%80%d1%96/">Вибираєте предмети до 11 або 12 кляси?  Беріть українську мову!</a>
+        <a href="https://ukrainians.org.au/education/%d0%92%d0%b8%d0%b1%d0%b8%d1%80%d0%b0%d1%94%d1%82%d0%b5-%d0%bf%d1%80%d0%b5%d0%b4%d0%bc%d0%b5%d1%82%d0%b8-%d0%b4%d0%be-11-%d0%b0%d0%b1%d0%be-12-%d0%ba%d0%bb%d1%8f%d1%81%d0%b8-%d0%91%d0%b5%d1%80%d1%96/">Вибираєте предмети до 11 або 12 кляси?  Беріть українську мову!</a>
       </h1>
       <time datetime="2011-03-04T14:35:33Z" class="post-date">Fri, Mar 4, 2011</time>
       Українська мова затверджена відділом освіти як предмет матуральних курсів, тобто:
@@ -103,7 +179,7 @@ HRIM (ГРІМ) will be playing Ukrainian folk music at a zabava (dance) at the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/%d0%9a%d1%83%d1%80%d1%81%d0%b8-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d1%81%d0%bb%d0%b8%d1%85/">Курси української мови для дорослих</a>
+        <a href="https://ukrainians.org.au/education/%d0%9a%d1%83%d1%80%d1%81%d0%b8-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d0%be%d0%b2%d0%b8-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d1%81%d0%bb%d0%b8%d1%85/">Курси української мови для дорослих</a>
       </h1>
       <time datetime="2011-03-04T14:16:24Z" class="post-date">Fri, Mar 4, 2011</time>
       Українська Центральна Шкільна Рада Австралії
@@ -121,7 +197,7 @@ HRIM (ГРІМ) will be playing Ukrainian folk music at a zabava (dance) at the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ueca-ukrainian-language-classes-for-adults/">UECA Ukrainian Language Classes For Adults</a>
+        <a href="https://ukrainians.org.au/education/ueca-ukrainian-language-classes-for-adults/">UECA Ukrainian Language Classes For Adults</a>
       </h1>
       <time datetime="2011-03-04T14:05:45Z" class="post-date">Fri, Mar 4, 2011</time>
       Venue: Ukrainian Parish School, 35 Canning Street, North Melbourne.
@@ -136,7 +212,7 @@ Session Times: 5.30 – 7.30 pm or 6.00 – 8.00 pm (subject to negotiation with
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%bd%d0%b0-%d0%bd%d0%b0%d0%b2%d1%87%d0%b0/">Українські школи запрошують на навчання</a>
+        <a href="https://ukrainians.org.au/education/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d1%96-%d1%88%d0%ba%d0%be%d0%bb%d0%b8-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%88%d1%83%d1%8e%d1%82%d1%8c-%d0%bd%d0%b0-%d0%bd%d0%b0%d0%b2%d1%87%d0%b0/">Українські школи запрошують на навчання</a>
       </h1>
       <time datetime="2011-03-04T13:59:17Z" class="post-date">Fri, Mar 4, 2011</time>
       Якщо Ви хочете, щоб Ваші діти:  * навчилися української мови або покращили її, * дізналися про незнайоме і цікаве з української культури, історії та літератури, * познайомилися з іншими родинами з України, * одержали додаткові пункти до балів, потрібних для вступу в університет, * мали можливість співати у хорі та брати участь у шкільних виставах[1], * брали участь у програмі обміну зі школами в Україні,  тоді українські суботні або вечірні школи у Пн.
@@ -147,7 +223,7 @@ Session Times: 5.30 – 7.30 pm or 6.00 – 8.00 pm (subject to negotiation with
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-schools-accepting-enrolments/">Ukrainian schools accepting enrolments</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-schools-accepting-enrolments/">Ukrainian schools accepting enrolments</a>
       </h1>
       <time datetime="2011-03-04T13:44:24Z" class="post-date">Fri, Mar 4, 2011</time>
       BENEFITS FROM LEARNING ANOTHER LANGUAGE
@@ -159,7 +235,7 @@ Educational research proves that knowing two or more languages is a valuable ski
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/sbs-radio-interview-dakhabrakha/">SBS radio interview between Roma and Marko Halanevych from DakhaBrakha</a>
+        <a href="https://ukrainians.org.au/interviews/sbs-radio-interview-dakhabrakha/">SBS radio interview between Roma and Marko Halanevych from DakhaBrakha</a>
       </h1>
       <time datetime="2011-03-03T03:26:50Z" class="post-date">Thu, Mar 3, 2011</time>
       ﻿
@@ -171,15 +247,6 @@ Romana It was a pleasant surprise for the Ukrainian community in Australia to l
         <div class="read-more-link">
           <a href="/interviews/sbs-radio-interview-dakhabrakha/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/education/queensland-ukrainians-resuming-community-life/">Queensland Ukrainians - Resuming Community Life</a>
-      </h1>
-      <time datetime="2011-03-01T22:24:47Z" class="post-date">Tue, Mar 1, 2011</time>
-      On Thursday 25th February 2011, the newly prepared classroom, the former library room and office at the refurbished Ukrainian Community Centre, were filled with children eager to start learning.
-Read (and see) more about this and other news about the Queensland community on their web-site at:
- http://www.ukrqld.com.au/ucq/first-day-of-ukrainian-school-2011
       
     </article>
 
@@ -1389,6 +1456,8 @@ Read (and see) more about this and other news about the Queensland community on 
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

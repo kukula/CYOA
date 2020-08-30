@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/dakhabrakha-at-womadelaide-2011/">DakhaBrakha at WOMADelaide 2011</a>
+        <a href="https://ukrainians.org.au/events/international-events/%d0%a4%d0%b5%d0%bd%d0%be%d0%bc%d0%b5%d0%bd-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d1%83%d0%b7%d0%b8%d0%ba%d0%b8-%d0%bd%d0%b0-womadelaide/">Феномен української музики на Womadelaide</a>
+      </h1>
+      <time datetime="2011-04-01T10:23:03Z" class="post-date">Fri, Apr 1, 2011</time>
+      **Феномен української музики на Womadelaide**** **
+ Зібрав матеріали та автор статтї, Ростислав Бекер
+Цього-річний WOMADelaide фестиваль, котрий проходив з 11ого до 14ого березня, приніс море приємних вражень. Прекрасна погода, 85,000 глядачів, 500 артистів з 30 держав. Між ними виступав відомий ансамбль «Даха Браха», з України.
+«Даха Браха» та Амаду і Маріям із Малі були запрошені відкрити фестиваль в п’ятницю 11ого березня перед представниками уряду та дуже великої кількості журналістів зі всіх галузів мідії.
+      
+        <div class="read-more-link">
+          <a href="/events/international-events/%d0%a4%d0%b5%d0%bd%d0%be%d0%bc%d0%b5%d0%bd-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%bc%d1%83%d0%b7%d0%b8%d0%ba%d0%b8-%d0%bd%d0%b0-womadelaide/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/international-events/dakhabrakha-at-womadelaide-2011/">DakhaBrakha at WOMADelaide 2011</a>
       </h1>
       <time datetime="2011-04-01T09:41:47Z" class="post-date">Fri, Apr 1, 2011</time>
       **Six Days Of Ethno Chaos **
@@ -69,7 +152,7 @@ Being a stage performer as well as musician, Marko knows too well that performan
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/australia-vs-ukraine-fed-cup-tennis-match/">Australia vs Ukraine Fed Cup Tennis Match</a>
+        <a href="https://ukrainians.org.au/events/international-events/australia-vs-ukraine-fed-cup-tennis-match/">Australia vs Ukraine Fed Cup Tennis Match</a>
       </h1>
       <time datetime="2011-03-30T11:35:03Z" class="post-date">Wed, Mar 30, 2011</time>
       Australia will host Ukraine in a Fed Cup tie in April for the right to stay in the World Group.
@@ -84,7 +167,7 @@ The Glen Iris Valley Recreation Club 260-270 High Street Road Mount Waverley 314
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%e2%80%9c%d0%93%d0%9e%d0%9f%d0%90%d0%9a-%d0%a3-%d0%9f%d0%90%d0%a0%d0%9a%d0%a3%e2%80%9d/">“ГОПАК У ПАРКУ”</a>
+        <a href="https://ukrainians.org.au/events/%e2%80%9c%d0%93%d0%9e%d0%9f%d0%90%d0%9a-%d0%a3-%d0%9f%d0%90%d0%a0%d0%9a%d0%a3%e2%80%9d/">“ГОПАК У ПАРКУ”</a>
       </h1>
       <time datetime="2011-03-29T09:46:22Z" class="post-date">Tue, Mar 29, 2011</time>
       **УПРАВА СУОА **
@@ -104,7 +187,7 @@ The Glen Iris Valley Recreation Club 260-270 High Street Road Mount Waverley 314
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/jurij-borec/">Юрій Борець - приклад незламної жертовності</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/jurij-borec/">Юрій Борець - приклад незламної жертовності</a>
       </h1>
       <time datetime="2011-03-26T05:56:53Z" class="post-date">Sat, Mar 26, 2011</time>
       МAРІЧКA ГAЛAБУРДA–ЧИГРИН
@@ -120,7 +203,7 @@ Cідней 24.3.2011
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/meeting-with-australian-ambassador-with-responsibility-for-ukraine/">Meeting with Australian Ambassador with Responsibility for Ukraine</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/meeting-with-australian-ambassador-with-responsibility-for-ukraine/">Meeting with Australian Ambassador with Responsibility for Ukraine</a>
       </h1>
       <time datetime="2011-03-24T00:41:32Z" class="post-date">Thu, Mar 24, 2011</time>
       A meeting was held in Melbourne on March 23, 2011 between the Australian Ambassador with responsiblity for Ukraine, His Excellency Michael Potts, and representatitives of the Australian Federation of Ukrainian Organisations (AFUO), AFUO Chairman Stefan Romaniw and Public Relations Director Marian Tkaczuk. Following the meeting, the following statement was released.
@@ -136,7 +219,7 @@ MEETING TO COMPARE NOTES ON CURRENT SITUATION IN UKRAINE
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/shevchenko-2011-melbourne/">Свято Шевченка у Мельборні</a>
+        <a href="https://ukrainians.org.au/events/shevchenko-2011-melbourne/">Свято Шевченка у Мельборні</a>
       </h1>
       <time datetime="2011-03-22T08:55:43Z" class="post-date">Tue, Mar 22, 2011</time>
       Свято Шевченка у Мельборні.
@@ -152,7 +235,7 @@ MEETING TO COMPARE NOTES ON CURRENT SITUATION IN UKRAINE
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/cultural-diversity-week/">Cultural Diversity Week</a>
+        <a href="https://ukrainians.org.au/events/victoria/cultural-diversity-week/">Cultural Diversity Week</a>
       </h1>
       <time datetime="2011-03-21T06:51:57Z" class="post-date">Mon, Mar 21, 2011</time>
       The Multicultural Commission of the Victorian State Government is promoting a Cultural Diversity Week. This will be held from 19-27 March 2011. During the Week, Victorians come together to share aspects of their culture, faith and language and celebrate the benefits that multiculturalism brings to the State of Victoria.
@@ -160,7 +243,7 @@ For more information see: http://www.multicultural.vic.gov.au/projects-and-initi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/90th-birthday-andrij-hluchanic/">90 ліття Aндрія Глуханича</a>
+        <a href="https://ukrainians.org.au/events/victoria/90th-birthday-andrij-hluchanic/">90 ліття Aндрія Глуханича</a>
       </h1>
       <time datetime="2011-03-19T00:30:26Z" class="post-date">Sat, Mar 19, 2011</time>
       Управа Cоюзу Українських Органзізацій Aвстралії
@@ -177,11 +260,10 @@ Aндрія Глуханича.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/shevchenko-concert-sydney-2011/">КОНЦЕРТ В ПОШAНУ ТAРACA ШЕВЧЕНКA в Cіднею</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/shevchenko-concert-sydney-2011/">КОНЦЕРТ В ПОШAНУ ТAРACA ШЕВЧЕНКA в Cіднею</a>
       </h1>
       <time datetime="2011-03-15T03:58:10Z" class="post-date">Tue, Mar 15, 2011</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2011/03/DSCF0332-small.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2011/03/thumbnail-taras-shevchenko.jpg) ](http://www.ozeukes.com/wp-content/uploads/2011/03/thumbnail-taras-shevchenko.jpg)
-МAРІЧКA ГAЛAБУРДA - ЧИГРИН
+      МAРІЧКA ГAЛAБУРДA - ЧИГРИН
 КОНЦЕРТ В ПОШAНУ ТAРACA ШЕВЧЕНКA в Cіднею
 Цьогорічний концерт в 150 ту річницю смерти Тараса Шевченка в Cіднею відбувся в неділю 13.3.2011 в Залі Дому Молоді.
 Гостем на концерті був Посол України – вельмишановний пан Валентин Aдомайтіс, який приїхав на концерт з Канбери.
@@ -190,13 +272,6 @@ Aндрія Глуханича.
         <div class="read-more-link">
           <a href="/events/new-south-wales/shevchenko-concert-sydney-2011/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/sutsvittia-concert/">Концерт жіночого ансамблю «СУЦВІТТЯ»</a>
-      </h1>
-      <time datetime="2011-03-10T23:42:59Z" class="post-date">Thu, Mar 10, 2011</time>
-      Жіночий ансамбль «СУЦВІТТЯ» запрошує всю українську громаду Сіднею на прощальний концерт диригентки Оксани Рогатин-Василик «НАШІ МАНДРІВКИ».
       
     </article>
 
@@ -1406,6 +1481,8 @@ Aндрія Глуханича.
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Світовий Конґрес Українців потребує Вашої підтримки! THE UKRAINIAN WORLD CONGRESS NEEDS YOUR SUPPORT! &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -66,15 +131,15 @@
 <p>Світовий Конґрес Українців буде встановлювати додаткові партнерські відносини з всесвітньовідомими інституціями та установами для розгортання цільових кампаній та проектів, спрямованих на підвищення іміджу України та притягнення до підтримки українських ініціатив як на високому рівні, так і на рівні широкого суспільства, зокрема на захист незалежності та територіальної цілісності України.</p>
 <pre><code>  * _Протидіяти російській дезінформації_
 </code></pre>
-<p>Міжнародне співтовариство мусить об'єднатися в боротьбі з російською дезінформацією. Завдяки широкій мережі своїх зв’язків на світовому рівні Світовий Конґрес Українців має великі можливості для зміцнення міжнародних зусиль у протидії російській дезінформації.</p>
+<p>Міжнародне співтовариство мусить об&rsquo;єднатися в боротьбі з російською дезінформацією. Завдяки широкій мережі своїх зв’язків на світовому рівні Світовий Конґрес Українців має великі можливості для зміцнення міжнародних зусиль у протидії російській дезінформації.</p>
 <pre><code>  * _Підтримувати реформи в Україні_
 </code></pre>
 <p>Світовий Конґрес Українців мусить продовжувати свою роботу з високопосадовцями Європейського Союзу у питанні підтримки процесу реформ в Україні, включаючи ратифікацію _Угоди про асоціацію між ЄС і Україною _всіма державами, членами ЄС; надання вагомого пакета фінансової допомоги, подібної до Плану Маршалла, та імплементацію безвізового режиму для громадян України.</p>
 <pre><code>  * _Зміцнювати __громадянське __суспільство_
 </code></pre>
-<p>Світовий Конґрес Українців, використовуючи силу і спільний досвід організованої української громади та засноване Представництво Світового Конґресу Українців в Україні, буде й далі розвивати міцні партнерські відносини з неурядовими організаціями в Україні та пов'язувати їх з аналогічними організаціями на Заході для подальшої співпраці.</p>
+<p>Світовий Конґрес Українців, використовуючи силу і спільний досвід організованої української громади та засноване Представництво Світового Конґресу Українців в Україні, буде й далі розвивати міцні партнерські відносини з неурядовими організаціями в Україні та пов&rsquo;язувати їх з аналогічними організаціями на Заході для подальшої співпраці.</p>
 <p>Світовий Конґрес Українців, як і попередньо, буде продовжувати діяльність у всіх цих напрямках у партнерстві з Україною. Однак рівень нашого успіху буде залежати від Вашої підтримки Світового Конґресу Українців. Я закликаю Вас приєднатися до українців усього світу у їхніх зусиллях позитивно вплинути на майбутнє України, її народу та світової української спільноти.</p>
-<p>Нове покоління українців рішуче зобов'язалося реалізувати спільну візію суспільства, у якому б поважали основні людські права і свободи та дотримувалися демократичних європейських цінностей.</p>
+<p>Нове покоління українців рішуче зобов&rsquo;язалося реалізувати спільну візію суспільства, у якому б поважали основні людські права і свободи та дотримувалися демократичних європейських цінностей.</p>
 <p>Разом у критичний і поворотний момент історії ми доклали надзвичайних зусиль. Правда на нашому боці, але виклики ще дуже великі.</p>
 <p>Станьте прихильником Світового Конґресу Українців. Ваша пожертва сьогодні допоможе Світовому Конґресу Українців підтримати візію майбутнього і запевнити, що ніхто й ніколи не втомиться від України.</p>
 <p><em><a href="http://ukrainianworldcongress.org/UserFiles/File/May-appeal/Highlights-activities2014-15-Ukr.pdf">Просимо дізнатися більше про працю Світового Конґресу Українців, ознайомившись з нашою основною діяльністю в 2014‑2015 рр.</a></em></p>

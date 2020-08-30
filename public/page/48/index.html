@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-parish-noble-park-feast-day/">Ukrainian Parish Noble Park Feast Day</a>
+        <a href="https://ukrainians.org.au/education/learn-ukrainian-in-lviv/">Summer courses in new Lviv, in new Ukraine!!</a>
+      </h1>
+      <time datetime="2014-06-22T11:44:01Z" class="post-date">Sun, Jun 22, 2014</time>
+      Ukrainian today is trendy! ** Spend your summer in new Lviv, in new Ukraine!**
+“2-nd UKRAINIAN SUMMER SCHOOL” (June, 30 - July, 11 2014) “3-rd UKRAINIAN SUMMER SCHOOL” (August, 18-29 2014 ) Two-week intensive course on Ukrainian Language and Culture
+Ukrainian Language &amp; Culture School Ukrainian - interestingly, cheerfully, efficiently! After the Euromaidan Revolution, Ukraine started the new way of development, and you&rsquo;ll feel it if come here! Lviv is the best place to spend your summer, because summer in Lviv is the time of art festivals, music concerts, carnivals, museums and theaters.
+      
+        <div class="read-more-link">
+          <a href="/education/learn-ukrainian-in-lviv/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/ukrainian-parish-noble-park-feast-day/">Ukrainian Parish Noble Park Feast Day</a>
       </h1>
       <time datetime="2014-06-21T11:46:38Z" class="post-date">Sat, Jun 21, 2014</time>
       THE UKRAINIAN PARISH COUNCIL OF NOBLE PARK
@@ -73,7 +155,7 @@ Bookings by July 1st :
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/open-letter-in-response-to-church-vandalism-lidcome-nsw/">Open Letter In Response to Church Vandalism Lidcome NSW</a>
+        <a href="https://ukrainians.org.au/community/open-letter-in-response-to-church-vandalism-lidcome-nsw/">Open Letter In Response to Church Vandalism Lidcome NSW</a>
       </h1>
       <time datetime="2014-06-20T22:51:42Z" class="post-date">Fri, Jun 20, 2014</time>
       ****
@@ -82,7 +164,7 @@ FROM
 THE CHAIRMAN OF THE AUSTRALIAN FEDERATION
 OF UKRAINIAN ORGANISATIONS
 IN RESPONSE TO UN AUSTRALIAN ACT - THE CHURCH VANDALISM , LIDCOMBE NSW
-Australia's Ukrainian community is deeply distressed and disgusted at the desecration of St Andrew's Ukrainian Catholic Church in Lidcombe Sydney last night.
+Australia&rsquo;s Ukrainian community is deeply distressed and disgusted at the desecration of St Andrew&rsquo;s Ukrainian Catholic Church in Lidcombe Sydney last night.
 Vandals painted anti Ukrainian slogans on the walls of the Church.
 The disgust of this act is now being expressed by the broader Australian community.
       
@@ -92,10 +174,10 @@ The disgust of this act is now being expressed by the broader Australian communi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/usc-lions-smash-their-way-to-victory/">USC Lions Smash their way to victory!</a>
+        <a href="https://ukrainians.org.au/sport/usc-lions-smash-their-way-to-victory/">USC Lions Smash their way to victory!</a>
       </h1>
       <time datetime="2014-06-20T06:43:58Z" class="post-date">Fri, Jun 20, 2014</time>
-      USC took out the 2014 Maribyrnong Volleyball Championships in the Open Men's division, on Sunday the 15th of June, held at the Maribyrnong Sports Academy. Topping their group and cruising through the cross over, the USC boys played a great brand of volleyball. However, the grand final proved to be a greater test against BLASH.
+      USC took out the 2014 Maribyrnong Volleyball Championships in the Open Men&rsquo;s division, on Sunday the 15th of June, held at the Maribyrnong Sports Academy. Topping their group and cruising through the cross over, the USC boys played a great brand of volleyball. However, the grand final proved to be a greater test against BLASH.
 Dropping the first set 25-18, USC pulled it together in the second set to take it 25-17.
       
         <div class="read-more-link">
@@ -104,7 +186,7 @@ Dropping the first set 25-18, USC pulled it together in the second set to take i
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/vasyl-jarocky-rip/">Vasyl Jarocky RIP</a>
+        <a href="https://ukrainians.org.au/community/vasyl-jarocky-rip/">Vasyl Jarocky RIP</a>
       </h1>
       <time datetime="2014-06-18T14:55:31Z" class="post-date">Wed, Jun 18, 2014</time>
       Ділимося сумною вісткою, що 6-го червня 2014 в Мельборні
@@ -125,7 +207,7 @@ Dropping the first set 25-18, USC pulled it together in the second set to take i
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-release-rally-in-canberra/">Media Release - Rally in Canberra</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-release-rally-in-canberra/">Media Release - Rally in Canberra</a>
       </h1>
       <time datetime="2014-05-26T02:21:15Z" class="post-date">Mon, May 26, 2014</time>
       The Australian Federation of Ukrainian Organisations (AFUO) has released a press statement in regards of the &lsquo;Pro-Ukraine, Anti-Putin&rsquo; rally held in Canberra on May 25th 2014.
@@ -133,7 +215,7 @@ Text of statement: Media Release Canberra Anti-Putin Rally
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/act/ukrainian-protest-rally-in-canberra-media-coverage/">Ukrainian Protest Rally in Canberra - Media coverage</a>
+        <a href="https://ukrainians.org.au/events/act/ukrainian-protest-rally-in-canberra-media-coverage/">Ukrainian Protest Rally in Canberra - Media coverage</a>
       </h1>
       <time datetime="2014-05-26T01:49:07Z" class="post-date">Mon, May 26, 2014</time>
       Scores of cars from Brisbane, Melbourne and Sydney carrying Ukrainian flags drove to Canberra to take part in an AutoMaidan round the streets of Australia’s capital city on Sunday May 25th 2014, the day of Presidential elections in Ukraine. The AutoMaidan terminated in front of the Russian embassy where hundreds of peaceful protesters expressed their support for Ukraine and strong opposition to Putin’s aggression in Ukraine.
@@ -145,7 +227,7 @@ Earlier in the day many of the protesters who had Ukrainian citizenship had take
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/media-release-presidential-elections-in-ukraine/">Media Release: Presidential Elections in Ukraine / Прес-реліз: щодо виборів Президента України</a>
+        <a href="https://ukrainians.org.au/politics/media-release-presidential-elections-in-ukraine/">Media Release: Presidential Elections in Ukraine / Прес-реліз: щодо виборів Президента України</a>
       </h1>
       <time datetime="2014-05-20T08:01:38Z" class="post-date">Tue, May 20, 2014</time>
       Media Release: On the early Presidential Elections in Ukraine The Embassy of Ukraine in Australia has issued a media release regarding the early Presidential Elections in Ukraine. The English-language version of the media release can be read here: MR (early presidential elections)
@@ -153,7 +235,7 @@ Earlier in the day many of the protesters who had Ukrainian citizenship had take
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/parish-feast-day-in-granville/">Парафіяльне свято в Парафії Св. Афанасія УАПЦ в Ґренвіллі</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/parish-feast-day-in-granville/">Парафіяльне свято в Парафії Св. Афанасія УАПЦ в Ґренвіллі</a>
       </h1>
       <time datetime="2014-05-20T07:56:20Z" class="post-date">Tue, May 20, 2014</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -167,26 +249,13 @@ Earlier in the day many of the protesters who had Ukrainian citizenship had take
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/wa-ukrainian-community-joins-national-rally/">WA Ukrainian community joins National Rally</a>
+        <a href="https://ukrainians.org.au/events/western-australia/wa-ukrainian-community-joins-national-rally/">WA Ukrainian community joins National Rally</a>
       </h1>
       <time datetime="2014-05-20T07:42:50Z" class="post-date">Tue, May 20, 2014</time>
       CYM (Ukrainian Youth Association of WA) and the Ukrainian Association of Western Australia (UAWA) calls on all concerned Australians to attend the FAIR ELECTIONS mean A FREE UKRAINE - PERTH RALLY The rally will voice its strong opposition to Putin’s aggression in South East Ukraine (namely Sloviansk, Donetsk, Luhansk, Mariupol, Odessa, and many other cities where the &ldquo;green men&rdquo; have stepped in and made fear and death a reality in Ukraine!
       
         <div class="read-more-link">
           <a href="/events/western-australia/wa-ukrainian-community-joins-national-rally/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/national-rally-in-support-of-ukraine-from-sydney/">National Rally in Support of Ukraine - from Sydney</a>
-      </h1>
-      <time datetime="2014-05-18T04:18:07Z" class="post-date">Sun, May 18, 2014</time>
-      AFUO-UCNSW Canberra Rally Sydney Bus May 25th 
-Bookings for Sydney Bus to Canberra Rally and Ukrainian Elections Sunday May 25th 8.00am, St Andrew's Ukrainian Catholic Church, 57 Church St, Lidcombe. $25 Employed Adults, $10 pensioners/ students/ children + $1.50 booking fee each. Bus will also be picking up from Cabramatta Ukrainian Hall. Queries 0410 866 820.
-Замовлення на автобус з Сіднею на акцію і на украінські вибори в Канберрі 25-го травня.
-      
-        <div class="read-more-link">
-          <a href="/events/new-south-wales/national-rally-in-support-of-ukraine-from-sydney/">Read More…</a>
         </div>
       
     </article>
@@ -1397,6 +1466,8 @@ Bookings for Sydney Bus to Canberra Rally and Ukrainian Elections Sunday May 25t
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

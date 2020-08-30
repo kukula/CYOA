@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>УКЛІН ВЕЛИКІЙ КНЯГИНІ ОЛЬЗІ &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -55,13 +120,13 @@
 В СІДНЕЇ</em></strong></p>
 <p><strong>УКЛІН ВЕЛИКІЙ КНЯГИНІ ОЛЬЗІ</strong></p>
 <p>28 липня по світах, а зокрема в Україні відзначили день пам’яті рівноапостольного князя Володимира. В Києві відбулися урочистості, Богослужби, похід церковної Їєрархії, священиків і вірних УАПЦ, Київського Патріярхату та Українська Греко Католицька Церква вшанувала память великого князя.</p>
-<p><strong>Українські жінки згуртовані в Союзові Українок в світі вшановують 24 липня пам'ять княгині Ольги, патронки Союзянок.</strong></p>
-<p>**В Сіднеї перший створений відділ Союзу Українок носить ім'я княгині Ольги. І зійшлися ми в Сіднеї,  щоби віддати честь і шану великій володарці України.  **</p>
+<p><strong>Українські жінки згуртовані в Союзові Українок в світі вшановують 24 липня пам&rsquo;ять княгині Ольги, патронки Союзянок.</strong></p>
+<p>**В Сіднеї перший створений відділ Союзу Українок носить ім&rsquo;я княгині Ольги. І зійшлися ми в Сіднеї,  щоби віддати честь і шану великій володарці України.  **</p>
 <p>Концерт відбувся в <strong>неділю 28. 7. 2013 року</strong> в Нaродному Домі в Сіднеї. Організатори концерту Стейтова Управа Союзу Українок з її відділами.</p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3436.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3436.jpg" alt="DSCN3436">
-</a>Відкрила святочні сходини привітанням присутніх голова Стейтової Управи пані Оля Москвяк, передаючий ведення концерту панові Павлові Кравченкові. Він прочитав молитву до св.княгині Ольги, яку присутні вислухали стоячи:&hellip;&rdquo; <strong>Свята Ольго, Ти була княгинею української землі, Ти була рівноапостольною у голошенні святої віри в Україні. До Тебе  кличе ввесь наш нарід,</strong> **як до могутньої заступниці в небі. Свята княгине, опікуйся нами. Будь нам матір'ю в небі, як була Tи матір'ю українському народові на землі. Випроси нам ласку, щоб у всіх наших родинах і в цілому народі славилося ім'я Боже і зберігались Божі правди. За Твоїми молитвами, свята наша заступнице, українська молодь нехай виростає у скромності, люди середніх літ нехай служать побожністю і працьовитістю, а старші нехай добрим прикладом та порадою ведуть український нарід до святости і добробуту. Могутня заступнице України, свята княгине Ольго, молися за нас.&quot;<a href="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3438.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3438.jpg" alt="DSCN3438">
+</a>Відкрила святочні сходини привітанням присутніх голова Стейтової Управи пані Оля Москвяк, передаючий ведення концерту панові Павлові Кравченкові. Він прочитав молитву до св.княгині Ольги, яку присутні вислухали стоячи:&hellip;&rdquo; <strong>Свята Ольго, Ти була княгинею української землі, Ти була рівноапостольною у голошенні святої віри в Україні. До Тебе  кличе ввесь наш нарід,</strong> **як до могутньої заступниці в небі. Свята княгине, опікуйся нами. Будь нам матір&rsquo;ю в небі, як була Tи матір&rsquo;ю українському народові на землі. Випроси нам ласку, щоб у всіх наших родинах і в цілому народі славилося ім&rsquo;я Боже і зберігались Божі правди. За Твоїми молитвами, свята наша заступнице, українська молодь нехай виростає у скромності, люди середніх літ нехай служать побожністю і працьовитістю, а старші нехай добрим прикладом та порадою ведуть український нарід до святости і добробуту. Могутня заступнице України, свята княгине Ольго, молися за нас.&quot;<a href="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3438.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3438.jpg" alt="DSCN3438">
 </a>**</p>
-<p>У своїй доповіді Оля Москв'як розповіла про діяльність мужньої жінки, яка керувала Україною, як ніхто з чоловіків перед нею. Ярослава Медко у вірші доповнила небагаті дані, про які ми незнали, бо не все відоме про життя княгині Ольги.</p>
+<p>У своїй доповіді Оля Москв&rsquo;як розповіла про діяльність мужньої жінки, яка керувала Україною, як ніхто з чоловіків перед нею. Ярослава Медко у вірші доповнила небагаті дані, про які ми незнали, бо не все відоме про життя княгині Ольги.</p>
 <p>Існують різні версії її життєпису. Найгірше це те, що росіяни вважають її й князя Володимира росіянами. Навіть поїхали вельможі Владімір Путін і Патріярх Кіріл в цю неділі разом з Віктором Януковичем святкувати «спільного святого й хрещення в 1025 -ти ліття його». Це все жах і то відбувається на 22 му році Незалежности України.</p>
 <p>**Галя Кравченко <strong>продеклямувала вірш</strong> <strong>Олександра Олеся</strong> &quot; Княгиня Ольга&rdquo;. **Гарно, спокійна розповідь про зустріч князя Ігора й Ольги на човні, коли вона, 15 річна, перевозила через річку князя.</p>
 <p>**<a href="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3442a.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/07/DSCN3442a.jpg" alt="DSCN3442a">

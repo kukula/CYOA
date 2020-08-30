@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/parliamentary-friendship-group-report/">Australia-Ukraine Parliamentary Friendship Group Report</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-community-welcomes-team-ukraine/">УКРАЇНСЬКА ГРОМАДА АВСТРАЛІЇ ВІТАЄ  НАЦІОНАЛЬНУ ЗБІРНУ КОМАНДУ -   “ІГРИ НЕСКОРЕНИХ&#34;</a>
+      </h1>
+      <time datetime="2018-10-16T09:34:35Z" class="post-date">Tue, Oct 16, 2018</time>
+      **Союз Українських Організацій Австралії (СУОА ) щиросердечно **вітає учасників української національної збірної команди “ Ігри Нескорених “ та бажає високих спортивних досягнень у міжнародних змаганнях, які відбудуться у Сіднеї, 20 - 27 жовтня 2018 року.____
+СУОА закликає українську спільноту підтримати учасників збірної команди – ветеранів та військовослужбовців України, що отримали поранення в зоні АТО, захищаючи свою Батьківщину.____
+Адже історія кожного з них – це історія неймовірної сили волі до життя,до перемоги та піднесення міжнародного авторитету української держави.
+      
+        <div class="read-more-link">
+          <a href="/community/ukrainian-community-welcomes-team-ukraine/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/parliamentary-friendship-group-report/">Australia-Ukraine Parliamentary Friendship Group Report</a>
       </h1>
       <time datetime="2018-10-16T09:15:27Z" class="post-date">Tue, Oct 16, 2018</time>
       Liaison - Chrestyna Kmetj 20 September 2018
@@ -65,7 +147,7 @@ Business and health have highlighted, with programs now progressing. Meetings wi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/afuo-gold-patron-crisis-appeal/">AFUO becomes Gold Patron of Invictus Games - Ukraine Crisis Appeal</a>
+        <a href="https://ukrainians.org.au/community/afuo-gold-patron-crisis-appeal/">AFUO becomes Gold Patron of Invictus Games - Ukraine Crisis Appeal</a>
       </h1>
       <time datetime="2018-10-11T10:50:56Z" class="post-date">Thu, Oct 11, 2018</time>
       The Australian Federation of Ukrainian Organisations (AFUO) has become a GOLD PATRON of the Ukraine Crisis Appeal donating $5000 to the Appeal. The appeal is coinciding with Team Ukraine who will be participating in the Invictus Games in Sydney on October 20-28, 2018____
@@ -77,7 +159,7 @@ __ This funding is to support rehabilitation of ATO Veterans and their families
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/cabramatta-fairfield-supports-ukraine/">Ukraine&#39;s Veterans receive major support from Cabramatta-Fairfield</a>
+        <a href="https://ukrainians.org.au/community/cabramatta-fairfield-supports-ukraine/">Ukraine&#39;s Veterans receive major support from Cabramatta-Fairfield</a>
       </h1>
       <time datetime="2018-10-10T05:41:20Z" class="post-date">Wed, Oct 10, 2018</time>
       Ukrainian Association of Cabramatta / Fairfield in NSW has shown strong community leadership and excellence by becoming a Gold Patron ($5000) of the Ukraine Crisis Appeal. The Association has also offered to sponsor the Featherdale event for Team Ukraine &amp; Family &amp; Friends to the value of nearly $3000.00.
@@ -89,7 +171,7 @@ The Australian Federation of Ukrainian Organisations (AFUO) Ukraine Crisis Appea
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/invictus-games-ukraine-guide/">Invictus Games | Your Guide to Team Ukraine Activities</a>
+        <a href="https://ukrainians.org.au/events/invictus-games-ukraine-guide/">Invictus Games | Your Guide to Team Ukraine Activities</a>
       </h1>
       <time datetime="2018-10-03T10:26:45Z" class="post-date">Wed, Oct 3, 2018</time>
       Invictus Games is only 2 weeks away in Sydney. There are some fantastic opportunities for you, the community, to not only see Team Ukraine compete, but also meet the team members and hear their stories. **COMMUNITY EVENTS | ** **_ Інформація українською мовою | VIEW INFORMATION IN UKRAINIAN HERE_**
@@ -102,7 +184,7 @@ Meeting place will be in forecourt outside the arrival terminal and marked by a 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/chairman-message-independence/">UKRAINE HAS USED ITS GOD-GIVEN TALENTS TO DRIVE AGENDAS, NOT BURY THEM</a>
+        <a href="https://ukrainians.org.au/current-affairs/chairman-message-independence/">UKRAINE HAS USED ITS GOD-GIVEN TALENTS TO DRIVE AGENDAS, NOT BURY THEM</a>
       </h1>
       <time datetime="2018-10-03T09:52:46Z" class="post-date">Wed, Oct 3, 2018</time>
       **Message from the Chairman of the Australian Federation of Ukrainian Organisations – ** Stefan Romaniw OAM
@@ -116,13 +198,13 @@ My Lord Bishops, Reverend Fathers, Your Excellency Ambassador of Ukraine in Aust
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/free-sushenko/">УКРАЇНЦІ В АВСТРАЛІЇ ЗАСУДЖУЮТЬ НЕЗАКОННОГО УТРИМАННЯ  РОСІЙСЬКОЮ ФЕДЕРАЦІЄЮ  УКРАЇНСЬКОГО ЖУРНАЛІСТА РОМАНА СУЩЕНКА</a>
+        <a href="https://ukrainians.org.au/current-affairs/free-sushenko/">УКРАЇНЦІ В АВСТРАЛІЇ ЗАСУДЖУЮТЬ НЕЗАКОННОГО УТРИМАННЯ  РОСІЙСЬКОЮ ФЕДЕРАЦІЄЮ  УКРАЇНСЬКОГО ЖУРНАЛІСТА РОМАНА СУЩЕНКА</a>
       </h1>
       <time datetime="2018-10-02T01:38:13Z" class="post-date">Tue, Oct 2, 2018</time>
       __
 Минає два роки з часу незаконного утримання під вартою в РФ українського журналіста Романа Сущенка.
 Нещодавно кремлівський режим засудив його до 12 років колонії строгого режиму за надуманими звинуваченнями у шпіонажі.
-Союз Українських Організацій Австралія (СУОА) приєднується до всіх украінських громад світу у засудженні дій РФ і закликає своїх членів та австралійський уряд посилити тиск на РФ у справі звільнення всіх незаконно арештованих українських політичних в'язнів.
+Союз Українських Організацій Австралія (СУОА) приєднується до всіх украінських громад світу у засудженні дій РФ і закликає своїх членів та австралійський уряд посилити тиск на РФ у справі звільнення всіх незаконно арештованих українських політичних в&rsquo;язнів.
 Пригадується сьогодні чудовий малюнок Сущенка - австралійський Сідней.
       
         <div class="read-more-link">
@@ -131,7 +213,7 @@ My Lord Bishops, Reverend Fathers, Your Excellency Ambassador of Ukraine in Aust
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/70-anniversary-canberra/">AFUO participates in 70th Anniversary Celebrations in Canberra |  Святкування 70-річчя в Канберрі</a>
+        <a href="https://ukrainians.org.au/events/70-anniversary-canberra/">AFUO participates in 70th Anniversary Celebrations in Canberra |  Святкування 70-річчя в Канберрі</a>
       </h1>
       <time datetime="2018-09-29T12:40:54Z" class="post-date">Sat, Sep 29, 2018</time>
       This weekend in Canberra, 70th Anniversary celebrations are in progress, honouring 70 years of Ukrainian Settlement, and 70 years of the Ukrainian Autocephalic Orthodox Church in Australia.
@@ -144,7 +226,7 @@ Beginning the proceedings, a service was held today St. John the Baptist Anglic
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/team-ukraine-meet-invictus/">Team Ukraine Meet &amp; Greet |  Зустріч з командою Україна</a>
+        <a href="https://ukrainians.org.au/events/team-ukraine-meet-invictus/">Team Ukraine Meet &amp; Greet |  Зустріч з командою Україна</a>
       </h1>
       <time datetime="2018-09-28T09:53:15Z" class="post-date">Fri, Sep 28, 2018</time>
       В жовтні розпочнуться Ігри Нескорених в Сіднеї, де виступатимуть 15 українських військовослужбовців та ветеранів. Спілка Української Молоді в Австралії запрошує членів Української спільноти на зустріч &ldquo;Meet &amp; Greet&rdquo;, яке відбудеться у четвер, 25 жовтня, о 6 годині вечора в Gallon Wine Bar (117 Harris St, Pyrmont, NSW), де буде можливість зустріти наших Нескорених Героїв. Квитки $65+BF від особи. **Всі кошти йдуть на “Ukraine Crisis Appeal”. Квитки можна придбати через лінк: sydinvictusgamesukraine.
@@ -155,7 +237,7 @@ Beginning the proceedings, a service was held today St. John the Baptist Anglic
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/open-letter-ambassador/">Open Letter from Ukrainians in Australia opposing conversation event with Ambassador of Russia in Perth.</a>
+        <a href="https://ukrainians.org.au/current-affairs/open-letter-ambassador/">Open Letter from Ukrainians in Australia opposing conversation event with Ambassador of Russia in Perth.</a>
       </h1>
       <time datetime="2018-09-18T08:10:27Z" class="post-date">Tue, Sep 18, 2018</time>
       Three Open Letters from the Ukrainian Association of Western Australia , Dr Lesa Melnyczuk and the Australian Federation of Ukrainian Organisations to the PROPOSED EVENT IN WA, A Conversation with the Russian Ambassador to Australia
@@ -170,13 +252,6 @@ How quickly we forget the &ldquo;tongue lashing&rdquo; that Julie Bishop (then t
         <div class="read-more-link">
           <a href="/current-affairs/open-letter-ambassador/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/holodomor-commemoration-service-in-sydney/">Holodomor Commemoration Service in Sydney</a>
-      </h1>
-      <time datetime="2018-09-07T01:59:59Z" class="post-date">Fri, Sep 7, 2018</time>
-      
       
     </article>
 
@@ -1384,6 +1459,8 @@ How quickly we forget the &ldquo;tongue lashing&rdquo; that Julie Bishop (then t
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

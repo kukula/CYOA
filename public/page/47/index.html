@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%ba%d0%bd%d1%8f%d0%b6%d0%b8%d0%b9-%d0%b4%d0%b0%d1%80%d1%83%d0%bd%d0%be%d0%ba-%d0%bf%d0%b0%d0%bd%d1%81%d1%82%d0%b2%d0%b0-%d1%80%d1%83%d0%b4%d0%b5%d0%b2%d0%b8%d1%87%d1%96%d0%b2/">КНЯЖИЙ ДАРУНОК  ПАНСТВА РУДЕВИЧІВ</a>
+        <a href="https://ukrainians.org.au/current-affairs/9168/">PLANE TRAGEDY: UKRAINIANS IN AUSTRALIA EXPRESS SYMPATHY; CONDEMN ACT BY PUTIN&#39;S TERRORISTS; CALL ON AUSTRALIAN GOVT TO BAN PUTIN</a>
+      </h1>
+      <time datetime="2014-07-18T13:14:25Z" class="post-date">Fri, Jul 18, 2014</time>
+      MEDIA RELEASE PLANE TRAGEDY: UKRAINIANS IN AUSTRALIA EXPRESS SYMPATHY; CONDEMN ACT BY PUTIN&rsquo;S TERRORISTS; CALL ON AUSTRALIAN GOVT TO BAN PUTIN The Australian Federation of Ukrainian Organisations (AFUO) offers its most sincere condolences to the families and friends of the innocent civilians who lost their lives today at the hands of Putin-backed terrorists, following the downing of Malaysian Airlines flight MH 17 over eastern Ukraine.
+AFUO calls on Australian Government to take a lead on banning Russian Federation representation at G20 discussions this weekend in Sydney and the G20 Summit in Brisbane in November.
+      
+        <div class="read-more-link">
+          <a href="/current-affairs/9168/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/%d0%ba%d0%bd%d1%8f%d0%b6%d0%b8%d0%b9-%d0%b4%d0%b0%d1%80%d1%83%d0%bd%d0%be%d0%ba-%d0%bf%d0%b0%d0%bd%d1%81%d1%82%d0%b2%d0%b0-%d1%80%d1%83%d0%b4%d0%b5%d0%b2%d0%b8%d1%87%d1%96%d0%b2/">КНЯЖИЙ ДАРУНОК  ПАНСТВА РУДЕВИЧІВ</a>
       </h1>
       <time datetime="2014-07-18T13:06:57Z" class="post-date">Fri, Jul 18, 2014</time>
       **КНЯЖИЙ ДАРУНОК **
@@ -66,7 +147,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%b6%d0%b8%d1%82%d1%82%d1%8f-%d1%83-%d1%81%d0%bb%d1%83%d0%b6%d1%96%d0%bd%d0%bd%d1%96-%d1%86%d0%b5%d1%80%d0%ba%d0%b2%d1%96-%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d1%96-%d1%81%d0%b2%d0%be%d1%97%d0%b9/">ЖИТТЯ - У СЛУЖІННІ ЦЕРКВІ-МАТЕРІ СВОЇЙ</a>
+        <a href="https://ukrainians.org.au/community/%d0%b6%d0%b8%d1%82%d1%82%d1%8f-%d1%83-%d1%81%d0%bb%d1%83%d0%b6%d1%96%d0%bd%d0%bd%d1%96-%d1%86%d0%b5%d1%80%d0%ba%d0%b2%d1%96-%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d1%96-%d1%81%d0%b2%d0%be%d1%97%d0%b9/">ЖИТТЯ - У СЛУЖІННІ ЦЕРКВІ-МАТЕРІ СВОЇЙ</a>
       </h1>
       <time datetime="2014-07-18T13:02:56Z" class="post-date">Fri, Jul 18, 2014</time>
       100-ліття з дня народження св. пам. Владики Івана Прашка
@@ -82,7 +163,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/website-letter-of-complaint-sent-to-sbs-from-afuo-broadcasting-ntv-news-syehodnya/">Website Letter of Complaint Sent to SBS from AFUO - broadcasting NTV News &#34;Syehodnya&#34;</a>
+        <a href="https://ukrainians.org.au/media/website-letter-of-complaint-sent-to-sbs-from-afuo-broadcasting-ntv-news-syehodnya/">Website Letter of Complaint Sent to SBS from AFUO - broadcasting NTV News &#34;Syehodnya&#34;</a>
       </h1>
       <time datetime="2014-07-15T01:21:27Z" class="post-date">Tue, Jul 15, 2014</time>
       July 14, 2014
@@ -100,7 +181,7 @@ We strongly believe that this program should be removed from SBS-TV’s broadcas
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/media-release-afuo-calls-on-sbs-to-immediately-stop-broadcasting-ntv-news-syehodnya/">Media Release: AFUO Calls on SBS to Immediately Stop Broadcasting NTV News  “Syehodnya&#34; </a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/media-release-afuo-calls-on-sbs-to-immediately-stop-broadcasting-ntv-news-syehodnya/">Media Release: AFUO Calls on SBS to Immediately Stop Broadcasting NTV News  “Syehodnya&#34; </a>
       </h1>
       <time datetime="2014-07-14T08:09:06Z" class="post-date">Mon, Jul 14, 2014</time>
       MEDIA RELEASE AFUO CALLS ON SBS TO IMMEDIATELY STOP BROADCASTING NTV NEWS “Syehodnya WHICH SPREADS DISINFORMATION ABOUT SITUATION IN UKRAINE COMMUNITY CALLED TO ACTION The Australian Federation of Ukrainian Organisations (AFUO) today expressed its very strong concerns to SBS Management that SBS-TV is re-broadcasting NTV News “Syehodnya”.
@@ -112,7 +193,7 @@ The AFUO has called for the program to be removed from SBS-TV’s broadcast sche
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/u-help-your-chance-to-help-ukraine/">U-HELP: Your Chance To Help Ukraine</a>
+        <a href="https://ukrainians.org.au/community/u-help-your-chance-to-help-ukraine/">U-HELP: Your Chance To Help Ukraine</a>
       </h1>
       <time datetime="2014-07-07T02:52:05Z" class="post-date">Mon, Jul 7, 2014</time>
       U-HELP (the Ukrainian Humanitarian Educational and Leadership Program) is announced by the Australian Federation of Ukrainian Organisations (AFUO) as the endorsed way for Australians to support Ukraine’s sovereignty, democracy and path to peace and prosperity.
@@ -125,7 +206,7 @@ The objectives of U-HELP, an official initiative of the AFUO, are:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-release-condemnation-of-racial-attack-on-ukrainian-catholic-church-in-lidcombe/">Media Release: Condemnation of Racial Attack on Ukrainian Catholic Church in Lidcombe</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-release-condemnation-of-racial-attack-on-ukrainian-catholic-church-in-lidcombe/">Media Release: Condemnation of Racial Attack on Ukrainian Catholic Church in Lidcombe</a>
       </h1>
       <time datetime="2014-06-25T03:22:05Z" class="post-date">Wed, Jun 25, 2014</time>
       **MEDIA RELEASE - **JOINT MEDIA RELEASE
@@ -140,7 +221,7 @@ CONDEMNATION OF RACIAL ATTACK ON UKRAINIAN CATHOLIC CHURCH IN LIDCOMBE The racia
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/removal-of-graffiti-from-ukrainian-catholic-church-lidcombe/">Removal of Graffiti from Ukrainian Catholic Church Lidcombe</a>
+        <a href="https://ukrainians.org.au/community/removal-of-graffiti-from-ukrainian-catholic-church-lidcombe/">Removal of Graffiti from Ukrainian Catholic Church Lidcombe</a>
       </h1>
       <time datetime="2014-06-25T03:06:11Z" class="post-date">Wed, Jun 25, 2014</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -152,7 +233,7 @@ CONDEMNATION OF RACIAL ATTACK ON UKRAINIAN CATHOLIC CHURCH IN LIDCOMBE The racia
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-friendship-night-rotary-international-convention/">A Night of Australian Ukrainian International Rotarian Friendship, hosted by the Rotary Club of Holroyd</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-friendship-night-rotary-international-convention/">A Night of Australian Ukrainian International Rotarian Friendship, hosted by the Rotary Club of Holroyd</a>
       </h1>
       <time datetime="2014-06-25T02:39:19Z" class="post-date">Wed, Jun 25, 2014</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -166,28 +247,15 @@ CONDEMNATION OF RACIAL ATTACK ON UKRAINIAN CATHOLIC CHURCH IN LIDCOMBE The racia
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/afuo-chairman-meets-with-leaders-ukraine/">Media Release - AFUO Chairman Meets with Senior Church, Political and Civic Leaders in Ukraine</a>
+        <a href="https://ukrainians.org.au/community/afuo-chairman-meets-with-leaders-ukraine/">Media Release - AFUO Chairman Meets with Senior Church, Political and Civic Leaders in Ukraine</a>
       </h1>
       <time datetime="2014-06-22T13:59:21Z" class="post-date">Sun, Jun 22, 2014</time>
       MEDIA RELEASE
-AUSTRALIAN FEDERATION OF UKRAINIAN ORGANISATIONS CHAIRMAN MEETS WITH SENIOR CHURCH, POLITICAL AND CIVIC LEADERS IN UKRAINE Australian Federation of Ukrainian Organisations (AFUO) Chairman and General Secretary of the Ukrainian World Congress (UWC) Stefan Romaniw participated in range of meeting with Church leaders, Ukraine's political leaders and community organisations during his visit to Ukraine between June 6 -18, 2014.
+AUSTRALIAN FEDERATION OF UKRAINIAN ORGANISATIONS CHAIRMAN MEETS WITH SENIOR CHURCH, POLITICAL AND CIVIC LEADERS IN UKRAINE Australian Federation of Ukrainian Organisations (AFUO) Chairman and General Secretary of the Ukrainian World Congress (UWC) Stefan Romaniw participated in range of meeting with Church leaders, Ukraine&rsquo;s political leaders and community organisations during his visit to Ukraine between June 6 -18, 2014.
 Many of the meetings were held as part of a UWC delegation which included UWC Congress President Eugene Czolij, UWC General Secretary, and AFUO Chairman, President of Ukrainian Canadian Congress Paul Grod.
       
         <div class="read-more-link">
           <a href="/community/afuo-chairman-meets-with-leaders-ukraine/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/education/learn-ukrainian-in-lviv/">Summer courses in new Lviv, in new Ukraine!!</a>
-      </h1>
-      <time datetime="2014-06-22T11:44:01Z" class="post-date">Sun, Jun 22, 2014</time>
-      Ukrainian today is trendy! ** Spend your summer in new Lviv, in new Ukraine!**
-“2-nd UKRAINIAN SUMMER SCHOOL” (June, 30 - July, 11 2014) “3-rd UKRAINIAN SUMMER SCHOOL” (August, 18-29 2014 ) Two-week intensive course on Ukrainian Language and Culture
-Ukrainian Language &amp; Culture School Ukrainian - interestingly, cheerfully, efficiently! After the Euromaidan Revolution, Ukraine started the new way of development, and you'll feel it if come here! Lviv is the best place to spend your summer, because summer in Lviv is the time of art festivals, music concerts, carnivals, museums and theaters.
-      
-        <div class="read-more-link">
-          <a href="/education/learn-ukrainian-in-lviv/">Read More…</a>
         </div>
       
     </article>
@@ -1398,6 +1466,8 @@ Ukrainian Language &amp; Culture School Ukrainian - interestingly, cheerfully, e
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

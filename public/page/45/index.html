@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainians-find-a-home-in-the-hunter/">Ukrainians find a home in the Hunter</a>
+        <a href="https://ukrainians.org.au/culture/make-sunday-august-24-2014-ukraines-national-day-a-blue-and-yellow-day/">MAKE SUNDAY AUGUST 24 2014 UKRAINE&#39;S NATIONAL DAY - A BLUE AND YELLOW DAY </a>
+      </h1>
+      <time datetime="2014-08-21T00:12:43Z" class="post-date">Thu, Aug 21, 2014</time>
+      MAKE SUNDAY AUGUST 24 2014 UKRAINE&rsquo;S NATIONAL DAY - A BLUE AND YELLOW DAY
+The Australian Federation of Ukrainian Organisations calls on the Australia&rsquo;s Ukrainian and broader community to support President Poroshenko&rsquo;s call to make Sunday BLUE AND YELLOW DAY IN SUPPORT OF UKRAINE Fly a flag, use the colours creatively in fashion, in decorations, in decorating houses , cars , offices State Organisations and individuals should think creatively how they could promote the colours in public places – Time is short but ideas normally flow quickly – Let us know your ideas Post on Facebook and email your suggestions
+      
+        <div class="read-more-link">
+          <a href="/culture/make-sunday-august-24-2014-ukraines-national-day-a-blue-and-yellow-day/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/ukrainians-find-a-home-in-the-hunter/">Ukrainians find a home in the Hunter</a>
       </h1>
       <time datetime="2014-08-17T00:41:00Z" class="post-date">Sun, Aug 17, 2014</time>
       [caption id=&quot;attachment_9326&rdquo; align=&quot;alignleft&rdquo; width=&quot;453&rdquo;] FRESH START: Ukrainian migrants Maria and Peter Tarnawskyj with daughters Olga and Anna, and their youngest child, Irene, who was born after they arrived in Australia.[/caption]
@@ -66,11 +147,11 @@ The Fairsea was the first migrant ship to arrive in Newcastle after World War II
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-release-president-of-ukraine-and-australias-prime-minister-discuss-potential-of-opening-australian-embassy-in-kyiv/">Media Release: PRESIDENT OF UKRAINE AND AUSTRALIA&#39;S PRIME MINISTER DISCUSS POTENTIAL OF OPENING AUSTRALIAN EMBASSY IN KYIV</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-release-president-of-ukraine-and-australias-prime-minister-discuss-potential-of-opening-australian-embassy-in-kyiv/">Media Release: PRESIDENT OF UKRAINE AND AUSTRALIA&#39;S PRIME MINISTER DISCUSS POTENTIAL OF OPENING AUSTRALIAN EMBASSY IN KYIV</a>
       </h1>
       <time datetime="2014-08-16T00:29:47Z" class="post-date">Sat, Aug 16, 2014</time>
       **MEDIA RELEASE: **
-**PRESIDENT OF UKRAINE AND AUSTRALIA'S PRIME MINISTER **DISCUSS POTENTIAL OF OPENING AUSTRALIAN EMBASSY IN KYIV From the Office of the President of Ukraine
+**PRESIDENT OF UKRAINE AND AUSTRALIA&rsquo;S PRIME MINISTER **DISCUSS POTENTIAL OF OPENING AUSTRALIAN EMBASSY IN KYIV From the Office of the President of Ukraine
 ** Australia is willing to provide assistance to the regions of the Donbas affected by the actions of militants**
 President of Ukraine Petro Poroshenko had a phone conversation with Prime Minister of Australia Tony Abbott.
 The Australian Prime Minister expressed gratitude to Ukraine and personally to the President for the assistance that Ukraine gave in the course of the international investigation of Malaysia Airlines aircraft tragedy which ended up with 38 Australian citizens dead.
@@ -81,7 +162,7 @@ The Australian Prime Minister expressed gratitude to Ukraine and personally to t
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/project-management-for-the-not-for-profit-sector/">Project Management for the Not-for-Profit Sector</a>
+        <a href="https://ukrainians.org.au/education/project-management-for-the-not-for-profit-sector/">Project Management for the Not-for-Profit Sector</a>
       </h1>
       <time datetime="2014-08-15T00:10:20Z" class="post-date">Fri, Aug 15, 2014</time>
       PM for NFP course overview
@@ -94,7 +175,7 @@ Canberra Thur 18 September 2014 Melbourne Thur 25 September 2014 Sydney Tue 28 O
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/club-wise-ones-memories/">Club &#34;Wise Ones&#34; Memories</a>
+        <a href="https://ukrainians.org.au/community/club-wise-ones-memories/">Club &#34;Wise Ones&#34; Memories</a>
       </h1>
       <time datetime="2014-08-14T23:50:32Z" class="post-date">Thu, Aug 14, 2014</time>
       “Club Wise Ones” monthly catch up happened on Saturday the 9th of August at 7pm at DYM.
@@ -108,28 +189,28 @@ we also commemorate ‘Ukraine’s Independence “. So we invite &amp; encourag
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-festival-melbourne-17th-august-2014/">Ukrainian Festival - Melbourne - 17th August 2014</a>
+        <a href="https://ukrainians.org.au/events/ukrainian-festival-melbourne-17th-august-2014/">Ukrainian Festival - Melbourne - 17th August 2014</a>
       </h1>
       <time datetime="2014-08-04T04:20:33Z" class="post-date">Mon, Aug 4, 2014</time>
       
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-independence-day-commemoration-western-australia/">Ukrainian Independence Day Commemoration - Western Australia</a>
+        <a href="https://ukrainians.org.au/events/ukrainian-independence-day-commemoration-western-australia/">Ukrainian Independence Day Commemoration - Western Australia</a>
       </h1>
       <time datetime="2014-08-03T04:05:57Z" class="post-date">Sun, Aug 3, 2014</time>
       UKR independence day invitation
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-independence-day-commemoration-brisbane/">Ukrainian Independence Day Commemoration Brisbane</a>
+        <a href="https://ukrainians.org.au/events/ukrainian-independence-day-commemoration-brisbane/">Ukrainian Independence Day Commemoration Brisbane</a>
       </h1>
       <time datetime="2014-07-31T04:02:17Z" class="post-date">Thu, Jul 31, 2014</time>
       UCQ Independence day 24 Aug 2014 invite
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/in-search-of-home-and-hope/">In Search of Home and Hope</a>
+        <a href="https://ukrainians.org.au/community/in-search-of-home-and-hope/">In Search of Home and Hope</a>
       </h1>
       <time datetime="2014-07-30T02:45:53Z" class="post-date">Wed, Jul 30, 2014</time>
       Sydney school teacher, Vasilis Vasilas, is currently gathering photographs and anecdotal stories within the Ukraine community for a forthcoming publication, In Search of Home and Hope: Images and Stories from People from Ukraine.
@@ -144,7 +225,7 @@ Australian-born and of Greek parents, Vasilas has published several books depict
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/media-release-statement-on-individual-in-sydney-daily-telegraph-story/">Media Release: Statement on Individual in Sydney Daily Telegraph Story</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/media-release-statement-on-individual-in-sydney-daily-telegraph-story/">Media Release: Statement on Individual in Sydney Daily Telegraph Story</a>
       </h1>
       <time datetime="2014-07-30T01:50:25Z" class="post-date">Wed, Jul 30, 2014</time>
       MEDIA RELEASE
@@ -154,18 +235,6 @@ I am sure that the Australian Government will very seriously investigate and dea
       
         <div class="read-more-link">
           <a href="/current-affairs/media-releases/media-release-statement-on-individual-in-sydney-daily-telegraph-story/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/maria-and-victor-rudewych-donate-750000-to-our-church-and-1520000-to-the-ukrainian-studies-support-fund/">Maria and Victor Rudewych donate $750,000 to our Church and $1,520,000 to the Ukrainian Studies Support Fund</a>
-      </h1>
-      <time datetime="2014-07-29T01:29:21Z" class="post-date">Tue, Jul 29, 2014</time>
-      Last month, our Ukrainian community in Australia witnessed two unprecedented philanthropic deeds. Both were the work of the same donors, who are well known for their generosity in support of Ukrainian life in Australia. However, this time, perhaps because of the extraordinary sums involved, the donations leave a sense that something fundamental may have changed for our Ukrainian community in Australia.
-On Wednesday 25 June 2014, Victor and Mimi (Maria) Rudewych announced their donation of $1.
-      
-        <div class="read-more-link">
-          <a href="/community/maria-and-victor-rudewych-donate-750000-to-our-church-and-1520000-to-the-ukrainian-studies-support-fund/">Read More…</a>
         </div>
       
     </article>
@@ -1376,6 +1445,8 @@ On Wednesday 25 June 2014, Victor and Mimi (Maria) Rudewych announced their dona
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraines-ambassador-to-australia-visiting-victoria-to-promote-message-of-gratitude-and-that-ukraine-is-open-for-business/">UKRAINE’S AMBASSADOR TO AUSTRALIA VISITING VICTORIA TO PROMOTE  MESSAGE OF GRATITUDE AND THAT UKRAINE IS OPEN FOR BUSINESS</a>
+        <a href="https://ukrainians.org.au/politics/australian-ukrainians-relieved-at-release-of-pilot-nadiya-savchenko/">Australian-Ukrainians relieved at release of pilot Nadiya Savchenko</a>
+      </h1>
+      <time datetime="2016-05-26T22:22:07Z" class="post-date">Thu, May 26, 2016</time>
+      27 May 2016
+MEDIA RELEASE **Australian—Ukrainians relieved at release of pilot Nadiya Savchenko ** The Australian Federation of Ukrainian Organisations (AFUO) welcomes the release of pilot Nadiya Savchenko after two years of political imprisonment by the Russian Federation.
+The thirty five year old Savchenko was handed a 22-year sentence when a Russian court convicted her of directing artillery fire that killed two Russian journalists during combat in eastern Ukraine in June 2014.
+      
+        <div class="read-more-link">
+          <a href="/politics/australian-ukrainians-relieved-at-release-of-pilot-nadiya-savchenko/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/ukraines-ambassador-to-australia-visiting-victoria-to-promote-message-of-gratitude-and-that-ukraine-is-open-for-business/">UKRAINE’S AMBASSADOR TO AUSTRALIA VISITING VICTORIA TO PROMOTE  MESSAGE OF GRATITUDE AND THAT UKRAINE IS OPEN FOR BUSINESS</a>
       </h1>
       <time datetime="2016-05-26T03:34:19Z" class="post-date">Thu, May 26, 2016</time>
       **May 26, 2016 **
@@ -66,7 +148,7 @@ The AFUO has facilitated a wide-ranging list of meetings for the Ambassador duri
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/finance/australia-ukraine-new-markets-ozuke-forums/">«Нові ринки» - Австралійсько-Українські форуми OzUke - Australia-Ukraine New Markets. OzUke Forums</a>
+        <a href="https://ukrainians.org.au/finance/australia-ukraine-new-markets-ozuke-forums/">«Нові ринки» - Австралійсько-Українські форуми OzUke - Australia-Ukraine New Markets. OzUke Forums</a>
       </h1>
       <time datetime="2016-05-16T07:36:18Z" class="post-date">Mon, May 16, 2016</time>
       Українсько-Австралійська справа набирає обертів. ПРИЄДНУЙТЕСЬ до двостороннього руху з інтеграції ділових і культурних осередків Австралії та України. Цей рух провадить громадська організація «Австралійсько-Українська Ініціатива» (АУІ) на Міжнародній Комунікаційній Платформі «Нові Ринки».
@@ -78,7 +160,7 @@ The AFUO has facilitated a wide-ranging list of meetings for the Ambassador duri
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/ukrainian-diaspora-rejoices-over-eurovision-win/">Ukrainian diaspora rejoices over Eurovision win</a>
+        <a href="https://ukrainians.org.au/events/international-events/ukrainian-diaspora-rejoices-over-eurovision-win/">Ukrainian diaspora rejoices over Eurovision win</a>
       </h1>
       <time datetime="2016-05-15T03:53:07Z" class="post-date">Sun, May 15, 2016</time>
       15 May 2016
@@ -92,7 +174,7 @@ The 32-year old singer is a Crimean Tatar, an ethnic group native to Ukraine’s
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/worlds-largest-aircraft-ukrainian-mriya-set-to-land-in-perth/">World&#39;s largest aircraft Ukrainian &#39;Mriya&#39; set to land in Perth</a>
+        <a href="https://ukrainians.org.au/events/western-australia/worlds-largest-aircraft-ukrainian-mriya-set-to-land-in-perth/">World&#39;s largest aircraft Ukrainian &#39;Mriya&#39; set to land in Perth</a>
       </h1>
       <time datetime="2016-05-14T10:59:30Z" class="post-date">Sat, May 14, 2016</time>
       14 May 2016
@@ -105,7 +187,7 @@ Arriving at its final destination of a journey spanning three continents, the cr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/community-meeting-with-his-excellency-dr-mykola-kulinich/">Community Meeting with His Excellency Dr Mykola Kulinich</a>
+        <a href="https://ukrainians.org.au/events/community-meeting-with-his-excellency-dr-mykola-kulinich/">Community Meeting with His Excellency Dr Mykola Kulinich</a>
       </h1>
       <time datetime="2016-05-12T07:28:49Z" class="post-date">Thu, May 12, 2016</time>
       Community Meeting with His Excellency Dr. Mykola Kulinich Ambassador of Ukraine to Australia. The Association of Ukrainians in Victoria invite all to attend a presentation from His Excellency on the topic of developing Ukrainian Australian relations and also the Embassy and Community in partnership.
@@ -119,7 +201,7 @@ Facebook event page: https://www.facebook.com/events/1549516285353158/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraines-position-and-the-ukrainian-community-in-australias-support-for-ukraine/">UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SUPPORT FOR UKRAINE</a>
+        <a href="https://ukrainians.org.au/politics/ukraines-position-and-the-ukrainian-community-in-australias-support-for-ukraine/">UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SUPPORT FOR UKRAINE</a>
       </h1>
       <time datetime="2016-05-09T07:32:39Z" class="post-date">Mon, May 9, 2016</time>
       May 9, 2016
@@ -131,7 +213,7 @@ PRESENTING UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SU
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-world-congress-invites-community-to-contribute-to-archives/">Світовий Конґрес Українців запрошує громаду долучитися до оновлення архіву</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-world-congress-invites-community-to-contribute-to-archives/">Світовий Конґрес Українців запрошує громаду долучитися до оновлення архіву</a>
       </h1>
       <time datetime="2016-05-03T07:21:28Z" class="post-date">Tue, May 3, 2016</time>
       20 квітня 2016 р.
@@ -147,7 +229,7 @@ PRESENTING UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SU
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/30th-anniversary-of-the-chornobyl-disaster-melbourne/">У Мельбурні відзначили 30-річчя аварії на Чорнобильській АЕС</a>
+        <a href="https://ukrainians.org.au/events/30th-anniversary-of-the-chornobyl-disaster-melbourne/">У Мельбурні відзначили 30-річчя аварії на Чорнобильській АЕС</a>
       </h1>
       <time datetime="2016-05-02T07:01:51Z" class="post-date">Mon, May 2, 2016</time>
       Чимало дат є в історії українського народу, які ми згадуємо з великим сумом і з біллю у серці. Одна із них – 26 квітня, коли над квітучим Поліссям у нічному небі спалахнув вогонь радіаційного вибуху четвертого реактора на Чорнобильській АЕС. Вибух цей стався тридцять років тому, 26 квітня 1986 року. Це була найбільша техноґенно – екологічна катастрофа сучасного світу. Уряд Радянського Союзу майже дві доби тримав у секреті події, що відбувалися після вибуху 26 квітня.
@@ -158,7 +240,7 @@ PRESENTING UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SU
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/easter-greeting-from-cyoa/">Великоднє привітання від СУОА</a>
+        <a href="https://ukrainians.org.au/community/easter-greeting-from-cyoa/">Великоднє привітання від СУОА</a>
       </h1>
       <time datetime="2016-04-29T06:34:59Z" class="post-date">Fri, Apr 29, 2016</time>
       Управа Союзу Українських Організацій Австралії (CYOA) вітає Вас з Великим Святом
@@ -171,18 +253,6 @@ PRESENTING UKRAINE’S POSITION AND THE UKRAINIAN COMMUNITY IN AUSTRALIA’S SU
         <div class="read-more-link">
           <a href="/community/easter-greeting-from-cyoa/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/media/30-littya-katastrofi-u-chornobili-interview-sbs-ukrainian/">30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ - Інтерв’ю на SBS Ukrainian Radio</a>
-      </h1>
-      <time datetime="2016-04-26T07:40:28Z" class="post-date">Tue, Apr 26, 2016</time>
-      [ ](http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/30-littya-katastrofi-u-chornobili-vidznachayut-v-avstraliyi)30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ ВІДЗНАЧАЮТЬ В АВСТРАЛІЇ
-26-го квітня 1986-го року найбільша у світі за всю історію ядерна катастрофа сталася на ЧАЕС, неподалік Припяті в Україні, яка була окупована і перебувала у складі тодішнього Радянського Союзу&hellip;
-http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/30-littya-katastrofi-u-chornobili-vidznachayut-v-avstraliyi
-  [ ](http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/roman-korchev-pro-yadernu-katastrofu-u-chornobili)РОМАН КОРЧЕВ ПРО ЯДЕРНУ КАТАСТРОФУ У ЧОРНОБИЛІ
-Богдан Рудницький розмовляє із очевидцем трагедії з Києва Романом Корчевим, котрий уже понад 20 років проживає у Мельбурні&hellip;
-http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/roman-korchev-pro-yadernu-katastrofu-u-chornobili
       
     </article>
 
@@ -1392,6 +1462,8 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/roman-korchev-pro-yadern
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

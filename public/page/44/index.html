@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,42 +23,128 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-national-public-relations-training-day/">AFUO National Public Relations Training Day</a>
+        <a href="https://ukrainians.org.au/community/call-to-action-protest-rally-october-26-2014-canberra/">CALL TO ACTION  PROTEST RALLY OCTOBER 26 2014 - CANBERRA</a>
+      </h1>
+      <time datetime="2014-10-11T01:00:35Z" class="post-date">Sat, Oct 11, 2014</time>
+      ЗAКЛИК
+Союз Українських Організацій Австралії ( СУОА) закликає українські організації, установи та все українське громадянство підтримати
+жовтневу акцію протесту СУОА -
+агресія та політика В.Путіна щодо України та участь РФ у саміті G-20, яка відбуватиметься
+в неділю, 26-го жовтня, 2014 о год. 1.00 пополудні біля Посольства Російської Федерації, Канберра. Координатори акції - Єврокомітет CУОA в НПВ та в Канберрі та ОУГ НПВ
+Рівнож закликаємо громадян України, що проживають або тимчасово перебувають в Австралії, взяти участь у Позачергових виборах народних депутатів, в неділю, 26 жовтня 2014
+      
+        <div class="read-more-link">
+          <a href="/community/call-to-action-protest-rally-october-26-2014-canberra/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/afuo-national-public-relations-training-day/">AFUO National Public Relations Training Day</a>
       </h1>
       <time datetime="2014-10-10T23:30:22Z" class="post-date">Fri, Oct 10, 2014</time>
       Управа Cоюзу Українських Організацій Aвстралії CУОA
 Бажає всім учасникам
-Cемінара CУОA - Зовнішні зв'язки в Aвстралії
+Cемінара CУОA - Зовнішні зв&rsquo;язки в Aвстралії
 який відбудеться сьогодні 11-го жовтня 2014 в Cіднею
-під проводом керівника Зовнішних Зв'язків CУОA Петра Шміґеля
+під проводом керівника Зовнішних Зв&rsquo;язків CУОA Петра Шміґеля
 найкращих успіхів
 В Програмі:
  * Програма та стратегія зовнішної політики CУОA * Урядові відносини - які їх розбудовувати * ЗМІ - відносини - які їх розбудовувати * Aкції - Як їх планувати * Велика 20ка Брізбен - Путін Геть !
@@ -70,7 +155,7 @@ Cемінара CУОA - Зовнішні зв'язки в Aвстралії
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%bf%d0%be%d0%b2%d1%96%d0%b4%d0%be%d0%bc%d0%bb%d0%b5%d0%bd%d0%bd%d1%8f-%d0%bf%d1%80%d0%be-%d0%b7%d0%b0%d0%ba%d1%83%d0%bf-%d1%88%d0%b2%d0%b8%d0%b4%d0%ba%d0%be%d1%97-%d0%b4%d0%be%d0%bf%d0%be%d0%bc/">Повідомлення про закуп швидкої допомоги для AТО – коштами громади в Aвстралії</a>
+        <a href="https://ukrainians.org.au/community/%d0%bf%d0%be%d0%b2%d1%96%d0%b4%d0%be%d0%bc%d0%bb%d0%b5%d0%bd%d0%bd%d1%8f-%d0%bf%d1%80%d0%be-%d0%b7%d0%b0%d0%ba%d1%83%d0%bf-%d1%88%d0%b2%d0%b8%d0%b4%d0%ba%d0%be%d1%97-%d0%b4%d0%be%d0%bf%d0%be%d0%bc/">Повідомлення про закуп швидкої допомоги для AТО – коштами громади в Aвстралії</a>
       </h1>
       <time datetime="2014-10-07T21:08:32Z" class="post-date">Tue, Oct 7, 2014</time>
       А ще спільно з українською діаспорою в Австралії Львівському лицарю вдалося придбати автомобіль для вивезення поранених з гарячих точок. Він уже завтра поїде в зону АТО, а саме в Дебальцево.
@@ -78,7 +163,7 @@ http://zaxid.net/news/showNews.do?lvivskiy_litsar_nazbirav_pivmilyona_griven_na_
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/do-you-want-to-help-ukraine/">Do You Want To Help Ukraine?</a>
+        <a href="https://ukrainians.org.au/community/do-you-want-to-help-ukraine/">Do You Want To Help Ukraine?</a>
       </h1>
       <time datetime="2014-09-17T02:44:19Z" class="post-date">Wed, Sep 17, 2014</time>
       Богдан Рудницький веде розмову із провідником української спільноти Стефаном Романівим, котрий є головою Управи Союзу Українських Організацій Австралії та Генеральним Секретарем Світового Конґресу Українців - мова про ситуацію в Україні та як можна допомогти Україні&hellip;
@@ -86,7 +171,7 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/361102/t/DO-YOU-W
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/u-help-update/">U-HELP Update</a>
+        <a href="https://ukrainians.org.au/current-affairs/u-help-update/">U-HELP Update</a>
       </h1>
       <time datetime="2014-09-16T02:40:15Z" class="post-date">Tue, Sep 16, 2014</time>
       UHELP UPDATE  * **Nearly 4500 personnel trained in Combat Life Saving** * **Some 3500 IFAKs (Improved First Aid Kits) distributed**  The AFUO’s UHELP (Ukrainian Humanitarian, Educational and Leadership Program) has raised some $30,000 to date in Australia to support the first aid training of Ukrainian service personnel and to provide advanced first aid equipment as part of Ukraine’s self-defence.
@@ -98,7 +183,7 @@ This has helped to fund nearly 4500 personnel being trained in Combat Life Savin
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/new-embassy-in-ukraine-govt-applauded-for-most-significant-milestone-and-recognition-of-sovereinty/">New Embassy in Ukraine: Gov&#39;t Applauded for most significant milestone and recognition of sovereinty</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/new-embassy-in-ukraine-govt-applauded-for-most-significant-milestone-and-recognition-of-sovereinty/">New Embassy in Ukraine: Gov&#39;t Applauded for most significant milestone and recognition of sovereinty</a>
       </h1>
       <time datetime="2014-09-03T03:38:35Z" class="post-date">Wed, Sep 3, 2014</time>
       MEDIA RELEASE NEW EMBASSY IN UKRAINE: GOV’T APPLAUDED FOR MOST SIGNIFICANT MILESTONE &amp; RECOGNITION OF SOVEREIGNTY The Ukrainian Australian community strongly applauds the announcement by the Abbott Government of the opening of an Australian Embassy in Kyiv in Ukraine. The community was joined in welcoming the very significant development by Mr Craig Laundy MP, Chair of the Australia/Ukraine Parliamentary Friendship Group. Mr Stefan Romaniw OAM, President of the Australian Federation of Ukrainian Organisations (AFUO), said from Kyiv where he is currently participating in high-level meetings with Ukrainian Government officials: “Prime Minister Abbott’s announcement of an Embassy in Ukraine is the most significant positive milestone in the Australia-Ukraine relationship.
@@ -109,7 +194,7 @@ This has helped to fund nearly 4500 personnel being trained in Combat Life Savin
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/australia-should-ask-un-and-allies-to-defend-ukraine/">Australia Should Ask UN and Allies To Defend Ukraine</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/australia-should-ask-un-and-allies-to-defend-ukraine/">Australia Should Ask UN and Allies To Defend Ukraine</a>
       </h1>
       <time datetime="2014-08-28T04:21:06Z" class="post-date">Thu, Aug 28, 2014</time>
       MEDIA RELEASE AUSTRALIA SHOULD ASK UN &amp; ALLIES TO DEFEND UKRAINE The Ukrainian Australian community is strongly requesting that the Australian Government bring to the UN Security Council, as well as its Western democratic allies, the consideration of logistical and military support for Ukraine.
@@ -122,11 +207,11 @@ Mr Stefan Romaniw OAM, President of the Australian Federation of Ukrainian Organ
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/%d1%87%d0%b0%d1%80%d1%96%d0%b2%d0%bd%d0%b0-%d0%ba%d1%80%d0%b0%d1%81%d0%b0-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%b2%d0%b8%d1%88%d0%b8%d0%b2%d0%b0%d0%bd%d0%ba%d0%b8/">ЧАРІВНА КРАСА УКРАЇНСЬКОЇ ВИШИВАНКИ</a>
+        <a href="https://ukrainians.org.au/culture/%d1%87%d0%b0%d1%80%d1%96%d0%b2%d0%bd%d0%b0-%d0%ba%d1%80%d0%b0%d1%81%d0%b0-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%b2%d0%b8%d1%88%d0%b8%d0%b2%d0%b0%d0%bd%d0%ba%d0%b8/">ЧАРІВНА КРАСА УКРАЇНСЬКОЇ ВИШИВАНКИ</a>
       </h1>
       <time datetime="2014-08-25T03:52:09Z" class="post-date">Mon, Aug 25, 2014</time>
       “ЧАРІВНА КРАСА УКРАЇНСЬКОЇ ВИШИВАНКИ” Фешн-Парад Вишиванoк дітей та молодi Української Громади Мельбурну.
-Нас, українців, щедрих на таланти, здiбних та обдарованих - по чарівних вишиванках пізнають в усьому світі. З вишиванкою пов'язана вся багатовікова історія українського народу, це і традиції, обряди, культурa, його творчі пошуки, радість і горе, його перемоги і поразки та сподівання на майбутнє. Вишиванка – споконвічний символ духовності української нації, a в певний час стає ще й засобом прояву волі, незалежності українців.
+Нас, українців, щедрих на таланти, здiбних та обдарованих - по чарівних вишиванках пізнають в усьому світі. З вишиванкою пов&rsquo;язана вся багатовікова історія українського народу, це і традиції, обряди, культурa, його творчі пошуки, радість і горе, його перемоги і поразки та сподівання на майбутнє. Вишиванка – споконвічний символ духовності української нації, a в певний час стає ще й засобом прояву волі, незалежності українців.
       
         <div class="read-more-link">
           <a href="/culture/%d1%87%d0%b0%d1%80%d1%96%d0%b2%d0%bd%d0%b0-%d0%ba%d1%80%d0%b0%d1%81%d0%b0-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d0%b2%d0%b8%d1%88%d0%b8%d0%b2%d0%b0%d0%bd%d0%ba%d0%b8/">Read More…</a>
@@ -134,7 +219,7 @@ Mr Stefan Romaniw OAM, President of the Australian Federation of Ukrainian Organ
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/23-%d1%80%d1%96%d1%87%d0%bd%d0%b8%d1%86%d1%8f-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bb%d0%b5%d0%b6%d0%bd%d0%be%d1%81%d1%82%d1%96-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d1%83-%d0%bc%d0%b5%d0%bb%d1%8c%d0%b1/">23 річниця Незалежності України у Мельбурні</a>
+        <a href="https://ukrainians.org.au/events/23-%d1%80%d1%96%d1%87%d0%bd%d0%b8%d1%86%d1%8f-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bb%d0%b5%d0%b6%d0%bd%d0%be%d1%81%d1%82%d1%96-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d1%83-%d0%bc%d0%b5%d0%bb%d1%8c%d0%b1/">23 річниця Незалежності України у Мельбурні</a>
       </h1>
       <time datetime="2014-08-24T01:22:46Z" class="post-date">Sun, Aug 24, 2014</time>
       В неділю 17 серпня, у залі Deakin, що на Площі Федерації у Мельбурні, відбувся культурно - мистецький захід з нагоди 23 -тої річниці Незалежності України та 200 - тої річниці від дня народження Великого Пророка України Тараса Григоровича Шевченка. Організатором заходу була Українська Громада Вікторії.
@@ -146,7 +231,7 @@ Mr Stefan Romaniw OAM, President of the Australian Federation of Ukrainian Organ
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/%d0%b0%d0%ba%d1%86%d1%96%d1%8f-%d1%81%d1%83%d0%be%d0%b0-%d0%bd%d0%b5%d0%b4%d1%96%d0%bb%d1%8f-24-%d1%81%d0%b5%d1%80%d0%bf%d0%bd%d1%8f-%d0%b4%d0%b5%d0%bd%d1%8c-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bb/">АКЦІЯ СУОА Неділя 24 серпня –День Незалежності та Синьо - Жовтий День</a>
+        <a href="https://ukrainians.org.au/current-affairs/%d0%b0%d0%ba%d1%86%d1%96%d1%8f-%d1%81%d1%83%d0%be%d0%b0-%d0%bd%d0%b5%d0%b4%d1%96%d0%bb%d1%8f-24-%d1%81%d0%b5%d1%80%d0%bf%d0%bd%d1%8f-%d0%b4%d0%b5%d0%bd%d1%8c-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bb/">АКЦІЯ СУОА Неділя 24 серпня –День Незалежності та Синьо - Жовтий День</a>
       </h1>
       <time datetime="2014-08-21T00:45:30Z" class="post-date">Thu, Aug 21, 2014</time>
       АКЦІЯ СУОА Неділя 24 серпня – День Незалежності та Синьо - Жовтий День Дорогі Друзі! Союз Українських Організацій Австралії закликає підтримати заклик президента України Петра Порошенка напередодні Дня Незалежності зробити жовто - блакитним увесь світ, підтримати ініціативу “Наші Кольори”, яка присвячується українському прапору.
@@ -155,18 +240,6 @@ Mr Stefan Romaniw OAM, President of the Australian Federation of Ukrainian Organ
       
         <div class="read-more-link">
           <a href="/current-affairs/%d0%b0%d0%ba%d1%86%d1%96%d1%8f-%d1%81%d1%83%d0%be%d0%b0-%d0%bd%d0%b5%d0%b4%d1%96%d0%bb%d1%8f-24-%d1%81%d0%b5%d1%80%d0%bf%d0%bd%d1%8f-%d0%b4%d0%b5%d0%bd%d1%8c-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bb/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/make-sunday-august-24-2014-ukraines-national-day-a-blue-and-yellow-day/">MAKE SUNDAY AUGUST 24 2014 UKRAINE&#39;S NATIONAL DAY - A BLUE AND YELLOW DAY </a>
-      </h1>
-      <time datetime="2014-08-21T00:12:43Z" class="post-date">Thu, Aug 21, 2014</time>
-      MAKE SUNDAY AUGUST 24 2014 UKRAINE'S NATIONAL DAY - A BLUE AND YELLOW DAY
-The Australian Federation of Ukrainian Organisations calls on the Australia's Ukrainian and broader community to support President Poroshenko's call to make Sunday BLUE AND YELLOW DAY IN SUPPORT OF UKRAINE Fly a flag, use the colours creatively in fashion, in decorations, in decorating houses , cars , offices State Organisations and individuals should think creatively how they could promote the colours in public places – Time is short but ideas normally flow quickly – Let us know your ideas Post on Facebook and email your suggestions
-      
-        <div class="read-more-link">
-          <a href="/culture/make-sunday-august-24-2014-ukraines-national-day-a-blue-and-yellow-day/">Read More…</a>
         </div>
       
     </article>
@@ -1377,6 +1450,8 @@ The Australian Federation of Ukrainian Organisations calls on the Australia's Uk
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

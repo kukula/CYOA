@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,122 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-1-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2017</a>
+        <a href="https://ukrainians.org.au/sport/marta-kostyuk-ukrainian-star-wins-girls-junior-australian-tennis-championship/">Marta Kostyuk – Ukrainian Star Wins Girls Junior Australian Tennis Championship / Марта Костюк – молода українка перемогла у чемпіонаті з тенісу для юніорів на міжнародній арені</a>
+      </h1>
+      <time datetime="2017-01-29T02:15:46Z" class="post-date">Sun, Jan 29, 2017</time>
+      MEDIA RELEASE
+28 January 2017
+MARTA KOSTYUK – UKRAINIAN STAR WINS GIRLS JUNIOR AUSTRALIAN TENNIS CHAMPIONSHIP
+14-year-old Ukrainian Tennis star Marta Kostyuk won the Australian Open Junior Girls title this afternoon in Melbourne, Australia defeating 17-year-old top-seeded Swiss player Rebeka Masarova .
+Her tenacity, focus and skills were amazing.
+The Australian Federation of Ukrainian Organisations (AFUO) congratulates Marta on her great achievement.
+Having won the championship, she approached the microphone and shouted Slava Ukraini!
+      
+        <div class="read-more-link">
+          <a href="/sport/marta-kostyuk-ukrainian-star-wins-girls-junior-australian-tennis-championship/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-1-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 1 2017</a>
       </h1>
       <time datetime="2017-01-27T06:23:19Z" class="post-date">Fri, Jan 27, 2017</time>
       Ukrainian language classes for adults 2017 – Term 1
@@ -67,7 +153,7 @@ Refer attachments for details.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/holodomor-drama-in-cinemas-feb-23/">Holodomor drama in cinemas Feb 23 / Драма про Голодомор - в кінотеатрах 23-лютого</a>
+        <a href="https://ukrainians.org.au/culture/holodomor-drama-in-cinemas-feb-23/">Holodomor drama in cinemas Feb 23 / Драма про Голодомор - в кінотеатрах 23-лютого</a>
       </h1>
       <time datetime="2017-01-26T11:40:35Z" class="post-date">Thu, Jan 26, 2017</time>
       Historical drama _Bitter Harvest _is a love story set amidst Ukraine’s devastating Holodomor.
@@ -79,12 +165,12 @@ Starring Max Irons (Red Riding Hood, Woman in Gold), Samantha Barks (Les Miserab
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/stop-putins-war-in-ukraine-3-0-afuo-call-to-action/">Stop Putin&#39;s War in Ukraine 3.0 - AFUO CALL TO ACTION</a>
+        <a href="https://ukrainians.org.au/events/stop-putins-war-in-ukraine-3-0-afuo-call-to-action/">Stop Putin&#39;s War in Ukraine 3.0 - AFUO CALL TO ACTION</a>
       </h1>
       <time datetime="2017-01-18T04:05:18Z" class="post-date">Wed, Jan 18, 2017</time>
       СОЮЗ УКРАЇНСЬКИХ ОРГАНІЗАЦІЙ АВСТРАЛІЇ (СУОА)
 **ЗАКЛИКАЄ **ПІДТРИМАТИ АКЦІЮ ВСЕСВІТНЬOГО РУХУ ПАТРІОТІВ УКРАЇНИ
-STOP PUTIN'S WAR IN UKRAINE 3.0 ЩО ВІДБУВАТИМЕТЬСЯ 21 СІЧНЯ 2017 РОКУ У 60 КРАЇНАХ СВІТУ
+STOP PUTIN&rsquo;S WAR IN UKRAINE 3.0 ЩО ВІДБУВАТИМЕТЬСЯ 21 СІЧНЯ 2017 РОКУ У 60 КРАЇНАХ СВІТУ
 ** **ТОЖ ЗАКЛИКАЄМО УКРАЇНСЬКУ СПІЛЬНОТУ ТА ЇЇ ПРИХИЛЬНИКІВ ДО АКТИВНОЇ УЧАСТІ
 Facebook події заплановані у Сіднеї
 https://www.facebook.com/events/1650151431945093/
@@ -93,7 +179,7 @@ https://www.facebook.com/events/410161919325380/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-call-to-action-flash-mob-unitedukraine/">AFUO CALL TO ACTION FLASH MOB #UnitedUkraine - #УкраїнаЄдина</a>
+        <a href="https://ukrainians.org.au/politics/afuo-call-to-action-flash-mob-unitedukraine/">AFUO CALL TO ACTION FLASH MOB #UnitedUkraine - #УкраїнаЄдина</a>
       </h1>
       <time datetime="2017-01-13T06:38:36Z" class="post-date">Fri, Jan 13, 2017</time>
       12-го січня 2016
@@ -107,7 +193,7 @@ https://www.facebook.com/events/410161919325380/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/golova-oun-b-stefan-romaniv-polityka-kapitulyantstva-do-myru-ne-pryzvede/">Голова ОУН (б) Стефан Романів: «Політика капітулянтства до миру не призведе»</a>
+        <a href="https://ukrainians.org.au/politics/golova-oun-b-stefan-romaniv-polityka-kapitulyantstva-do-myru-ne-pryzvede/">Голова ОУН (б) Стефан Романів: «Політика капітулянтства до миру не призведе»</a>
       </h1>
       <time datetime="2017-01-12T06:49:38Z" class="post-date">Thu, Jan 12, 2017</time>
       Значний резонанс викликала стаття українського олігарха Віктора Пінчука у американському виданні The Wall Street Journal, опублікована в кінці минулого року, де поміж інших «поступок» Росії пропонувалося де-факто визнати анексію нею Криму. Прокоментувати зміст і мету цієї публікації Українська Інформаційна Служба попросила Голову ОУН (б) Стефана Романіва.
@@ -119,7 +205,7 @@ https://www.facebook.com/events/410161919325380/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/general/merry-christmas-happy-new-year-2017/">Вітання з Різдвом Христовим</a>
+        <a href="https://ukrainians.org.au/general/merry-christmas-happy-new-year-2017/">Вітання з Різдвом Христовим</a>
       </h1>
       <time datetime="2017-01-06T07:00:03Z" class="post-date">Fri, Jan 6, 2017</time>
       Дорогі Українці!
@@ -136,7 +222,7 @@ We wish all those who are celebrating a very Merry Christmas and a Happy New Yea
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/christmas-contribution-to-support-our-soldiers-in-ukraine/">Коляда на Допомогу Українським Солдатам</a>
+        <a href="https://ukrainians.org.au/politics/christmas-contribution-to-support-our-soldiers-in-ukraine/">Коляда на Допомогу Українським Солдатам</a>
       </h1>
       <time datetime="2016-12-30T21:54:15Z" class="post-date">Fri, Dec 30, 2016</time>
       СУОА - Коляда на Допомогу Українським Солдатам Настають Різдв’яні Свята – В родинному оточенню будемо святкувати народження Ісуса Христа.
@@ -153,12 +239,12 @@ ACCOUNT: 00015958
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/family-picnic-2017/">Family Picnic / Громадський Пікнік</a>
+        <a href="https://ukrainians.org.au/events/family-picnic-2017/">Family Picnic / Громадський Пікнік</a>
       </h1>
       <time datetime="2016-12-27T22:15:14Z" class="post-date">Tue, Dec 27, 2016</time>
       Association of Ukrainians in Victoriainvites you to a
 FAMILY PICNIC The day includes:
- * A short Jordan water blessing in a united service of all denominations * Ukrainian Carol sing-along * Celebrating Ukraine's unity day * Ukraine's Ambassador to Australia will be attending  Sunday January 22nd, 2017 1:30pm Queens Park, Mt Alexander Rd, Essendon A great day out for all, bring a blanket, snacks and let's enjoy each other's company.
+ * A short Jordan water blessing in a united service of all denominations * Ukrainian Carol sing-along * Celebrating Ukraine's unity day * Ukraine's Ambassador to Australia will be attending  Sunday January 22nd, 2017 1:30pm Queens Park, Mt Alexander Rd, Essendon A great day out for all, bring a blanket, snacks and let&rsquo;s enjoy each other&rsquo;s company.
       
         <div class="read-more-link">
           <a href="/events/family-picnic-2017/">Read More…</a>
@@ -166,20 +252,12 @@ FAMILY PICNIC The day includes:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/stefan-romaniw-in-maikl-shchur07/">Стефан Романів у випуску #@)₴?$0 з Майклом Щуром</a>
+        <a href="https://ukrainians.org.au/media/stefan-romaniw-in-maikl-shchur07/">Стефан Романів у випуску #@)₴?$0 з Майклом Щуром</a>
       </h1>
       <time datetime="2016-12-20T06:21:11Z" class="post-date">Tue, Dec 20, 2016</time>
       Дивітсі у цім випуску:
- Інтерв'ю з Стефаном Романівим, секретарем Світового Конгресу Українців та головою Союзу Українських Організацій Австралії;  (Інтерв'ю починається на позиції 14 хв 33 сек)
+ Інтерв&rsquo;ю з Стефаном Романівим, секретарем Світового Конгресу Українців та головою Союзу Українських Організацій Австралії;  (Інтерв&rsquo;ю починається на позиції 14 хв 33 сек)
 https://www.youtube.com/watch?v=jrhTnMO40zw
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/dyakuiemo-tobi-avstraliie/">ДЯКУЄМО ТОБІ, АВСТРАЛІЄ...</a>
-      </h1>
-      <time datetime="2016-12-12T10:58:13Z" class="post-date">Mon, Dec 12, 2016</time>
-      Богдан Рудницький веде розмову із Надзвичайним і Повноважним Послом України в Австралії д-ром Миколою Кулінічем. Дещо до підсумків року 2016-го, що минає&hellip;
-http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/dyakuiemo-tobi-avstraliie?language=uk
       
     </article>
 
@@ -1389,6 +1467,8 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/dyakuiemo-tobi-avstralii
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

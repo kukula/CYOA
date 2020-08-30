@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,113 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/natalka-poltavka-auditions/">Наталка Полтавка – переслуховування на ролі</a>
+        <a href="https://ukrainians.org.au/events/victoria/50th-anniversary-of-ukrainian-hall-in-newborough/">50 ліття Українського Громадського Дому в Нюборо</a>
+      </h1>
+      <time datetime="2013-08-26T03:11:47Z" class="post-date">Mon, Aug 26, 2013</time>
+      50 ліття Українського Громадського Дому в Нюборо Філія Української Громади Вікторії (УГВ) в Нюборо відзначить 50 ліття будови Українського Громадського Дому в Нюборо в жовтні 2013р.
+50th anniversary of Ukrainian Hall in Newborough The Association of Ukrainians in Victoria (Newborough branch) is celebrating the 50th anniversary of the building of the Ukrainian Hall in Newborough in October 2013.
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/natalka-poltavka-auditions/">Наталка Полтавка – переслуховування на ролі</a>
       </h1>
       <time datetime="2013-08-26T02:52:25Z" class="post-date">Mon, Aug 26, 2013</time>
       Наталка Полтавка – переслуховування на ролі Філія Української Громади Вікторії (УГВ) в Нобл Парку представлятиме оперету «Наталка Полтавка». Переслуховування на ролі відбудуться у вересні 2013р.
@@ -61,7 +138,7 @@ Natalka Poltavka – Auditions The Association of Ukrainians in Victorians (AUV)
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/ukrainian-tv-interviews-wcu-members/">Проект «Прямим текстом» - інтерв’ю з членами СКУ</a>
+        <a href="https://ukrainians.org.au/interviews/ukrainian-tv-interviews-wcu-members/">Проект «Прямим текстом» - інтерв’ю з членами СКУ</a>
       </h1>
       <time datetime="2013-08-24T02:13:58Z" class="post-date">Sat, Aug 24, 2013</time>
       Український телеканал ZIK передає проект «Прямим текстом».
@@ -71,14 +148,14 @@ http://youtu.be/MIXEPJUxDSM
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/consecration-of-new-ukrainian-catholic-cathedral/">Освячення головного храму УГКЦ </a>
+        <a href="https://ukrainians.org.au/media/consecration-of-new-ukrainian-catholic-cathedral/">Освячення головного храму УГКЦ </a>
       </h1>
       <time datetime="2013-08-24T02:04:17Z" class="post-date">Sat, Aug 24, 2013</time>
       З нагоди 1025-річчя Хрещення Киівської Русі телеканал новин &ldquo;24&rdquo; передав короткий відео-репортаж про освячення нового головного храму українських греко-католиків - Патріарший собор Воскресіння Христового в Києві. В репортажі виступають паломники із Австралії: http://24tv.ua/home/showSingleNews.do?podiya_dnya_na_osvyachennya_golovnogo_hramu_ugkts_zavitalo_blizko_18_tisyach_viryan&amp;objectId=361227
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-independence-day-concert-melbourne-2013/">Ukrainian Independence Day Concert Melbourne 2013</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-independence-day-concert-melbourne-2013/">Ukrainian Independence Day Concert Melbourne 2013</a>
       </h1>
       <time datetime="2013-08-21T04:13:40Z" class="post-date">Wed, Aug 21, 2013</time>
       The Ukrainian community in Melbourne together with many of its friends celebrated the 22nd anniversary of Ukrainian Independence Day on Sunday 18th August 2013. The venue, as in previous years, was at the BMW Edge in Federation Square.
@@ -93,7 +170,7 @@ This year the event coordinator was Peter Mazurcuk, with Taras Galas performing 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/gallery/consecration-of-the-new-ucc-cathedral/">Посвячення Патріяршого Cобору</a>
+        <a href="https://ukrainians.org.au/gallery/consecration-of-the-new-ucc-cathedral/">Посвячення Патріяршого Cобору</a>
       </h1>
       <time datetime="2013-08-19T02:49:29Z" class="post-date">Mon, Aug 19, 2013</time>
       Великі дні в Києві – Посвячення Патріяршого Cобору.
@@ -104,7 +181,7 @@ The Patriarch of the Ukrainian Catholic Church greets pilgrims from Australia on
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-course-for-adults-2013-ukr/">КУРС УКРАЇНСЬКОЇ МОВИ ДЛЯ ДОРОСЛИХ 2013</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-language-course-for-adults-2013-ukr/">КУРС УКРАЇНСЬКОЇ МОВИ ДЛЯ ДОРОСЛИХ 2013</a>
       </h1>
       <time datetime="2013-08-19T02:17:00Z" class="post-date">Mon, Aug 19, 2013</time>
       Українська Центральна Шкільна Рада Австралії
@@ -133,7 +210,7 @@ $250
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-2013/">UKRAINIAN LANGUAGE CLASSES FOR ADULTS 2013</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-2013/">UKRAINIAN LANGUAGE CLASSES FOR ADULTS 2013</a>
       </h1>
       <time datetime="2013-08-19T02:09:43Z" class="post-date">Mon, Aug 19, 2013</time>
       **Українська Центральна Шкільна Рада Австралії**
@@ -165,7 +242,7 @@ Orthographic dictionary (Pravopysnyi slovnyk)-provides word endings (declensions
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/older-migrants-to-tell-their-stories/">OLDER MIGRANTS TO TELL THEIR STORIES</a>
+        <a href="https://ukrainians.org.au/community/older-migrants-to-tell-their-stories/">OLDER MIGRANTS TO TELL THEIR STORIES</a>
       </h1>
       <time datetime="2013-08-19T01:37:50Z" class="post-date">Mon, Aug 19, 2013</time>
       Are you an older person from a migrant background who has a story to tell about what it is like to be growing older in Australia, your experiences with the aged care system or your life as an immigrant?
@@ -178,24 +255,12 @@ FECCA believes that telling people’s stories is one of the most powerful forms
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/interview-in-ukraine-peter-duma/">Інтерв’ю в Україні - Петро Дума</a>
+        <a href="https://ukrainians.org.au/culture/interview-in-ukraine-peter-duma/">Інтерв’ю в Україні - Петро Дума</a>
       </h1>
       <time datetime="2013-08-19T01:22:33Z" class="post-date">Mon, Aug 19, 2013</time>
       Роман Швед веде радіопрограму в Україні про культуру української діаспори – тут веде інтерв’ю з гостем з Австралії – Петром Думою. Включається музика гурту з Австралії «Yellow Blue Bus».
 Roman Shwed conducts a radio program in Ukraine about the culture of the Ukrainian diaspora – here he interviews Peter Duma from Australia and includes the music of the Adelaide-based group “Yellow Blue Bus”.
 Інтерв’ю / Interview: http://schedule.nrcu.gov.ua/grid/channel/period/item-listen-popup.html?periodItemID=184014
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ucs-heritage-stamp-no-9/">UCS Heritage stamp No. 9</a>
-      </h1>
-      <time datetime="2013-08-07T01:21:40Z" class="post-date">Wed, Aug 7, 2013</time>
-      The Ukrainian Collectibles Society (UCS) has released the next issue of the ongoing “Ukrainian Heritage in Australia” stamp and envelope series.
-The latest featured institution / organisation is:
- * **No. 9: USC Lion Volleyball Club of Adelaide, SA – 60th Anniversary **  The very last day to order is Monday night, 26 August 2013.
-
-Information Sheet: Information Sheet No 6 (H9)
-Order Form: USC Lion order form
       
     </article>
 
@@ -1405,6 +1470,8 @@ Order Form: USC Lion order form
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

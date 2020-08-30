@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,115 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/commemoration-of-ukrainian-heroes-2012/">Герої Ураїни - Святкування 2012 </a>
+        <a href="https://ukrainians.org.au/community/stefan-romaniw-to-chair-australia-day-committee/">Stefan Romaniw to Chair Australia Day Committee</a>
+      </h1>
+      <time datetime="2012-09-29T03:51:23Z" class="post-date">Sat, Sep 29, 2012</time>
+      Congratulations to Mr Stefan Romaniw OAM on his appointment by the Victorian State Government to the post of Chair of the Victorian Australia Day Committee.
+Mr Romaniw will bring to the position his extensive experience, dynamic drive and knowledge of community affairs.
+Best wishes and Многії Літа!
+Letter of appointment: austr day
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/commemoration-of-ukrainian-heroes-2012/">Герої Ураїни - Святкування 2012 </a>
       </h1>
       <time datetime="2012-09-25T06:42:00Z" class="post-date">Tue, Sep 25, 2012</time>
       Конференція Українських Державницьких Організацій (КУДО) в Австралії запрошує все українське громадянство на святкування «Герої України» в неділю 28-го жовтня 2012 р. в Українському Народному Домі в Ессендоні (Мельбурн).
@@ -65,7 +144,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/support-monash-ukrainian/">Support Monash Ukrainian</a>
+        <a href="https://ukrainians.org.au/education/support-monash-ukrainian/">Support Monash Ukrainian</a>
       </h1>
       <time datetime="2012-09-23T03:19:16Z" class="post-date">Sun, Sep 23, 2012</time>
       Бажаєте підтримати новий онлайн курс з української мови та культури, що його Університет ім. Монаша пропонує студентам у цілій Австралії з 2013 року?
@@ -77,7 +156,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-community-celebrates-50-years/">Ukrainian Community celebrates 50 years</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-community-celebrates-50-years/">Ukrainian Community celebrates 50 years</a>
       </h1>
       <time datetime="2012-09-03T04:56:59Z" class="post-date">Mon, Sep 3, 2012</time>
       A local community newspaper, “The Dandenong Leader”, has published a brief article about the forthcoming 50 year anniversary of the Ukrainian Community in Noble Park.
@@ -85,7 +164,7 @@ The article can be viewed at: http://dandenong-leader.whereilive.com.au/news/sto
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/support-for-uwc-election-monitoring-mission/">Збірка нa підтримку виборчо-спостережної Міcії CКУ</a>
+        <a href="https://ukrainians.org.au/events/international-events/support-for-uwc-election-monitoring-mission/">Збірка нa підтримку виборчо-спостережної Міcії CКУ</a>
       </h1>
       <time datetime="2012-08-23T07:58:40Z" class="post-date">Thu, Aug 23, 2012</time>
       Союз Українських Організацій Австралії (СУОА) випустив зaклик до фінaнcової збірки нa підтримку виборчо-спостережної міcії CКУ (Світовий Конґрес Українців) підчас виборів до Верховної Ради Укрaїни в 2012р.
@@ -100,17 +179,17 @@ The Australian Federation of Ukrainian Organisations (AFUO) has issued a call to
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/auv-noble-park-golden-jubilee/">Золотий ювілей філії УГВ в Нобл Парку</a>
+        <a href="https://ukrainians.org.au/events/victoria/auv-noble-park-golden-jubilee/">Золотий ювілей філії УГВ в Нобл Парку</a>
       </h1>
       <time datetime="2012-08-23T01:23:14Z" class="post-date">Thu, Aug 23, 2012</time>
       **Ласкаво просимо_ __всіх__ __на__ __наш__ __золотий ювілей__!_** 
-Лист Голови філії УГВ в Нобл Парку AUV NP 50th President's Letter Ukr
+Лист Голови філії УГВ в Нобл Парку AUV NP 50th President&rsquo;s Letter Ukr
 **You are cordially invited to our Golden Jubilee_!_** 
-Letter from the President AUV Noble Park AUV NP 50th President's Letter Eng
+Letter from the President AUV Noble Park AUV NP 50th President&rsquo;s Letter Eng
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/celebrations-in-melbourne-ukrainian-independence-day/">Святкування 21 річниці Незалежності України в Мельбурні</a>
+        <a href="https://ukrainians.org.au/events/victoria/celebrations-in-melbourne-ukrainian-independence-day/">Святкування 21 річниці Незалежності України в Мельбурні</a>
       </h1>
       <time datetime="2012-08-22T01:17:35Z" class="post-date">Wed, Aug 22, 2012</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2012/08/Melb-flag.jpg)21 річниця Незалежності України
@@ -125,7 +204,7 @@ Letter from the President AUV Noble Park AUV NP 50th President's Letter Eng
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/successful-ukrainian-independence-day-celebrations-in-melbourne/">Successful Ukrainian Independence Day Celebrations in Melbourne</a>
+        <a href="https://ukrainians.org.au/events/victoria/successful-ukrainian-independence-day-celebrations-in-melbourne/">Successful Ukrainian Independence Day Celebrations in Melbourne</a>
       </h1>
       <time datetime="2012-08-20T00:56:42Z" class="post-date">Mon, Aug 20, 2012</time>
       21st Anniversary of Ukrainian Independence Federation Square, Melbourne 19 Aug 2012 
@@ -139,7 +218,7 @@ CYM Cheremosh, Verchovyna, Sokoly, our guest from Canada Myxajlo Ljahovic, Kater
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-festival-melbourne-advertising/">Ukrainian Festival Melbourne Advertising</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-festival-melbourne-advertising/">Ukrainian Festival Melbourne Advertising</a>
       </h1>
       <time datetime="2012-08-16T10:20:25Z" class="post-date">Thu, Aug 16, 2012</time>
       Further information regarding the Victorian celebrations of Ukrainian Independence Day can be found through:
@@ -157,7 +236,7 @@ CYM Cheremosh, Verchovyna, Sokoly, our guest from Canada Myxajlo Ljahovic, Kater
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/book-launch-in-perth/">Book Launch in Perth</a>
+        <a href="https://ukrainians.org.au/events/western-australia/book-launch-in-perth/">Book Launch in Perth</a>
       </h1>
       <time datetime="2012-08-15T00:14:23Z" class="post-date">Wed, Aug 15, 2012</time>
       Book Launch in Perth: Silent Memories, Traumatic Lives Ukrainian Migrant Refugees in Western Australia****__ by Dr Lesa Melnyczuk ** **&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
@@ -166,16 +245,6 @@ CYM Cheremosh, Verchovyna, Sokoly, our guest from Canada Myxajlo Ljahovic, Kater
         <div class="read-more-link">
           <a href="/events/western-australia/book-launch-in-perth/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/education/lets-learn-ukrainian/">Lets Learn Ukrainian</a>
-      </h1>
-      <time datetime="2012-08-12T10:11:25Z" class="post-date">Sun, Aug 12, 2012</time>
-      The Ukrainian Studies Foundation of Australia is sponsoring an adult refresher course entitled &ldquo;Let's Learn Ukrainian&rdquo;.
-The 15 week course will be conducted in Strathfield, NSW.
-
-Further Information: www.novashkola.webs.com
       
     </article>
 
@@ -1385,6 +1454,8 @@ Further Information: www.novashkola.webs.com
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

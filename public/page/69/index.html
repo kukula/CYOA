@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/ukrainian-independence-day-2013-in-western-australia/">Ukrainian Independence Day 2013 in Western Australia</a>
+        <a href="https://ukrainians.org.au/culture/ucs-heritage-stamp-no-9/">UCS Heritage stamp No. 9</a>
+      </h1>
+      <time datetime="2013-08-07T01:21:40Z" class="post-date">Wed, Aug 7, 2013</time>
+      The Ukrainian Collectibles Society (UCS) has released the next issue of the ongoing “Ukrainian Heritage in Australia” stamp and envelope series.
+The latest featured institution / organisation is:
+ * **No. 9: USC Lion Volleyball Club of Adelaide, SA – 60th Anniversary **  The very last day to order is Monday night, 26 August 2013.
+
+Information Sheet: Information Sheet No 6 (H9)
+Order Form: USC Lion order form
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/western-australia/ukrainian-independence-day-2013-in-western-australia/">Ukrainian Independence Day 2013 in Western Australia</a>
       </h1>
       <time datetime="2013-07-31T00:58:55Z" class="post-date">Wed, Jul 31, 2013</time>
       Celebrate Ukrainian Independence Day with the Ukrainian Association of Western Australia at the Inglewood United Soccer Club on Sunday 25th August 2013.
@@ -62,14 +143,14 @@ Please book early to avoid embarrassment.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/honouring-grand-princess-olha/">УКЛІН ВЕЛИКІЙ КНЯГИНІ ОЛЬЗІ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/honouring-grand-princess-olha/">УКЛІН ВЕЛИКІЙ КНЯГИНІ ОЛЬЗІ</a>
       </h1>
       <time datetime="2013-07-31T00:51:23Z" class="post-date">Wed, Jul 31, 2013</time>
       МАРІЧКА ГАЛАБУРДА – ЧИГРИН В СІДНЕЇ
 УКЛІН ВЕЛИКІЙ КНЯГИНІ ОЛЬЗІ
 28 липня по світах, а зокрема в Україні відзначили день пам’яті рівноапостольного князя Володимира. В Києві відбулися урочистості, Богослужби, похід церковної Їєрархії, священиків і вірних УАПЦ, Київського Патріярхату та Українська Греко Католицька Церква вшанувала память великого князя.
-Українські жінки згуртовані в Союзові Українок в світі вшановують 24 липня пам'ять княгині Ольги, патронки Союзянок.
-**В Сіднеї перший створений відділ Союзу Українок носить ім'я княгині Ольги.
+Українські жінки згуртовані в Союзові Українок в світі вшановують 24 липня пам&rsquo;ять княгині Ольги, патронки Союзянок.
+**В Сіднеї перший створений відділ Союзу Українок носить ім&rsquo;я княгині Ольги.
       
         <div class="read-more-link">
           <a href="/events/new-south-wales/honouring-grand-princess-olha/">Read More…</a>
@@ -77,7 +158,7 @@ Please book early to avoid embarrassment.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/vce-ukrainian-to-continue/">VCE Ukrainian to continue</a>
+        <a href="https://ukrainians.org.au/education/vce-ukrainian-to-continue/">VCE Ukrainian to continue</a>
       </h1>
       <time datetime="2013-07-27T02:20:00Z" class="post-date">Sat, Jul 27, 2013</time>
       The impact of small candidatures on the provision of Ukrainian at Year 12 level VCE Ukrainian to continue Добра новина ! Признання всім які спричинилися до успіху та брали участь у переговорах або дали стимул учням батуи українську мову до матури– CУОA УЦШР, , Шкільній Ради, В і М Рудевич за їхню жертвенність , особливо учням, батькам, старшим учнямн , вчителям та батьківським комітетам
@@ -89,7 +170,7 @@ Please book early to avoid embarrassment.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/fairfax-apologises-for-slurring-ukrainians/">Fairfax apologises for slurring Ukrainians</a>
+        <a href="https://ukrainians.org.au/community/fairfax-apologises-for-slurring-ukrainians/">Fairfax apologises for slurring Ukrainians</a>
       </h1>
       <time datetime="2013-07-22T01:28:23Z" class="post-date">Mon, Jul 22, 2013</time>
       Several weeks ago Fairfax media published an article under the heading “Modern Guru” in both The Saturday Age (The Good Weekend) and The Sydney Morning Herald, which was also reproduced on their web site. The article had two parts:
@@ -101,7 +182,7 @@ Please book early to avoid embarrassment.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/independence-day-celebrations-sydney-2013/">День Незалежности України – Сідней 2013</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/independence-day-celebrations-sydney-2013/">День Незалежности України – Сідней 2013</a>
       </h1>
       <time datetime="2013-07-17T02:25:22Z" class="post-date">Wed, Jul 17, 2013</time>
       Управа ОУГ й Організаційний Комітет Концерту в день Незалежности України запрошують все Громадянство Сіднею й околиць на свято.
@@ -110,7 +191,7 @@ Please book early to avoid embarrassment.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/multiculturalism-in-australia-how-is-could-apply-in-ukraine/">Multiculturalism in Australia - How is could apply in Ukraine</a>
+        <a href="https://ukrainians.org.au/politics/multiculturalism-in-australia-how-is-could-apply-in-ukraine/">Multiculturalism in Australia - How is could apply in Ukraine</a>
       </h1>
       <time datetime="2013-07-16T06:21:08Z" class="post-date">Tue, Jul 16, 2013</time>
       В червні цього року відбулася конференція в Івано Франківську по питанню націоналізму, етносів в Україні. Організатори Інститут при Cвободі, Центр Національного Відродження ім Cтепана Бандери та інші – Головний організатор О. Cич, попросив Стефана Романіва підготувати матеріял в цій справі до збірника на підставі міжнародного досвіду –
@@ -124,7 +205,7 @@ Stefan Romaniw was recently requested to prepare a paper for a Conference in Ukr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-independence-day-2013-celebration-melbourne/">Ukrainian Independence Day 2013 celebration - Melbourne</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-independence-day-2013-celebration-melbourne/">Ukrainian Independence Day 2013 celebration - Melbourne</a>
       </h1>
       <time datetime="2013-07-13T02:06:08Z" class="post-date">Sat, Jul 13, 2013</time>
       Melbourne’s Ukrainian community will be celebrating Ukraine’s Independence Day on 18th August 2013 in BMW Edge, Federation Square.
@@ -132,7 +213,7 @@ Stefan Romaniw was recently requested to prepare a paper for a Conference in Ukr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/sydney-ukrainian-students-visit-drohobych/">Учні з Сіднею (Австралія) завітали до дрогобицької школи</a>
+        <a href="https://ukrainians.org.au/events/international-events/sydney-ukrainian-students-visit-drohobych/">Учні з Сіднею (Австралія) завітали до дрогобицької школи</a>
       </h1>
       <time datetime="2013-07-07T05:14:21Z" class="post-date">Sun, Jul 7, 2013</time>
       1-го липня 2013 року завітали до дрогобицької загальноосвітньої школи № 1 учні суботньої української школи з Сіднею (Австралія), а також дорослі представники української діаспори. Такі зустрічі вже стали традиційними, тобто відбуваються щороку.
@@ -142,24 +223,12 @@ Stefan Romaniw was recently requested to prepare a paper for a Conference in Ukr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/lets-learn-ukrainian-3/">Let’s learn Ukrainian</a>
+        <a href="https://ukrainians.org.au/education/lets-learn-ukrainian-3/">Let’s learn Ukrainian</a>
       </h1>
       <time datetime="2013-07-06T01:01:59Z" class="post-date">Sat, Jul 6, 2013</time>
       Adult Education Courses Two Adult Ukrainian Education Courses are being held in Sydney from August to November 2013:
  1. Ukrainian for Beginners (Thursday nights) 2. Refresher Course (Tuesday nights)  
 Information: www.novashkola.webs.com
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-catholic-church-now-a-recognised-denomination-in-australia/">Ukrainian Catholic Church now a recognised denomination in Australia</a>
-      </h1>
-      <time datetime="2013-07-01T05:02:58Z" class="post-date">Mon, Jul 1, 2013</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2013/07/EparchyCrest_thumb.jpg)
-Governor-General proclaims Ukrainian Catholic Church in Australia a recognised denomination. Since its inception over 50 years ago, the Ukrainian Greek-Catholic Eparchy in Australia has been regarded by the Commonwealth government as a part of the Roman Catholic Church for the purposes of registration as a religious entity. Such registration brings with it certain authority and responsibilities, and particularly the power to nominate ministers of religion as authorised marriage celebrants.
-      
-        <div class="read-more-link">
-          <a href="/community/ukrainian-catholic-church-now-a-recognised-denomination-in-australia/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1369,6 +1438,8 @@ Governor-General proclaims Ukrainian Catholic Church in Australia a recognised 
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

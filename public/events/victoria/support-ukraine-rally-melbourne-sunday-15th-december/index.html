@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Support Ukraine rally Melbourne Sunday 15th December &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -53,7 +118,7 @@
     
     <h2 id="support-ukraine-rally-in-melbourne">Support Ukraine rally in Melbourne</h2>
 <p>Due to latest events in Kyiv with authorities using force to disperse the protesters at EuroMaidan, there will be another rally in Melbourne CBD - City Square (cnr. Swanston and Collins Streets)</p>
-<p>If you haven't attended one yet, or if you have been and think you've done your bit, just stop and think about those crowds in the open in Kyiv (up to 2,400,000) in freezing temperatures, snow, sleet and chilling winds, in danger of their lives. They are there to demand the rights that we take for granted: a life in freedom, democracy, independence, justice and respect for human and national rights.</p>
+<p>If you haven&rsquo;t attended one yet, or if you have been and think you&rsquo;ve done your bit, just stop and think about those crowds in the open in Kyiv (up to 2,400,000) in freezing temperatures, snow, sleet and chilling winds, in danger of their lives. They are there to demand the rights that we take for granted: a life in freedom, democracy, independence, justice and respect for human and national rights.</p>
 <h3 id="surely-they-deserve-our-support">Surely they deserve our support!</h3>
 <h4 id="support-ukraine-rally">Support Ukraine rally</h4>
 <h4 id="melbourne-cbd-sunday-15th-december-2013-2-pm">Melbourne CBD Sunday 15th December 2013 2 pm</h4>
@@ -61,11 +126,11 @@
 <p><strong>Please disseminate.</strong></p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/12/We-Support-Ukraine-mid.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/12/We-Support-Ukraine-mid.jpg" alt="We Support Ukraine mid">
 </a> </p>
-<h2 id="----">Віче-підтримку Україні в Мельбурну</h2>
-<p>У зв'язку з тривожним розвитком подій на Євромайдані, закликаємо Вас усіх на віче-підтримку Україні, що відбудеться в неділю 15 грудня 2013р. в центрі Мельбурну _- _City Square (cnr. Swanston and Collins Streets).</p>
+<h2 id="віче-підтримку-україні-в-мельбурну">Віче-підтримку Україні в Мельбурну</h2>
+<p>У зв&rsquo;язку з тривожним розвитком подій на Євромайдані, закликаємо Вас усіх на віче-підтримку Україні, що відбудеться в неділю 15 грудня 2013р. в центрі Мельбурну _- _City Square (cnr. Swanston and Collins Streets).</p>
 <p>Якщо Ви ще не були на жодній із акцій підтримки, або якщо Ви вважаєте, що Ви вже були один-два рази, то подумайте про тих усіх, які стоять на Явромайдані на морозі, знігу, слоті серед холодних вітрів, наражуючи свої життя. Вони вимагають лише те, що нам здаяться нормальним: право на свободу, демократію, незалежність, правосуддя, та людькі й національні права.</p>
-<h3 id="-----1">Вони заслуговують на нашу підтримку!</h3>
-<h4 id="--">Віче &ldquo;Підтримуємо Україну&rdquo;</h4>
+<h3 id="вони-заслуговують-на-нашу-підтримку">Вони заслуговують на нашу підтримку!</h3>
+<h4 id="віче-підтримуємо-україну">Віче &ldquo;Підтримуємо Україну&rdquo;</h4>
 <p>у неділю 15 грудня 2013р. в центрі Мельбурну, год. 2 п.п.</p>
 <h4 id="city-square-cnr-swanston-and-collins-streets-1">City Square (cnr. Swanston and Collins Streets)</h4>
 <p><strong>Просимо розповсюдити.</strong></p>

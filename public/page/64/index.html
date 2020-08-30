@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,38 +23,116 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-call-to-the-australian-government-2/">AFUO Call to the Australian Government</a>
+        <a href="https://ukrainians.org.au/events/victoria/womens-day-in-victori/">День Союзянки Союзу Українок Вікторії</a>
+      </h1>
+      <time datetime="2013-12-03T05:59:55Z" class="post-date">Tue, Dec 3, 2013</time>
+      В неділю, 1-го грудня в Клюбі УГВ відбувся День Союзянки СУВ з нагоди 100-річчя від дня смерти Лесі Українки. Гостей та союзянок вітала голова СУ Вікторії п.Наталка Гриневич. Програму вела Ірина Андреєва.
+У відзначенні приймали участь союзянки відділів СУ Вікторії союзянки новоствореного відділу &ldquo;Мальви&rdquo; Союзу Українок.
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/afuo-call-to-the-australian-government-2/">AFUO Call to the Australian Government</a>
       </h1>
       <time datetime="2013-12-01T07:00:45Z" class="post-date">Sun, Dec 1, 2013</time>
-      In the early hours of November 30th 2013 baton-wielding police violently dispersed a peaceful rally in Kyiv's Independence Square. The Kyiv Police Chief has acknowledged that the police exceeded their powers with their violent actions and may face criminal charges. The demonstrators were protesting against the failure of the president and his cabinet to proceed with the signing of an Association Agreement with the European Union and the increasingly anti-democratic stance of the government.
+      In the early hours of November 30th 2013 baton-wielding police violently dispersed a peaceful rally in Kyiv&rsquo;s Independence Square. The Kyiv Police Chief has acknowledged that the police exceeded their powers with their violent actions and may face criminal charges. The demonstrators were protesting against the failure of the president and his cabinet to proceed with the signing of an Association Agreement with the European Union and the increasingly anti-democratic stance of the government.
       
         <div class="read-more-link">
           <a href="/politics/afuo-call-to-the-australian-government-2/">Read More…</a>
@@ -63,7 +140,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/stefan-romaniw-from-kyiv/">Стефан Романів пише із Києва (30-11-2013)</a>
+        <a href="https://ukrainians.org.au/current-affairs/stefan-romaniw-from-kyiv/">Стефан Романів пише із Києва (30-11-2013)</a>
       </h1>
       <time datetime="2013-12-01T06:29:05Z" class="post-date">Sun, Dec 1, 2013</time>
       НAРОД ВИМAЄ НІЧОГО ІНШОГО ЯК CВОЇ КОНCТИТУЦІЙНІ ПРAВA ТA ОБОВЯЗКИ
@@ -79,7 +156,7 @@ Cьогоднішні акції міліції та Беркуту вже за�
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-condemns-yanukovych-3/">AFUO Condemns Yanukovych</a>
+        <a href="https://ukrainians.org.au/politics/afuo-condemns-yanukovych-3/">AFUO Condemns Yanukovych</a>
       </h1>
       <time datetime="2013-11-30T08:34:44Z" class="post-date">Sat, Nov 30, 2013</time>
       Following the failure of the Ukrainian President Yanukovych to sign the EU integration agreement at the Vilnius EU summit, the Australian Federation of Ukrainian Organisations (AFUO) condemns the deliberate about-face of the president and his cabinet in this matter. A statement to this effect has been issued.
@@ -92,7 +169,7 @@ Stefan Romaniw, the AFUO Chairman and General Secretary of the Ukrainian World C
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-rally-euromaidan-australia/">Melbourne rally – EuroMaidan Australia!</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-rally-euromaidan-australia/">Melbourne rally – EuroMaidan Australia!</a>
       </h1>
       <time datetime="2013-11-30T07:28:40Z" class="post-date">Sat, Nov 30, 2013</time>
       The Ukrainian community in Victoria braved the wet conditions on 28th November 2013 to hold a rally in front of the State Library supporting other EuroMaidan rallies in Ukraine and around the world. The rallies support the wishes of the majority of Ukraine’s people who believe that Ukraine’s best future lies within the European Union.
@@ -101,10 +178,10 @@ More photos at: http://www.auvnoblepark.com/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australian-governement-response-regarding-ukraines-euro-integration/">Australian Governement response regarding Ukraine&#39;s Euro-Integration</a>
+        <a href="https://ukrainians.org.au/politics/australian-governement-response-regarding-ukraines-euro-integration/">Australian Governement response regarding Ukraine&#39;s Euro-Integration</a>
       </h1>
       <time datetime="2013-11-29T02:58:37Z" class="post-date">Fri, Nov 29, 2013</time>
-      Following representations, the AFUO has received the following position from the Australian Government with regard to the current events in Ukraine. AFUO acknowledges and thanks the Australian Government, and calls on it to take further steps - including in Parliament and in the lead-up to 2015 Presidential elections - to support Euro-integration and democratisation. The Australian Government's position follows public statements by the Canadian Government, the US State Department and the President of the EC.
+      Following representations, the AFUO has received the following position from the Australian Government with regard to the current events in Ukraine. AFUO acknowledges and thanks the Australian Government, and calls on it to take further steps - including in Parliament and in the lead-up to 2015 Presidential elections - to support Euro-integration and democratisation. The Australian Government&rsquo;s position follows public statements by the Canadian Government, the US State Department and the President of the EC.
       
         <div class="read-more-link">
           <a href="/politics/australian-governement-response-regarding-ukraines-euro-integration/">Read More…</a>
@@ -112,17 +189,17 @@ More photos at: http://www.auvnoblepark.com/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/sydney-rally-euromaidan-australia/">Sydney rally - EuroMaidan Australia!</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/sydney-rally-euromaidan-australia/">Sydney rally - EuroMaidan Australia!</a>
       </h1>
       <time datetime="2013-11-29T02:49:09Z" class="post-date">Fri, Nov 29, 2013</time>
       The Sydney community held a rally on 28th November 2013 in front of Parliament House supporting EuroMaidan rallies in Ukraine and around the world.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/media-release-australians-stand-for-democracy-in-ukraine/">Media Release: Australians Stand for Democracy in Ukraine</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/media-release-australians-stand-for-democracy-in-ukraine/">Media Release: Australians Stand for Democracy in Ukraine</a>
       </h1>
       <time datetime="2013-11-27T01:47:58Z" class="post-date">Wed, Nov 27, 2013</time>
-      The Australian Federation of Ukrainian Organisations (AFUO) has issued a media release regarding rallies to be held in Australia supporting the people of Ukraine have come out in force to protest against the Government who reneged on signing an agreement with the European Union - against the wishes of the people. Hundreds of thousands of protesters have gathered in Kyiv's Independence Square and in other cities to demand a reversal of the decision.
+      The Australian Federation of Ukrainian Organisations (AFUO) has issued a media release regarding rallies to be held in Australia supporting the people of Ukraine have come out in force to protest against the Government who reneged on signing an agreement with the European Union - against the wishes of the people. Hundreds of thousands of protesters have gathered in Kyiv&rsquo;s Independence Square and in other cities to demand a reversal of the decision.
       
         <div class="read-more-link">
           <a href="/current-affairs/media-releases/media-release-australians-stand-for-democracy-in-ukraine/">Read More…</a>
@@ -130,7 +207,7 @@ More photos at: http://www.auvnoblepark.com/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/call-to-participate-in-euromaidan-australia/">Закликаємо на «ЄвроМайдан Австралія!»</a>
+        <a href="https://ukrainians.org.au/events/national-events/call-to-participate-in-euromaidan-australia/">Закликаємо на «ЄвроМайдан Австралія!»</a>
       </h1>
       <time datetime="2013-11-27T01:23:40Z" class="post-date">Wed, Nov 27, 2013</time>
       Закликаємо на «ЄвроМайдан Австралія!» Управа Cоюзу Українських Організацій Aвстралії (СУОА) закликає українців Австралії підтримати світові акції, які наголошують, що Україна - це Європа, і закликають уряд України підписати договір із Євросоюзом.
@@ -144,7 +221,7 @@ Ukraine for EU rallies Australia call to action UKR
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/sbs-radio-melbourne-commemorates-holodomor-2/">SBS Radio: Мельбурн вшанував жертв Голодомору</a>
+        <a href="https://ukrainians.org.au/community/sbs-radio-melbourne-commemorates-holodomor-2/">SBS Radio: Мельбурн вшанував жертв Голодомору</a>
       </h1>
       <time datetime="2013-11-27T01:12:22Z" class="post-date">Wed, Nov 27, 2013</time>
       **МЕЛЬБОРН: УКРАЇНСЬКА СПІЛЬНОТА ВШАНУВАЛА У 80–ту РІЧНИЦЮ ЖЕРТВ ГОЛОДОМОРУ–ҐЕНОЦИДУ В УКРАЇНІ У 1932–33 РОКАХ**
@@ -152,21 +229,6 @@ Ukraine for EU rallies Australia call to action UKR
       
         <div class="read-more-link">
           <a href="/community/sbs-radio-melbourne-commemorates-holodomor-2/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/ukraines-suspension-of-the-european-union-association-agreement/">Про відмову уряда України від Асоціації з Євросоюзом</a>
-      </h1>
-      <time datetime="2013-11-26T01:53:54Z" class="post-date">Tue, Nov 26, 2013</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2013/11/Ukraine-EU.jpg)Про відмову уряда України від Асоціації з Євросоюзом
-Cоюз Українських Організацій Aвстралії (СУОА) закликає українців Австралії протестувати проти відмову уряда України від Асоціації з Євросоюзом та пітримувати світові акції які наголошують, що Україна це Європа.
-Подається копію листа: UKRAINE -EUROPE (2) 20131125
-Заплановані акціії: Мельбурн: Віче в центрі Мельбурну в четвер 27-го листопада 2013 від 4:00 год. пп. (детальніше буде подано)
-Сідней: Віче в центрі Сіднею в четвер 27-го листопада 2013 (детальніше буде подано)
-      
-        <div class="read-more-link">
-          <a href="/events/international-events/ukraines-suspension-of-the-european-union-association-agreement/">Read More…</a>
         </div>
       
     </article>
@@ -1377,6 +1439,8 @@ Cоюз Українських Організацій Aвстралії (СУО�
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

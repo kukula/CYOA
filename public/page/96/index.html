@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/julie-nalivaiko-back-in-the-soviet-bloc/">Julie Nalivaiko - BACK IN THE SOVIET BLOC</a>
+        <a href="https://ukrainians.org.au/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Нові інтерв’ю SBS Ukrainian</a>
+      </h1>
+      <time datetime="2011-12-14T03:47:05Z" class="post-date">Wed, Dec 14, 2011</time>
+      Нище є подані короткі дані і лінки до деяких нових інтерв’ю на Радіо SBS Ukrainian
+ ЧИ ВИ ЗНАЄТЕ УСЕ ПРО СПЛАТУ ПОДАТКІВ?
+Інтерв&rsquo;ю зі Світланою Новотарською з Австралійського податкового департаменту. Сьогодні ми розмовляємо про програму допомоги малому бізнесові та як податкова служба може допомогти саме Вам.. Ця розповідь подає тільки загальну інформацію. Податкове законодавство є складним, і навіть обставини, що трохи відрізняються, можуть призвести до зовсім інших податкових результатів.
+      
+        <div class="read-more-link">
+          <a href="/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/new-south-wales/julie-nalivaiko-back-in-the-soviet-bloc/">Julie Nalivaiko - BACK IN THE SOVIET BLOC</a>
       </h1>
       <time datetime="2011-12-13T11:01:09Z" class="post-date">Tue, Dec 13, 2011</time>
       Julie Nalivaiko was born in Kyiv, Ukraine, and 14 years ago, aged 13, moved to Australia. She now lives in Newcastle, New South Wales. Recently she teamed up with Stuart McBratney, a filmmaker with 25 years experience, to document everyday life in Ukraine and Russia. Having spent 2 months filming on location, they are now seeking funds to complete work on a 4-part TV series called Back in the Soviet Bloc.
@@ -63,7 +145,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/wally-muc-rip/">WALLY MUC RIP</a>
+        <a href="https://ukrainians.org.au/events/victoria/wally-muc-rip/">WALLY MUC RIP</a>
       </h1>
       <time datetime="2011-12-08T09:19:32Z" class="post-date">Thu, Dec 8, 2011</time>
       Ділимося сумною вісткою,
@@ -73,8 +155,8 @@
 відійшов у вічність
 сл. пам ВОЛОДИМИР МУЦ
 Покійний був активним членом та провідником церковного, громдаського, шкільного та культурно-освітного життя української громади в Aрдірі, Вікторії та Aвстралії.
- Нехай Господь Бог прийме його в царство небесне, а пам'ять про покійного буде вічною
-Вічна йому пам'ять!
+ Нехай Господь Бог прийме його в царство небесне, а пам&rsquo;ять про покійного буде вічною
+Вічна йому пам&rsquo;ять!
  Управа CУОA
 ****
 Wednesday 7th December 2011
@@ -85,7 +167,7 @@ Wednesday 7th December 2011
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/holodomor-commemoration-in-western-australia/">Holodomor Commemoration in Western Australia</a>
+        <a href="https://ukrainians.org.au/events/western-australia/holodomor-commemoration-in-western-australia/">Holodomor Commemoration in Western Australia</a>
       </h1>
       <time datetime="2011-12-03T00:42:38Z" class="post-date">Sat, Dec 3, 2011</time>
       November 28, 2011
@@ -98,7 +180,7 @@ At the conclusion of the panahyda, the W.A. Vesna Choir with choirmaster Suzanna
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/commemorating-the-holodomor-victims-sydney-australia/">Вшанування жертв Голодомору – Сідней, Австралія</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/commemorating-the-holodomor-victims-sydney-australia/">Вшанування жертв Голодомору – Сідней, Австралія</a>
       </h1>
       <time datetime="2011-11-28T05:33:16Z" class="post-date">Mon, Nov 28, 2011</time>
       МAРІЧКA ГAЛAБУРДA-ЧИГРИН
@@ -111,18 +193,18 @@ At the conclusion of the panahyda, the W.A. Vesna Choir with choirmaster Suzanna
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/links-to-sites-about-holodomor-commemoration-events/">Лінки до сайтів про роковини Голодомору / Links to sites about Holodomor commemoration events</a>
+        <a href="https://ukrainians.org.au/events/international-events/links-to-sites-about-holodomor-commemoration-events/">Лінки до сайтів про роковини Голодомору / Links to sites about Holodomor commemoration events</a>
       </h1>
       <time datetime="2011-11-28T05:24:26Z" class="post-date">Mon, Nov 28, 2011</time>
       Подаємо лінки до новинні тексти, відео та фото-репортажі про роковини Голодомору (Links to recent reports, videos and photographs about Holodomor commemoration events):
  На сторінці Центру досліджень визвольного руху
  http://www.cdvr.org.ua/content/5-%D1%82%D0%B8%D1%81%D1%8F%D1%87-%D0%BA%D0%B8%D1%8F%D0%BD-%D0%B2%D1%88%D0%B0%D0%BD%D1%83%D0%B2%D0%B0%D0%BB%D0%B8-%D0%B7%D0%B0%D0%B3%D0%B8%D0%B1%D0%BB%D0%B8%D1%85-%D0%B2%D1%96%D0%B4-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B4%D1%83-%D0%B4%D1%96%D1%82%D0%B5%D0%B9
- Олеся Ісаюк. Дві пам'яті.
+ Олеся Ісаюк. Дві пам&rsquo;яті.
  http://lb.ua/blog/isayuk_olesya/125669_dvi_pamyati.html
- Володимир В'ятрович. Втрачені
- http://lb.ua/blog/isayuk_olesya/125669_dvi_pamyati.html Іван Вакарчук. Пам'яті жертв Голодомору
+ Володимир В&rsquo;ятрович. Втрачені
+ http://lb.ua/blog/isayuk_olesya/125669_dvi_pamyati.html Іван Вакарчук. Пам&rsquo;яті жертв Голодомору
  http://tsn.ua/analitika/pam-yati-zhertv-golodomoru-1932-1933-rokiv-v-ukrayini.html
- Ігор Дерев'яний. Голодомор та Європа: уроки демократії
+ Ігор Дерев&rsquo;яний. Голодомор та Європа: уроки демократії
  http://www.unian.net/ukr/news/news-470468.html
  Олександр Ярмола. Українцям не було потрібне примусове залучення до радянського концтабору
       
@@ -132,7 +214,7 @@ At the conclusion of the panahyda, the W.A. Vesna Choir with choirmaster Suzanna
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/international-holodomor-memorial-day/">International Holodomor Memorial Day</a>
+        <a href="https://ukrainians.org.au/events/international-events/international-holodomor-memorial-day/">International Holodomor Memorial Day</a>
       </h1>
       <time datetime="2011-11-26T00:32:44Z" class="post-date">Sat, Nov 26, 2011</time>
       In memory of Holodomor victims
@@ -142,20 +224,20 @@ Light a candle in your home, your office, in a Church nearby you.
  Cубота 26-го листопада 2011
 Запаліть свічку памяті -
 Згадаймо жертв Голодомору
-Україна Пам'ятає Cвіт Визнає
+Україна Пам&rsquo;ятає Cвіт Визнає
  Change your profile photo to the candle image on your Facebook page
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/south-australia/holodomor-commemoration-south-australia/">ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ / HOLODOMOR COMMEMORATION (South Australia)</a>
+        <a href="https://ukrainians.org.au/events/south-australia/holodomor-commemoration-south-australia/">ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ / HOLODOMOR COMMEMORATION (South Australia)</a>
       </h1>
       <time datetime="2011-11-26T00:28:18Z" class="post-date">Sat, Nov 26, 2011</time>
-      The Association of Ukrainians in South Australia Inc will mark the day of Remembrance of the tragedy of the Holodomor (Famine in Ukraine) on Saturday 26th November at the Holodomor Memorial in the grounds of St Michael’s Orthodox Church, Port Road, Croydon. Укpаїнська Гpомада Південної Австpалії вшановує пам'ять жертв Голодомору в суботу 26-ого листопада 2011р перед пам'ятником Голодомору при православні церкви св. Михаїла, Port Road, Croydon.
+      The Association of Ukrainians in South Australia Inc will mark the day of Remembrance of the tragedy of the Holodomor (Famine in Ukraine) on Saturday 26th November at the Holodomor Memorial in the grounds of St Michael’s Orthodox Church, Port Road, Croydon. Укpаїнська Гpомада Південної Австpалії вшановує пам&rsquo;ять жертв Голодомору в суботу 26-ого листопада 2011р перед пам&rsquo;ятником Голодомору при православні церкви св. Михаїла, Port Road, Croydon.
 Повні дані / Full details: Holodomor 2011 SA
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/the-hon-matthew-guy-on-the-ukrainian-holodomor-2/">The Hon Matthew Guy on the Ukrainian Holodomor</a>
+        <a href="https://ukrainians.org.au/politics/the-hon-matthew-guy-on-the-ukrainian-holodomor-2/">The Hon Matthew Guy on the Ukrainian Holodomor</a>
       </h1>
       <time datetime="2011-11-26T00:16:50Z" class="post-date">Sat, Nov 26, 2011</time>
       The Hon Matthew Guy on the occasion of the 78th Anniversary of the Ukrainian Holodomor  ** **Ukrainian Holodomor: commemoration
@@ -168,33 +250,10 @@ Hon. M. J. GUY (Minister for Planning) —
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/%d0%92%d1%88%d0%b0%d0%bd%d1%83%d0%b2%d0%b0%d0%bd%d0%bd%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-%d0%b6%d0%b5%d1%80%d1%82%d0%b2-%d0%93%d0%be%d0%bb%d0%be%d0%b4%d0%be%d0%bc%d0%be%d1%80%d1%83-%d0%b2/">Вшанування пам&#39;ять жертв Голодомору в Нобл Парку</a>
+        <a href="https://ukrainians.org.au/events/victoria/%d0%92%d1%88%d0%b0%d0%bd%d1%83%d0%b2%d0%b0%d0%bd%d0%bd%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-%d0%b6%d0%b5%d1%80%d1%82%d0%b2-%d0%93%d0%be%d0%bb%d0%be%d0%b4%d0%be%d0%bc%d0%be%d1%80%d1%83-%d0%b2/">Вшанування пам&#39;ять жертв Голодомору в Нобл Парку</a>
       </h1>
       <time datetime="2011-11-26T00:04:59Z" class="post-date">Sat, Nov 26, 2011</time>
-      У Нобл Парку (Вікторія) школа вшановує пам'ять жертв Голодомору в суботу 26-ого листопада 2011р , а в неділю 27-ого листопада буде відравлена панахида.
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/holodomor-commemoration-victoria/">ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ / HOLODOMOR COMMEMORATION (Victoria)</a>
-      </h1>
-      <time datetime="2011-11-23T22:55:17Z" class="post-date">Wed, Nov 23, 2011</time>
-      Українська Громада Вікторії
-ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ
-Управа УГВ повідомляє, що в цю
-неділю 27-го листопада 2011 по всіх церквах відправляться Панахиди
-для жертв Голодоморів
-В Українській Католицькій Катедрі в Норт Мельборні
-Панахида відправиться після 9.30 Літургії (приблизно год 10.45 рано.)
-Заохочуємо наших організацій взяти участь прапорами та вінками.
-Управа УГВ
- Association of Ukrainians in Victoria
-COMMEMORATION OF THE VICTIMS OF THE HOLODOMOR
-The AUV Committee advises that
-This Sunday 27 November 2011 requiem services will be conducted in all Churches in Victoria in honour of all who lost their lives in the Famine - Holodomor.
-      
-        <div class="read-more-link">
-          <a href="/events/victoria/holodomor-commemoration-victoria/">Read More…</a>
-        </div>
+      У Нобл Парку (Вікторія) школа вшановує пам&rsquo;ять жертв Голодомору в суботу 26-ого листопада 2011р , а в неділю 27-ого листопада буде відравлена панахида.
       
     </article>
 
@@ -1404,6 +1463,8 @@ This Sunday 27 November 2011 requiem services will be conducted in all Churches 
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

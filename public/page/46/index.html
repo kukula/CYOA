@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/condolence-statement-from-the-leadership-of-the-ukrainian-catholic-church/">Condolence statement from the leadership of the Ukrainian Catholic Church</a>
+        <a href="https://ukrainians.org.au/community/maria-and-victor-rudewych-donate-750000-to-our-church-and-1520000-to-the-ukrainian-studies-support-fund/">Maria and Victor Rudewych donate $750,000 to our Church and $1,520,000 to the Ukrainian Studies Support Fund</a>
+      </h1>
+      <time datetime="2014-07-29T01:29:21Z" class="post-date">Tue, Jul 29, 2014</time>
+      Last month, our Ukrainian community in Australia witnessed two unprecedented philanthropic deeds. Both were the work of the same donors, who are well known for their generosity in support of Ukrainian life in Australia. However, this time, perhaps because of the extraordinary sums involved, the donations leave a sense that something fundamental may have changed for our Ukrainian community in Australia.
+On Wednesday 25 June 2014, Victor and Mimi (Maria) Rudewych announced their donation of $1.
+      
+        <div class="read-more-link">
+          <a href="/community/maria-and-victor-rudewych-donate-750000-to-our-church-and-1520000-to-the-ukrainian-studies-support-fund/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/condolence-statement-from-the-leadership-of-the-ukrainian-catholic-church/">Condolence statement from the leadership of the Ukrainian Catholic Church</a>
       </h1>
       <time datetime="2014-07-28T05:31:37Z" class="post-date">Mon, Jul 28, 2014</time>
       Condolences from the Ukrainian Catholic Church to the Family and Friends of the Victims of Flight MH17 The incredible has happened to Australian citizens and so many of other countries, including the Netherlands, Malaysia, Indonesia, the United Kingdom, Germany, Belgium, Philippines, New Zealand, Canada, and the United States of America.
@@ -64,7 +145,7 @@ The terrorist attack on the Malaysian Airlines Flight 17 has violently ended the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/urgent-action-regarding-russia-backed-terrorism/">Urgent action regarding Russia-backed terrorism</a>
+        <a href="https://ukrainians.org.au/current-affairs/urgent-action-regarding-russia-backed-terrorism/">Urgent action regarding Russia-backed terrorism</a>
       </h1>
       <time datetime="2014-07-25T06:10:21Z" class="post-date">Fri, Jul 25, 2014</time>
       24 July 2014
@@ -80,7 +161,7 @@ Dear Prime Minister:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/afuo-statement-on-community-relations/">AFUO statement on community relations</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/afuo-statement-on-community-relations/">AFUO statement on community relations</a>
       </h1>
       <time datetime="2014-07-25T05:34:04Z" class="post-date">Fri, Jul 25, 2014</time>
       MEDIA RELEASE
@@ -94,7 +175,7 @@ Mr Pete Shmigel, AFUO Public Affairs Director, made the following comments after
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/matthew-guy-backs-ukrainian-australian-program-u-help/">Matthew Guy Backs Ukrainian Australian Program U-Help</a>
+        <a href="https://ukrainians.org.au/current-affairs/matthew-guy-backs-ukrainian-australian-program-u-help/">Matthew Guy Backs Ukrainian Australian Program U-Help</a>
       </h1>
       <time datetime="2014-07-25T05:28:41Z" class="post-date">Fri, Jul 25, 2014</time>
       Read the full article on the Herald Sun website -
@@ -102,10 +183,10 @@ http://www.heraldsun.com.au/news/victoria/matthew-guy-backs-ukrainian-australian
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/u-help-your-chance-to-help-ukraine/">U-HELP: Your Chance To Help Ukraine</a>
+        <a href="https://ukrainians.org.au/u-help-your-chance-to-help-ukraine/">U-HELP: Your Chance To Help Ukraine</a>
       </h1>
       <time datetime="2014-07-23T08:15:47Z" class="post-date">Wed, Jul 23, 2014</time>
-      MEDIA UPDATE AFUO thanks Victorian Minister Matthew Guy for his support of U-HELP, the AFUO's endorsed initiative to provide medical and humanitarian aid. Now is the time for you to help through U-HELP:
+      MEDIA UPDATE AFUO thanks Victorian Minister Matthew Guy for his support of U-HELP, the AFUO&rsquo;s endorsed initiative to provide medical and humanitarian aid. Now is the time for you to help through U-HELP:
 BSB: 704-235 ** Account: 00015958**
 Matthew Guy backs Ukrainian Australian program U-Help to assist victims of Ukraine conflict http://www.heraldsun.com.au/news/victoria/matthew-guy-backs-ukrainian-australian-program-uhelp-to-assist-victims-of-ukraine-conflict/story-fni0fit3-1226998861737?nk=594d07dd2514fbc43f6a78a6221bc7c5
 U-HELP (the Ukrainian Humanitarian Educational and Leadership Program) is announced by the Australian Federation of Ukrainian Organisations (AFUO) as the endorsed way for Australians to support Ukraine’s sovereignty, democracy and path to peace and prosperity.
@@ -116,7 +197,7 @@ U-HELP (the Ukrainian Humanitarian Educational and Leadership Program) is announ
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/call-to-action-update-on-the-current-situation-in-ukraine/">Call to Action: Update on the Current Situation in Ukraine</a>
+        <a href="https://ukrainians.org.au/current-affairs/call-to-action-update-on-the-current-situation-in-ukraine/">Call to Action: Update on the Current Situation in Ukraine</a>
       </h1>
       <time datetime="2014-07-22T01:59:17Z" class="post-date">Tue, Jul 22, 2014</time>
       AN UPDATE FROM THE AUSTRALIAN FEDERATION OF UKRAINIAN ORGANISATIONS ON THE CURRENT SITUATION IN UKRAINE
@@ -128,7 +209,7 @@ Call to ACTION The Australian Federation of Ukrainian Organisations (AFUO) has 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-release-ukrainian-peak-body-supports-prime-minister-abbott/">Media Release: Ukrainian Peak Body Supports Prime Minister Abbott</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-release-ukrainian-peak-body-supports-prime-minister-abbott/">Media Release: Ukrainian Peak Body Supports Prime Minister Abbott</a>
       </h1>
       <time datetime="2014-07-19T02:16:55Z" class="post-date">Sat, Jul 19, 2014</time>
       MEDIA RELEASE
@@ -143,7 +224,7 @@ The peak body for the Ukrainian community in Australia says that the appropriate
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/open-letter-the-honourable-trade-ministers-participating-in-the-g20-trade-ministers-meeting-in-sydney-australia-on-19-july-2014/">Open Letter the Honourable Trade Ministers participating in the G20 Trade Ministers meeting in Sydney, Australia, on 19 July 2014</a>
+        <a href="https://ukrainians.org.au/current-affairs/open-letter-the-honourable-trade-ministers-participating-in-the-g20-trade-ministers-meeting-in-sydney-australia-on-19-july-2014/">Open Letter the Honourable Trade Ministers participating in the G20 Trade Ministers meeting in Sydney, Australia, on 19 July 2014</a>
       </h1>
       <time datetime="2014-07-19T02:13:22Z" class="post-date">Sat, Jul 19, 2014</time>
       18 July 2014
@@ -165,22 +246,10 @@ Honourable Ministers: Re: Urgent action regarding Russia-backed terrorism in Eas
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/embassy-of-ukraine-in-australia-media-release/">Embassy of Ukraine in Australia - Media Release</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/embassy-of-ukraine-in-australia-media-release/">Embassy of Ukraine in Australia - Media Release</a>
       </h1>
       <time datetime="2014-07-18T13:22:14Z" class="post-date">Fri, Jul 18, 2014</time>
       Embassy media release
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/9168/">PLANE TRAGEDY: UKRAINIANS IN AUSTRALIA EXPRESS SYMPATHY; CONDEMN ACT BY PUTIN&#39;S TERRORISTS; CALL ON AUSTRALIAN GOVT TO BAN PUTIN</a>
-      </h1>
-      <time datetime="2014-07-18T13:14:25Z" class="post-date">Fri, Jul 18, 2014</time>
-      MEDIA RELEASE PLANE TRAGEDY: UKRAINIANS IN AUSTRALIA EXPRESS SYMPATHY; CONDEMN ACT BY PUTIN'S TERRORISTS; CALL ON AUSTRALIAN GOVT TO BAN PUTIN The Australian Federation of Ukrainian Organisations (AFUO) offers its most sincere condolences to the families and friends of the innocent civilians who lost their lives today at the hands of Putin-backed terrorists, following the downing of Malaysian Airlines flight MH 17 over eastern Ukraine.
-AFUO calls on Australian Government to take a lead on banning Russian Federation representation at G20 discussions this weekend in Sydney and the G20 Summit in Brisbane in November.
-      
-        <div class="read-more-link">
-          <a href="/current-affairs/9168/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1390,6 +1459,8 @@ AFUO calls on Australian Government to take a lead on banning Russian Federation
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

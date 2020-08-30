@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/statement-by-state-hromady-and-the-afuo-on-the-role-an-importance-of-state-hromady-associations-and-community-representation-ukr/">ЗАЯВА СТЕЙТОВИХ  ГРОМАД ТА СУОА ПРО РОЛЬ ТА ВАЖЛИВІСТЬ СТЕЙТОВИХ ГРОМАД ТА ПРЕДСТАВЛЕННЯ УКРАЇНСЬКОЇ СПІЛЬНОТИ</a>
+        <a href="https://ukrainians.org.au/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia/">Ukrainian World Congress (UWC) President Eugene Czolij to visit Australia</a>
+      </h1>
+      <time datetime="2017-07-04T07:47:59Z" class="post-date">Tue, Jul 4, 2017</time>
+      UKRAINIAN WORLD CONGRESS (UWC) PRESIDENT EUGENE CZOLIJ TO VISIT AUSTRALIA
+The Australian Federation of Ukrainian Organisations is pleased to announce the planned visit to Australia of
+THE PRESIDENT OF THE UKRAINIAN WORLD CONGRESS EUGENE CZOLIJ
+Mr. Czolij will visit all our communities in Australia at the invitation of the AFUO to celebrate the 50th Anniversary of the UWC and 70th Anniversary of Ukrainian Settlement in Australia.
+A series of meetings with senior Government officials including the Prime Minister, Minister for Foreign Affairs, other Ministers and representatives of Think Tanks and NGO’s are being planned.
+      
+        <div class="read-more-link">
+          <a href="/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/statement-by-state-hromady-and-the-afuo-on-the-role-an-importance-of-state-hromady-associations-and-community-representation-ukr/">ЗАЯВА СТЕЙТОВИХ  ГРОМАД ТА СУОА ПРО РОЛЬ ТА ВАЖЛИВІСТЬ СТЕЙТОВИХ ГРОМАД ТА ПРЕДСТАВЛЕННЯ УКРАЇНСЬКОЇ СПІЛЬНОТИ</a>
       </h1>
       <time datetime="2017-06-23T10:30:04Z" class="post-date">Fri, Jun 23, 2017</time>
       ЗАЯВА СТЕЙТОВИХ ГРОМАД ТА СУОА ПРО РОЛЬ ТА ВАЖЛИВІСТЬ СТЕЙТОВИХ ГРОМАД ТА ПРЕДСТАВЛЕННЯ УКРАЇНСЬКОЇ СПІЛЬНОТИ
@@ -64,7 +148,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/statement-by-state-hromady-and-the-afuo-on-the-role-an-importance-of-state-hromady-associations-and-community-representation/">STATEMENT BY STATE HROMADY AND THE AFUO ON THE ROLE AN IMPORTANCE OF STATE HROMADY–ASSOCIATIONS AND COMMUNITY REPRESENTATION</a>
+        <a href="https://ukrainians.org.au/community/statement-by-state-hromady-and-the-afuo-on-the-role-an-importance-of-state-hromady-associations-and-community-representation/">STATEMENT BY STATE HROMADY AND THE AFUO ON THE ROLE AN IMPORTANCE OF STATE HROMADY–ASSOCIATIONS AND COMMUNITY REPRESENTATION</a>
       </h1>
       <time datetime="2017-06-23T10:23:57Z" class="post-date">Fri, Jun 23, 2017</time>
       STATEMENT BY STATE HROMADY AND THE AFUO ON THE ROLE AN IMPORTANCE OF STATE HROMADY – ASSOCIATIONS AND COMMUNITY REPRESENTATION
@@ -76,7 +160,7 @@ Australia’s Ukrainian community prides itself with being warm and inclusive. I
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/75-anniversary-of-upa/">75-та річниця УПА - Продовжуємо Боротьбу за Україну</a>
+        <a href="https://ukrainians.org.au/events/75-anniversary-of-upa/">75-та річниця УПА - Продовжуємо Боротьбу за Україну</a>
       </h1>
       <time datetime="2017-06-17T11:50:37Z" class="post-date">Sat, Jun 17, 2017</time>
       Цього року припадає 75-та річниця заснування УПА, легендарні українські вояки котрі продовж 1940-их та 1950-их років боролися на ниві двох фронтів за визволення України з під чобіт московського комунізму та гітлерівсько-німецького фашизму.
@@ -89,14 +173,14 @@ Australia’s Ukrainian community prides itself with being warm and inclusive. I
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-has-european-history-ukraine-fight-freedom/">УКРАЇНА МАЄ ЄВРОПЕЙСЬКУ ІСТОРІЮ, УКРАЇНА БОРЕТЬСЯ ЗА СВОЮ СВОБОДУ</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-has-european-history-ukraine-fight-freedom/">УКРАЇНА МАЄ ЄВРОПЕЙСЬКУ ІСТОРІЮ, УКРАЇНА БОРЕТЬСЯ ЗА СВОЮ СВОБОДУ</a>
       </h1>
       <time datetime="2017-06-13T11:56:02Z" class="post-date">Tue, Jun 13, 2017</time>
       УКРАЇНА МАЄ ЄВРОПЕЙСЬКУ ІСТОРІЮ, УКРАЇНА БОРЕТЬСЯ ЗА СВОЮ СВОБОДУ Богдан Рудницький веде розмову із відомим істориком Володимиром В’ятровичем, директором Українського інституту національної пам’яті. http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/ukraine-has-european-history-ukraine-fight-freedom?language=uk
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/xv-national-ukrainian-festival-zdvyh/">XV National Ukrainian Festival – Zdvyh</a>
+        <a href="https://ukrainians.org.au/events/xv-national-ukrainian-festival-zdvyh/">XV National Ukrainian Festival – Zdvyh</a>
       </h1>
       <time datetime="2017-06-11T23:04:43Z" class="post-date">Sun, Jun 11, 2017</time>
       XV NATIONAL UKRAINIAN CONFERENCE – ZDVYH 7th – 9th July, Melbourne
@@ -109,7 +193,7 @@ Held every four years, the Zdvyh will bring together Australian Ukrainians of al
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/about-the-50th-anniversary-of-the-ukrainian-world-congress-and-70-years-of-ukrainian-settlement-in-australia/">ABOUT THE 50th ANNIVERSARY OF THE UKRAINIAN WORLD CONGRESS AND 70 YEARS OF UKRAINIAN SETTLEMENT IN AUSTRALIA</a>
+        <a href="https://ukrainians.org.au/community/about-the-50th-anniversary-of-the-ukrainian-world-congress-and-70-years-of-ukrainian-settlement-in-australia/">ABOUT THE 50th ANNIVERSARY OF THE UKRAINIAN WORLD CONGRESS AND 70 YEARS OF UKRAINIAN SETTLEMENT IN AUSTRALIA</a>
       </h1>
       <time datetime="2017-06-07T07:25:24Z" class="post-date">Wed, Jun 7, 2017</time>
       ABOUT THE 50th ANNIVERSARY OF THE UKRAINIAN WORLD CONGRESS AND 70 YEARS OF UKRAINIAN SETTLEMENT IN AUSTRALIA Bogdan Rudnytski interviewed Stefan Romaniw, the President of the Australian Federation of Ukrainian Organisations and Secretary-General of the Ukrainian World Congress. This year marks 50 years of the Ukrainian World Congress (UWC), the international coordinating body for Ukrainian communities in the diaspora that represents the interests of over 20 million Ukrainians with a network of member organizations and ties with Ukrainians in 53 countries.
@@ -120,14 +204,14 @@ Held every four years, the Zdvyh will bring together Australian Ukrainians of al
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/kalyna-care-yesterday-today-and-tomorrow/">УКРАЇНСЬКА &#34;КАЛИНА&#34;: ВЧОРА, НИНІ ТА ЗАВТРА</a>
+        <a href="https://ukrainians.org.au/media/kalyna-care-yesterday-today-and-tomorrow/">УКРАЇНСЬКА &#34;КАЛИНА&#34;: ВЧОРА, НИНІ ТА ЗАВТРА</a>
       </h1>
       <time datetime="2017-06-06T01:43:25Z" class="post-date">Tue, Jun 6, 2017</time>
       УКРАЇНСЬКА &ldquo;КАЛИНА&rdquo;: ВЧОРА, НИНІ ТА ЗАВТРА Богдан Рудницький веде розмову із Головою Дирекції Будинку опіки для престарілих &ldquo;Калина&rdquo; (знаного раніше як Український дім для старших людей) пані Галею Бриндзя. http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/kalyna-care-yesterday-today-and-tomorrow?language=uk
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/australias-ukrainian-community-mourns-the-passing-of-spiritual-and-national-leader-patriarch-lubomyr-husar/">AUSTRALIA’S UKRAINIAN COMMUNITY MOURNS THE PASSING OF SPIRITUAL AND NATIONAL LEADER PATRIARCH LUBOMYR HUSAR</a>
+        <a href="https://ukrainians.org.au/community/australias-ukrainian-community-mourns-the-passing-of-spiritual-and-national-leader-patriarch-lubomyr-husar/">AUSTRALIA’S UKRAINIAN COMMUNITY MOURNS THE PASSING OF SPIRITUAL AND NATIONAL LEADER PATRIARCH LUBOMYR HUSAR</a>
       </h1>
       <time datetime="2017-05-31T22:12:11Z" class="post-date">Wed, May 31, 2017</time>
       MEDIA RELEASE
@@ -142,30 +226,16 @@ Patriarch Husar was a spiritual leader not only for Ukrainian Catholics but for 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-welcomes-the-announcement-of-the-newly-appointed-ambassador-of-australia-to-ukraine/">AFUO WELCOMES THE ANNOUNCEMENT OF THE NEWLY APPOINTED AMBASSADOR OF AUSTRALIA TO UKRAINE</a>
+        <a href="https://ukrainians.org.au/politics/afuo-welcomes-the-announcement-of-the-newly-appointed-ambassador-of-australia-to-ukraine/">AFUO WELCOMES THE ANNOUNCEMENT OF THE NEWLY APPOINTED AMBASSADOR OF AUSTRALIA TO UKRAINE</a>
       </h1>
       <time datetime="2017-05-30T11:58:03Z" class="post-date">Tue, May 30, 2017</time>
       MEDIA RELEASE
 30 May 2017
-AFUO WELCOMES THE ANNOUNCEMENT OF THE NEWLY APPOINTED AMBASSADOR OF AUSTRALIA TO UKRAINE The Australian Federation of Ukrainian Organisations (AFUO) welcomes today’s announcement by Minister for Foreign Affairs Julie Bishop of the appointment of Ms Melissa O'Rourke as Australia's next Ambassador to Ukraine.
+AFUO WELCOMES THE ANNOUNCEMENT OF THE NEWLY APPOINTED AMBASSADOR OF AUSTRALIA TO UKRAINE The Australian Federation of Ukrainian Organisations (AFUO) welcomes today’s announcement by Minister for Foreign Affairs Julie Bishop of the appointment of Ms Melissa O&rsquo;Rourke as Australia&rsquo;s next Ambassador to Ukraine.
 “The AFUO congratulates Ambassador O’Rourke on her appointment and looks forward to continuing the strong working relationship with the Embassy of Ukraine in Kyiv under her leadership,” AFUO Chairman Stefan Romaniw said today.
       
         <div class="read-more-link">
           <a href="/politics/afuo-welcomes-the-announcement-of-the-newly-appointed-ambassador-of-australia-to-ukraine/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australias-ukrainian-community-applauds-senator-john-mc-cain-for-exposing-vladimir-putin-as-the-worlds-biggest-threat/">AUSTRALIA’S UKRAINIAN COMMUNITY APPLAUDS SENATOR JOHN Mc CAIN FOR EXPOSING VLADIMIR PUTIN AS THE WORLD’S BIGGEST THREAT</a>
-      </h1>
-      <time datetime="2017-05-30T11:53:34Z" class="post-date">Tue, May 30, 2017</time>
-      MEDIA RELEASE
-30 May 2017
-AUSTRALIA’S UKRAINIAN COMMUNITY APPLAUDS SENATOR JOHN Mc CAIN FOR EXPOSING VLADIMIR PUTIN AS THE WORLD’S BIGGEST THREAT Australia’s Ukrainian Community applauds US Senator John McCain for again warning the international community that the biggest threat to stability and international peace is Russia’s Vladimir Putin.
-Speaking on the 7.30 Report in Australia last night, Senator McCain highlighted the fact Russian President Vladimir Putin is the free world’s greatest ‘threat’.
-      
-        <div class="read-more-link">
-          <a href="/politics/australias-ukrainian-community-applauds-senator-john-mc-cain-for-exposing-vladimir-putin-as-the-worlds-biggest-threat/">Read More…</a>
         </div>
       
     </article>
@@ -1376,6 +1446,8 @@ Speaking on the 7.30 Report in Australia last night, Senator McCain highlighted 
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

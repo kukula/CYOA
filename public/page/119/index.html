@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/afuo-weekly-wrap-up-12011/">AFUO WEEKLY WRAP UP - 1/2011</a>
+        <a href="https://ukrainians.org.au/events/australian-open-2011-%e2%80%93-dolgopolov-to-play-on-australia-day/">AUSTRALIAN OPEN 2011 – DOLGOPOLOV TO PLAY ON AUSTRALIA DAY</a>
+      </h1>
+      <time datetime="2011-01-25T02:28:58Z" class="post-date">Tue, Jan 25, 2011</time>
+      **“MARCHENKO GOES DOWN FIGHTING” **Marchenko was always going to have the odds stacked against him as he faced Murray in Round 2 on Thursday night. But with an enthusiastic 30 odd Ukrainian supporters cheering him on, hopes were held high. In what was a gallant battle, Murray proved too good for the up and coming Ukrainian, smashing him in 3 sets, 6-1, 6-3, 6-3.
+**“DAY 10 – ANOTHER UKRAINIAN FACES MURRAY!
+      
+        <div class="read-more-link">
+          <a href="/events/australian-open-2011-%e2%80%93-dolgopolov-to-play-on-australia-day/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/afuo-weekly-wrap-up-12011/">AFUO WEEKLY WRAP UP - 1/2011</a>
       </h1>
       <time datetime="2011-01-25T00:28:31Z" class="post-date">Tue, Jan 25, 2011</time>
       1/2011
@@ -68,7 +149,7 @@ Taras Klish from Auckland handled many of the pre Tabir arrangements
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/senator-bilyk-appointed-chair-of-federal-parliaments-australian-ukraine-friendship-group/">Senator Bilyk appointed  Chair of Federal Parliament&#39;s  Australian - Ukraine Friendship group</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/senator-bilyk-appointed-chair-of-federal-parliaments-australian-ukraine-friendship-group/">Senator Bilyk appointed  Chair of Federal Parliament&#39;s  Australian - Ukraine Friendship group</a>
       </h1>
       <time datetime="2011-01-25T00:04:10Z" class="post-date">Tue, Jan 25, 2011</time>
       January 17, 2011
@@ -87,7 +168,7 @@ The AFUO is the peak body for Ukrainians in Australia. We look forward to workin
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukrainian-community-in-russia-under-attack-from-russian-lawmakers/">UKRAINIAN COMMUNITY IN RUSSIA UNDER ATTACK FROM RUSSIAN LAWMAKERS</a>
+        <a href="https://ukrainians.org.au/politics/ukrainian-community-in-russia-under-attack-from-russian-lawmakers/">UKRAINIAN COMMUNITY IN RUSSIA UNDER ATTACK FROM RUSSIAN LAWMAKERS</a>
       </h1>
       <time datetime="2011-01-24T23:51:31Z" class="post-date">Mon, Jan 24, 2011</time>
       **MEMORANDUM **
@@ -100,7 +181,7 @@ DATE: JANUARY 20, 2011 RE: FEDERAL NATIONAL CULTURAL AUTONOMY OF UKRAINIANS OF R
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/malanka-in-sydney-2011/">Malanka in Sydney 2011</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/malanka-in-sydney-2011/">Malanka in Sydney 2011</a>
       </h1>
       <time datetime="2011-01-24T12:28:51Z" class="post-date">Mon, Jan 24, 2011</time>
       MALANKA in SYDNEY
@@ -113,7 +194,7 @@ View Album Play slideshow Contribute photos to this album
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/congratulations-to-alexander-dolgopolov/">Congratulations to Alexander Dolgopolov</a>
+        <a href="https://ukrainians.org.au/events/international-events/congratulations-to-alexander-dolgopolov/">Congratulations to Alexander Dolgopolov</a>
       </h1>
       <time datetime="2011-01-24T12:13:16Z" class="post-date">Mon, Jan 24, 2011</time>
       Congratulations to Alexander Dolgopolov, the unseeded Ukrainian tennis player who today defeated the fourth-seeded Swede Robin Soderling in five sets 1-6 6-3 6-1 4-6 6-2 at the Australian Tennis Open.
@@ -125,7 +206,7 @@ Despite badly losing the first set, Alexander quietly and competently rallied to
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/ucs-press-release/">UCS Press Release</a>
+        <a href="https://ukrainians.org.au/media/ucs-press-release/">UCS Press Release</a>
       </h1>
       <time datetime="2011-01-24T11:44:02Z" class="post-date">Mon, Jan 24, 2011</time>
       The Ukrainian Collectibles Society (UCS) of Australia released the first two stamps of the “Australian-Ukrainian Heritage” Personalised Stamp™ and souvenir first day of issue envelope series on 1 November 2010.
@@ -137,7 +218,7 @@ Despite badly losing the first set, Alexander quietly and competently rallied to
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/dakhabrakha-%e2%80%93ukraine%e2%80%99s-world-music-sensation-performing-at-womadelaide/">DakhaBrakha –Ukraine’s World Music sensation performing at WOMADelaide</a>
+        <a href="https://ukrainians.org.au/media/dakhabrakha-%e2%80%93ukraine%e2%80%99s-world-music-sensation-performing-at-womadelaide/">DakhaBrakha –Ukraine’s World Music sensation performing at WOMADelaide</a>
       </h1>
       <time datetime="2011-01-24T10:06:52Z" class="post-date">Mon, Jan 24, 2011</time>
       DakhaBrakha –Ukraine’s World Music sensation will be performing at WOMADelaide March 11th – 14th in the idyllic outdoor setting of The Botanic Gardens.
@@ -149,10 +230,10 @@ DakhaBrakha who were formed at the avant garde Dakh Theatre for Contemporary Art
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%b8%d0%b9-%d0%b3%d1%83%d1%80%d1%82-%d0%94%d0%b0%d0%b4%d1%85%d0%b0%d0%91%d1%80%d0%b0%d1%85%d0%b0-%d0%b2%d0%b8%d1%81%d1%82%d1%83%d0%bf%d0%b0/">Український гурт ДахаБраха виступатиме на Фестивалю WOMAD 2011 / Ukrainian Group DakhaBrakha From Ukraine аt WOMAD Festival 2011</a>
+        <a href="https://ukrainians.org.au/events/international-events/%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%b8%d0%b9-%d0%b3%d1%83%d1%80%d1%82-%d0%94%d0%b0%d0%b4%d1%85%d0%b0%d0%91%d1%80%d0%b0%d1%85%d0%b0-%d0%b2%d0%b8%d1%81%d1%82%d1%83%d0%bf%d0%b0/">Український гурт ДахаБраха виступатиме на Фестивалю WOMAD 2011 / Ukrainian Group DakhaBrakha From Ukraine аt WOMAD Festival 2011</a>
       </h1>
       <time datetime="2011-01-20T00:14:11Z" class="post-date">Thu, Jan 20, 2011</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2011/01/2011-web-tile_smal-72dpi.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2011/01/2011-web-tile_smal-72dpi1.jpg) ](http://www.ozeukes.com/wp-content/uploads/2011/01/2011-web-tile_smal-72dpi1.jpg)Подаємо до відома, що до Aвстралії приїде група з України ДахаБраха. Група приїзджає на запрошення Міжнародного Фестивалю WOMAD в Aделайді між 11-14 березня 2011.
+      Подаємо до відома, що до Aвстралії приїде група з України ДахаБраха. Група приїзджає на запрошення Міжнародного Фестивалю WOMAD в Aделайді між 11-14 березня 2011.
  DakhaBrakha, a music group from Ukraine, will perform at the WOMAD Festival in Adelaide between 11-14 March 2011.
  http://womad.org/ http://dakhabrakha.com.ua/
 http://www.youtube.com/watch?v=ivIICD9_4Vg&amp;feature=related
@@ -161,7 +242,7 @@ http://www.youtube.com/watch?v=SWnao7yGu0I
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/%d0%9f%d0%b5%d1%80%d1%88%d0%b8%d0%b9-%d1%82%d0%b0%d0%b1%d1%96%d1%80-%d0%a1%d0%a3%d0%9c-%d1%83-%d0%b2-%d0%9d%d0%be%d0%b2%d1%96%d0%b9-%d0%97%d0%b5%d0%bb%d0%b0%d0%bd%d0%b4%d1%96%d1%97-first-sum-cym-c/">Перший табір СУМ-у в Новій Зеландії - First SUM (CYM) Camp in New Zealand</a>
+        <a href="https://ukrainians.org.au/events/international-events/%d0%9f%d0%b5%d1%80%d1%88%d0%b8%d0%b9-%d1%82%d0%b0%d0%b1%d1%96%d1%80-%d0%a1%d0%a3%d0%9c-%d1%83-%d0%b2-%d0%9d%d0%be%d0%b2%d1%96%d0%b9-%d0%97%d0%b5%d0%bb%d0%b0%d0%bd%d0%b4%d1%96%d1%97-first-sum-cym-c/">Перший табір СУМ-у в Новій Зеландії - First SUM (CYM) Camp in New Zealand</a>
       </h1>
       <time datetime="2011-01-19T08:14:57Z" class="post-date">Wed, Jan 19, 2011</time>
       Cоюз Українських Організацій Aвстралії (СУОА) вітає перший Табір Cпілки Української Молоді (CУМ) у Новій Зеландії.
@@ -175,21 +256,6 @@ CПІЛКИ УКРAЇНCЬКОЇ МОЛОДІ У НОВІЙ ЗЕЛAНДІЇ
       
         <div class="read-more-link">
           <a href="/events/international-events/%d0%9f%d0%b5%d1%80%d1%88%d0%b8%d0%b9-%d1%82%d0%b0%d0%b1%d1%96%d1%80-%d0%a1%d0%a3%d0%9c-%d1%83-%d0%b2-%d0%9d%d0%be%d0%b2%d1%96%d0%b9-%d0%97%d0%b5%d0%bb%d0%b0%d0%bd%d0%b4%d1%96%d1%97-first-sum-cym-c/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/marchenko-v-murray-after-7pm-20012011-margaret-court-arena/">MARCHENKO V. MURRAY - After 7pm 20/01/2011 Margaret Court Arena</a>
-      </h1>
-      <time datetime="2011-01-19T05:08:17Z" class="post-date">Wed, Jan 19, 2011</time>
-      **THIS IS A CALL OUT TO ALL UKRAINIAN SUPPORTERS TO COME DOWN TO MELBOURNE PARK TOMORROW, 20th January, 2011 **
-AND SUPPORT ONE OF OUR OWN!
-MARCHENKO V. MURRAY - After 7pm 20/01/2011 Margaret Court Arena
-Don on your Uki colours, grab your flags and warm up your vocal cords. We will aim to hold a few seats reserve in the arena, but best to get there early!
-This is sure to be a huge match and with tickets only $20 after 5pm, we’re encouraging everyone and anyone to get down to Margaret Court for 7pm.
-      
-        <div class="read-more-link">
-          <a href="/events/marchenko-v-murray-after-7pm-20012011-margaret-court-arena/">Read More…</a>
         </div>
       
     </article>
@@ -1400,6 +1466,8 @@ This is sure to be a huge match and with tickets only $20 after 5pm, we’re enc
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

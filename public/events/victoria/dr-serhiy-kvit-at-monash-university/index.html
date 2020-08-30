@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Д-р Сергій Квіт в Університеті ім. Монаша / Dr Serhiy Kvit at Monash University &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -80,12 +145,12 @@ with the Australian Federation of Ukrainian Organisations </p>
 <p>PUBLIC LECTURE </p>
 <p><strong>Dr Serhiy Kvit,</strong></p>
 <p>President, &ldquo;Kyiv Mohyla Academy&rdquo; National University </p>
-<p><strong>Public Debate and Higher Education in Today's Ukraine: The Case of the ‘Kyiv Mohyla Academy’ National University</strong>****</p>
+<p><strong>Public Debate and Higher Education in Today&rsquo;s Ukraine: The Case of the ‘Kyiv Mohyla Academy’ National University</strong>****</p>
 <p> Time:   7.00 p.m., Thursday 26 April 2012 </p>
 <p>Place:  Lecture Theatre H3, ground floor, Building 11 (Robert Menzies Building), Clayton Campus, Monash University. </p>
 <p>The speaker will be introduced by Professor Stephanie Fahey, Deputy Vice-Chancellor (Global Engagement), Monash University </p>
 <p><em>The “Kyiv Mohyla Academy” National University (NaUKMA) is one of Ukraine’s most highly regarded universities. The university, its staff and students have been vigorous advocates of academic freedom and university autonomy, as well as of human rights and the democratic process. Dr Kvit’s presentation will address, among other themes, the challenges faced by his university in the complex political and cultural environment of today’s Ukraine.</em></p>
-<p>_ Serhiy Kvit is president of Ukraine's Media Reform Centre and head of Ukraine’s Consortium of University Autonomy. He graduated in journalism and holds a doctorate in philology. At NaUKMA Dr Kvit founded the School of Journalism (2001) and held the post of professor and dean of the Faculty of Social Sciences and Social Technologies (2002-2007) prior to becoming the University’s president. His research focuses on mass communication, university management and philosophical hermeneutics. He is the author of more than 100 publications, including the books Hermeneutics of Style (2011) and Mass Communication (2008). Serhiy Kvit was a Fulbright Scholar (2006) at Ohio University, Kennan Institute Scholar (2009) at the Woodrow Wilson Center, and DAAD Scholar at the University of Cologne (2010)._</p>
+<p>_ Serhiy Kvit is president of Ukraine&rsquo;s Media Reform Centre and head of Ukraine’s Consortium of University Autonomy. He graduated in journalism and holds a doctorate in philology. At NaUKMA Dr Kvit founded the School of Journalism (2001) and held the post of professor and dean of the Faculty of Social Sciences and Social Technologies (2002-2007) prior to becoming the University’s president. His research focuses on mass communication, university management and philosophical hermeneutics. He is the author of more than 100 publications, including the books Hermeneutics of Style (2011) and Mass Communication (2008). Serhiy Kvit was a Fulbright Scholar (2006) at Ohio University, Kennan Institute Scholar (2009) at the Woodrow Wilson Center, and DAAD Scholar at the University of Cologne (2010)._</p>
 <p> Ample free parking is available near the venue after office hours.</p>
 <p>A campus map may be downloaded at</p>
 <p><a href="http://www.monash.edu.au/pubs/maps/3-Claytoncolour.pdf">http://www.monash.edu.au/pubs/maps/3-Claytoncolour.pdf</a></p>

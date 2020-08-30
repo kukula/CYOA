@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,116 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/dobryj-slid-na-zemli-5-y-boluch/">ДОБРИЙ СЛІД НА ЗЕМЛІ</a>
+        <a href="https://ukrainians.org.au/community/interview-sbs-ukrainian-aug-2017/">Інтерв’ю на SBS Ukrainian Radio</a>
+      </h1>
+      <time datetime="2017-08-08T07:00:41Z" class="post-date">Tue, Aug 8, 2017</time>
+      ДЯКУЄМО ТОБІ, SBS! ВСЕАВСТРАЛІЙСЬКИЙ МОВНИЙ КОНКУРС SBS - інтерв&rsquo;ю SBS Ukrainian з Орисею Стефин, головою Української Центральної Шкільної Ради Австралії та заступником голови управи Союзу Українських Організацій Австралії.
+http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/thank-you-sbs?language=uk
+
+СВЯТКУВАННЯ У СІДНЕЇ. ЧАСТИНА 1 Промова Президента Світового Конґресу Українців (СКУ) в-ш пана Євгена Чолія на святковому бенкеті з нагоди 50-річчя СКУ та 70-ліття поселення українців в Австралії.
+http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/celebration-sydney-part-1?language=uk
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/dobryj-slid-na-zemli-5-y-boluch/">ДОБРИЙ СЛІД НА ЗЕМЛІ</a>
       </h1>
       <time datetime="2017-08-07T07:32:16Z" class="post-date">Mon, Aug 7, 2017</time>
       П’ЯТА РІЧНИЦЯ З ЧАСУ ВІДХОДУ У ВІЧНІСТЬ
@@ -67,7 +147,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/afuo-welcomes-the-president-of-the-uwc-eugen-czolij-and-his-wife-hania-to-australia/">AFUO welcomes the President of the UWC Eugen Czolij and his wife Hania to Australia</a>
+        <a href="https://ukrainians.org.au/events/afuo-welcomes-the-president-of-the-uwc-eugen-czolij-and-his-wife-hania-to-australia/">AFUO welcomes the President of the UWC Eugen Czolij and his wife Hania to Australia</a>
       </h1>
       <time datetime="2017-07-30T22:00:04Z" class="post-date">Sun, Jul 30, 2017</time>
       Управа СУОА вітає Президента Світого Конґресу Українців з дружиною – Ганею до Австралії The Australian Federation of Ukrainian Organisations welcomes the President of the Ukrainian World Congress Eugen Czolij and his wife Hania to Australia Програма Зустрічей з Президентом СКУ у Всіх штатах Австралії:
@@ -82,7 +162,7 @@ Wednesday 2 August 7pm Maylands Sport &amp; Rec Club, 50 Clarkson Rd, Maylands 6
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australias-ukrainian-community-reflects-and-remembers-3rd-anniversary-mh-17-disaster/">AUSTRALIA’S UKRAINIAN COMMUNITY REFLECTS AND REMEMBERS 3rd ANNIVERSARY MH 17 DISASTER</a>
+        <a href="https://ukrainians.org.au/politics/australias-ukrainian-community-reflects-and-remembers-3rd-anniversary-mh-17-disaster/">AUSTRALIA’S UKRAINIAN COMMUNITY REFLECTS AND REMEMBERS 3rd ANNIVERSARY MH 17 DISASTER</a>
       </h1>
       <time datetime="2017-07-17T07:12:03Z" class="post-date">Mon, Jul 17, 2017</time>
       MEDIA RELEASE
@@ -97,7 +177,7 @@ Today, on the 3rd Anniversary of this human disaster, our prayers and thoughts a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/interview-sbs-ukrainian-jul-2017/">Інтерв’ю на SBS Ukrainian Radio</a>
+        <a href="https://ukrainians.org.au/community/interview-sbs-ukrainian-jul-2017/">Інтерв’ю на SBS Ukrainian Radio</a>
       </h1>
       <time datetime="2017-07-14T09:58:45Z" class="post-date">Fri, Jul 14, 2017</time>
       XV ВСЕАВСТРАЛІЙСЬКИЙ УКРАЇНСЬКИЙ ЗДВИГ Українці відзначають 70-ліття поселення в Австралії післявоєнних міґрантів. Святкування розпочалися із XV Здвигу українців Австралії, який відбувся 7-9 липня 2017-го року у Мельбурні. Союз Українських Організацій Австралії проголосив дворічну програму святкувань. http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/xv-national-ukrainian-festival?language=uk
@@ -106,7 +186,7 @@ Today, on the 3rd Anniversary of this human disaster, our prayers and thoughts a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/malymonenko-100-year-anniversary/">ДО 100-РІЧНОГО ЮВІЛЕЮ ПАНА МАЛИМОНЕНКА</a>
+        <a href="https://ukrainians.org.au/community/malymonenko-100-year-anniversary/">ДО 100-РІЧНОГО ЮВІЛЕЮ ПАНА МАЛИМОНЕНКА</a>
       </h1>
       <time datetime="2017-07-11T07:31:24Z" class="post-date">Tue, Jul 11, 2017</time>
       11 липня 2017
@@ -121,7 +201,7 @@ Today, on the 3rd Anniversary of this human disaster, our prayers and thoughts a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-classes-for-adults-term-3-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2017</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-language-classes-for-adults-term-3-2017/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 3 2017</a>
       </h1>
       <time datetime="2017-07-11T07:16:12Z" class="post-date">Tue, Jul 11, 2017</time>
       Ukrainian language classes for adults 2017 – Term 3
@@ -136,7 +216,7 @@ Refer attachments for details.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-arts-festival-twirls-into-melbourne-this-weekend/">Ukrainian arts festival twirls into Melbourne this weekend</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-arts-festival-twirls-into-melbourne-this-weekend/">Ukrainian arts festival twirls into Melbourne this weekend</a>
       </h1>
       <time datetime="2017-07-06T12:35:04Z" class="post-date">Thu, Jul 6, 2017</time>
       6 July 2017
@@ -151,15 +231,15 @@ Every four years the Australian Federation of Ukrainian Organisations (AFUO) org
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australia-ukraine-parliamentary-friendship-group-being-formed/">Australia-Ukraine Parliamentary Friendship Group being formed</a>
+        <a href="https://ukrainians.org.au/politics/australia-ukraine-parliamentary-friendship-group-being-formed/">Australia-Ukraine Parliamentary Friendship Group being formed</a>
       </h1>
       <time datetime="2017-07-05T12:33:08Z" class="post-date">Wed, Jul 5, 2017</time>
       July 5, 2017
 AUSTRALIA-UKRAINE PARLIAMENTARY FRIENDSHIP GROUP BEING FORMED – LEADERSHIP TEAM HAS ACCEPTED AFUO PROPOSAL TO FORM GROUP
 
-Chris Crewther MP Member for Dunkley has agreed to accept the Australian Federation of Ukrainian Organisation's (AFUO) proposal to Chair the Australia - Ukraine Parliamentary Friendship Group (AUPFG).
+Chris Crewther MP Member for Dunkley has agreed to accept the Australian Federation of Ukrainian Organisation&rsquo;s (AFUO) proposal to Chair the Australia - Ukraine Parliamentary Friendship Group (AUPFG).
 Senator Catryna Bilyk (Tasmania) had also agreed to stay on as deputy chair.
-Both are very strong supporters of Ukraine and Australia's Ukrainian community.
+Both are very strong supporters of Ukraine and Australia&rsquo;s Ukrainian community.
       
         <div class="read-more-link">
           <a href="/politics/australia-ukraine-parliamentary-friendship-group-being-formed/">Read More…</a>
@@ -167,7 +247,7 @@ Both are very strong supporters of Ukraine and Australia's Ukrainian community.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia-ukr/">Австралію відвідає Президент Світового Конґресу Українців (СКУ) Евген Чолій</a>
+        <a href="https://ukrainians.org.au/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia-ukr/">Австралію відвідає Президент Світового Конґресу Українців (СКУ) Евген Чолій</a>
       </h1>
       <time datetime="2017-07-04T07:54:43Z" class="post-date">Tue, Jul 4, 2017</time>
       АВСТРАЛІЮ ВІДВІДАЄ ПРЕЗИДЕНТ СВІТОВОГО КОНҐРЕСУ УКРАЇНЦІВ (СКУ) ЕВГЕН ЧОЛІЙ
@@ -178,21 +258,6 @@ Both are very strong supporters of Ukraine and Australia's Ukrainian community.
       
         <div class="read-more-link">
           <a href="/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia-ukr/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia/">Ukrainian World Congress (UWC) President Eugene Czolij to visit Australia</a>
-      </h1>
-      <time datetime="2017-07-04T07:47:59Z" class="post-date">Tue, Jul 4, 2017</time>
-      UKRAINIAN WORLD CONGRESS (UWC) PRESIDENT EUGENE CZOLIJ TO VISIT AUSTRALIA
-The Australian Federation of Ukrainian Organisations is pleased to announce the planned visit to Australia of
-THE PRESIDENT OF THE UKRAINIAN WORLD CONGRESS EUGENE CZOLIJ
-Mr. Czolij will visit all our communities in Australia at the invitation of the AFUO to celebrate the 50th Anniversary of the UWC and 70th Anniversary of Ukrainian Settlement in Australia.
-A series of meetings with senior Government officials including the Prime Minister, Minister for Foreign Affairs, other Ministers and representatives of Think Tanks and NGO’s are being planned.
-      
-        <div class="read-more-link">
-          <a href="/events/ukrainian-world-congress-uwc-president-eugene-czolij-to-visit-australia/">Read More…</a>
         </div>
       
     </article>
@@ -1403,6 +1468,8 @@ A series of meetings with senior Government officials including the Prime Minist
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

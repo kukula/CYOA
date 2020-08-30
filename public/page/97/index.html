@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,38 +23,131 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/remembrance-candle/">СВІЧКА ПАМ&#39;ЯТІ / REMEMBRANCE CANDLE</a>
+        <a href="https://ukrainians.org.au/events/victoria/holodomor-commemoration-victoria/">ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ / HOLODOMOR COMMEMORATION (Victoria)</a>
+      </h1>
+      <time datetime="2011-11-23T22:55:17Z" class="post-date">Wed, Nov 23, 2011</time>
+      Українська Громада Вікторії
+ВШAНУВAННЯ ЖЕРТВ ГОЛОДОМОРІВ
+Управа УГВ повідомляє, що в цю
+неділю 27-го листопада 2011 по всіх церквах відправляться Панахиди
+для жертв Голодоморів
+В Українській Католицькій Катедрі в Норт Мельборні
+Панахида відправиться після 9.30 Літургії (приблизно год 10.45 рано.)
+Заохочуємо наших організацій взяти участь прапорами та вінками.
+Управа УГВ
+ Association of Ukrainians in Victoria
+COMMEMORATION OF THE VICTIMS OF THE HOLODOMOR
+The AUV Committee advises that
+This Sunday 27 November 2011 requiem services will be conducted in all Churches in Victoria in honour of all who lost their lives in the Famine - Holodomor.
+      
+        <div class="read-more-link">
+          <a href="/events/victoria/holodomor-commemoration-victoria/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/remembrance-candle/">СВІЧКА ПАМ&#39;ЯТІ / REMEMBRANCE CANDLE</a>
       </h1>
       <time datetime="2011-11-23T22:47:39Z" class="post-date">Wed, Nov 23, 2011</time>
-      ҐЕНОЦИД В УКРАІНІ: ЗАПАЛІТЬ СВІЧКУ ПАМ'ЯТІ&hellip;  26 листопада 2011 року - Міжнародний День пам'яті - вшанування жертв голодоморів та ґеноциду в Україні у 20-му столітті. Ґеноцид у1932-33рр. - найбільший і найогидніший злочин тоталітарного радянського режиму проти України і української нації…
+      ҐЕНОЦИД В УКРАІНІ: ЗАПАЛІТЬ СВІЧКУ ПАМ&rsquo;ЯТІ&hellip;  26 листопада 2011 року - Міжнародний День пам&rsquo;яті - вшанування жертв голодоморів та ґеноциду в Україні у 20-му столітті. Ґеноцид у1932-33рр. - найбільший і найогидніший злочин тоталітарного радянського режиму проти України і української нації…
 SBS Радіо передача: http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/193653/t/GENOCIDE-IN-UKRAINE:-LIGHT-A-CANDLE-IN-REMEMBRANCE…/
 GENOCIDE IN UKRAINE: LIGHT A CANDLE IN REMEMBRANCE…  26th November 2011 is the International Remembrance Day – honouring the victims of the famines and genocide in Ukraine in the 20th century.
       
@@ -65,7 +157,7 @@ GENOCIDE IN UKRAINE: LIGHT A CANDLE IN REMEMBRANCE…  26th November 2011 is th
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/uwcc-statement-on-holodomor/">Заява УВКР в річницю Голодомору</a>
+        <a href="https://ukrainians.org.au/community/uwcc-statement-on-holodomor/">Заява УВКР в річницю Голодомору</a>
       </h1>
       <time datetime="2011-11-23T00:15:50Z" class="post-date">Wed, Nov 23, 2011</time>
       Українська Всесвітня Координаційна Рада (УВКР) подала заяву з нагоди 79 річниці початку Голодомору в Україні 1932—1933 рр. Текст заяви в українські мові можна прочитати тут: ЗАЯВА УКРАЇНСЬКОЇ ВСЕСВІТНЬОЇ КООРДИНАЦІЙНОЇ РАДИ З НАГОДИ 79 РІЧНИЦІ ПОЧАТКУ ГОЛОДОМОРУ В УКРАЇНІ 19321933 рр
@@ -73,14 +165,14 @@ The Ukrainian World Coordinating Council (UWCC) has issued a statement (in Ukrai
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/uwc-statement-on-the-anniversa/">Заклик CКУ до річниці Голодомору / UWC Statement on the anniversary of the Holodomor</a>
+        <a href="https://ukrainians.org.au/events/international-events/uwc-statement-on-the-anniversa/">Заклик CКУ до річниці Голодомору / UWC Statement on the anniversary of the Holodomor</a>
       </h1>
       <time datetime="2011-11-22T06:33:26Z" class="post-date">Tue, Nov 22, 2011</time>
       Cвітовий Конґреc Укрaїнців (СКУ) подав заклик з нагоди 78-ої річниці Голодомору 1932-33 рр. в Україні. Текст заклику в українські мові можна прочитати тут: Nov 16 2011 PR Holodomor Zaklyk SKU (Ukr )  The Ukrainian World Congress (UWC) has issued a statement on the occasion of the 78th anniversary of the Holodomor of 1932-33. The English-language version of the statement can be read here: Nov 16 2011 PR Holodomor Zaklyk SKU (Eng)
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/in-parallel-worlds/">У паралельних світах / In Parallel Worlds</a>
+        <a href="https://ukrainians.org.au/community/in-parallel-worlds/">У паралельних світах / In Parallel Worlds</a>
       </h1>
       <time datetime="2011-11-22T06:07:19Z" class="post-date">Tue, Nov 22, 2011</time>
       _Подається статтю Олександра Карпенка -журналіст - Cільські Вісті Київ. Це наступна стаття пана Карпенка про його вражіння з побуту в Aвстралії в травні 2011 р. Раніше він написав статтю «Бумеранг повертається». _
@@ -92,7 +184,7 @@ _ _Below is an article (in Ukrainian) by Oleksandr Karpenko, a journalist from
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/interview-about-the-great-famine-in-ukraine/">Interview about the Great Famine in Ukraine / Інтерв&#39;ю про Великий Голод в Україні</a>
+        <a href="https://ukrainians.org.au/community/interview-about-the-great-famine-in-ukraine/">Interview about the Great Famine in Ukraine / Інтерв&#39;ю про Великий Голод в Україні</a>
       </h1>
       <time datetime="2011-11-17T04:12:47Z" class="post-date">Thu, Nov 17, 2011</time>
       THE GREAT FAMINE IN UKRAINE (1932-1933 ) AND UKRAINE TODAY
@@ -104,7 +196,7 @@ An interview on SBS Radio with Professor Iurii Shapoval. Dr Shapoval is the Head
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/%d0%9d%d0%b0%d0%b4%d0%b7%d0%b2%d0%b8%d1%87%d0%b0%d0%b9%d0%bd%d0%b8%d0%b9-%d0%97%e2%80%99%d1%97%d0%b7%d0%b4-%d0%9a%d1%80%d0%b0%d0%b9%d0%be%d0%b2%d0%be%d1%97-%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%b8-%d0%a1/">Надзвичайний З’їзд Крайової Управи Союзу Українок Австралії</a>
+        <a href="https://ukrainians.org.au/events/national-events/%d0%9d%d0%b0%d0%b4%d0%b7%d0%b2%d0%b8%d1%87%d0%b0%d0%b9%d0%bd%d0%b8%d0%b9-%d0%97%e2%80%99%d1%97%d0%b7%d0%b4-%d0%9a%d1%80%d0%b0%d0%b9%d0%be%d0%b2%d0%be%d1%97-%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%b8-%d0%a1/">Надзвичайний З’їзд Крайової Управи Союзу Українок Австралії</a>
       </h1>
       <time datetime="2011-11-16T01:29:00Z" class="post-date">Wed, Nov 16, 2011</time>
       В суботу, 3-го вересня 2011 р., в Прицерковній залі УКЦ св.Андрія в Лідкомбі (Сідней), відбувся Надзвичайний Крайовий З’їзд Союзу Українок Австралії.
@@ -116,7 +208,7 @@ An interview on SBS Radio with Professor Iurii Shapoval. Dr Shapoval is the Head
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/silent-memories-traumatic-lives/">Silent Memories - Traumatic Lives</a>
+        <a href="https://ukrainians.org.au/events/western-australia/silent-memories-traumatic-lives/">Silent Memories - Traumatic Lives</a>
       </h1>
       <time datetime="2011-11-15T00:31:32Z" class="post-date">Tue, Nov 15, 2011</time>
       Recently we posted an article about a new publication &lsquo;Silent Memories - Traumatic Lives&rsquo; due to be released in March 2012.  Further to this we have a brief piece written by Mykola Mowczan, the president of the Ukrainian Association in Western Australia (UAWA) about the author of the publication, Dr Lesa Melnyczuk Morgan.
@@ -129,13 +221,13 @@ An interview on SBS Radio with Professor Iurii Shapoval. Dr Shapoval is the Head
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/lucy-yurkiv-nicolson-in-concert-sat-nov-19th/">Lucy Yurkiv-Nicolson in concert Sat Nov 19th</a>
+        <a href="https://ukrainians.org.au/events/lucy-yurkiv-nicolson-in-concert-sat-nov-19th/">Lucy Yurkiv-Nicolson in concert Sat Nov 19th</a>
       </h1>
       <time datetime="2011-11-14T11:34:28Z" class="post-date">Mon, Nov 14, 2011</time>
       Divas join voices for cause in peninsula concert BY JO WINTERBOTTOM
 08 Nov, 2011 01:00 AM
 [caption id=&quot;attachment_4222&rdquo; align=&quot;alignleft&rdquo; width=&quot;300&rdquo; caption=&quot;One night only: Opera singers Liane Keegan, rear, and Lucy Nicolson, with Jack Nicolson, will sing at Tanglewood Estate winery. Picture: Yanni&rdquo;][/caption]
-ONE of Australia's most distinguished opera singers will sing at a benefit concert in Merricks next weekend.Dramatic contralto Liane Keegan, who is staying in Mornington with her mother Yvonne Morrison while on a sabbatical from the Deutsche Oper in Berlin, will perform with her long-time friend, Frankston soprano Lucy Nicolson in a once-only concert, Nightsong at Tanglewood.
+ONE of Australia&rsquo;s most distinguished opera singers will sing at a benefit concert in Merricks next weekend.Dramatic contralto Liane Keegan, who is staying in Mornington with her mother Yvonne Morrison while on a sabbatical from the Deutsche Oper in Berlin, will perform with her long-time friend, Frankston soprano Lucy Nicolson in a once-only concert, Nightsong at Tanglewood.
       
         <div class="read-more-link">
           <a href="/events/lucy-yurkiv-nicolson-in-concert-sat-nov-19th/">Read More…</a>
@@ -143,7 +235,7 @@ ONE of Australia's most distinguished opera singers will sing at a benefit conce
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/official-plast-personalised-stamp-and-commemorative-envelope-release/">Official Plast Personalised Stamp and Commemorative Envelope Release</a>
+        <a href="https://ukrainians.org.au/culture/official-plast-personalised-stamp-and-commemorative-envelope-release/">Official Plast Personalised Stamp and Commemorative Envelope Release</a>
       </h1>
       <time datetime="2011-11-13T07:28:12Z" class="post-date">Sun, Nov 13, 2011</time>
       During 2011-2012 the Ukrainian Scouting Organisation Plast is commemorating the centenary of its formation in 1911-1912. The Supreme Plast Council “Holovna Plastova Bulava (HPB)” has released both an official centenary logo (for camp badges) and an official postage stamp design that will be released by many of the international Plast Federal Executives around the world.
@@ -151,21 +243,6 @@ The Plast Federal Executive (KPS) in Australia is releasing an Australian commem
       
         <div class="read-more-link">
           <a href="/culture/official-plast-personalised-stamp-and-commemorative-envelope-release/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/upcoming-events-for-uawa-cym/">UPCOMING EVENTS FOR  UAWA &amp; CYM</a>
-      </h1>
-      <time datetime="2011-11-13T07:08:28Z" class="post-date">Sun, Nov 13, 2011</time>
-      A number of events are occurring in the near future of interest to the Ukrainian community and its friends in and around Perth. These events are being organised by the Ukrainian Association of Western Australia (AUWA) and the Perth branch of the Ukrainian Youth Association (CYM).
-
-SUNDAY ~ NOVEMBER 13****
-CYM &ldquo;St Michael's Day&rdquo; BBQ
- CYM Perth will be celebrating Saint Michael's day at Bardon Park in Maylands from 1200.
-      
-        <div class="read-more-link">
-          <a href="/events/western-australia/upcoming-events-for-uawa-cym/">Read More…</a>
         </div>
       
     </article>
@@ -1376,6 +1453,8 @@ CYM &ldquo;St Michael's Day&rdquo; BBQ
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

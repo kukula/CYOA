@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/new-publication-%e2%80%93-%e2%80%9csilent-memories-traumatic-lives%e2%80%9d/">New Publication – “Silent Memories - Traumatic Lives”</a>
+        <a href="https://ukrainians.org.au/events/western-australia/upcoming-events-for-uawa-cym/">UPCOMING EVENTS FOR  UAWA &amp; CYM</a>
+      </h1>
+      <time datetime="2011-11-13T07:08:28Z" class="post-date">Sun, Nov 13, 2011</time>
+      A number of events are occurring in the near future of interest to the Ukrainian community and its friends in and around Perth. These events are being organised by the Ukrainian Association of Western Australia (AUWA) and the Perth branch of the Ukrainian Youth Association (CYM).
+
+SUNDAY ~ NOVEMBER 13****
+CYM &ldquo;St Michael&rsquo;s Day&rdquo; BBQ
+ CYM Perth will be celebrating Saint Michael&rsquo;s day at Bardon Park in Maylands from 1200.
+      
+        <div class="read-more-link">
+          <a href="/events/western-australia/upcoming-events-for-uawa-cym/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/new-publication-%e2%80%93-%e2%80%9csilent-memories-traumatic-lives%e2%80%9d/">New Publication – “Silent Memories - Traumatic Lives”</a>
       </h1>
       <time datetime="2011-11-10T06:54:16Z" class="post-date">Thu, Nov 10, 2011</time>
       Silent Memories - Traumatic Lives is the result of a study undertaken during her doctoral research by Dr Lesa Melnyczuk Morgan, Associate Researcher at the Maritime History department of the WA Maritime Museum in Fremantle, Western Australia.
@@ -65,14 +149,14 @@ The work is due to be published March 2012, but a special pre-publication offer 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/st-michaels-feastday/">Свято Михаїла</a>
+        <a href="https://ukrainians.org.au/events/victoria/st-michaels-feastday/">Свято Михаїла</a>
       </h1>
       <time datetime="2011-11-01T23:59:48Z" class="post-date">Tue, Nov 1, 2011</time>
       Осередок СУМ-у в Мельборні запрошує всіх на Свято Архистратига Михаїла яке відбудеться в неділю 20-го листопада 2011р. на сумівські оселі Карпати. The Melbourne branch of the Ukrainian Youth Association (CYM) invites all to the feast-day of its patron saint, the Archangel Michael. The feast-day will be held on Sunday 20th November 2011 at the CYM premises “Karpaty” in Buxton.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/sbs-radio/">SBS радіо</a>
+        <a href="https://ukrainians.org.au/media/sbs-radio/">SBS радіо</a>
       </h1>
       <time datetime="2011-10-31T03:31:11Z" class="post-date">Mon, Oct 31, 2011</time>
       SBS радіо, як одна із найбільших національних радіокомпаній Австралії, займає одне із провідних місць у багатомовному світі. Одним із підрозділів SBS радіо є українське радіомовлення в Австралії.
@@ -85,7 +169,7 @@ The work is due to be published March 2012, but a special pre-publication offer 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/australian-presentation-and-launch-of-the-book-holodomor-the-great-famine-in-ukraine-1932-1933-and-the-book-series-%e2%80%9cpoland-and-ukraine-in-the-1930s-and-1940s%e2%80%9d/">Australian Presentation and Launch of the book &#34;Holodomor. The Great Famine in Ukraine 1932-1933&#34;  and the book series “Poland and Ukraine in the 1930s and 1940s” </a>
+        <a href="https://ukrainians.org.au/events/victoria/australian-presentation-and-launch-of-the-book-holodomor-the-great-famine-in-ukraine-1932-1933-and-the-book-series-%e2%80%9cpoland-and-ukraine-in-the-1930s-and-1940s%e2%80%9d/">Australian Presentation and Launch of the book &#34;Holodomor. The Great Famine in Ukraine 1932-1933&#34;  and the book series “Poland and Ukraine in the 1930s and 1940s” </a>
       </h1>
       <time datetime="2011-10-31T02:48:27Z" class="post-date">Mon, Oct 31, 2011</time>
       Monash European and EU Centre
@@ -102,14 +186,14 @@ Place: Lecture Theatre HB32, Building H, Monash University Caulfield Campus
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/verchovyna-end-of-year-concert/">“Verchovyna” End of Year Concert / Концерт “Верховини”</a>
+        <a href="https://ukrainians.org.au/events/victoria/verchovyna-end-of-year-concert/">“Verchovyna” End of Year Concert / Концерт “Верховини”</a>
       </h1>
       <time datetime="2011-10-31T00:04:49Z" class="post-date">Mon, Oct 31, 2011</time>
       The Verchovyna Ukrainian Dance School and Ensemble from Melbourne is organising an End of Year Concert. The concert is scheduled for Sunday, 27th November 2011 at the Ukrainian House, Essendon. Танцювальний ансамбль “Верховина” влаштовує концерт з нагоди кінця вишкільного року. Концерт відбудеться в неділю 27-ого листопада 2011р. в Українському Народному Домі, Ессендон.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/%d0%94%d0%b5%d0%bd%d1%8c-%d0%9f%d0%be%d0%ba%d1%80%d0%be%d0%b2%d0%b8-%d0%9f%d1%80%d0%b5%d1%81%d0%b2%d1%8f%d1%82%d0%be%d1%97-%d0%91%d0%be%d0%b3%d0%be%d1%80%d0%be%d0%b4%d0%b8%d1%86%d1%96-%d0%b2-%d0%a1/">День Покрови Пресвятої Богородиці в Сіднеї</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/%d0%94%d0%b5%d0%bd%d1%8c-%d0%9f%d0%be%d0%ba%d1%80%d0%be%d0%b2%d0%b8-%d0%9f%d1%80%d0%b5%d1%81%d0%b2%d1%8f%d1%82%d0%be%d1%97-%d0%91%d0%be%d0%b3%d0%be%d1%80%d0%be%d0%b4%d0%b8%d1%86%d1%96-%d0%b2-%d0%a1/">День Покрови Пресвятої Богородиці в Сіднеї</a>
       </h1>
       <time datetime="2011-10-27T00:23:40Z" class="post-date">Thu, Oct 27, 2011</time>
       On Sunday the 16th October 2011 the Ukrainian Sviato Pokrovska (Feast of the Protection of the Blessed Virgin Mary) Parish in Homebush celebrated the 60th anniversary of its founding and the 50th anniversary of the consecration of its Church. A large gathering paid homage to all the dedicated men and woman who gave so much to realize the dream of building a place of worship. They remembered all the work that went into the building of the Ukrainian Orthodox Church life in Australia.
@@ -120,34 +204,25 @@ Place: Lecture Theatre HB32, Building H, Monash University Caulfield Campus
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/tymoshenko-verdict-letter-to-australian-opposition/">Tymoshenko Verdict - Letter to Australian Opposition</a>
+        <a href="https://ukrainians.org.au/politics/tymoshenko-verdict-letter-to-australian-opposition/">Tymoshenko Verdict - Letter to Australian Opposition</a>
       </h1>
       <time datetime="2011-10-24T10:42:56Z" class="post-date">Mon, Oct 24, 2011</time>
       Further to the correspondence between the Australian Federation of Ukrainian Organisations(AFUO) and the Australian Government, the AFUO has now written a letter to the Australian opposition coalition requesting that they add their voice to the world-wide condemnation regarding the initial politically-motivated arrest and subsequent conviction and sentence of the Ukrainian opposition leader, Yulia Tymoshenko. The text of the letter can be read here: Julie Bishop Tymoshenko doc
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/geelong-malanka-%d0%9c%d0%b0%d0%bb%d0%b0%d0%bd%d0%ba%d0%b0-%d0%b2-%d0%94%d0%b6%d1%96%d0%bb%d0%be%d0%bd%d2%91%d1%83/">Geelong Malanka / Маланка в Джілонґу</a>
+        <a href="https://ukrainians.org.au/events/victoria/geelong-malanka-%d0%9c%d0%b0%d0%bb%d0%b0%d0%bd%d0%ba%d0%b0-%d0%b2-%d0%94%d0%b6%d1%96%d0%bb%d0%be%d0%bd%d2%91%d1%83/">Geelong Malanka / Маланка в Джілонґу</a>
       </h1>
       <time datetime="2011-10-21T00:02:44Z" class="post-date">Fri, Oct 21, 2011</time>
       The Association of Ukrainians (AUV) Geelong Branch and the Ukrainian Youth Association (CYM) Geelong are organising a Malanka (New Year’s Eve Dance) on Friday 13th January 2012 at the Ukrainian Hall, 57 Pakington St, Geelong West.
-Українська Громада Вікторії (УГВ) в Джілонґу та Спілка Української Молоді (СУМ) в Джілонґу влаштовують Маланку в п'ятницю 13-ого січня 2012 р. в Українському Народному Домі при 57 Pakington St, Geelong West.
+Українська Громада Вікторії (УГВ) в Джілонґу та Спілка Української Молоді (СУМ) в Джілонґу влаштовують Маланку в п&rsquo;ятницю 13-ого січня 2012 р. в Українському Народному Домі при 57 Pakington St, Geelong West.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australian-government-response-to-tymoshenko-sentence/">Australian Government Response to Tymoshenko Sentence</a>
+        <a href="https://ukrainians.org.au/politics/australian-government-response-to-tymoshenko-sentence/">Australian Government Response to Tymoshenko Sentence</a>
       </h1>
       <time datetime="2011-10-19T22:58:20Z" class="post-date">Wed, Oct 19, 2011</time>
-      The Office of the Australian Ministry of Foreign Affairs has written a letter regarding the matter of Yulia Tymoshenko's conviction and sentence. Канцелярії Міністра Закордонних Cправ Aвстралії переслала листа в справі Юлі Тимошенко. The text of the letter can be viewed here / текст листа можна переглянути тут: img-X19150412r2
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/%d0%9e%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d0%a1%d0%b2%d1%96%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%9a%d0%be%d0%bd%d2%91%d1%80%d0%b5%d1%81%d1%83-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96-2/">Обіжник Світового Конґресу Українців – вересень, 2011 р.</a>
-      </h1>
-      <time datetime="2011-10-18T23:01:52Z" class="post-date">Tue, Oct 18, 2011</time>
-      **[ ](http://www.ozeukes.com/wp-content/uploads/2011/10/World-Congress-of-Ukrainians-72-dpi-150-pxls-2.jpg)ОБІЖНИК**
-СВІТОВОГО КОНҐРЕСУ УКРАЇНЦІВ № 9 (97) – Вересень, 2011 р. Світовий Конґрес Українців (СКУ) випустив обіжник на вересень 2011 р. В обіжнику містяться такі теми:
- * Державна програма співпраці із закордонними українцями на період до 2015 р. * Меморандум про важливі питання, що стосуються України та української діаспори * Президент СКУ зустрівся з високопoсaдовцями Європейського Парламенту в Страсбурзі * Президент СКУ зустрівся з високопосадовцями обсє та ООН у Відні * Президент СКУ взяв участь у VI з’їзді Союзу Українців Румунії * Подорожі генерального Секретаря СКУ по Україні * Генеральний Секретар СКУ взяв участь у святкуванні 20-ої річниці незалежності України в Римі * СКУ вітає Преосвященнішого Владику Петра з призначенням офіційним представником до ради директорів СКУ від УГКЦ * Привітання СКУ на адресу українських інституцій   Цілий обіжник можна прочитати тут: UWC Newsletter September 2011
+      The Office of the Australian Ministry of Foreign Affairs has written a letter regarding the matter of Yulia Tymoshenko&rsquo;s conviction and sentence. Канцелярії Міністра Закордонних Cправ Aвстралії переслала листа в справі Юлі Тимошенко. The text of the letter can be viewed here / текст листа можна переглянути тут: img-X19150412r2
       
     </article>
 
@@ -1357,6 +1432,8 @@ Place: Lecture Theatre HB32, Building H, Monash University Caulfield Campus
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

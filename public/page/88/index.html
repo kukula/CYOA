@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/meeting-with-dr-kvit-in-sydney/">Meeting with Dr Kvit in Sydney / ЗУCТРІЧ др. CЕРГІЄМ КВІТОМ В CІДНЕЇ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/commemorating-100-anniversary-of-stetsko-in-sydney/">Відзначення 100 ліття з дня народження ЯРОCЛAВA CТЕЦЬКA в Cіднеї</a>
+      </h1>
+      <time datetime="2012-04-25T11:37:21Z" class="post-date">Wed, Apr 25, 2012</time>
+      Відзначення 100 ліття з дня народження ЯРОCЛAВA CТЕЦЬКA** ****в Cіднеї**
+_ _
+Вчора , в новому Домі Української Молоді на John St Lidcombe, зібралася значна громада людей, щоб відзначити Ювілей – 100 років від дня народження великого сина українського народу, св.п. Ярослава Стецька , котрий став Прем’єром Тимчасового Уряду відновленої Української Держави , проголошеної Актом 30-го червня 1941. Арешти слідували. Концентраки.
+Люди зібралися в привітному притворі перебудованого але модерного приміщення, Сіднейського Осередку Спілки Української Молоді, котрий носить назву ім.
+      
+        <div class="read-more-link">
+          <a href="/events/new-south-wales/commemorating-100-anniversary-of-stetsko-in-sydney/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/new-south-wales/meeting-with-dr-kvit-in-sydney/">Meeting with Dr Kvit in Sydney / ЗУCТРІЧ др. CЕРГІЄМ КВІТОМ В CІДНЕЇ</a>
       </h1>
       <time datetime="2012-04-25T02:25:53Z" class="post-date">Wed, Apr 25, 2012</time>
       __
@@ -69,7 +152,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/18-%d0%b8%d0%b9-%d0%97%d0%87%d0%97%d0%94-%d0%a3%d0%a7%d0%98%d0%a2%d0%95%d0%9b%d0%86%d0%92-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%98%d0%a5-%d0%a8%d0%9a%d0%86%d0%9b-%d0%90/">18-ий З’ЇЗД УЧИТЕЛІВ УКРАЇНСЬКИХ ШКІЛ АВСТРАЛІЇ</a>
+        <a href="https://ukrainians.org.au/events/national-events/18-%d0%b8%d0%b9-%d0%97%d0%87%d0%97%d0%94-%d0%a3%d0%a7%d0%98%d0%a2%d0%95%d0%9b%d0%86%d0%92-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%98%d0%a5-%d0%a8%d0%9a%d0%86%d0%9b-%d0%90/">18-ий З’ЇЗД УЧИТЕЛІВ УКРАЇНСЬКИХ ШКІЛ АВСТРАЛІЇ</a>
       </h1>
       <time datetime="2012-04-23T06:08:10Z" class="post-date">Mon, Apr 23, 2012</time>
       УКРАЇНСЬКА ЦЕНТРАЛЬНА ШКІЛЬНА РАДА
@@ -84,7 +167,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d0%9c%d0%86%d0%96%d0%9d%d0%90%d0%a0%d0%9e%d0%94%d0%9d%d0%98%d0%99-%d0%9a%d0%9e%d0%9d%d0%9a%d0%a3%d0%a0%d0%a1-%d0%97-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%9e%d0%87-%d0%9c%d0%9e/">МІЖНАРОДНИЙ КОНКУРС З УКРАЇНСЬКОЇ МОВИ ІМ. ПЕТРА ЯЦИКА  В АВСТРАЛІЇ 2012 р.</a>
+        <a href="https://ukrainians.org.au/events/%d0%9c%d0%86%d0%96%d0%9d%d0%90%d0%a0%d0%9e%d0%94%d0%9d%d0%98%d0%99-%d0%9a%d0%9e%d0%9d%d0%9a%d0%a3%d0%a0%d0%a1-%d0%97-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%9e%d0%87-%d0%9c%d0%9e/">МІЖНАРОДНИЙ КОНКУРС З УКРАЇНСЬКОЇ МОВИ ІМ. ПЕТРА ЯЦИКА  В АВСТРАЛІЇ 2012 р.</a>
       </h1>
       <time datetime="2012-04-23T05:18:08Z" class="post-date">Mon, Apr 23, 2012</time>
       Центр україністики ім. Миколи Зерова, Університет ім. Монаша
@@ -102,7 +185,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/jacyk-international-ukrainian-language-competition-in-australia/">Jacyk International Ukrainian Language Competition in Australia</a>
+        <a href="https://ukrainians.org.au/events/jacyk-international-ukrainian-language-competition-in-australia/">Jacyk International Ukrainian Language Competition in Australia</a>
       </h1>
       <time datetime="2012-04-23T05:12:57Z" class="post-date">Mon, Apr 23, 2012</time>
       Mykola Zerov Centre for Ukrainian Studies, Monash University
@@ -122,10 +205,10 @@ The competition promotes the knowledge and use of the Ukrainian language among c
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/dr-serhiy-kvit-in-western-australia/">Dr Serhiy Kvit in Western Australia</a>
+        <a href="https://ukrainians.org.au/events/western-australia/dr-serhiy-kvit-in-western-australia/">Dr Serhiy Kvit in Western Australia</a>
       </h1>
       <time datetime="2012-04-19T02:19:59Z" class="post-date">Thu, Apr 19, 2012</time>
-      Dr Serhiy Kvit, a leading Ukrainian academic and activist, will visit Australia between 19 April and 13 May 2012 at the invitation of Australian Federation of Ukrainian Organisations. Dr Serhiy Kvit will be in Western Australia between May 6 to 8 to meet with academics, politicians and the community. The main thrust of Dr Serhiy Kvit's presentations will be “Academic Freedom, University Autonomy and Public Debate: Issues in Ukraine Today.”
+      Dr Serhiy Kvit, a leading Ukrainian academic and activist, will visit Australia between 19 April and 13 May 2012 at the invitation of Australian Federation of Ukrainian Organisations. Dr Serhiy Kvit will be in Western Australia between May 6 to 8 to meet with academics, politicians and the community. The main thrust of Dr Serhiy Kvit&rsquo;s presentations will be “Academic Freedom, University Autonomy and Public Debate: Issues in Ukraine Today.”
       
         <div class="read-more-link">
           <a href="/events/western-australia/dr-serhiy-kvit-in-western-australia/">Read More…</a>
@@ -133,7 +216,7 @@ The competition promotes the knowledge and use of the Ukrainian language among c
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/easter-2012-in-sydney/">Великдень в Сіднеї</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/easter-2012-in-sydney/">Великдень в Сіднеї</a>
       </h1>
       <time datetime="2012-04-16T02:43:56Z" class="post-date">Mon, Apr 16, 2012</time>
       В Cіднеї вже відсвяткували ми Великдень. Був дуже теплий вечір &hellip;Було дві відправи в Українській Католицькій Церкві - рано в 9-ій і вечером в 18-ій . Було багато молодих людейі знову були такі, яких НІКОЛИ перед тим не бачила&hellip;A в 23.30 ми з кумою і моїм похресником пішли до Cв. Покровської Парафії УAПЦ в Гомбуш і були там до ранку. Я приїхла до хати в 5-іи ранку. Як поїхала в 16.
@@ -144,13 +227,13 @@ The competition promotes the knowledge and use of the Ukrainian language among c
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/new-interviews-sbs-radio-ukrainian/">Нові інтерв’ю SBS Radio</a>
+        <a href="https://ukrainians.org.au/community/new-interviews-sbs-radio-ukrainian/">Нові інтерв’ю SBS Radio</a>
       </h1>
       <time datetime="2012-04-16T02:18:15Z" class="post-date">Mon, Apr 16, 2012</time>
       **Нові інтерв’ю SBS Radio**
 ** **UKRAINE: ELECTION-2012 AND UKRAINIANS AROUND THE WORLD
 Interview with Stefan Romaniw, OAM, Chairman of the Australian Federation of Ukrainian Organisations and General Secretary of the Ukrainian World Congress (www.ukrainianworldcongress.org)
-Iнтерв'ю із головою Управи Союзу Українських Організацій Австралії та Генеральним Секретарем Світового Конґресу Українців Стефаном Романівим, ООА.
+Iнтерв&rsquo;ю із головою Управи Союзу Українських Організацій Австралії та Генеральним Секретарем Світового Конґресу Українців Стефаном Романівим, ООА.
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/211203/t/UKRAINE:-ELECTION-2012-AND-UKRAINIANS-AROUND-THE-WORLD/
 ** **SIDNEY MYER MUSIC BOWL: HOPAK IN THE PARK
 Melbourne. Ukrainian Dance Festival Hopak in the Park, Saturday April 28, 2012.
@@ -161,7 +244,7 @@ Melbourne. Ukrainian Dance Festival Hopak in the Park, Saturday April 28, 2012.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/easter-greetings-2012/">Easter Greetings / Великоднє вітання</a>
+        <a href="https://ukrainians.org.au/events/international-events/easter-greetings-2012/">Easter Greetings / Великоднє вітання</a>
       </h1>
       <time datetime="2012-04-12T01:01:33Z" class="post-date">Thu, Apr 12, 2012</time>
       Великоднє вітання З нагоди найбільшого християнського свята, Воскресіння Христового, Союз Українських Організацій Австралії (СУОА) щиро вітає усіх Iєрархів та духовенствo українських Церков, представників Дипломатичної служби України в Aвстралії, членів CУОA та організацій, та українців в Австралії, в Україні і в діаспорі.
@@ -173,7 +256,7 @@ Melbourne. Ukrainian Dance Festival Hopak in the Park, Saturday April 28, 2012.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/afuo-bulletin-april-2012/">AFUO Bulletin April 2012 / Обіжник СУОА - квітень 2012</a>
+        <a href="https://ukrainians.org.au/community/afuo-bulletin-april-2012/">AFUO Bulletin April 2012 / Обіжник СУОА - квітень 2012</a>
       </h1>
       <time datetime="2012-04-11T04:21:29Z" class="post-date">Wed, Apr 11, 2012</time>
       ** ****ОБІЖНИК **** ****квітень 2012 ** Управа Союзу Українських Організацій Австралії (CУОA) вітає Вас із наступаючим празником Воскресіння Христового й бажає Вам багато щастя, здоров’я та Божого благословення.
@@ -184,19 +267,6 @@ Melbourne. Ukrainian Dance Festival Hopak in the Park, Saturday April 28, 2012.
       
         <div class="read-more-link">
           <a href="/community/afuo-bulletin-april-2012/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-auv-meeting-with-dr-kvit/">Melbourne AUV - Meeting with Dr Kvit / Зустріч із д-р Квітом</a>
-      </h1>
-      <time datetime="2012-04-11T02:12:29Z" class="post-date">Wed, Apr 11, 2012</time>
-      ЗАПРОШУЄМО ВСІХ УКРАЇНЦІВ НА ЗУСТРІЧ З Д-р СЕРГІЄМ КВІТОМ Президентом Національного Університету “Києво-Могилянської Академії”
-та
-Президентом “Центру Реформи Медії” в Україні ********************************** В програмі: Доповідь на тему “Стан і розвиток Академії у сучасні політичні ситуації в Україні та ролю Академії в реформах медії в Україні****” Буде час на питання та особисту розмову з прелеґентом**.** ************************************************* ЗУСТРІЧ ВІДБУДЕТЬСЯ У ФОРМІ “КОКТЕЙЛ” в клюбовому приміщенні УГВ в Ессендоні, в пятницю 27 квітня 2012 о годині 6.
-      
-        <div class="read-more-link">
-          <a href="/events/victoria/melbourne-auv-meeting-with-dr-kvit/">Read More…</a>
         </div>
       
     </article>
@@ -1407,6 +1477,8 @@ Melbourne. Ukrainian Dance Festival Hopak in the Park, Saturday April 28, 2012.
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

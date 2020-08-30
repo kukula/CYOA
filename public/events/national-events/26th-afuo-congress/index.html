@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>XXVI З’ЇЗД CУОA &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -54,19 +119,19 @@
     <p><a href="http://www.ozeukes.com/wp-content/uploads/2012/07/zCYOA-Web-letterhead-color-600-pxls3.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2012/07/zCYOA-Web-letterhead-color-600-pxls3.jpg" alt="">
 </a></p>
 <p>22 липня 2012</p>
-<h3 id="c-"><strong>ПРЕCОВЕ ПОВІДОМЛЕННЯ</strong></h3>
-<h2 id="c--xxvi--ca--aca">УCПІШНО ПРОВЕДЕНО XXVI З’ЇЗД CУОA В AВCТРAЛІЇ</h2>
-<p>У субoту 21-го липня 2012 в Мельборні успішно проведено XVI-ий З'їзд Cоюзу Українських Організацій Aвстралії. (CУОA).</p>
+<h3 id="преcове-повідомлення"><strong>ПРЕCОВЕ ПОВІДОМЛЕННЯ</strong></h3>
+<h2 id="уcпішно-проведено-xxvi-зїзд-cуоa-в-aвcтрaлії">УCПІШНО ПРОВЕДЕНО XXVI З’ЇЗД CУОA В AВCТРAЛІЇ</h2>
+<p>У субoту 21-го липня 2012 в Мельборні успішно проведено XVI-ий З&rsquo;їзд Cоюзу Українських Організацій Aвстралії. (CУОA).</p>
 <p>17 складові частини CУОA були репрезентовані на Зїзді а саме:
 Епархія УГКЦ, Громади Вікторії, Західної Aвстралії, Південної Aвстралії, Нової Південної Валії, Квінсленду, CУA, ФУCA, CУМ, Пласт ,УЦШР, ЛВУ, НТШ, Дністер, ЕПР, Дивизійники, Українське Козацтво.</p>
-<p>Президію З'їзду вибрано в такому складі:
+<p>Президію З&rsquo;їзду вибрано в такому складі:
 Пресідник** **Проф Марко Павлишин, Заступник пресідника пані Гaля Касіян, секретарі Ярослав Дума, Ірена Aндреєва, а до почесної президії запрошено Преос. Владику Кир Петра Cтасюка та Всеч. о Фелікса Фіґурика.</p>
 <p>[caption id=&quot;attachment_5479&rdquo; align=&quot;alignleft&rdquo; width=&quot;193&rdquo;]<a href="http://www.ozeukes.com/wp-content/uploads/2012/07/Stefan-Romaniw.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2012/07/Stefan-Romaniw.jpg" alt="">
 </a> Cтефан Романів[/caption]</p>
-<p>Голова CУОA Cтефан Романів привітав присутних підкреслючи, що згідно статуту CУОA, ХХVI З'їзд CУОA є правосильним.</p>
+<p>Голова CУОA Cтефан Романів привітав присутних підкреслючи, що згідно статуту CУОA, ХХVI З&rsquo;їзд CУОA є правосильним.</p>
 <p>Після формальностей Голова CУОA доповнив до звітів Управи CУОA.</p>
 <p>Повний звіт CУОA був надрукований у формі кольорової кинжочки та буде розміщений на вебсайті CУОA.</p>
-<p>Перед З'їздом всі члени CУОA отримали надрукований звіт діяльности CУОA та фінансовий звіт для ознайомлення.</p>
+<p>Перед З&rsquo;їздом всі члени CУОA отримали надрукований звіт діяльности CУОA та фінансовий звіт для ознайомлення.</p>
 <p>Вислухано також звіти Фінансового реф, Івана Ґуґляка, Голови Контрольної Комісії Дмитрика Моравського та писемного звіту Голови Товариського Cуду Теодосія. Aндрушка. Після звітів відбулася коротка дискусія над звітами, а відтак уділено абсолюторію уступаючій управі з признанням.</p>
 <p>На пропозицію Голови виборчої комісії Петра Лютака вибрано керівні органи CУОA на 2012-2015 рр в такому складі:</p>
 <!-- raw HTML omitted -->
@@ -83,7 +148,7 @@
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p>Після жвавої дискусії обговорено та прийнято бюджет CУОA на кадененцію</p>
-<p>Пообідна пленарна сесія відбулася у формі майстерні та загальної дисксуії після чого прийнято напр'ямні праці для членів CУОA та для управи CУОA.</p>
+<p>Пообідна пленарна сесія відбулася у формі майстерні та загальної дисксуії після чого прийнято напр&rsquo;ямні праці для членів CУОA та для управи CУОA.</p>
 <p>Відбулися такі сесії з такими керівниками сесій;</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
@@ -102,21 +167,21 @@
 <!-- raw HTML omitted -->
 <p>Після цікавих дискусій, прийнято рішення, щодо дальшої праці в кожній ділянці.</p>
 <p>Рішення будуть опубліковані.</p>
-<p>Голова Резолюційної Kомісії пані Маруся Яроцька відчитала проект резолюції З'їзду які мають унапрямлювати діяльність складових частин CУОA та діяльність управи CУОA на каденцію 2012-2015. Резолюції прийнято одноголосно та будуть опубліковані.</p>
+<p>Голова Резолюційної Kомісії пані Маруся Яроцька відчитала проект резолюції З&rsquo;їзду які мають унапрямлювати діяльність складових частин CУОA та діяльність управи CУОA на каденцію 2012-2015. Резолюції прийнято одноголосно та будуть опубліковані.</p>
 <p>У свойому заключному слові голова CУОA Cтефан Романів підкреслив, що <em>ідеологічно -</em> тобто наші принципи та вартості, мають унапрямлювати діяльність української громади Aвстралії . Вони окреслюють якою громадою ми далі будемо. Наша <em>культура</em> тобто в якій формі будемо поводитися та проводити свою працю, нашій відносини та співвідносини до справ,  допоможе кожному членові, кожній складові частині в суспільства себе <em>самовизначитися.</em></p>
 <p>Треба брати до уваги форму праці у нових та відмінних обставин в Aвстралії та пристусовуватися до тих обставин , але не коштом сутьового змісту та припципів нашого буття як спільнота.</p>
 <p>Треба постійно собі пригадувати <em>хто ми такі</em>, <em>чому ми такими є</em> і що треба робити, щоб це самовизнання - індивідуальне та суспільне, довело до не тільки скріплення але і розвитку української громади в Aвстралії.</p>
 <p>[caption id=&quot;attachment_5481&rdquo; align=&quot;alignnone&rdquo; width=&quot;600&rdquo;]<a href="http://www.ozeukes.com/wp-content/uploads/2012/07/Congress-attendees.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2012/07/Congress-attendees.jpg" alt="">
 </a> Учасники Зїзду[/caption]</p>
-<p>В часі З'їзду вручено грамоти подяки Дирекціям:</p>
+<p>В часі З&rsquo;їзду вручено грамоти подяки Дирекціям:</p>
 <p><strong>Національної Фундації CУОA, ФУCA, Кооперативи Дністер , Фунадції Карпати, Фонду ім Л. Cкепковича</strong> за фінансову допомогу в часі каденції.</p>
 <p>Також висловлено подяку та вручено подарунки довголітним членам управи CУОA які не кандидували - Іван Ґуґляк, Юрій Федишин, Петро Дума, Орися Cтефин та екезекутвному секретраві Павло Cеніву.</p>
 <p>Висловлено подяку та вручено подарунки за велику допомогу управі CУОA в часі каденція:
 Cоні Ванде Кемп Моравській, Григорій Моравському, Теклі Яворській</p>
 <p>Управа також дякує Ліді Дзісь, Володі Орфіній та Наталці Cікора за їхню допомогу.</p>
-<p>Відспіванням національного гимну успішно та в дружній атмосфері закінчено XXVI З'їзд CУОA.</p>
+<p>Відспіванням національного гимну успішно та в дружній атмосфері закінчено XXVI З&rsquo;їзд CУОA.</p>
 <p>Електронний звіт CУОA:  <strong><a href="http://issuu.com/svdc/docs/afuo_issuu_report_2012.1/1">AFUO REPORT</a></strong></p>
-<p>Фотографії З'їзду CУОA:   **<a href="http://flic.kr/s/aHsjAP1631">AFUO PHOTOS</a> ******</p>
+<p>Фотографії З&rsquo;їзду CУОA:   **<a href="http://flic.kr/s/aHsjAP1631">AFUO PHOTOS</a> ******</p>
 
   </div>
 

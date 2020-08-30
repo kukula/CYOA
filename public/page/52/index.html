@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/children-festival-2014/">CHILDREN FESTIVAL 2014</a>
+        <a href="https://ukrainians.org.au/events/victoria/shevchenko-concert-melbourne-2014/">Шевченквський Концерт у Мельбурні – 30/3/2014р</a>
+      </h1>
+      <time datetime="2014-04-01T02:27:25Z" class="post-date">Tue, Apr 1, 2014</time>
+      В неділю 30 березня 2014р. українське громадянство Мельбурну відзначили 200-ліття з дня народження Тараса Шеченка святочним концертом.
+В концерті брали участь різні мистецькі склади та одиниці. Поміж ними:
+ * Капела «ЧЕРЕМОШ» при осереду СУМ-у в Мельбурні * Художний керівник і дириґент - Заслужений діяч мистецтв України Володимир Головко * Концертмейстер Христина Головко * Солісти * Анна Дацьків * Галина Костюк * Євген Стефин   
+ * Доповідач на тему «Заповіт Тараса Шевченка» - Проф.
+      
+        <div class="read-more-link">
+          <a href="/events/victoria/shevchenko-concert-melbourne-2014/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/new-south-wales/children-festival-2014/">CHILDREN FESTIVAL 2014</a>
       </h1>
       <time datetime="2014-04-01T00:50:07Z" class="post-date">Tue, Apr 1, 2014</time>
       **МАРІЧКА ГАЛАБУРДА-ЧИГРИН****_ _****_СІДНЕЙ 30.3.2014 _**
@@ -65,14 +148,14 @@ CHILDREN FESTIVAL 2014** в СІДНЕЇ Й МИ** В неділю 30.3.2014 в�
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-7/">Crimea Bulletin 7</a>
+        <a href="https://ukrainians.org.au/politics/crimea-bulletin-7/">Crimea Bulletin 7</a>
       </h1>
       <time datetime="2014-04-01T00:26:53Z" class="post-date">Tue, Apr 1, 2014</time>
       Issue #7 of the Crimea bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, has been released by the Ukrainian Embassy in Canberra. This issue summarises events of 26-27 March 2014, including the overwhelming vote by the United Nations General Assembly endorsing Ukraine’s territorial integrity, and further support for Ukraine from other governments and organisations.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/free-seminar-at-monash-university-ukraine-between-the-eu-and-russia/">Free Seminar at Monash University - Ukraine: Between the EU and Russia</a>
+        <a href="https://ukrainians.org.au/events/victoria/free-seminar-at-monash-university-ukraine-between-the-eu-and-russia/">Free Seminar at Monash University - Ukraine: Between the EU and Russia</a>
       </h1>
       <time datetime="2014-03-29T00:43:42Z" class="post-date">Sat, Mar 29, 2014</time>
       Ukraine: Between the EU and Russia A public seminar “Ukraine: Between the EU and Russia” will be presented by the Monash European and EU Centre and the Mykola Zerov Centre for Ukrainian Studies, Monash University.
@@ -86,7 +169,7 @@ RSVP: by 3 April 2014 to europecentre@monash.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/act/free-lecture-in-canberra-ukraine-between-the-eu-and-russia/">Free Lecture in Canberra - Ukraine: Between the EU and Russia</a>
+        <a href="https://ukrainians.org.au/events/act/free-lecture-in-canberra-ukraine-between-the-eu-and-russia/">Free Lecture in Canberra - Ukraine: Between the EU and Russia</a>
       </h1>
       <time datetime="2014-03-29T00:39:49Z" class="post-date">Sat, Mar 29, 2014</time>
       Ukraine: Between the EU and Russia Professor Norman Davies will be presenting a lecture titled “Ukraine: Between the EU and Russia”.
@@ -101,7 +184,7 @@ RSVP by Friday 28 March 2014 E-mail: europe@anu.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-6/">Crimea Bulletin 6</a>
+        <a href="https://ukrainians.org.au/politics/crimea-bulletin-6/">Crimea Bulletin 6</a>
       </h1>
       <time datetime="2014-03-27T03:23:31Z" class="post-date">Thu, Mar 27, 2014</time>
       Issue #6 of the Crimea bulletin “Ukraine Under Attack” has been released by the Ukrainian Embassy in Canberra. This issue summarises events of 24-25 March 2014 and includes excerpts from the “Hague Declaration” issued by the G-7 group of nations, the European Council and European Commission.
@@ -109,7 +192,7 @@ crimea bulletin 6
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/crimea-and-ukrainians-in-australia/">КРИМ ТА УКРАЇНЦІ АВСТРАЛІЇ</a>
+        <a href="https://ukrainians.org.au/current-affairs/crimea-and-ukrainians-in-australia/">КРИМ ТА УКРАЇНЦІ АВСТРАЛІЇ</a>
       </h1>
       <time datetime="2014-03-26T10:28:31Z" class="post-date">Wed, Mar 26, 2014</time>
       Богдан Рудницький веде розмову із головою Управи Союзу Українських Організацій Австралії Стефаном Романівим
@@ -118,7 +201,7 @@ Bogdan Rudnytski leads a discussion with Stefan Romaniw, the chairman of the Aus
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/sydney-children-read-the-works-of-shevchenko/">ДІТИ СІДНЕЮ ЧИТАЮТЬ твори ТАРАСА ШЕВЧЕНКА</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/sydney-children-read-the-works-of-shevchenko/">ДІТИ СІДНЕЮ ЧИТАЮТЬ твори ТАРАСА ШЕВЧЕНКА</a>
       </h1>
       <time datetime="2014-03-25T05:37:24Z" class="post-date">Tue, Mar 25, 2014</time>
       **_МАРІЧКА ГАЛАБУРДА-ЧИГРИН_**
@@ -131,7 +214,7 @@ Bogdan Rudnytski leads a discussion with Stefan Romaniw, the chairman of the Aus
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/karpaty-foundation-media-release/">Karpaty Foundation Media Release</a>
+        <a href="https://ukrainians.org.au/community/karpaty-foundation-media-release/">Karpaty Foundation Media Release</a>
       </h1>
       <time datetime="2014-03-24T06:43:50Z" class="post-date">Mon, Mar 24, 2014</time>
       SCU and the Karpaty Foundation provide grants to individuals and organisations and individual scholarships for the purpose of building a fair, just, creative and caring society - particularly in relation to the Ukrainian community in Australia and in Ukraine by:
@@ -143,18 +226,11 @@ Bogdan Rudnytski leads a discussion with Stefan Romaniw, the chairman of the Aus
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-5/">Crimea Bulletin 5</a>
+        <a href="https://ukrainians.org.au/politics/crimea-bulletin-5/">Crimea Bulletin 5</a>
       </h1>
       <time datetime="2014-03-24T06:34:34Z" class="post-date">Mon, Mar 24, 2014</time>
       Issue #5 of the Crimea bulletin “Ukraine Under Attack” has been released by the Ukrainian Embassy in Canberra. This issue summarises events of 20-21 March 2014 and includes steps that the Ukrainian Government is undertaking to respond to Russian aggression.
 crimea bulletin 5
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/taras-shevchenko-200th-anniversary-concert-wa/">Taras Shevchenko 200th Anniversary Concert - WA</a>
-      </h1>
-      <time datetime="2014-03-22T04:10:39Z" class="post-date">Sat, Mar 22, 2014</time>
-      The Ukrainian Association of Western Australia will honour the memory of Taras Shevchenko with a 200th Anniversary Concert on Sunday March 30th at the Ukrainian Catholic Parish Hall in Maylands.
       
     </article>
 
@@ -1364,6 +1440,8 @@ crimea bulletin 5
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

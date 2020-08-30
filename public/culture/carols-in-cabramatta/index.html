@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>КОЛЯДКИ У КАБРАМАТТІ &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -53,8 +118,8 @@
     
     <p><strong><em>МАРІЧКА ГАЛАБУРДА–ЧИГРИН</em></strong></p>
 <p><strong><em>Сідней 23.12.2012</em></strong></p>
-<h2 id="--"><strong>КОЛЯДКИ У КАБРАМАТТІ</strong></h2>
-<p>Тоді коли десь у світах бушували стихії, а в Австралії божевільно палюче, сонце спекотно гріло,  а країни Европи й  Україну морози й замели сніговії, - **в неділю  23 грудня 2012 **суспільство Західнього Сіднею відбуло в Громадському Домі в Кабраматті Передріздв'яну Зустріч.</p>
+<h2 id="колядки-у-кабраматті"><strong>КОЛЯДКИ У КАБРАМАТТІ</strong></h2>
+<p>Тоді коли десь у світах бушували стихії, а в Австралії божевільно палюче, сонце спекотно гріло,  а країни Европи й  Україну морози й замели сніговії, - **в неділю  23 грудня 2012 **суспільство Західнього Сіднею відбуло в Громадському Домі в Кабраматті Передріздв&rsquo;яну Зустріч.</p>
 <p>Управа Громади небула певна скільки людей прибуде, була навіть мова про переложення свята на січень місяць, але тоді на ту же неділю припадало би аж три імпрези. Свято рішили відбути й добре, бо прийшло більше людей, як зголосилося й відбулося воно гарно.</p>
 <p>Я дещо спізнилася, так не годиться робити ведучій свята, але після Св. Літургії до св. Покровської  Парафії УАПЦ в Гомбуш  приходив св. Миколай й їзда з імпрези на імпрезу звичайно  кінчається     спізненням.</p>
 <p>Пан  <strong>Григорій Глухан</strong>, голова Громади привітав всіх присутніх й передав ведення свята мені.  Відмовили ми всі разом молитву &ldquo;Отче наш&rdquo; (о. Олег Стефанишин також приїхав з спізненням.) й пані їмость <strong>Наталя Стефанишин</strong>, разом з панями подавали обід.</p>
@@ -67,7 +132,7 @@
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2012/12/DSCN1665.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2012/12/DSCN1665.jpg" alt="">
 </a></p>
 <p>Згадала  про книжку під назвою <strong>&ldquo;Партизанськими дорогами з командиром  &ldquo;Залізняком &ldquo;,</strong> яку дав мені коли перебувала 3 місяці вдома мій батько, щоби прочитала. В ній описи-спогади тих повстанців &ldquo;Месників&rdquo;, які воювали на Рaвсько-Любачівських землях. Для мене було несподіванкою прочитати на стр. 84 до 92 спогади нашого сіднейського друга-упівця, який минулого року помер, **бл.п. Стефана Маркевича **- псевдо Мурин.  Ми всі його знали, скромного, доброго, активного громадяна нашої спільноти, але не всі знали, що він був особистим охоронцем командира &ldquo;Залізняка&rdquo;. Згадали тих упівців, що полягли в боях з поляками, обороняючи свої родини, прадідівські землі на наших прадідвських землях, які в наслідок Акції Вісла таки попали під Польщу.</p>
-<p>Гарним звичаєм це на свят Вечір ставити на святково застелений стіл тарілку-тарілки  в пам'ять віддійшовших у вічність членів родини, а в нашому випадку членів Громади.</p>
+<p>Гарним звичаєм це на свят Вечір ставити на святково застелений стіл тарілку-тарілки  в пам&rsquo;ять віддійшовших у вічність членів родини, а в нашому випадку членів Громади.</p>
 <p>Згадали двох провідних, довголітніх членів Управи, радше основоположників Громади Кабрамата-Ферфілд, які віддійшли цього року у вічність - це <strong>бл. п. Владислав Нечипорук і бл.п.   Теодор Грещук</strong>. Наголосила на тому, що ми їх незабудемо й  вдячні за те, що придбали для спільноти Народний дім,  в якому сходимося вже стільки років, й який надіємося, ще довго буде служити  спільноті Західнього Сіднею.</p>
 <p>З своїми прекрасними за змістом власними віршами виступала (це вже традиція) пані <strong>Параскевія Грещук.</strong> В певну хвилину вона розчулилася сльозами&hellip;і не диво поховала недавно чоловіка. Ми дякуємо пані Грещук, що прийшла на зустріч і нагадала всім, як це сталося, що частина земляків наших опинилася через другу світову війну в Австралії і за щирі святкові побажання.</p>
 <p>Виступали  <strong>o</strong>**. Олег Стефанишин** і з своїми спогадами **пані Христина Бейлі-Сивенька,  пан Петро Гузій і пан Осип Ковальський.** Всі наголошували на тому, що ми не сміємо  цуратися своїх традицій,  щоби надальше сходилися колядувати, відзначати важні свята й не забули тих, хто в лікарнях чи старечих домах й немогли бути присутніми в домівці або віддійшли у вічність. І побажали всім щасливо дочекатися наших свят в січні місяці.</p>

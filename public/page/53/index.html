@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,42 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/%d1%81%d0%b2%d1%8f%d1%82%d0%be%d1%87%d0%bd%d0%b8%d0%b9-%d0%ba%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82-200-%d0%bb%d1%96%d1%82%d1%82%d1%8f-%d1%82%d0%b0%d1%80%d0%b0%d1%81-%d1%88%d0%b5%d0%b2%d1%87%d0%b5%d0%bd/">Святочний Концерт 200 ліття Тарас Шевченка - Мельбурн</a>
+        <a href="https://ukrainians.org.au/events/western-australia/taras-shevchenko-200th-anniversary-concert-wa/">Taras Shevchenko 200th Anniversary Concert - WA</a>
+      </h1>
+      <time datetime="2014-03-22T04:10:39Z" class="post-date">Sat, Mar 22, 2014</time>
+      The Ukrainian Association of Western Australia will honour the memory of Taras Shevchenko with a 200th Anniversary Concert on Sunday March 30th at the Ukrainian Catholic Parish Hall in Maylands.
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/%d1%81%d0%b2%d1%8f%d1%82%d0%be%d1%87%d0%bd%d0%b8%d0%b9-%d0%ba%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82-200-%d0%bb%d1%96%d1%82%d1%82%d1%8f-%d1%82%d0%b0%d1%80%d0%b0%d1%81-%d1%88%d0%b5%d0%b2%d1%87%d0%b5%d0%bd/">Святочний Концерт 200 ліття Тарас Шевченка - Мельбурн</a>
       </h1>
       <time datetime="2014-03-21T02:11:10Z" class="post-date">Fri, Mar 21, 2014</time>
       Українська Громада Вікторії (УГВ) запрошує на Святочний Концерт для святкування 200 ліття від дня народження Тарас Шевченка. Концерт відбудеться в неділю 30-го березня 2014 р. о годині 2:00 пп в Українському Народному Домі, Ессендон.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-4/">Crimea Bulletin 4</a>
+        <a href="https://ukrainians.org.au/politics/crimea-bulletin-4/">Crimea Bulletin 4</a>
       </h1>
       <time datetime="2014-03-21T01:03:59Z" class="post-date">Fri, Mar 21, 2014</time>
       The Ukrainian Embassy in Canberra has released issue #4 of the Crimea bulletin “Ukraine Under Attack”. This issue summarises events of 18-19 March 2014 and includes other short related articles.
@@ -67,7 +143,7 @@ crimea bulletin 4
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/conclusions-on-recent-events-in-ukraine/">Conclusions on Recent Events in Ukraine</a>
+        <a href="https://ukrainians.org.au/politics/conclusions-on-recent-events-in-ukraine/">Conclusions on Recent Events in Ukraine</a>
       </h1>
       <time datetime="2014-03-20T06:13:21Z" class="post-date">Thu, Mar 20, 2014</time>
       The Ukrainian Embassy in Canberra has released two recent documents concerning the crisis in Europe, with specific determinations regarding the illegal and invalid nature of the so-called “referendum” in Crimea and its outcomes.
@@ -76,7 +152,7 @@ The second document is a translation of “Judgement of the Constitutional Court
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/us-state-department-fact-sheet/">US State Department Fact Sheet</a>
+        <a href="https://ukrainians.org.au/politics/us-state-department-fact-sheet/">US State Department Fact Sheet</a>
       </h1>
       <time datetime="2014-03-19T03:05:58Z" class="post-date">Wed, Mar 19, 2014</time>
       The US Department of State has produced the first iteration of a new “Public Diplomacy Tool Kit on Ukraine” that it will be deploying to its Department messengers to assist them in promoting accurate narratives about the crisis in the Ukraine. The document contains excellent information regarding the true facts about events in Ukraine, as well as containing links to other valuable supporting sites.
@@ -84,7 +160,7 @@ A PDF copy of the Tool Kit can be viewed here: US Toolkit on Ukraine Narratives
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/sbs-radio-interview-with-peter-shmigel/">SBS Radio: Інтерв&#39;ю із п. Петром Шміґелем / Interview with Peter Shmigel</a>
+        <a href="https://ukrainians.org.au/politics/sbs-radio-interview-with-peter-shmigel/">SBS Radio: Інтерв&#39;ю із п. Петром Шміґелем / Interview with Peter Shmigel</a>
       </h1>
       <time datetime="2014-03-19T02:56:36Z" class="post-date">Wed, Mar 19, 2014</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2014/03/150px-SBS-Ukrainian.jpg)AUSTRALIA AND UKRAINE: RUSSIAN AGGRESSION
@@ -97,7 +173,7 @@ Bogdan Rudnytski interviewed Pete Shmigel, who is the Public Affairs Director fo
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimean-bulletins-2-and-3/">Crimean Bulletins 2 and 3</a>
+        <a href="https://ukrainians.org.au/politics/crimean-bulletins-2-and-3/">Crimean Bulletins 2 and 3</a>
       </h1>
       <time datetime="2014-03-18T08:47:43Z" class="post-date">Tue, Mar 18, 2014</time>
       The Ukrainian Government, through its embassies, has issued the next two releases of its newsletter “Ukraine under Attack”
@@ -106,7 +182,7 @@ Issue 3: crimea bulletin 3
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/comparative-data-on-ethnic-minority-rights/">Порівняльна характеристика забезпечення прав меншостей / Comparative Data on Ethnic Minority Rights</a>
+        <a href="https://ukrainians.org.au/politics/comparative-data-on-ethnic-minority-rights/">Порівняльна характеристика забезпечення прав меншостей / Comparative Data on Ethnic Minority Rights</a>
       </h1>
       <time datetime="2014-03-18T08:42:00Z" class="post-date">Tue, Mar 18, 2014</time>
       **Порівняльна характеристика забезпечення прав **меншостей
@@ -116,7 +192,7 @@ The Ministry of Foreign Affairs (Ukraine) has released a brief information sheet
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/press-releases-from-the-ukrainian-embasssy-in-canberra/">Press Releases from the Ukrainian Embasssy in Canberra</a>
+        <a href="https://ukrainians.org.au/politics/press-releases-from-the-ukrainian-embasssy-in-canberra/">Press Releases from the Ukrainian Embasssy in Canberra</a>
       </h1>
       <time datetime="2014-03-18T08:37:08Z" class="post-date">Tue, Mar 18, 2014</time>
       ****
@@ -127,21 +203,10 @@ Press Release3 (2)
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/ukrainian-government-newsletter/">Ukrainian Government Newsletter</a>
+        <a href="https://ukrainians.org.au/current-affairs/ukrainian-government-newsletter/">Ukrainian Government Newsletter</a>
       </h1>
       <time datetime="2014-03-17T09:39:46Z" class="post-date">Mon, Mar 17, 2014</time>
       The Ukrainian Government, through its embassies, has issued a four-page newsletter summarising events in Ukraine, in particular in Crimea, over the last fortnight. In addition, the newsletter provides links to other sites which provide further information. Newsletter (in English): Ukraine Under Attack
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/rally-in-canberra-feb-2014/">Rally in Canberra – Feb 2014</a>
-      </h1>
-      <time datetime="2014-03-17T07:00:06Z" class="post-date">Mon, Mar 17, 2014</time>
-      The Ukrainian community of Canberra held a rally on 18th February, 2014 as part of the world-wide campaign by the Ukrainian diaspora supporting the EuroMaidan movement in the Ukrainian capital Kyiv. EuroMaidan started as a protest movement against the last-minute decision by the Yanukovych regime to abandon the signing of the Association Agreement with the European Union, then progressed to a vehement disapproval of the signing of a series of laws severely curtailing civil liberties and political rights in Ukraine.
-      
-        <div class="read-more-link">
-          <a href="/community/rally-in-canberra-feb-2014/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1351,6 +1416,8 @@ Press Release3 (2)
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

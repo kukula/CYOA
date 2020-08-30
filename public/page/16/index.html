@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,39 +23,124 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/bitter-harvest-holodomor-1932-33/">BITTER HARVEST / ГІРКІ ЖНИВА - HOLODOMOR / ГОЛОДОМОР 1932/33</a>
+        <a href="https://ukrainians.org.au/community/holodomor-1932-1933/">ГОЛОДОМОР 1932 - 1933</a>
+      </h1>
+      <time datetime="2016-11-03T12:05:28Z" class="post-date">Thu, Nov 3, 2016</time>
+      ОБІЖНИК СУОА Ч. 10. 2015 - 2018
+МИ НЕ ЗАБУЛИ! МИ ПАМ’ЯТАЄМО!
+ГОЛОДОМОР 1932 – 1933** **
+ҐЕНОЦИД ЗАБУТТЮ НЕ ПІДЛЯГАЄ! УКРАЇНА ПАМ’ЯТАЄ! СВІТ ВИЗНАЄ!
+Управа Союзу Українських Організацій Австралії (СУОА) закликає кожну українську родину та всіх людей доброї волі вшанувати пам’ять жертв Голодомору і в суботу 26 листопада запалити свічку пам’яті y вікні свого будинку, a в неділю, 27 листопада у всіх церквах відслужити поминальні молебні i панахиди за упокій душ безвинно убієнних.
+      
+        <div class="read-more-link">
+          <a href="/community/holodomor-1932-1933/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/bitter-harvest-holodomor-1932-33/">BITTER HARVEST / ГІРКІ ЖНИВА - HOLODOMOR / ГОЛОДОМОР 1932/33</a>
       </h1>
       <time datetime="2016-11-03T11:44:10Z" class="post-date">Thu, Nov 3, 2016</time>
       UWC and AFUO announcing that negotiations have commenced with the major donor of the film Ian Hnatowycz and the international distributors about the 2017 International launch of the film. It was agreed we will work in partnership to ensure its wide exposure. A major event will be held in Kyiv on November 24, 2016 to launch the film in Ukraine to coincide with Holodomor Commemorations.
-СКУ та СУОА оголошують, що розпочалися переговори з основним донором фільму Ян Гнатовичом і міжнародними дистриб'юторами міжнародну прем'єру фільму у 2017 роws.
+СКУ та СУОА оголошують, що розпочалися переговори з основним донором фільму Ян Гнатовичом і міжнародними дистриб&rsquo;юторами міжнародну прем&rsquo;єру фільму у 2017 роws.
       
         <div class="read-more-link">
           <a href="/culture/bitter-harvest-holodomor-1932-33/">Read More…</a>
@@ -64,7 +148,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/embassy-of-ukraine-in-australia-and-afuo-sign-memorandum-of-understanding/">ПОСОЛЬСТВО УКРАЇНИ В АВСТРАЛІЇ І СУОА ПІДПИСАЛИ МЕМОРАНДУМ СПІВПРАЦІ</a>
+        <a href="https://ukrainians.org.au/politics/embassy-of-ukraine-in-australia-and-afuo-sign-memorandum-of-understanding/">ПОСОЛЬСТВО УКРАЇНИ В АВСТРАЛІЇ І СУОА ПІДПИСАЛИ МЕМОРАНДУМ СПІВПРАЦІ</a>
       </h1>
       <time datetime="2016-10-31T11:44:22Z" class="post-date">Mon, Oct 31, 2016</time>
       ПОСОЛЬСТВО УКРАЇНИ В АВСТРАЛІЇ І СУОА ПІДПИСАЛИ МЕМОРАНДУМ СПІВПРАЦІ Управа СУОА та Посольство України в Австралії сьогодні підписали Меморандум Співпраці та План Дії. В Меморандумі зазначено загальні положення та напрямні для ефективної справпраці. Меморандум підписано підчас наради управи СУОА з участю членів СУОА. Текст Меморандуму та допис про нараду будуть опубліковані. Цей Меморандум будується на підставі підписано Меморандуму між СКУ та Кабінет Міністром України.
@@ -76,7 +160,7 @@ EMBASSY OF UKRAINE IN AUSTRALIA AND AFUO SIGN MEMORANDUM OF UNDERSTANDING Austra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/nakaz-1262/">ІІІ Міжнародний конкурс &#34;Найкращий учитель української мови за кордоном&#34;</a>
+        <a href="https://ukrainians.org.au/education/nakaz-1262/">ІІІ Міжнародний конкурс &#34;Найкращий учитель української мови за кордоном&#34;</a>
       </h1>
       <time datetime="2016-10-30T02:53:30Z" class="post-date">Sun, Oct 30, 2016</time>
       МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
@@ -87,7 +171,7 @@ EMBASSY OF UKRAINE IN AUSTRALIA AND AFUO SIGN MEMORANDUM OF UNDERSTANDING Austra
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australias-ukrainian-community-calls-on-the-netherlands-to-ratify-eu-ukraine-association-agreement/">AUSTRALIA’ S UKRAINIAN COMMUNITY CALLS ON THE NETHERLANDS TO RATIFY EU-UKRAINE ASSOCIATION AGREEMENT</a>
+        <a href="https://ukrainians.org.au/politics/australias-ukrainian-community-calls-on-the-netherlands-to-ratify-eu-ukraine-association-agreement/">AUSTRALIA’ S UKRAINIAN COMMUNITY CALLS ON THE NETHERLANDS TO RATIFY EU-UKRAINE ASSOCIATION AGREEMENT</a>
       </h1>
       <time datetime="2016-10-28T22:35:14Z" class="post-date">Fri, Oct 28, 2016</time>
       October 27, 2016
@@ -101,7 +185,7 @@ The letter is in support of the Ukrainian World Congress (UWC) call to the PM to
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/cossack-brothers-20th-anniversary-gala-cabaret-evening/">Cossack Brothers 20th Anniversary - Gala Cabaret Evening</a>
+        <a href="https://ukrainians.org.au/events/cossack-brothers-20th-anniversary-gala-cabaret-evening/">Cossack Brothers 20th Anniversary - Gala Cabaret Evening</a>
       </h1>
       <time datetime="2016-10-24T11:42:55Z" class="post-date">Mon, Oct 24, 2016</time>
       Cossack Brothers Invite you to
@@ -111,10 +195,10 @@ Ukrainian House Essendon
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/pro-ukrayinciv-u-sviti-ta-ukrayinu-rik-2016/">ПРО УКРАЇНЦІВ У СВІТІ ТА УКРАЇНУ - РІК 2016</a>
+        <a href="https://ukrainians.org.au/politics/pro-ukrayinciv-u-sviti-ta-ukrayinu-rik-2016/">ПРО УКРАЇНЦІВ У СВІТІ ТА УКРАЇНУ - РІК 2016</a>
       </h1>
       <time datetime="2016-10-24T11:30:29Z" class="post-date">Mon, Oct 24, 2016</time>
-      Богдан Рудницький веде розмову із Генеральним Секретарем Світового Конґресу Українців (СКУ) та Головою Союзу Українських Організацій Австралії паном Стефаном Романівим. Ми розмовляємо про діяльність СКУ, життя-буття українців Австралії, війну в Україні та заклик до міжнародної спільноти, щоб захистити журналістів і всіх політичних в'язнів, незаконно затриманих у Росії. Нагадаємо, що Світовий Конґрес Українців, на підтримку заяви Верховної Ради України від 5 жовтня 2016 р., закликав усю міжнародну спільноту, включно й правозахисні організації, допомогти звільненню українських журналістів і всіх політичних в'язнів, незаконно затриманих російськими владними структурами&hellip;
+      Богдан Рудницький веде розмову із Генеральним Секретарем Світового Конґресу Українців (СКУ) та Головою Союзу Українських Організацій Австралії паном Стефаном Романівим. Ми розмовляємо про діяльність СКУ, життя-буття українців Австралії, війну в Україні та заклик до міжнародної спільноти, щоб захистити журналістів і всіх політичних в&rsquo;язнів, незаконно затриманих у Росії. Нагадаємо, що Світовий Конґрес Українців, на підтримку заяви Верховної Ради України від 5 жовтня 2016 р., закликав усю міжнародну спільноту, включно й правозахисні організації, допомогти звільненню українських журналістів і всіх політичних в&rsquo;язнів, незаконно затриманих російськими владними структурами&hellip;
       
         <div class="read-more-link">
           <a href="/politics/pro-ukrayinciv-u-sviti-ta-ukrayinu-rik-2016/">Read More…</a>
@@ -122,7 +206,7 @@ Ukrainian House Essendon
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/nu-ethno-launch/">Nu Ethno Launch</a>
+        <a href="https://ukrainians.org.au/events/nu-ethno-launch/">Nu Ethno Launch</a>
       </h1>
       <time datetime="2016-10-21T11:26:59Z" class="post-date">Fri, Oct 21, 2016</time>
       Think where Music meets Art, meets Dance (with limited alcohol - beer, wine, sparkling, basic spirits - &amp; food).
@@ -136,7 +220,7 @@ An experience not to be missed. Talented artists each will present their craft f
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/cilodoboviy-rejim-roboty-departamenty-konsulskoi-slyzbi-v-aeroport-boryspil/">Цілодобовий режим роботи консульської служби в аеропорту Бориспіль</a>
+        <a href="https://ukrainians.org.au/politics/cilodoboviy-rejim-roboty-departamenty-konsulskoi-slyzbi-v-aeroport-boryspil/">Цілодобовий режим роботи консульської служби в аеропорту Бориспіль</a>
       </h1>
       <time datetime="2016-10-21T06:19:39Z" class="post-date">Fri, Oct 21, 2016</time>
       Наказом Міністерства закордонних справ України запроваджено цілодобовий режим роботи оперативного відділу Департаменту консульської служби МЗС України в аеропорту Бориспіль З 17 жовтня 2016 року наказом МЗС України запроваджено цілодобовий режим роботи з семиденним робочим тижнем оперативного відділу Департаменту консульської служби МЗС України в аеропорту «Бориспіль».
@@ -148,7 +232,7 @@ An experience not to be missed. Talented artists each will present their craft f
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/local-european-business-expo-2016-executive-event-summary/">Local European Business Expo 2016 –  Executive Event summary</a>
+        <a href="https://ukrainians.org.au/events/local-european-business-expo-2016-executive-event-summary/">Local European Business Expo 2016 –  Executive Event summary</a>
       </h1>
       <time datetime="2016-10-13T10:55:41Z" class="post-date">Thu, Oct 13, 2016</time>
       **Local European Business Expo 2016 – Logistics **
@@ -157,20 +241,6 @@ The venue for LEBE 2016 was the premises of Cracovia Club, Beechboro and the eve
       
         <div class="read-more-link">
           <a href="/events/local-european-business-expo-2016-executive-event-summary/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/ukraine-is-calling-for-international-volunteers/">Ukraine is calling for international volunteers!</a>
-      </h1>
-      <time datetime="2016-10-13T10:39:33Z" class="post-date">Thu, Oct 13, 2016</time>
-      Do you have or would like to get volunteer experience?
-Ukraine is calling for you to participate in a new wave of English summer camps for children in 2017, including those affected by the armed conflict in Eastern Ukraine.
-We are looking for English-speaking volunteers who would come to Ukraine and interact with the children in English, get great time, new friends and unforgettable experience!
-As a volunteer you will get special training and opportunity to share experience in the following spheres: STEAM (Science, Technology, Engineering, Art, Mathematics), Leadership and Career, Citizenship, Sports&amp;Health!
-      
-        <div class="read-more-link">
-          <a href="/events/international-events/ukraine-is-calling-for-international-volunteers/">Read More…</a>
         </div>
       
     </article>
@@ -1381,6 +1451,8 @@ As a volunteer you will get special training and opportunity to share experience
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

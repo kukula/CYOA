@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Media &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,456 +23,522 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/categories/media/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/categories/media/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <ul class="posts">
 <li>
-    <span><a href="https://ozeukes.com/media/australias-peak-ukrainian-body-set-to-slap-vladimir-putin-with-series-of-red-cards/">Australia&#39;s peak Ukrainian body set to slap Vladimir Putin with series of red cards.</a> <time class="pull-right post-list" datetime="2018-06-14T23:20:16Z">Thu, Jun 14, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/media/australias-peak-ukrainian-body-set-to-slap-vladimir-putin-with-series-of-red-cards/">Australia&#39;s peak Ukrainian body set to slap Vladimir Putin with series of red cards.</a> <time class="pull-right post-list" datetime="2018-06-14T23:20:16Z">Thu, Jun 14, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukraine-crisis-appeal/">Help Ukraine&#39;s Veterans &amp; their families through Tax Deductible Donations</a> <time class="pull-right post-list" datetime="2018-06-14T12:55:57Z">Thu, Jun 14, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukraine-crisis-appeal/">Help Ukraine&#39;s Veterans &amp; their families through Tax Deductible Donations</a> <time class="pull-right post-list" datetime="2018-06-14T12:55:57Z">Thu, Jun 14, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/stop-putin-stop-war/">АКЦІЯ – STOP  PUTIN – STOP WAR</a> <time class="pull-right post-list" datetime="2018-01-19T11:31:54Z">Fri, Jan 19, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/stop-putin-stop-war/">АКЦІЯ – STOP  PUTIN – STOP WAR</a> <time class="pull-right post-list" datetime="2018-01-19T11:31:54Z">Fri, Jan 19, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/my-kitchen-rules-mkr-continued-support-of-hammer-and-sickle/">MY KITCHEN RULES (MKR) CONTINUED SUPPORT OF HAMMER AND SICKLE</a> <time class="pull-right post-list" datetime="2018-01-17T04:58:41Z">Wed, Jan 17, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/media/my-kitchen-rules-mkr-continued-support-of-hammer-and-sickle/">MY KITCHEN RULES (MKR) CONTINUED SUPPORT OF HAMMER AND SICKLE</a> <time class="pull-right post-list" datetime="2018-01-17T04:58:41Z">Wed, Jan 17, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/rizdviane-vitanya-provid-oun/">Різдвяне привітання проводу ОУН(б)</a> <time class="pull-right post-list" datetime="2017-12-29T10:43:03Z">Fri, Dec 29, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/rizdviane-vitanya-provid-oun/">Різдвяне привітання проводу ОУН(б)</a> <time class="pull-right post-list" datetime="2017-12-29T10:43:03Z">Fri, Dec 29, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-world-congress-statement-on-the-84th-anniversary-of-the-holodomor-of-1932-33/">Ukrainian World Congress statement on the  84th anniversary of the Holodomor of 1932-33</a> <time class="pull-right post-list" datetime="2017-11-22T19:21:42Z">Wed, Nov 22, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-world-congress-statement-on-the-84th-anniversary-of-the-holodomor-of-1932-33/">Ukrainian World Congress statement on the  84th anniversary of the Holodomor of 1932-33</a> <time class="pull-right post-list" datetime="2017-11-22T19:21:42Z">Wed, Nov 22, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrayinska-spilnota-viziya-2018-avstraliya-i-ukrayina/">УКРАЇНСЬКА СПІЛЬНОТА. ВІЗІЯ-2018: АВСТРАЛІЯ І УКРАЇНА</a> <time class="pull-right post-list" datetime="2017-10-31T08:17:54Z">Tue, Oct 31, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrayinska-spilnota-viziya-2018-avstraliya-i-ukrayina/">УКРАЇНСЬКА СПІЛЬНОТА. ВІЗІЯ-2018: АВСТРАЛІЯ І УКРАЇНА</a> <time class="pull-right post-list" datetime="2017-10-31T08:17:54Z">Tue, Oct 31, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/interview-sbs-ukrainian-aug-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-08-08T07:00:41Z">Tue, Aug 8, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/community/interview-sbs-ukrainian-aug-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-08-08T07:00:41Z">Tue, Aug 8, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/dobryj-slid-na-zemli-5-y-boluch/">ДОБРИЙ СЛІД НА ЗЕМЛІ</a> <time class="pull-right post-list" datetime="2017-08-07T07:32:16Z">Mon, Aug 7, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/community/dobryj-slid-na-zemli-5-y-boluch/">ДОБРИЙ СЛІД НА ЗЕМЛІ</a> <time class="pull-right post-list" datetime="2017-08-07T07:32:16Z">Mon, Aug 7, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/interview-sbs-ukrainian-jul-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-07-14T09:58:45Z">Fri, Jul 14, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/community/interview-sbs-ukrainian-jul-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-07-14T09:58:45Z">Fri, Jul 14, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukraine-has-european-history-ukraine-fight-freedom/">УКРАЇНА МАЄ ЄВРОПЕЙСЬКУ ІСТОРІЮ, УКРАЇНА БОРЕТЬСЯ ЗА СВОЮ СВОБОДУ</a> <time class="pull-right post-list" datetime="2017-06-13T11:56:02Z">Tue, Jun 13, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukraine-has-european-history-ukraine-fight-freedom/">УКРАЇНА МАЄ ЄВРОПЕЙСЬКУ ІСТОРІЮ, УКРАЇНА БОРЕТЬСЯ ЗА СВОЮ СВОБОДУ</a> <time class="pull-right post-list" datetime="2017-06-13T11:56:02Z">Tue, Jun 13, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/kalyna-care-yesterday-today-and-tomorrow/">УКРАЇНСЬКА &#34;КАЛИНА&#34;: ВЧОРА, НИНІ ТА ЗАВТРА</a> <time class="pull-right post-list" datetime="2017-06-06T01:43:25Z">Tue, Jun 6, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/media/kalyna-care-yesterday-today-and-tomorrow/">УКРАЇНСЬКА &#34;КАЛИНА&#34;: ВЧОРА, НИНІ ТА ЗАВТРА</a> <time class="pull-right post-list" datetime="2017-06-06T01:43:25Z">Tue, Jun 6, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukraine-ukrainian-world-congress-and-australia/">УКРАЇНА, СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ І АВСТРАЛІЯ</a> <time class="pull-right post-list" datetime="2017-04-12T22:03:48Z">Wed, Apr 12, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukraine-ukrainian-world-congress-and-australia/">УКРАЇНА, СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ І АВСТРАЛІЯ</a> <time class="pull-right post-list" datetime="2017-04-12T22:03:48Z">Wed, Apr 12, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/interview-sbs-ukrainian-apr-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-04-05T10:56:33Z">Wed, Apr 5, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/media/interview-sbs-ukrainian-apr-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-04-05T10:56:33Z">Wed, Apr 5, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/stalins-forced-famine-melbourne-pensioner-fedir-habelko-recalls-brutal-regime-in-ukraine/">Stalin’s forced famine: Melbourne pensioner Fedir Habelko recalls brutal regime in Ukraine</a> <time class="pull-right post-list" datetime="2017-02-22T09:51:38Z">Wed, Feb 22, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/stalins-forced-famine-melbourne-pensioner-fedir-habelko-recalls-brutal-regime-in-ukraine/">Stalin’s forced famine: Melbourne pensioner Fedir Habelko recalls brutal regime in Ukraine</a> <time class="pull-right post-list" datetime="2017-02-22T09:51:38Z">Wed, Feb 22, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/feature-film-bitter-harvest-a-sad-reminder-for-local-victorian-holodomor-survivors-ukr/">Художній фільм “Bitter Harvest” (“Гіркі жнива”) — сумний спомин для місцевих мешканців Вікторії, які пережили Голодомор</a> <time class="pull-right post-list" datetime="2017-02-17T05:39:04Z">Fri, Feb 17, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/feature-film-bitter-harvest-a-sad-reminder-for-local-victorian-holodomor-survivors-ukr/">Художній фільм “Bitter Harvest” (“Гіркі жнива”) — сумний спомин для місцевих мешканців Вікторії, які пережили Голодомор</a> <time class="pull-right post-list" datetime="2017-02-17T05:39:04Z">Fri, Feb 17, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/feature-film-bitter-harvest-a-sad-reminder-for-local-victorian-holodomor-survivors/">Feature film Bitter Harvest a sad reminder for local Victorian Holodomor survivors</a> <time class="pull-right post-list" datetime="2017-02-16T21:51:25Z">Thu, Feb 16, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/feature-film-bitter-harvest-a-sad-reminder-for-local-victorian-holodomor-survivors/">Feature film Bitter Harvest a sad reminder for local Victorian Holodomor survivors</a> <time class="pull-right post-list" datetime="2017-02-16T21:51:25Z">Thu, Feb 16, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/interview-sbs-ukrainian-feb-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-02-07T10:27:05Z">Tue, Feb 7, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/media/interview-sbs-ukrainian-feb-2017/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2017-02-07T10:27:05Z">Tue, Feb 7, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/stefan-romaniw-eastern-ukraine-west-must-act-to-stop-putins-aggression/">Stefan Romaniw: Eastern Ukraine: West must act to stop Putin’s aggression</a> <time class="pull-right post-list" datetime="2017-02-07T06:44:55Z">Tue, Feb 7, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/politics/stefan-romaniw-eastern-ukraine-west-must-act-to-stop-putins-aggression/">Stefan Romaniw: Eastern Ukraine: West must act to stop Putin’s aggression</a> <time class="pull-right post-list" datetime="2017-02-07T06:44:55Z">Tue, Feb 7, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/holodomor-drama-in-cinemas-feb-23/">Holodomor drama in cinemas Feb 23 / Драма про Голодомор - в кінотеатрах 23-лютого</a> <time class="pull-right post-list" datetime="2017-01-26T11:40:35Z">Thu, Jan 26, 2017</time></span>
+    <span><a href="https://ukrainians.org.au/culture/holodomor-drama-in-cinemas-feb-23/">Holodomor drama in cinemas Feb 23 / Драма про Голодомор - в кінотеатрах 23-лютого</a> <time class="pull-right post-list" datetime="2017-01-26T11:40:35Z">Thu, Jan 26, 2017</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/stefan-romaniw-in-maikl-shchur07/">Стефан Романів у випуску #@)₴?$0 з Майклом Щуром</a> <time class="pull-right post-list" datetime="2016-12-20T06:21:11Z">Tue, Dec 20, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/stefan-romaniw-in-maikl-shchur07/">Стефан Романів у випуску #@)₴?$0 з Майклом Щуром</a> <time class="pull-right post-list" datetime="2016-12-20T06:21:11Z">Tue, Dec 20, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/dyakuiemo-tobi-avstraliie/">ДЯКУЄМО ТОБІ, АВСТРАЛІЄ...</a> <time class="pull-right post-list" datetime="2016-12-12T10:58:13Z">Mon, Dec 12, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/dyakuiemo-tobi-avstraliie/">ДЯКУЄМО ТОБІ, АВСТРАЛІЄ...</a> <time class="pull-right post-list" datetime="2016-12-12T10:58:13Z">Mon, Dec 12, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/afuo-calls-on-ukrainian-community-to-save-sbs-in-language-radio-program/">AFUO calls on Ukrainian community to save SBS in-language radio program</a> <time class="pull-right post-list" datetime="2016-12-01T10:37:55Z">Thu, Dec 1, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/afuo-calls-on-ukrainian-community-to-save-sbs-in-language-radio-program/">AFUO calls on Ukrainian community to save SBS in-language radio program</a> <time class="pull-right post-list" datetime="2016-12-01T10:37:55Z">Thu, Dec 1, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/interview-sbs-ukrainian-nov-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-11-22T20:19:28Z">Tue, Nov 22, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/interview-sbs-ukrainian-nov-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-11-22T20:19:28Z">Tue, Nov 22, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/bitter-harvest-holodomor-1932-33/">BITTER HARVEST / ГІРКІ ЖНИВА - HOLODOMOR / ГОЛОДОМОР 1932/33</a> <time class="pull-right post-list" datetime="2016-11-03T11:44:10Z">Thu, Nov 3, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/bitter-harvest-holodomor-1932-33/">BITTER HARVEST / ГІРКІ ЖНИВА - HOLODOMOR / ГОЛОДОМОР 1932/33</a> <time class="pull-right post-list" datetime="2016-11-03T11:44:10Z">Thu, Nov 3, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/pro-ukrayinciv-u-sviti-ta-ukrayinu-rik-2016/">ПРО УКРАЇНЦІВ У СВІТІ ТА УКРАЇНУ - РІК 2016</a> <time class="pull-right post-list" datetime="2016-10-24T11:30:29Z">Mon, Oct 24, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/pro-ukrayinciv-u-sviti-ta-ukrayinu-rik-2016/">ПРО УКРАЇНЦІВ У СВІТІ ТА УКРАЇНУ - РІК 2016</a> <time class="pull-right post-list" datetime="2016-10-24T11:30:29Z">Mon, Oct 24, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/cilodoboviy-rejim-roboty-departamenty-konsulskoi-slyzbi-v-aeroport-boryspil/">Цілодобовий режим роботи консульської служби в аеропорту Бориспіль</a> <time class="pull-right post-list" datetime="2016-10-21T06:19:39Z">Fri, Oct 21, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/cilodoboviy-rejim-roboty-departamenty-konsulskoi-slyzbi-v-aeroport-boryspil/">Цілодобовий режим роботи консульської служби в аеропорту Бориспіль</a> <time class="pull-right post-list" datetime="2016-10-21T06:19:39Z">Fri, Oct 21, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/interview-sbs-ukrainian-sep-oct-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-10-04T10:46:21Z">Tue, Oct 4, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/interview-sbs-ukrainian-sep-oct-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-10-04T10:46:21Z">Tue, Oct 4, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/kolomyyskyy-muzey-otrymav-u-podarunok-kolektsiyu-pysanok-z-avstraliyi/">Коломийський музей отримав у подарунок колекцію писанок з Австралії</a> <time class="pull-right post-list" datetime="2016-09-11T11:30:58Z">Sun, Sep 11, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/kolomyyskyy-muzey-otrymav-u-podarunok-kolektsiyu-pysanok-z-avstraliyi/">Коломийський музей отримав у подарунок колекцію писанок з Австралії</a> <time class="pull-right post-list" datetime="2016-09-11T11:30:58Z">Sun, Sep 11, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/viyna-v-ukrayini-ie-realnoyu-viynoyu/">ВІЙНА В УКРАЇНІ Є РЕАЛЬНОЮ ВІЙНОЮ...</a> <time class="pull-right post-list" datetime="2016-09-06T09:38:17Z">Tue, Sep 6, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/viyna-v-ukrayini-ie-realnoyu-viynoyu/">ВІЙНА В УКРАЇНІ Є РЕАЛЬНОЮ ВІЙНОЮ...</a> <time class="pull-right post-list" datetime="2016-09-06T09:38:17Z">Tue, Sep 6, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/community-leaders-share-their-thoughts-on-ukraine-at-25/">Community leaders share their thoughts on Ukraine at 25</a> <time class="pull-right post-list" datetime="2016-08-29T12:04:47Z">Mon, Aug 29, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/community-leaders-share-their-thoughts-on-ukraine-at-25/">Community leaders share their thoughts on Ukraine at 25</a> <time class="pull-right post-list" datetime="2016-08-29T12:04:47Z">Mon, Aug 29, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/stefan-romaniv-natsionalna-ideia-tse-braty-vidpovidalnist/">Стефан Романів: Національна ідея – це брати відповідальність</a> <time class="pull-right post-list" datetime="2016-08-28T11:54:43Z">Sun, Aug 28, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/stefan-romaniv-natsionalna-ideia-tse-braty-vidpovidalnist/">Стефан Романів: Національна ідея – це брати відповідальність</a> <time class="pull-right post-list" datetime="2016-08-28T11:54:43Z">Sun, Aug 28, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/sport/western-sydney-wanderers-support-war-affected-kids-in-ukraine/">Western Sydney Wanderers support war-affected kids in Ukraine</a> <time class="pull-right post-list" datetime="2016-08-09T11:36:00Z">Tue, Aug 9, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/sport/western-sydney-wanderers-support-war-affected-kids-in-ukraine/">Western Sydney Wanderers support war-affected kids in Ukraine</a> <time class="pull-right post-list" datetime="2016-08-09T11:36:00Z">Tue, Aug 9, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/perepis-naselennya-u-2016-roci-ta-ukrayinska-spilnota-avstraliyi/">ПЕРЕПИС НАСЕЛЕННЯ У 2016 РОЦІ - Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-08-02T11:42:25Z">Tue, Aug 2, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/community/perepis-naselennya-u-2016-roci-ta-ukrayinska-spilnota-avstraliyi/">ПЕРЕПИС НАСЕЛЕННЯ У 2016 РОЦІ - Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-08-02T11:42:25Z">Tue, Aug 2, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-collectibles-society-25th-anniversary-of-the-rebirth-of-ukrainian-independence/">Ukrainian Collectibles Society - 25th Anniversary of the Rebirth of Ukrainian Independence</a> <time class="pull-right post-list" datetime="2016-07-18T07:40:30Z">Mon, Jul 18, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-collectibles-society-25th-anniversary-of-the-rebirth-of-ukrainian-independence/">Ukrainian Collectibles Society - 25th Anniversary of the Rebirth of Ukrainian Independence</a> <time class="pull-right post-list" datetime="2016-07-18T07:40:30Z">Mon, Jul 18, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/30-littya-katastrofi-u-chornobili-interview-sbs-ukrainian/">30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ - Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-04-26T07:40:28Z">Tue, Apr 26, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/30-littya-katastrofi-u-chornobili-interview-sbs-ukrainian/">30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ - Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-04-26T07:40:28Z">Tue, Apr 26, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/australias-ukrainian-community-pays-to-respect-to-our-anzac-war-veterans/">AUSTRALIA’S UKRAINIAN COMMUNITY PAYS TO RESPECT TO OUR ANZAC WAR VETERANS</a> <time class="pull-right post-list" datetime="2016-04-25T02:24:55Z">Mon, Apr 25, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/community/australias-ukrainian-community-pays-to-respect-to-our-anzac-war-veterans/">AUSTRALIA’S UKRAINIAN COMMUNITY PAYS TO RESPECT TO OUR ANZAC WAR VETERANS</a> <time class="pull-right post-list" datetime="2016-04-25T02:24:55Z">Mon, Apr 25, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/uis-digest-1/">Перший інформаційний бюлетень Української Інформаційної Служби (УІС)</a> <time class="pull-right post-list" datetime="2016-04-19T09:43:39Z">Tue, Apr 19, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/uis-digest-1/">Перший інформаційний бюлетень Української Інформаційної Служби (УІС)</a> <time class="pull-right post-list" datetime="2016-04-19T09:43:39Z">Tue, Apr 19, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ourcommunity-campaign/">#ourcommunity campaign</a> <time class="pull-right post-list" datetime="2016-04-17T13:30:57Z">Sun, Apr 17, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/community/ourcommunity-campaign/">#ourcommunity campaign</a> <time class="pull-right post-list" datetime="2016-04-17T13:30:57Z">Sun, Apr 17, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/viyna-politika-ambiciyi-ta-ukrayinci/">ВІЙНА, ПОЛІТИКА, АМБІЦІЇ TA УКРАЇНЦІ</a> <time class="pull-right post-list" datetime="2016-04-04T22:38:12Z">Mon, Apr 4, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/viyna-politika-ambiciyi-ta-ukrayinci/">ВІЙНА, ПОЛІТИКА, АМБІЦІЇ TA УКРАЇНЦІ</a> <time class="pull-right post-list" datetime="2016-04-04T22:38:12Z">Mon, Apr 4, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/south-australia/dakha-brakha-in-adelaide/">ДахаБраха в Аделайді</a> <time class="pull-right post-list" datetime="2016-03-29T09:26:03Z">Tue, Mar 29, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/events/south-australia/dakha-brakha-in-adelaide/">ДахаБраха в Аделайді</a> <time class="pull-right post-list" datetime="2016-03-29T09:26:03Z">Tue, Mar 29, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/south-australia/dakha-brakha-at-womadelaide/">DAKHA BRAKHA at WOMADelaide</a> <time class="pull-right post-list" datetime="2016-03-29T09:18:02Z">Tue, Mar 29, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/events/south-australia/dakha-brakha-at-womadelaide/">DAKHA BRAKHA at WOMADelaide</a> <time class="pull-right post-list" datetime="2016-03-29T09:18:02Z">Tue, Mar 29, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/tony-abbott-ignore-ukraine-and-well-help-russia/">Tony Abbott - Ignore Ukraine and we’ll help Russia</a> <time class="pull-right post-list" datetime="2016-03-23T06:13:52Z">Wed, Mar 23, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/tony-abbott-ignore-ukraine-and-well-help-russia/">Tony Abbott - Ignore Ukraine and we’ll help Russia</a> <time class="pull-right post-list" datetime="2016-03-23T06:13:52Z">Wed, Mar 23, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/uwc-president-eugene-czolij-meets-with-president-of-ukraine-petro-poroshenko/">Президент СКУ Евген Чолій зустрівся з Президентом України Петром Порошенком</a> <time class="pull-right post-list" datetime="2016-03-17T09:41:58Z">Thu, Mar 17, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/uwc-president-eugene-czolij-meets-with-president-of-ukraine-petro-poroshenko/">Президент СКУ Евген Чолій зустрівся з Президентом України Петром Порошенком</a> <time class="pull-right post-list" datetime="2016-03-17T09:41:58Z">Thu, Mar 17, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/australian-labor-media-release-russia-and-the-minsk-agreement/">Australian Labor Media Release - RUSSIA AND THE MINSK AGREEMENT</a> <time class="pull-right post-list" datetime="2016-03-10T05:19:19Z">Thu, Mar 10, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/australian-labor-media-release-russia-and-the-minsk-agreement/">Australian Labor Media Release - RUSSIA AND THE MINSK AGREEMENT</a> <time class="pull-right post-list" datetime="2016-03-10T05:19:19Z">Thu, Mar 10, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-community-to-hold-flash-mob-rally-at-russian-embassy-in-canberra/">Ukrainian community to hold Flash Mob Rally at Russian Embassy in Canberra</a> <time class="pull-right post-list" datetime="2016-03-08T21:00:51Z">Tue, Mar 8, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-community-to-hold-flash-mob-rally-at-russian-embassy-in-canberra/">Ukrainian community to hold Flash Mob Rally at Russian Embassy in Canberra</a> <time class="pull-right post-list" datetime="2016-03-08T21:00:51Z">Tue, Mar 8, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/freesavchenko-statement-by-ounb/">Надія є! #FreeSavchenko! Заява Проводу ОУН (б)</a> <time class="pull-right post-list" datetime="2016-03-08T20:57:09Z">Tue, Mar 8, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/freesavchenko-statement-by-ounb/">Надія є! #FreeSavchenko! Заява Проводу ОУН (б)</a> <time class="pull-right post-list" datetime="2016-03-08T20:57:09Z">Tue, Mar 8, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/australias-ukrainian-community-call-to-action-freesavchenko/">AUSTRALIA’S UKRAINIAN COMMUNITY CALL TO ACTION #FreeSavchenko</a> <time class="pull-right post-list" datetime="2016-03-07T05:50:03Z">Mon, Mar 7, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/australias-ukrainian-community-call-to-action-freesavchenko/">AUSTRALIA’S UKRAINIAN COMMUNITY CALL TO ACTION #FreeSavchenko</a> <time class="pull-right post-list" datetime="2016-03-07T05:50:03Z">Mon, Mar 7, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/velichavi-visoti-slavnogo-dushpastirya-malyara-i-muzeynika/">ВЕЛИЧАВІ ВИСОТИ СЛАВНОГО ДУШПАСТИРЯ, МАЛЯРА І МУЗЕЙНИКА</a> <time class="pull-right post-list" datetime="2016-02-25T06:36:17Z">Thu, Feb 25, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/velichavi-visoti-slavnogo-dushpastirya-malyara-i-muzeynika/">ВЕЛИЧАВІ ВИСОТИ СЛАВНОГО ДУШПАСТИРЯ, МАЛЯРА І МУЗЕЙНИКА</a> <time class="pull-right post-list" datetime="2016-02-25T06:36:17Z">Thu, Feb 25, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/poglyad-dva-roki-opislya-revolyuciyi-gidnosti/">ПОГЛЯД. ДВА РОКИ ОПІСЛЯ РЕВОЛЮЦІЇ ГІДНОСТІ</a> <time class="pull-right post-list" datetime="2016-02-25T06:33:27Z">Thu, Feb 25, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/poglyad-dva-roki-opislya-revolyuciyi-gidnosti/">ПОГЛЯД. ДВА РОКИ ОПІСЛЯ РЕВОЛЮЦІЇ ГІДНОСТІ</a> <time class="pull-right post-list" datetime="2016-02-25T06:33:27Z">Thu, Feb 25, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/den-avstraliyi/">ДЕНЬ АВСТРАЛІЇ: ВИСІВАЙМО ЗЕРНА ГАРМОНІЇ, ІСТОРІЯ ТА УКРАЇНЦІ</a> <time class="pull-right post-list" datetime="2016-02-08T10:40:12Z">Mon, Feb 8, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/community/den-avstraliyi/">ДЕНЬ АВСТРАЛІЇ: ВИСІВАЙМО ЗЕРНА ГАРМОНІЇ, ІСТОРІЯ ТА УКРАЇНЦІ</a> <time class="pull-right post-list" datetime="2016-02-08T10:40:12Z">Mon, Feb 8, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/interview-sbs-ukrainian-jan-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-01-24T23:04:36Z">Sun, Jan 24, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/media/interview-sbs-ukrainian-jan-2016/">Інтерв’ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2016-01-24T23:04:36Z">Sun, Jan 24, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/gateway-travel-crimean-tours-afuo-protest-follow-up/">GATEWAY TRAVEL – CRIMEAN TOURS – AFUO PROTEST FOLLOW UP</a> <time class="pull-right post-list" datetime="2016-01-13T12:02:26Z">Wed, Jan 13, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/gateway-travel-crimean-tours-afuo-protest-follow-up/">GATEWAY TRAVEL – CRIMEAN TOURS – AFUO PROTEST FOLLOW UP</a> <time class="pull-right post-list" datetime="2016-01-13T12:02:26Z">Wed, Jan 13, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/sydney-travel-firm-offering-crimea-tour-accused-of-selling-out-to-mh17-accused/">Sydney travel firm offering Crimea tour accused of &#39;selling out&#39; to MH17 accused</a> <time class="pull-right post-list" datetime="2016-01-12T11:26:16Z">Tue, Jan 12, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/sydney-travel-firm-offering-crimea-tour-accused-of-selling-out-to-mh17-accused/">Sydney travel firm offering Crimea tour accused of &#39;selling out&#39; to MH17 accused</a> <time class="pull-right post-list" datetime="2016-01-12T11:26:16Z">Tue, Jan 12, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/interview-mykola-kulinich/">Інтерв&#39;ю з послом України в Австралії паном Миколою Кулінічем на Ukrainian Radio 4EB Brisbane</a> <time class="pull-right post-list" datetime="2016-01-07T11:12:51Z">Thu, Jan 7, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/politics/interview-mykola-kulinich/">Інтерв&#39;ю з послом України в Австралії паном Миколою Кулінічем на Ukrainian Radio 4EB Brisbane</a> <time class="pull-right post-list" datetime="2016-01-07T11:12:51Z">Thu, Jan 7, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/brisbane-ukr-radio-day-2015/">Українське Радіо Брисбану - радіо ярмарок</a> <time class="pull-right post-list" datetime="2016-01-07T11:06:25Z">Thu, Jan 7, 2016</time></span>
+    <span><a href="https://ukrainians.org.au/culture/brisbane-ukr-radio-day-2015/">Українське Радіо Брисбану - радіо ярмарок</a> <time class="pull-right post-list" datetime="2016-01-07T11:06:25Z">Thu, Jan 7, 2016</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukraine-foreign-ministry-launches-international-campaign-myukraineis/">UKRAINE FOREIGN MINISTRY LAUNCHES INTERNATIONAL CAMPAIGN #MyUkraineIs myukraineis.org</a> <time class="pull-right post-list" datetime="2015-12-23T23:11:09Z">Wed, Dec 23, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukraine-foreign-ministry-launches-international-campaign-myukraineis/">UKRAINE FOREIGN MINISTRY LAUNCHES INTERNATIONAL CAMPAIGN #MyUkraineIs myukraineis.org</a> <time class="pull-right post-list" datetime="2015-12-23T23:11:09Z">Wed, Dec 23, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/former-pm-tony-abbott-mobbed-after-shirtfront-mention-as-he-receives-ukrainian-freedom-gong-in-melbourne/">Former PM Tony Abbott mobbed after shirtfront mention as he receives Ukrainian freedom gong in Melbourne</a> <time class="pull-right post-list" datetime="2015-12-14T06:38:09Z">Mon, Dec 14, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/media/former-pm-tony-abbott-mobbed-after-shirtfront-mention-as-he-receives-ukrainian-freedom-gong-in-melbourne/">Former PM Tony Abbott mobbed after shirtfront mention as he receives Ukrainian freedom gong in Melbourne</a> <time class="pull-right post-list" datetime="2015-12-14T06:38:09Z">Mon, Dec 14, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukraine-launches-multimedia-platform-telekanal-uatv/">ЗAПУCКAЄТЬCЯ  МУЛЬТИМЕДІЙНA  ПЛAТФОРМA ІНОМОВЛЕННЯ УКРAЇНИ ТЕЛЕКAНAЛ  UATV - UKRAINE LAUNCHES MULTIMEDIA PLATFORM - TELEKANAL UATV</a> <time class="pull-right post-list" datetime="2015-10-02T21:43:45Z">Fri, Oct 2, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukraine-launches-multimedia-platform-telekanal-uatv/">ЗAПУCКAЄТЬCЯ  МУЛЬТИМЕДІЙНA  ПЛAТФОРМA ІНОМОВЛЕННЯ УКРAЇНИ ТЕЛЕКAНAЛ  UATV - UKRAINE LAUNCHES MULTIMEDIA PLATFORM - TELEKANAL UATV</a> <time class="pull-right post-list" datetime="2015-10-02T21:43:45Z">Fri, Oct 2, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ozuke-2015-avstraliya-ukrayina/">OzUke-2015: АВСТРАЛІЯ - УКРАЇНА</a> <time class="pull-right post-list" datetime="2015-10-01T11:44:53Z">Thu, Oct 1, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ozuke-2015-avstraliya-ukrayina/">OzUke-2015: АВСТРАЛІЯ - УКРАЇНА</a> <time class="pull-right post-list" datetime="2015-10-01T11:44:53Z">Thu, Oct 1, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/24-anniversary-of-independence-of-ukraine-in-melbourne-radio-sbs/">24 річниця Незалежності України у Мельбурні - радіо-репортаж на SBS Ukrainian</a> <time class="pull-right post-list" datetime="2015-09-15T11:27:08Z">Tue, Sep 15, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/24-anniversary-of-independence-of-ukraine-in-melbourne-radio-sbs/">24 річниця Незалежності України у Мельбурні - радіо-репортаж на SBS Ukrainian</a> <time class="pull-right post-list" datetime="2015-09-15T11:27:08Z">Tue, Sep 15, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/video-on-work-of-the-ukrainian-world-congress/">Відео про діяльність Світового Конґресу Українців</a> <time class="pull-right post-list" datetime="2015-07-05T13:29:18Z">Sun, Jul 5, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/media/video-on-work-of-the-ukrainian-world-congress/">Відео про діяльність Світового Конґресу Українців</a> <time class="pull-right post-list" datetime="2015-07-05T13:29:18Z">Sun, Jul 5, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radios-40th-birthday-giveaway/">SBS Radio’s 40th Birthday Giveaway</a> <time class="pull-right post-list" datetime="2015-06-29T07:34:30Z">Mon, Jun 29, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radios-40th-birthday-giveaway/">SBS Radio’s 40th Birthday Giveaway</a> <time class="pull-right post-list" datetime="2015-06-29T07:34:30Z">Mon, Jun 29, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/australian-diaspora-help-support-to-ukraine/">Австралійська діаспора. Допомога та підтримка Україні</a> <time class="pull-right post-list" datetime="2015-06-17T12:16:31Z">Wed, Jun 17, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/politics/australian-diaspora-help-support-to-ukraine/">Австралійська діаспора. Допомога та підтримка Україні</a> <time class="pull-right post-list" datetime="2015-06-17T12:16:31Z">Wed, Jun 17, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/atlantic-council-hiding-in-plain-sight-putins-war-in-ukraine-and-boris-nemtsovs-putin-war/">Atlantic Council: Hiding in Plain Sight: Putin&#39;s War in Ukraine and Boris Nemtsov&#39;s Putin. War.</a> <time class="pull-right post-list" datetime="2015-05-27T12:48:18Z">Wed, May 27, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/politics/atlantic-council-hiding-in-plain-sight-putins-war-in-ukraine-and-boris-nemtsovs-putin-war/">Atlantic Council: Hiding in Plain Sight: Putin&#39;s War in Ukraine and Boris Nemtsov&#39;s Putin. War.</a> <time class="pull-right post-list" datetime="2015-05-27T12:48:18Z">Wed, May 27, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/afuo-youtube-channel-2/">AFUO YouTube Channel</a> <time class="pull-right post-list" datetime="2015-04-01T01:34:17Z">Wed, Apr 1, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/afuo-youtube-channel-2/">AFUO YouTube Channel</a> <time class="pull-right post-list" datetime="2015-04-01T01:34:17Z">Wed, Apr 1, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/afuo-youtube-channel/">AFUO YouTube Channel</a> <time class="pull-right post-list" datetime="2015-03-29T21:57:14Z">Sun, Mar 29, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/afuo-youtube-channel/">AFUO YouTube Channel</a> <time class="pull-right post-list" datetime="2015-03-29T21:57:14Z">Sun, Mar 29, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/dangerous-ideas-kitty-green/">Dangerous Ideas – Kitty Green</a> <time class="pull-right post-list" datetime="2015-03-10T10:56:58Z">Tue, Mar 10, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/media/dangerous-ideas-kitty-green/">Dangerous Ideas – Kitty Green</a> <time class="pull-right post-list" datetime="2015-03-10T10:56:58Z">Tue, Mar 10, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs_ukrainian_radio_interviews_feb_mar_2015/">Інтерв&#39;ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2015-03-05T06:32:16Z">Thu, Mar 5, 2015</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs_ukrainian_radio_interviews_feb_mar_2015/">Інтерв&#39;ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2015-03-05T06:32:16Z">Thu, Mar 5, 2015</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/admin-officer-position-available-at-the-nembc/">Admin Officer Position available at the NEMBC</a> <time class="pull-right post-list" datetime="2014-12-10T09:39:49Z">Wed, Dec 10, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/admin-officer-position-available-at-the-nembc/">Admin Officer Position available at the NEMBC</a> <time class="pull-right post-list" datetime="2014-12-10T09:39:49Z">Wed, Dec 10, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrayinci-viganyayut-putina-z-avstraliyi-siday-na-sviy-bayk-ta-kotis-dodomu/">Українці виганяють Путіна з Австралії: сідай на свій байк та котись додому!</a> <time class="pull-right post-list" datetime="2014-11-17T02:32:51Z">Mon, Nov 17, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrayinci-viganyayut-putina-z-avstraliyi-siday-na-sviy-bayk-ta-kotis-dodomu/">Українці виганяють Путіна з Австралії: сідай на свій байк та котись додому!</a> <time class="pull-right post-list" datetime="2014-11-17T02:32:51Z">Mon, Nov 17, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/can-anti-putin-and-pro-russian-rallies-co-exist/">Can anti-Putin and pro-Russian rallies co-exist?</a> <time class="pull-right post-list" datetime="2014-11-05T21:22:02Z">Wed, Nov 5, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/can-anti-putin-and-pro-russian-rallies-co-exist/">Can anti-Putin and pro-Russian rallies co-exist?</a> <time class="pull-right post-list" datetime="2014-11-05T21:22:02Z">Wed, Nov 5, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/closer-ties-for-australia-and-ukraine-after-mh17-disaster/">&#39;Closer ties&#39; for Australia and Ukraine after MH17 disaster</a> <time class="pull-right post-list" datetime="2014-11-05T21:17:01Z">Wed, Nov 5, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/closer-ties-for-australia-and-ukraine-after-mh17-disaster/">&#39;Closer ties&#39; for Australia and Ukraine after MH17 disaster</a> <time class="pull-right post-list" datetime="2014-11-05T21:17:01Z">Wed, Nov 5, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs_ukrainian_radio_interviews_oct_2014/">Інтерв&#39;ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2014-10-20T10:26:39Z">Mon, Oct 20, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs_ukrainian_radio_interviews_oct_2014/">Інтерв&#39;ю на SBS Ukrainian Radio</a> <time class="pull-right post-list" datetime="2014-10-20T10:26:39Z">Mon, Oct 20, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukraine_alert_angry_continued_corruption/">Ukraine Alert: Ukrainians Angry at Continued Corruption; Putin’s Balkan Gambit</a> <time class="pull-right post-list" datetime="2014-10-18T10:33:35Z">Sat, Oct 18, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukraine_alert_angry_continued_corruption/">Ukraine Alert: Ukrainians Angry at Continued Corruption; Putin’s Balkan Gambit</a> <time class="pull-right post-list" datetime="2014-10-18T10:33:35Z">Sat, Oct 18, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/subscribe-ukrainealert-atlantic-council/">SUBSCRIBE  “UkraineAlert” ATLANTIC COUNCIL</a> <time class="pull-right post-list" datetime="2014-10-15T22:01:14Z">Wed, Oct 15, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/subscribe-ukrainealert-atlantic-council/">SUBSCRIBE  “UkraineAlert” ATLANTIC COUNCIL</a> <time class="pull-right post-list" datetime="2014-10-15T22:01:14Z">Wed, Oct 15, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-community-slams-putin-at-g20/">Ukrainian community slams Putin at G20</a> <time class="pull-right post-list" datetime="2014-10-15T21:50:25Z">Wed, Oct 15, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-community-slams-putin-at-g20/">Ukrainian community slams Putin at G20</a> <time class="pull-right post-list" datetime="2014-10-15T21:50:25Z">Wed, Oct 15, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/afuo-chairman-stefan-romaniw-responds-putin-persona-non-grata/">AFUO CHAIRMAN STEFAN ROMANIW RESPONDS PUTIN PERSONA NON GRATA</a> <time class="pull-right post-list" datetime="2014-10-15T21:38:03Z">Wed, Oct 15, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/afuo-chairman-stefan-romaniw-responds-putin-persona-non-grata/">AFUO CHAIRMAN STEFAN ROMANIW RESPONDS PUTIN PERSONA NON GRATA</a> <time class="pull-right post-list" datetime="2014-10-15T21:38:03Z">Wed, Oct 15, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/%d0%be%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d1%81%d0%ba%d1%83-9-133/">ОБІЖНИК СКУ № 9 (133) – Вересень, 2014 р.</a> <time class="pull-right post-list" datetime="2014-10-13T10:31:09Z">Mon, Oct 13, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/%d0%be%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d1%81%d0%ba%d1%83-9-133/">ОБІЖНИК СКУ № 9 (133) – Вересень, 2014 р.</a> <time class="pull-right post-list" datetime="2014-10-13T10:31:09Z">Mon, Oct 13, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-peak-body-hits-out-at-putin-attendance-at-g20/">Ukrainian peak body hits out at Putin attendance at G20</a> <time class="pull-right post-list" datetime="2014-10-12T22:00:53Z">Sun, Oct 12, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-peak-body-hits-out-at-putin-attendance-at-g20/">Ukrainian peak body hits out at Putin attendance at G20</a> <time class="pull-right post-list" datetime="2014-10-12T22:00:53Z">Sun, Oct 12, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/afuo-media-release-putin-does-not-deserve-to-be-at-g20/">PUTIN DOES NOT DESERVE TO BE AT G20</a> <time class="pull-right post-list" datetime="2014-10-12T21:46:58Z">Sun, Oct 12, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/afuo-media-release-putin-does-not-deserve-to-be-at-g20/">PUTIN DOES NOT DESERVE TO BE AT G20</a> <time class="pull-right post-list" datetime="2014-10-12T21:46:58Z">Sun, Oct 12, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/afuo-national-public-relations-training-day/">AFUO National Public Relations Training Day</a> <time class="pull-right post-list" datetime="2014-10-10T23:30:22Z">Fri, Oct 10, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/afuo-national-public-relations-training-day/">AFUO National Public Relations Training Day</a> <time class="pull-right post-list" datetime="2014-10-10T23:30:22Z">Fri, Oct 10, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/website-letter-of-complaint-sent-to-sbs-from-afuo-broadcasting-ntv-news-syehodnya/">Website Letter of Complaint Sent to SBS from AFUO - broadcasting NTV News &#34;Syehodnya&#34;</a> <time class="pull-right post-list" datetime="2014-07-15T01:21:27Z">Tue, Jul 15, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/website-letter-of-complaint-sent-to-sbs-from-afuo-broadcasting-ntv-news-syehodnya/">Website Letter of Complaint Sent to SBS from AFUO - broadcasting NTV News &#34;Syehodnya&#34;</a> <time class="pull-right post-list" datetime="2014-07-15T01:21:27Z">Tue, Jul 15, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/act/ukrainian-protest-rally-in-canberra-media-coverage/">Ukrainian Protest Rally in Canberra - Media coverage</a> <time class="pull-right post-list" datetime="2014-05-26T01:49:07Z">Mon, May 26, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/events/act/ukrainian-protest-rally-in-canberra-media-coverage/">Ukrainian Protest Rally in Canberra - Media coverage</a> <time class="pull-right post-list" datetime="2014-05-26T01:49:07Z">Mon, May 26, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio-two-interviews-may-2014/">SBS Radio – Два інтерв&#39;ю – травень 2014р.</a> <time class="pull-right post-list" datetime="2014-05-10T01:10:20Z">Sat, May 10, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio-two-interviews-may-2014/">SBS Radio – Два інтерв&#39;ю – травень 2014р.</a> <time class="pull-right post-list" datetime="2014-05-10T01:10:20Z">Sat, May 10, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio-ania-hrechyshin/">SBS Radio: АНЯ ГРЕЧИШКІНА В АВСТРАЛІЇ: &#34; Я МАЮ МРІЮ...&#34;</a> <time class="pull-right post-list" datetime="2014-04-09T03:04:24Z">Wed, Apr 9, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio-ania-hrechyshin/">SBS Radio: АНЯ ГРЕЧИШКІНА В АВСТРАЛІЇ: &#34; Я МАЮ МРІЮ...&#34;</a> <time class="pull-right post-list" datetime="2014-04-09T03:04:24Z">Wed, Apr 9, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/us-state-department-fact-sheet/">US State Department Fact Sheet</a> <time class="pull-right post-list" datetime="2014-03-19T03:05:58Z">Wed, Mar 19, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/us-state-department-fact-sheet/">US State Department Fact Sheet</a> <time class="pull-right post-list" datetime="2014-03-19T03:05:58Z">Wed, Mar 19, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ucs-heritage-series-kashtan-ukrainian-song-and-dance-ensemble-inc/">UCS Heritage Series – KASHTAN Ukrainian Song and Dance Ensemble Inc.</a> <time class="pull-right post-list" datetime="2014-03-07T00:22:25Z">Fri, Mar 7, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ucs-heritage-series-kashtan-ukrainian-song-and-dance-ensemble-inc/">UCS Heritage Series – KASHTAN Ukrainian Song and Dance Ensemble Inc.</a> <time class="pull-right post-list" datetime="2014-03-07T00:22:25Z">Fri, Mar 7, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/refuting-putins-lies/">Refuting Putin’s lies</a> <time class="pull-right post-list" datetime="2014-03-06T02:46:35Z">Thu, Mar 6, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/refuting-putins-lies/">Refuting Putin’s lies</a> <time class="pull-right post-list" datetime="2014-03-06T02:46:35Z">Thu, Mar 6, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/media-coverage-of-rally-in-melbourne-over-ukraine-crisis/">Media coverage of rally in Melbourne over Ukraine crisis</a> <time class="pull-right post-list" datetime="2014-03-05T02:26:02Z">Wed, Mar 5, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/media-coverage-of-rally-in-melbourne-over-ukraine-crisis/">Media coverage of rally in Melbourne over Ukraine crisis</a> <time class="pull-right post-list" datetime="2014-03-05T02:26:02Z">Wed, Mar 5, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/media-article-the-justifying-myths-of-russian-intervention/">Media article: &#34;The Justifying Myths of Russian Intervention&#34;</a> <time class="pull-right post-list" datetime="2014-03-04T01:06:07Z">Tue, Mar 4, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/politics/media-article-the-justifying-myths-of-russian-intervention/">Media article: &#34;The Justifying Myths of Russian Intervention&#34;</a> <time class="pull-right post-list" datetime="2014-03-04T01:06:07Z">Tue, Mar 4, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/recording-of-prayer-for-peace/">Запис із спільної «Молитви за мир і спокій»</a> <time class="pull-right post-list" datetime="2014-03-03T09:25:30Z">Mon, Mar 3, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/community/recording-of-prayer-for-peace/">Запис із спільної «Молитви за мир і спокій»</a> <time class="pull-right post-list" datetime="2014-03-03T09:25:30Z">Mon, Mar 3, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/the-hon-david-john-clarke-about-ukraine/">Високодостойний Дейвід Джон КЛАРК про Україну</a> <time class="pull-right post-list" datetime="2014-02-05T05:20:17Z">Wed, Feb 5, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/community/the-hon-david-john-clarke-about-ukraine/">Високодостойний Дейвід Джон КЛАРК про Україну</a> <time class="pull-right post-list" datetime="2014-02-05T05:20:17Z">Wed, Feb 5, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrainians-in-australia-against-dictatorship-in-ukraine-videos/">Ukrainians in Australia against dictatorship in Ukraine – Videos</a> <time class="pull-right post-list" datetime="2014-01-22T06:53:09Z">Wed, Jan 22, 2014</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrainians-in-australia-against-dictatorship-in-ukraine-videos/">Ukrainians in Australia against dictatorship in Ukraine – Videos</a> <time class="pull-right post-list" datetime="2014-01-22T06:53:09Z">Wed, Jan 22, 2014</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/letter-from-cardinal-pell/">Letter from Cardinal Pell</a> <time class="pull-right post-list" datetime="2013-12-13T06:49:10Z">Fri, Dec 13, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/letter-from-cardinal-pell/">Letter from Cardinal Pell</a> <time class="pull-right post-list" datetime="2013-12-13T06:49:10Z">Fri, Dec 13, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrainians-around-the-world-support-protesters-in-ukraine/">Українці Австралії та всього світу підтримують протестуючих в Україні</a> <time class="pull-right post-list" datetime="2013-12-10T23:13:05Z">Tue, Dec 10, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrainians-around-the-world-support-protesters-in-ukraine/">Українці Австралії та всього світу підтримують протестуючих в Україні</a> <time class="pull-right post-list" datetime="2013-12-10T23:13:05Z">Tue, Dec 10, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/why-ukraine-matters/">Why Ukraine Matters</a> <time class="pull-right post-list" datetime="2013-12-09T03:41:40Z">Mon, Dec 9, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/why-ukraine-matters/">Why Ukraine Matters</a> <time class="pull-right post-list" datetime="2013-12-09T03:41:40Z">Mon, Dec 9, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/stefan-romaniw-from-kyiv-4-dec-2013/">Cтефан Романів - Київ 4-го грудня</a> <time class="pull-right post-list" datetime="2013-12-05T00:10:38Z">Thu, Dec 5, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/politics/stefan-romaniw-from-kyiv-4-dec-2013/">Cтефан Романів - Київ 4-го грудня</a> <time class="pull-right post-list" datetime="2013-12-05T00:10:38Z">Thu, Dec 5, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-melbourne-commemorates-holodomor-2/">SBS Radio: Мельбурн вшанував жертв Голодомору</a> <time class="pull-right post-list" datetime="2013-11-27T01:12:22Z">Wed, Nov 27, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-melbourne-commemorates-holodomor-2/">SBS Radio: Мельбурн вшанував жертв Голодомору</a> <time class="pull-right post-list" datetime="2013-11-27T01:12:22Z">Wed, Nov 27, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/book-launch-taste-of-ukraine/">Book Launch - Taste of Ukraine</a> <time class="pull-right post-list" datetime="2013-11-03T03:13:11Z">Sun, Nov 3, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/book-launch-taste-of-ukraine/">Book Launch - Taste of Ukraine</a> <time class="pull-right post-list" datetime="2013-11-03T03:13:11Z">Sun, Nov 3, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukrainian-credit-union-dnister-and-the-community/">УКК “ДНІСТЕР“ I СПІЛЬНОТА: НАША СИЛА – У ЄДНОСТІ!</a> <time class="pull-right post-list" datetime="2013-10-19T04:12:26Z">Sat, Oct 19, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukrainian-credit-union-dnister-and-the-community/">УКК “ДНІСТЕР“ I СПІЛЬНОТА: НАША СИЛА – У ЄДНОСТІ!</a> <time class="pull-right post-list" datetime="2013-10-19T04:12:26Z">Sat, Oct 19, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/holodomor-2013-ucs-stamps-and-envelopes/">Holodomor 2013 - UCS stamps and envelopes</a> <time class="pull-right post-list" datetime="2013-10-14T02:22:10Z">Mon, Oct 14, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/holodomor-2013-ucs-stamps-and-envelopes/">Holodomor 2013 - UCS stamps and envelopes</a> <time class="pull-right post-list" datetime="2013-10-14T02:22:10Z">Mon, Oct 14, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/80th-anniversary-of-the-ukrainian-famine-genocide/">УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ</a> <time class="pull-right post-list" datetime="2013-10-02T03:26:32Z">Wed, Oct 2, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/80th-anniversary-of-the-ukrainian-famine-genocide/">УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ</a> <time class="pull-right post-list" datetime="2013-10-02T03:26:32Z">Wed, Oct 2, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-world-congress-of-ukrainians/">SBS RADIO: СВІТОВЕ УКРАЇНСТВО ТА СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ</a> <time class="pull-right post-list" datetime="2013-09-20T01:19:48Z">Fri, Sep 20, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-world-congress-of-ukrainians/">SBS RADIO: СВІТОВЕ УКРАЇНСТВО ТА СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ</a> <time class="pull-right post-list" datetime="2013-09-20T01:19:48Z">Fri, Sep 20, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/new-book-release-fortune-at-the-edge-of-the-world/">Презинтaція книжки “Щастя на краю світу”</a> <time class="pull-right post-list" datetime="2013-09-12T10:53:40Z">Thu, Sep 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/new-book-release-fortune-at-the-edge-of-the-world/">Презинтaція книжки “Щастя на краю світу”</a> <time class="pull-right post-list" datetime="2013-09-12T10:53:40Z">Thu, Sep 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/consecration-of-new-ukrainian-catholic-cathedral/">Освячення головного храму УГКЦ </a> <time class="pull-right post-list" datetime="2013-08-24T02:04:17Z">Sat, Aug 24, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/consecration-of-new-ukrainian-catholic-cathedral/">Освячення головного храму УГКЦ </a> <time class="pull-right post-list" datetime="2013-08-24T02:04:17Z">Sat, Aug 24, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/interview-in-ukraine-peter-duma/">Інтерв’ю в Україні - Петро Дума</a> <time class="pull-right post-list" datetime="2013-08-19T01:22:33Z">Mon, Aug 19, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/interview-in-ukraine-peter-duma/">Інтерв’ю в Україні - Петро Дума</a> <time class="pull-right post-list" datetime="2013-08-19T01:22:33Z">Mon, Aug 19, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ucs-heritage-stamp-no-9/">UCS Heritage stamp No. 9</a> <time class="pull-right post-list" datetime="2013-08-07T01:21:40Z">Wed, Aug 7, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ucs-heritage-stamp-no-9/">UCS Heritage stamp No. 9</a> <time class="pull-right post-list" datetime="2013-08-07T01:21:40Z">Wed, Aug 7, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/fairfax-apologises-for-slurring-ukrainians/">Fairfax apologises for slurring Ukrainians</a> <time class="pull-right post-list" datetime="2013-07-22T01:28:23Z">Mon, Jul 22, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/fairfax-apologises-for-slurring-ukrainians/">Fairfax apologises for slurring Ukrainians</a> <time class="pull-right post-list" datetime="2013-07-22T01:28:23Z">Mon, Jul 22, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ucs-heritage-issue-no-8/">UCS Heritage issue no. 8</a> <time class="pull-right post-list" datetime="2013-07-01T04:34:59Z">Mon, Jul 1, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ucs-heritage-issue-no-8/">UCS Heritage issue no. 8</a> <time class="pull-right post-list" datetime="2013-07-01T04:34:59Z">Mon, Jul 1, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/65-years-of-ukrainian-settlement-in-australia/">65–ЛІТТЯ ПОСЕЛЕННЯ УКРАЇНЦІВ В АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2013-06-15T04:49:24Z">Sat, Jun 15, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/65-years-of-ukrainian-settlement-in-australia/">65–ЛІТТЯ ПОСЕЛЕННЯ УКРАЇНЦІВ В АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2013-06-15T04:49:24Z">Sat, Jun 15, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-youth-short-film-festival-2013-results/">Ukrainian Youth Short Film Festival 2013 - Results</a> <time class="pull-right post-list" datetime="2013-06-12T05:18:52Z">Wed, Jun 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-youth-short-film-festival-2013-results/">Ukrainian Youth Short Film Festival 2013 - Results</a> <time class="pull-right post-list" datetime="2013-06-12T05:18:52Z">Wed, Jun 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-interview-orysia-tracz/">SBS interview – Orysia Tracz</a> <time class="pull-right post-list" datetime="2013-06-04T06:41:36Z">Tue, Jun 4, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-interview-orysia-tracz/">SBS interview – Orysia Tracz</a> <time class="pull-right post-list" datetime="2013-06-04T06:41:36Z">Tue, Jun 4, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio-uketube-interview-with-stefan-romaniw/">SBS Radio - UkeTube: Interview with Stefan Romaniw</a> <time class="pull-right post-list" datetime="2013-04-26T03:10:24Z">Fri, Apr 26, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio-uketube-interview-with-stefan-romaniw/">SBS Radio - UkeTube: Interview with Stefan Romaniw</a> <time class="pull-right post-list" datetime="2013-04-26T03:10:24Z">Fri, Apr 26, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ucs-heritage-stamp-issue-no-8/">UCS Heritage stamp issue No. 8</a> <time class="pull-right post-list" datetime="2013-04-18T10:06:11Z">Thu, Apr 18, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ucs-heritage-stamp-issue-no-8/">UCS Heritage stamp issue No. 8</a> <time class="pull-right post-list" datetime="2013-04-18T10:06:11Z">Thu, Apr 18, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/sbs-radio-petro-jacyk-international-ukrainian-language-competition-in-australia/">SBS Radio - Міжнародний конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2013-04-12T03:33:16Z">Fri, Apr 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/sbs-radio-petro-jacyk-international-ukrainian-language-competition-in-australia/">SBS Radio - Міжнародний конкурс з української мови ім. Петра Яцика в Австралії</a> <time class="pull-right post-list" datetime="2013-04-12T03:33:16Z">Fri, Apr 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-interview-stefan-romaniw/">SBS Radio - Інтерв&#39;ю із Стефаном Романівим</a> <time class="pull-right post-list" datetime="2013-04-03T06:29:48Z">Wed, Apr 3, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-interview-stefan-romaniw/">SBS Radio - Інтерв&#39;ю із Стефаном Романівим</a> <time class="pull-right post-list" datetime="2013-04-03T06:29:48Z">Wed, Apr 3, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/sbs-radio-%d0%b4%d0%be-%d1%83%d0%b2%d0%b0%d0%b3%d0%b8/">SBS Radio - До УВАГИ!!!</a> <time class="pull-right post-list" datetime="2013-03-14T00:06:44Z">Thu, Mar 14, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/sbs-radio-%d0%b4%d0%be-%d1%83%d0%b2%d0%b0%d0%b3%d0%b8/">SBS Radio - До УВАГИ!!!</a> <time class="pull-right post-list" datetime="2013-03-14T00:06:44Z">Thu, Mar 14, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/lets-speak-ukrainia/">Давайте говорити українською!</a> <time class="pull-right post-list" datetime="2013-03-12T05:55:46Z">Tue, Mar 12, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/education/lets-speak-ukrainia/">Давайте говорити українською!</a> <time class="pull-right post-list" datetime="2013-03-12T05:55:46Z">Tue, Mar 12, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainians-around-the-world-language-culture-identity/">УКРАЇНЦІ У СВІТІ: МОВА, КУЛЬТУРА, ІДЕНТИЧНІСТЬ</a> <time class="pull-right post-list" datetime="2013-03-08T01:12:58Z">Fri, Mar 8, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainians-around-the-world-language-culture-identity/">УКРАЇНЦІ У СВІТІ: МОВА, КУЛЬТУРА, ІДЕНТИЧНІСТЬ</a> <time class="pull-right post-list" datetime="2013-03-08T01:12:58Z">Fri, Mar 8, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-%d1%85v-%d0%b7%d0%b4%d0%b2%d0%b8%d0%b3-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96%d0%b2-%d0%b0%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d1%97/">SBS Radio: ХV ЗДВИГ УКРАЇНЦІВ АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2013-02-27T01:49:22Z">Wed, Feb 27, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-%d1%85v-%d0%b7%d0%b4%d0%b2%d0%b8%d0%b3-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96%d0%b2-%d0%b0%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d1%97/">SBS Radio: ХV ЗДВИГ УКРАЇНЦІВ АВСТРАЛІЇ</a> <time class="pull-right post-list" datetime="2013-02-27T01:49:22Z">Wed, Feb 27, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/commit-to-community-radio/">COMMIT TO COMMUNITY RADIO!</a> <time class="pull-right post-list" datetime="2013-02-20T06:42:06Z">Wed, Feb 20, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/commit-to-community-radio/">COMMIT TO COMMUNITY RADIO!</a> <time class="pull-right post-list" datetime="2013-02-20T06:42:06Z">Wed, Feb 20, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/unsung-hero-marched-on/">Unsung hero marched on</a> <time class="pull-right post-list" datetime="2013-02-10T06:00:13Z">Sun, Feb 10, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/unsung-hero-marched-on/">Unsung hero marched on</a> <time class="pull-right post-list" datetime="2013-02-10T06:00:13Z">Sun, Feb 10, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/afuo-newsletter-1-2013/">AFUO Newsletter 1-2013</a> <time class="pull-right post-list" datetime="2013-01-24T03:01:34Z">Thu, Jan 24, 2013</time></span>
+    <span><a href="https://ukrainians.org.au/community/afuo-newsletter-1-2013/">AFUO Newsletter 1-2013</a> <time class="pull-right post-list" datetime="2013-01-24T03:01:34Z">Thu, Jan 24, 2013</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/uwc-bulletin-winter-2012/">БЮЛЕТЕНЬ Світового Конґресу Українців</a> <time class="pull-right post-list" datetime="2012-12-27T06:25:24Z">Thu, Dec 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/uwc-bulletin-winter-2012/">БЮЛЕТЕНЬ Світового Конґресу Українців</a> <time class="pull-right post-list" datetime="2012-12-27T06:25:24Z">Thu, Dec 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/uwcc-newsletter-2012-3/">Вісник УВКР - 2012/3</a> <time class="pull-right post-list" datetime="2012-12-27T05:52:33Z">Thu, Dec 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/uwcc-newsletter-2012-3/">Вісник УВКР - 2012/3</a> <time class="pull-right post-list" datetime="2012-12-27T05:52:33Z">Thu, Dec 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-announces-new-radio-schedule/">CБC проголосив новий плян радіо-програм</a> <time class="pull-right post-list" datetime="2012-11-30T23:37:31Z">Fri, Nov 30, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-announces-new-radio-schedule/">CБC проголосив новий плян радіо-програм</a> <time class="pull-right post-list" datetime="2012-11-30T23:37:31Z">Fri, Nov 30, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/mp-matthew-guy-remembers-sad-family-past-in-ukraine/">MP Matthew Guy remembers sad family past in Ukraine</a> <time class="pull-right post-list" datetime="2012-11-29T10:20:19Z">Thu, Nov 29, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/media/mp-matthew-guy-remembers-sad-family-past-in-ukraine/">MP Matthew Guy remembers sad family past in Ukraine</a> <time class="pull-right post-list" datetime="2012-11-29T10:20:19Z">Thu, Nov 29, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/meeting-in-vic-parliament-with-yurij-luhovy/">Зустріч у Парламенті Вікторії з Ю. Луговим</a> <time class="pull-right post-list" datetime="2012-11-29T10:06:49Z">Thu, Nov 29, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/meeting-in-vic-parliament-with-yurij-luhovy/">Зустріч у Парламенті Вікторії з Ю. Луговим</a> <time class="pull-right post-list" datetime="2012-11-29T10:06:49Z">Thu, Nov 29, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/new-segment-on-sbs-radio-about-the-holodomor/">Новий сеґмент на СБС про Голодомор</a> <time class="pull-right post-list" datetime="2012-11-27T01:12:20Z">Tue, Nov 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/new-segment-on-sbs-radio-about-the-holodomor/">Новий сеґмент на СБС про Голодомор</a> <time class="pull-right post-list" datetime="2012-11-27T01:12:20Z">Tue, Nov 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/commemoration-in-ardeer-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Ардірі</a> <time class="pull-right post-list" datetime="2012-11-27T00:47:32Z">Tue, Nov 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/commemoration-in-ardeer-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Ардірі</a> <time class="pull-right post-list" datetime="2012-11-27T00:47:32Z">Tue, Nov 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/commemoration-in-melbourne-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Мельбурні</a> <time class="pull-right post-list" datetime="2012-11-27T00:24:00Z">Tue, Nov 27, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/commemoration-in-melbourne-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Мельбурні</a> <time class="pull-right post-list" datetime="2012-11-27T00:24:00Z">Tue, Nov 27, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/genocide-revealed-shown-in-sydney/">&#34;ОКРАДЕНА ЗЕМЛЯ&#34; НА ПРЕМ’ЄРІ В СІДНЕЇ </a> <time class="pull-right post-list" datetime="2012-11-25T05:40:10Z">Sun, Nov 25, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/genocide-revealed-shown-in-sydney/">&#34;ОКРАДЕНА ЗЕМЛЯ&#34; НА ПРЕМ’ЄРІ В СІДНЕЇ </a> <time class="pull-right post-list" datetime="2012-11-25T05:40:10Z">Sun, Nov 25, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/act/screening-of-genocide-revealed-in-federal-parliament/">Screening of &#39;Genocide Revealed&#39; in Federal Parliament</a> <time class="pull-right post-list" datetime="2012-11-21T02:21:21Z">Wed, Nov 21, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/act/screening-of-genocide-revealed-in-federal-parliament/">Screening of &#39;Genocide Revealed&#39; in Federal Parliament</a> <time class="pull-right post-list" datetime="2012-11-21T02:21:21Z">Wed, Nov 21, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-interview-genocide-revealed/">SBS Interview - &#34;Genocide Revealed&#34;</a> <time class="pull-right post-list" datetime="2012-11-15T22:58:32Z">Thu, Nov 15, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-interview-genocide-revealed/">SBS Interview - &#34;Genocide Revealed&#34;</a> <time class="pull-right post-list" datetime="2012-11-15T22:58:32Z">Thu, Nov 15, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/cultural-lesson-learned-well/">Cultural lesson learned well</a> <time class="pull-right post-list" datetime="2012-11-13T07:04:06Z">Tue, Nov 13, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/culture/cultural-lesson-learned-well/">Cultural lesson learned well</a> <time class="pull-right post-list" datetime="2012-11-13T07:04:06Z">Tue, Nov 13, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-ukrainian-october-2012/">Радіопередача - SBS Radio жовтень 2012</a> <time class="pull-right post-list" datetime="2012-11-07T00:07:49Z">Wed, Nov 7, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-ukrainian-october-2012/">Радіопередача - SBS Radio жовтень 2012</a> <time class="pull-right post-list" datetime="2012-11-07T00:07:49Z">Wed, Nov 7, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/the-age-on-the-ukrainian-holodomor/">“The Age” on the Ukrainian Holodomor </a> <time class="pull-right post-list" datetime="2012-11-05T01:35:05Z">Mon, Nov 5, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/media/the-age-on-the-ukrainian-holodomor/">“The Age” on the Ukrainian Holodomor </a> <time class="pull-right post-list" datetime="2012-11-05T01:35:05Z">Mon, Nov 5, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/worthy-commemoration-70-years-upa/">Гідно відзначили 70 Ліття УПA</a> <time class="pull-right post-list" datetime="2012-10-29T01:25:14Z">Mon, Oct 29, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/worthy-commemoration-70-years-upa/">Гідно відзначили 70 Ліття УПA</a> <time class="pull-right post-list" datetime="2012-10-29T01:25:14Z">Mon, Oct 29, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/genocide-revealed/">Genocide Revealed</a> <time class="pull-right post-list" datetime="2012-10-25T05:59:56Z">Thu, Oct 25, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/genocide-revealed/">Genocide Revealed</a> <time class="pull-right post-list" datetime="2012-10-25T05:59:56Z">Thu, Oct 25, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio-%d0%b4%d0%be%d0%bb%d1%8f-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%b2-%d1%80%d1%83%d0%ba%d0%b0%d1%85-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96%d0%b2/">SBS Radio - Доля України в руках українців</a> <time class="pull-right post-list" datetime="2012-10-18T01:21:14Z">Thu, Oct 18, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio-%d0%b4%d0%be%d0%bb%d1%8f-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%b2-%d1%80%d1%83%d0%ba%d0%b0%d1%85-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96%d0%b2/">SBS Radio - Доля України в руках українців</a> <time class="pull-right post-list" datetime="2012-10-18T01:21:14Z">Thu, Oct 18, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-ukrainian-september-2012/">Радіопередачі на SBS Radio - вересень 2012</a> <time class="pull-right post-list" datetime="2012-10-01T06:21:47Z">Mon, Oct 1, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-ukrainian-september-2012/">Радіопередачі на SBS Radio - вересень 2012</a> <time class="pull-right post-list" datetime="2012-10-01T06:21:47Z">Mon, Oct 1, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukrainian-community-celebrates-50-years/">Ukrainian Community celebrates 50 years</a> <time class="pull-right post-list" datetime="2012-09-03T04:56:59Z">Mon, Sep 3, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukrainian-community-celebrates-50-years/">Ukrainian Community celebrates 50 years</a> <time class="pull-right post-list" datetime="2012-09-03T04:56:59Z">Mon, Sep 3, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/successful-ukrainian-independence-day-celebrations-in-melbourne/">Successful Ukrainian Independence Day Celebrations in Melbourne</a> <time class="pull-right post-list" datetime="2012-08-20T00:56:42Z">Mon, Aug 20, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/successful-ukrainian-independence-day-celebrations-in-melbourne/">Successful Ukrainian Independence Day Celebrations in Melbourne</a> <time class="pull-right post-list" datetime="2012-08-20T00:56:42Z">Mon, Aug 20, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/victoria/ukrainian-festival-melbourne-advertising/">Ukrainian Festival Melbourne Advertising</a> <time class="pull-right post-list" datetime="2012-08-16T10:20:25Z">Thu, Aug 16, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/victoria/ukrainian-festival-melbourne-advertising/">Ukrainian Festival Melbourne Advertising</a> <time class="pull-right post-list" datetime="2012-08-16T10:20:25Z">Thu, Aug 16, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/broddcasts-on-sbs-radio/">Радіопередачі на SBS Radio</a> <time class="pull-right post-list" datetime="2012-07-28T03:17:39Z">Sat, Jul 28, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/broddcasts-on-sbs-radio/">Радіопередачі на SBS Radio</a> <time class="pull-right post-list" datetime="2012-07-28T03:17:39Z">Sat, Jul 28, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukraine-wins-first-prize-at-microsoft-imagine/">Ukraine wins first prize at Microsoft Imagine</a> <time class="pull-right post-list" datetime="2012-07-10T23:51:14Z">Tue, Jul 10, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukraine-wins-first-prize-at-microsoft-imagine/">Ukraine wins first prize at Microsoft Imagine</a> <time class="pull-right post-list" datetime="2012-07-10T23:51:14Z">Tue, Jul 10, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukrainian-team-in-microsoft-imagine-cup/">Ukrainian Team in Microsoft Imagine Cup</a> <time class="pull-right post-list" datetime="2012-07-10T09:05:53Z">Tue, Jul 10, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukrainian-team-in-microsoft-imagine-cup/">Ukrainian Team in Microsoft Imagine Cup</a> <time class="pull-right post-list" datetime="2012-07-10T09:05:53Z">Tue, Jul 10, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/protest-letters-against-language-bill/">Лиcти укрaїнcьких організацій в Aвcтрaлії в справі закону про мову</a> <time class="pull-right post-list" datetime="2012-07-10T02:58:03Z">Tue, Jul 10, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/protest-letters-against-language-bill/">Лиcти укрaїнcьких організацій в Aвcтрaлії в справі закону про мову</a> <time class="pull-right post-list" datetime="2012-07-10T02:58:03Z">Tue, Jul 10, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-radio-ukrainian-language-isuues/">SBS Radio Ukrainian - Language Issues</a> <time class="pull-right post-list" datetime="2012-07-10T02:17:07Z">Tue, Jul 10, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-radio-ukrainian-language-isuues/">SBS Radio Ukrainian - Language Issues</a> <time class="pull-right post-list" datetime="2012-07-10T02:17:07Z">Tue, Jul 10, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/more-interviews-sbs-radio/">Нові інтерв’ю SBS Radio</a> <time class="pull-right post-list" datetime="2012-04-26T02:42:20Z">Thu, Apr 26, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/more-interviews-sbs-radio/">Нові інтерв’ю SBS Radio</a> <time class="pull-right post-list" datetime="2012-04-26T02:42:20Z">Thu, Apr 26, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/new-interviews-sbs-radio-ukrainian/">Нові інтерв’ю SBS Radio</a> <time class="pull-right post-list" datetime="2012-04-16T02:18:15Z">Mon, Apr 16, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/new-interviews-sbs-radio-ukrainian/">Нові інтерв’ю SBS Radio</a> <time class="pull-right post-list" datetime="2012-04-16T02:18:15Z">Mon, Apr 16, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/afuo-bulletin-april-2012/">AFUO Bulletin April 2012 / Обіжник СУОА - квітень 2012</a> <time class="pull-right post-list" datetime="2012-04-11T04:21:29Z">Wed, Apr 11, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/afuo-bulletin-april-2012/">AFUO Bulletin April 2012 / Обіжник СУОА - квітень 2012</a> <time class="pull-right post-list" datetime="2012-04-11T04:21:29Z">Wed, Apr 11, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/sbs-radio-schedule-review/">SBS Radio Schedule Review</a> <time class="pull-right post-list" datetime="2012-04-02T04:58:18Z">Mon, Apr 2, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/sbs-radio-schedule-review/">SBS Radio Schedule Review</a> <time class="pull-right post-list" datetime="2012-04-02T04:58:18Z">Mon, Apr 2, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/in-memory-of-yosyf-slipyi/">В пам’ять Патріярха ЙОCИПA CЛІПОГО</a> <time class="pull-right post-list" datetime="2012-03-24T01:59:22Z">Sat, Mar 24, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/in-memory-of-yosyf-slipyi/">В пам’ять Патріярха ЙОCИПA CЛІПОГО</a> <time class="pull-right post-list" datetime="2012-03-24T01:59:22Z">Sat, Mar 24, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/radio-sbs-ukrainian/">Radio SBS Ukrainian</a> <time class="pull-right post-list" datetime="2012-03-20T01:30:24Z">Tue, Mar 20, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/radio-sbs-ukrainian/">Radio SBS Ukrainian</a> <time class="pull-right post-list" datetime="2012-03-20T01:30:24Z">Tue, Mar 20, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ucs-heritage-series-plast/">UCS Heritage series - PLAST</a> <time class="pull-right post-list" datetime="2012-03-19T00:20:05Z">Mon, Mar 19, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ucs-heritage-series-plast/">UCS Heritage series - PLAST</a> <time class="pull-right post-list" datetime="2012-03-19T00:20:05Z">Mon, Mar 19, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/bbc-radio-programmes-about-the-holodomor/">BBC Radio programmes about the Holodomor</a> <time class="pull-right post-list" datetime="2012-01-13T23:57:40Z">Fri, Jan 13, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/media/bbc-radio-programmes-about-the-holodomor/">BBC Radio programmes about the Holodomor</a> <time class="pull-right post-list" datetime="2012-01-13T23:57:40Z">Fri, Jan 13, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/sbs-ukrainian-new-interviews/">SBS Ukrainian - Нові інтерв’ю </a> <time class="pull-right post-list" datetime="2012-01-05T00:26:12Z">Thu, Jan 5, 2012</time></span>
+    <span><a href="https://ukrainians.org.au/community/sbs-ukrainian-new-interviews/">SBS Ukrainian - Нові інтерв’ю </a> <time class="pull-right post-list" datetime="2012-01-05T00:26:12Z">Thu, Jan 5, 2012</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Нові інтерв’ю SBS Ukrainian</a> <time class="pull-right post-list" datetime="2011-12-14T03:47:05Z">Wed, Dec 14, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Нові інтерв’ю SBS Ukrainian</a> <time class="pull-right post-list" datetime="2011-12-14T03:47:05Z">Wed, Dec 14, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/julie-nalivaiko-back-in-the-soviet-bloc/">Julie Nalivaiko - BACK IN THE SOVIET BLOC</a> <time class="pull-right post-list" datetime="2011-12-13T11:01:09Z">Tue, Dec 13, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/julie-nalivaiko-back-in-the-soviet-bloc/">Julie Nalivaiko - BACK IN THE SOVIET BLOC</a> <time class="pull-right post-list" datetime="2011-12-13T11:01:09Z">Tue, Dec 13, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/new-south-wales/commemorating-the-holodomor-victims-sydney-australia/">Вшанування жертв Голодомору – Сідней, Австралія</a> <time class="pull-right post-list" datetime="2011-11-28T05:33:16Z">Mon, Nov 28, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/new-south-wales/commemorating-the-holodomor-victims-sydney-australia/">Вшанування жертв Голодомору – Сідней, Австралія</a> <time class="pull-right post-list" datetime="2011-11-28T05:33:16Z">Mon, Nov 28, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/links-to-sites-about-holodomor-commemoration-events/">Лінки до сайтів про роковини Голодомору / Links to sites about Holodomor commemoration events</a> <time class="pull-right post-list" datetime="2011-11-28T05:24:26Z">Mon, Nov 28, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/links-to-sites-about-holodomor-commemoration-events/">Лінки до сайтів про роковини Голодомору / Links to sites about Holodomor commemoration events</a> <time class="pull-right post-list" datetime="2011-11-28T05:24:26Z">Mon, Nov 28, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/remembrance-candle/">СВІЧКА ПАМ&#39;ЯТІ / REMEMBRANCE CANDLE</a> <time class="pull-right post-list" datetime="2011-11-23T22:47:39Z">Wed, Nov 23, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/remembrance-candle/">СВІЧКА ПАМ&#39;ЯТІ / REMEMBRANCE CANDLE</a> <time class="pull-right post-list" datetime="2011-11-23T22:47:39Z">Wed, Nov 23, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/uwc-statement-on-the-anniversa/">Заклик CКУ до річниці Голодомору / UWC Statement on the anniversary of the Holodomor</a> <time class="pull-right post-list" datetime="2011-11-22T06:33:26Z">Tue, Nov 22, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/uwc-statement-on-the-anniversa/">Заклик CКУ до річниці Голодомору / UWC Statement on the anniversary of the Holodomor</a> <time class="pull-right post-list" datetime="2011-11-22T06:33:26Z">Tue, Nov 22, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/in-parallel-worlds/">У паралельних світах / In Parallel Worlds</a> <time class="pull-right post-list" datetime="2011-11-22T06:07:19Z">Tue, Nov 22, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/in-parallel-worlds/">У паралельних світах / In Parallel Worlds</a> <time class="pull-right post-list" datetime="2011-11-22T06:07:19Z">Tue, Nov 22, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/interview-about-the-great-famine-in-ukraine/">Interview about the Great Famine in Ukraine / Інтерв&#39;ю про Великий Голод в Україні</a> <time class="pull-right post-list" datetime="2011-11-17T04:12:47Z">Thu, Nov 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/interview-about-the-great-famine-in-ukraine/">Interview about the Great Famine in Ukraine / Інтерв&#39;ю про Великий Голод в Україні</a> <time class="pull-right post-list" datetime="2011-11-17T04:12:47Z">Thu, Nov 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/western-australia/silent-memories-traumatic-lives/">Silent Memories - Traumatic Lives</a> <time class="pull-right post-list" datetime="2011-11-15T00:31:32Z">Tue, Nov 15, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/western-australia/silent-memories-traumatic-lives/">Silent Memories - Traumatic Lives</a> <time class="pull-right post-list" datetime="2011-11-15T00:31:32Z">Tue, Nov 15, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/official-plast-personalised-stamp-and-commemorative-envelope-release/">Official Plast Personalised Stamp and Commemorative Envelope Release</a> <time class="pull-right post-list" datetime="2011-11-13T07:28:12Z">Sun, Nov 13, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/official-plast-personalised-stamp-and-commemorative-envelope-release/">Official Plast Personalised Stamp and Commemorative Envelope Release</a> <time class="pull-right post-list" datetime="2011-11-13T07:28:12Z">Sun, Nov 13, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/new-publication-%e2%80%93-%e2%80%9csilent-memories-traumatic-lives%e2%80%9d/">New Publication – “Silent Memories - Traumatic Lives”</a> <time class="pull-right post-list" datetime="2011-11-10T06:54:16Z">Thu, Nov 10, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/new-publication-%e2%80%93-%e2%80%9csilent-memories-traumatic-lives%e2%80%9d/">New Publication – “Silent Memories - Traumatic Lives”</a> <time class="pull-right post-list" datetime="2011-11-10T06:54:16Z">Thu, Nov 10, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio/">SBS радіо</a> <time class="pull-right post-list" datetime="2011-10-31T03:31:11Z">Mon, Oct 31, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio/">SBS радіо</a> <time class="pull-right post-list" datetime="2011-10-31T03:31:11Z">Mon, Oct 31, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/%d0%94%d0%95%d0%a0%d0%96%d0%90%d0%92%d0%9d%d0%98%d0%99-komitet-te%d0%9be%d0%91a%d0%a7e%d0%9d%d0%9d%d0%af-ta-pa%d0%94io%d0%9co%d0%92%d0%9be%d0%9d%d0%9d%d0%af-y%d0%9apa%d0%87%d0%9d%d0%98/">ДЕРЖАВНИЙ KOMITET TEЛEБAЧEННЯ TA PAДIOМOВЛEННЯ YКPAЇНИ</a> <time class="pull-right post-list" datetime="2011-10-17T23:47:16Z">Mon, Oct 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/%d0%94%d0%95%d0%a0%d0%96%d0%90%d0%92%d0%9d%d0%98%d0%99-komitet-te%d0%9be%d0%91a%d0%a7e%d0%9d%d0%9d%d0%af-ta-pa%d0%94io%d0%9co%d0%92%d0%9be%d0%9d%d0%9d%d0%af-y%d0%9apa%d0%87%d0%9d%d0%98/">ДЕРЖАВНИЙ KOMITET TEЛEБAЧEННЯ TA PAДIOМOВЛEННЯ YКPAЇНИ</a> <time class="pull-right post-list" datetime="2011-10-17T23:47:16Z">Mon, Oct 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/stook-stook-issue-5/">Stook Stook Issue 5</a> <time class="pull-right post-list" datetime="2011-09-21T13:54:06Z">Wed, Sep 21, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/stook-stook-issue-5/">Stook Stook Issue 5</a> <time class="pull-right post-list" datetime="2011-09-21T13:54:06Z">Wed, Sep 21, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/%d0%9e%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d0%a1%d0%b2%d1%96%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%9a%d0%be%d0%bd%d2%91%d1%80%d0%b5%d1%81%d1%83-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96/">Обіжник Світового Конґресу Українців – Серпень, 2011 р.</a> <time class="pull-right post-list" datetime="2011-09-19T03:02:33Z">Mon, Sep 19, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/%d0%9e%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d0%a1%d0%b2%d1%96%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%9a%d0%be%d0%bd%d2%91%d1%80%d0%b5%d1%81%d1%83-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96/">Обіжник Світового Конґресу Українців – Серпень, 2011 р.</a> <time class="pull-right post-list" datetime="2011-09-19T03:02:33Z">Mon, Sep 19, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/people-of-australia-ambassador/">People of Australia Ambassador</a> <time class="pull-right post-list" datetime="2011-09-08T09:30:02Z">Thu, Sep 8, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/people-of-australia-ambassador/">People of Australia Ambassador</a> <time class="pull-right post-list" datetime="2011-09-08T09:30:02Z">Thu, Sep 8, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ucs-press-release-september-2011/">UCS PRESS RELEASE September 2011</a> <time class="pull-right post-list" datetime="2011-09-07T07:34:53Z">Wed, Sep 7, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/ucs-press-release-september-2011/">UCS PRESS RELEASE September 2011</a> <time class="pull-right post-list" datetime="2011-09-07T07:34:53Z">Wed, Sep 7, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/hrim-%e2%80%93-debut-album/">HRIM – Debut Album</a> <time class="pull-right post-list" datetime="2011-08-20T01:31:50Z">Sat, Aug 20, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/hrim-%e2%80%93-debut-album/">HRIM – Debut Album</a> <time class="pull-right post-list" datetime="2011-08-20T01:31:50Z">Sat, Aug 20, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/film-genocide-revealed-wins-multiple-awards/">Film &#34;Genocide Revealed&#34; wins multiple awards</a> <time class="pull-right post-list" datetime="2011-08-11T10:13:00Z">Thu, Aug 11, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/film-genocide-revealed-wins-multiple-awards/">Film &#34;Genocide Revealed&#34; wins multiple awards</a> <time class="pull-right post-list" datetime="2011-08-11T10:13:00Z">Thu, Aug 11, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/%d0%90%d1%80%d0%b5%d1%88%d1%82-%d0%9f%d1%80%d0%be%d0%b2%d1%96%d0%b4%d0%bd%d0%b8%d0%ba%d0%b0-%d0%9e%d0%bf%d0%be%d0%b7%d0%b8%d1%86%d1%96%d1%97-%d0%bf%e2%80%93%d1%96-%d0%a2%d0%b8%d0%bc%d0%be%d1%88%d0%b5/">Арешт Провідника Опозиції п–і Тимошенко, Українці та Світ</a> <time class="pull-right post-list" datetime="2011-08-10T11:46:59Z">Wed, Aug 10, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/%d0%90%d1%80%d0%b5%d1%88%d1%82-%d0%9f%d1%80%d0%be%d0%b2%d1%96%d0%b4%d0%bd%d0%b8%d0%ba%d0%b0-%d0%9e%d0%bf%d0%be%d0%b7%d0%b8%d1%86%d1%96%d1%97-%d0%bf%e2%80%93%d1%96-%d0%a2%d0%b8%d0%bc%d0%be%d1%88%d0%b5/">Арешт Провідника Опозиції п–і Тимошенко, Українці та Світ</a> <time class="pull-right post-list" datetime="2011-08-10T11:46:59Z">Wed, Aug 10, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/the-boomerang-returns/">Бумеранг повертається</a> <time class="pull-right post-list" datetime="2011-08-04T00:55:11Z">Thu, Aug 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/the-boomerang-returns/">Бумеранг повертається</a> <time class="pull-right post-list" datetime="2011-08-04T00:55:11Z">Thu, Aug 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrainian-community-in-newcastle-nsw/">Ukrainian Community in Newcastle, NSW</a> <time class="pull-right post-list" datetime="2011-08-03T01:14:03Z">Wed, Aug 3, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrainian-community-in-newcastle-nsw/">Ukrainian Community in Newcastle, NSW</a> <time class="pull-right post-list" datetime="2011-08-03T01:14:03Z">Wed, Aug 3, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/60-minutes-says-sorry-we-were-wrong/">60 MINUTES SAYS SORRY, WE WERE WRONG</a> <time class="pull-right post-list" datetime="2011-08-01T05:46:59Z">Mon, Aug 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/60-minutes-says-sorry-we-were-wrong/">60 MINUTES SAYS SORRY, WE WERE WRONG</a> <time class="pull-right post-list" datetime="2011-08-01T05:46:59Z">Mon, Aug 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/20th-anniversary-of-ukraines-independence-stamp/">20th Anniversary of Ukraine&#39;s Independence stamp</a> <time class="pull-right post-list" datetime="2011-07-27T05:25:13Z">Wed, Jul 27, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/20th-anniversary-of-ukraines-independence-stamp/">20th Anniversary of Ukraine&#39;s Independence stamp</a> <time class="pull-right post-list" datetime="2011-07-27T05:25:13Z">Wed, Jul 27, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrainian-brides/">Ukrainian Brides</a> <time class="pull-right post-list" datetime="2011-07-26T01:48:18Z">Tue, Jul 26, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrainian-brides/">Ukrainian Brides</a> <time class="pull-right post-list" datetime="2011-07-26T01:48:18Z">Tue, Jul 26, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/a%d0%bd%d0%b0%d1%82%d0%be%d0%bb%d1%96%d0%b9-%d0%bc%d0%b8%d1%85%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d0%b8%d1%87-%d0%bc%d1%96%d1%80%d0%be%d1%88%d0%bd%d0%b8%d0%ba/">Aнатолій Михайлович Мірошник</a> <time class="pull-right post-list" datetime="2011-07-21T04:21:01Z">Thu, Jul 21, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/a%d0%bd%d0%b0%d1%82%d0%be%d0%bb%d1%96%d0%b9-%d0%bc%d0%b8%d1%85%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d0%b8%d1%87-%d0%bc%d1%96%d1%80%d0%be%d1%88%d0%bd%d0%b8%d0%ba/">Aнатолій Михайлович Мірошник</a> <time class="pull-right post-list" datetime="2011-07-21T04:21:01Z">Thu, Jul 21, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/wooden-churches-in-zakarpattia/">Wooden Churches in Zakarpattia</a> <time class="pull-right post-list" datetime="2011-07-21T04:14:33Z">Thu, Jul 21, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/wooden-churches-in-zakarpattia/">Wooden Churches in Zakarpattia</a> <time class="pull-right post-list" datetime="2011-07-21T04:14:33Z">Thu, Jul 21, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/%d0%9b%d0%b8%d1%81%d1%82-%d0%9f%d0%be%d0%b4%d1%8f%d0%ba%d0%b8/">Лист Подяки</a> <time class="pull-right post-list" datetime="2011-06-01T00:29:04Z">Wed, Jun 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/%d0%9b%d0%b8%d1%81%d1%82-%d0%9f%d0%be%d0%b4%d1%8f%d0%ba%d0%b8/">Лист Подяки</a> <time class="pull-right post-list" datetime="2011-06-01T00:29:04Z">Wed, Jun 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-interview-%d0%86%d0%bd%d1%82%d0%b5%d1%80%d0%b2%d1%8e-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%90-%d0%94%d0%86%d0%af%d0%a1%d0%9f%d0%9e%d0%a0%d0%90-%d0%a2%d0%90-%d0%a3%d0%9a/">SBS Interview / Інтерв&#39;ю - &#34;УКРАЇНСЬКА ДІЯСПОРА ТА УКРАЇНА&#34;</a> <time class="pull-right post-list" datetime="2011-05-31T10:07:17Z">Tue, May 31, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-interview-%d0%86%d0%bd%d1%82%d0%b5%d1%80%d0%b2%d1%8e-%d0%a3%d0%9a%d0%a0%d0%90%d0%87%d0%9d%d0%a1%d0%ac%d0%9a%d0%90-%d0%94%d0%86%d0%af%d0%a1%d0%9f%d0%9e%d0%a0%d0%90-%d0%a2%d0%90-%d0%a3%d0%9a/">SBS Interview / Інтерв&#39;ю - &#34;УКРАЇНСЬКА ДІЯСПОРА ТА УКРАЇНА&#34;</a> <time class="pull-right post-list" datetime="2011-05-31T10:07:17Z">Tue, May 31, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ucs-press-release-2/">UCS Press Release</a> <time class="pull-right post-list" datetime="2011-05-31T09:46:45Z">Tue, May 31, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/ucs-press-release-2/">UCS Press Release</a> <time class="pull-right post-list" datetime="2011-05-31T09:46:45Z">Tue, May 31, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/sbs-radio-interviews/">SBS Радіопередачі</a> <time class="pull-right post-list" datetime="2011-05-25T12:02:09Z">Wed, May 25, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/sbs-radio-interviews/">SBS Радіопередачі</a> <time class="pull-right post-list" datetime="2011-05-25T12:02:09Z">Wed, May 25, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/praise-for-hopak-in-the-park/">Praise for Hopak in the Park / Похвала Гопаку в Парку</a> <time class="pull-right post-list" datetime="2011-05-19T03:57:38Z">Thu, May 19, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/praise-for-hopak-in-the-park/">Praise for Hopak in the Park / Похвала Гопаку в Парку</a> <time class="pull-right post-list" datetime="2011-05-19T03:57:38Z">Thu, May 19, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/communique-cym-18th-congress/">Комунікат ХVIII Cвітового Конґресу CУМ</a> <time class="pull-right post-list" datetime="2011-05-17T00:53:18Z">Tue, May 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/communique-cym-18th-congress/">Комунікат ХVIII Cвітового Конґресу CУМ</a> <time class="pull-right post-list" datetime="2011-05-17T00:53:18Z">Tue, May 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/hopak-in-the-park-%e2%80%93-photos-%d0%97%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8/">Hopak in the Park – Photos / Знимки</a> <time class="pull-right post-list" datetime="2011-05-04T03:01:30Z">Wed, May 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/hopak-in-the-park-%e2%80%93-photos-%d0%97%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8/">Hopak in the Park – Photos / Знимки</a> <time class="pull-right post-list" datetime="2011-05-04T03:01:30Z">Wed, May 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/hopak-in-the-park-%e2%80%93-afuo-report/">Hopak in the Park – AFUO Report / Звіт СУОА</a> <time class="pull-right post-list" datetime="2011-05-04T02:31:21Z">Wed, May 4, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/hopak-in-the-park-%e2%80%93-afuo-report/">Hopak in the Park – AFUO Report / Звіт СУОА</a> <time class="pull-right post-list" datetime="2011-05-04T02:31:21Z">Wed, May 4, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/stook-stook-issue-4-now-available/">Stook Stook - Issue 4 now available</a> <time class="pull-right post-list" datetime="2011-04-28T14:31:49Z">Thu, Apr 28, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/stook-stook-issue-4-now-available/">Stook Stook - Issue 4 now available</a> <time class="pull-right post-list" datetime="2011-04-28T14:31:49Z">Thu, Apr 28, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ukrainian-easter-2011-in-sydney/">Ukrainian Easter 2011 in Sydney – Великдень 2011 в Сіднею</a> <time class="pull-right post-list" datetime="2011-04-25T06:02:19Z">Mon, Apr 25, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/ukrainian-easter-2011-in-sydney/">Ukrainian Easter 2011 in Sydney – Великдень 2011 в Сіднею</a> <time class="pull-right post-list" datetime="2011-04-25T06:02:19Z">Mon, Apr 25, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/chornobyl-25th-web-articles/">Chornobyl 25th Anniversary Web Articles</a> <time class="pull-right post-list" datetime="2011-04-21T03:19:02Z">Thu, Apr 21, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/chornobyl-25th-web-articles/">Chornobyl 25th Anniversary Web Articles</a> <time class="pull-right post-list" datetime="2011-04-21T03:19:02Z">Thu, Apr 21, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/herald-sun-article-about-hopak-in-the-park/">Herald Sun article about Hopak in the Park</a> <time class="pull-right post-list" datetime="2011-04-12T10:26:50Z">Tue, Apr 12, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/herald-sun-article-about-hopak-in-the-park/">Herald Sun article about Hopak in the Park</a> <time class="pull-right post-list" datetime="2011-04-12T10:26:50Z">Tue, Apr 12, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/education/victorian-government-reinforces-commitment-to-language-education/">Victorian Government Reinforces Commitment to Language Education</a> <time class="pull-right post-list" datetime="2011-03-01T03:16:48Z">Tue, Mar 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/education/victorian-government-reinforces-commitment-to-language-education/">Victorian Government Reinforces Commitment to Language Education</a> <time class="pull-right post-list" datetime="2011-03-01T03:16:48Z">Tue, Mar 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/inter-airlines-and-travelwiz-newsletter/">Inter-Airlines and TravelWiz Newsletter</a> <time class="pull-right post-list" datetime="2011-03-01T03:00:36Z">Tue, Mar 1, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/inter-airlines-and-travelwiz-newsletter/">Inter-Airlines and TravelWiz Newsletter</a> <time class="pull-right post-list" datetime="2011-03-01T03:00:36Z">Tue, Mar 1, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/culture/ukrainian-collectibles-society-heritage-issues-3-and-4/">Ukrainian Collectibles Society - Heritage Issues 3 and 4</a> <time class="pull-right post-list" datetime="2011-02-24T05:55:37Z">Thu, Feb 24, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/culture/ukrainian-collectibles-society-heritage-issues-3-and-4/">Ukrainian Collectibles Society - Heritage Issues 3 and 4</a> <time class="pull-right post-list" datetime="2011-02-24T05:55:37Z">Thu, Feb 24, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/report-marichka-chyhyryn/">ДЕМОНCТРAЦІЯ В КAНБЕРІ - Стаття Марічки Галабурди-Чигрин</a> <time class="pull-right post-list" datetime="2011-02-23T02:01:35Z">Wed, Feb 23, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/report-marichka-chyhyryn/">ДЕМОНCТРAЦІЯ В КAНБЕРІ - Стаття Марічки Галабурди-Чигрин</a> <time class="pull-right post-list" datetime="2011-02-23T02:01:35Z">Wed, Feb 23, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/national-events/media-alert/">MEDIA ALERT</a> <time class="pull-right post-list" datetime="2011-02-17T03:59:20Z">Thu, Feb 17, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/events/national-events/media-alert/">MEDIA ALERT</a> <time class="pull-right post-list" datetime="2011-02-17T03:59:20Z">Thu, Feb 17, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/stook-stook/">Stook Stook</a> <time class="pull-right post-list" datetime="2011-02-14T06:05:04Z">Mon, Feb 14, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/community/stook-stook/">Stook Stook</a> <time class="pull-right post-list" datetime="2011-02-14T06:05:04Z">Mon, Feb 14, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/ukrainian-community-in-russia-under-attack-from-russian-lawmakers/">UKRAINIAN COMMUNITY IN RUSSIA UNDER ATTACK FROM RUSSIAN LAWMAKERS</a> <time class="pull-right post-list" datetime="2011-01-24T23:51:31Z">Mon, Jan 24, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/politics/ukrainian-community-in-russia-under-attack-from-russian-lawmakers/">UKRAINIAN COMMUNITY IN RUSSIA UNDER ATTACK FROM RUSSIAN LAWMAKERS</a> <time class="pull-right post-list" datetime="2011-01-24T23:51:31Z">Mon, Jan 24, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/ucs-press-release/">UCS Press Release</a> <time class="pull-right post-list" datetime="2011-01-24T11:44:02Z">Mon, Jan 24, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/ucs-press-release/">UCS Press Release</a> <time class="pull-right post-list" datetime="2011-01-24T11:44:02Z">Mon, Jan 24, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/media/dakhabrakha-%e2%80%93ukraine%e2%80%99s-world-music-sensation-performing-at-womadelaide/">DakhaBrakha –Ukraine’s World Music sensation performing at WOMADelaide</a> <time class="pull-right post-list" datetime="2011-01-24T10:06:52Z">Mon, Jan 24, 2011</time></span>
+    <span><a href="https://ukrainians.org.au/media/dakhabrakha-%e2%80%93ukraine%e2%80%99s-world-music-sensation-performing-at-womadelaide/">DakhaBrakha –Ukraine’s World Music sensation performing at WOMADelaide</a> <time class="pull-right post-list" datetime="2011-01-24T10:06:52Z">Mon, Jan 24, 2011</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/a%d0%ba%d1%86%d1%96%d1%8f-c%d0%b2%d1%96%d1%87%d0%ba%d0%b0-%d0%9c%d0%be%d0%bb%d1%96%d0%bd%d0%bd%d1%8f-%d0%b2-a%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d1%97-%d1%82%d0%b0-%d0%b2%d1%88%d0%b0%d0%bd/">Aкція Cвічка Моління в Aвстралії та вшанування жертв Голодомору – Ґеноциду</a> <time class="pull-right post-list" datetime="2010-11-26T03:27:16Z">Fri, Nov 26, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/events/a%d0%ba%d1%86%d1%96%d1%8f-c%d0%b2%d1%96%d1%87%d0%ba%d0%b0-%d0%9c%d0%be%d0%bb%d1%96%d0%bd%d0%bd%d1%8f-%d0%b2-a%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d1%97-%d1%82%d0%b0-%d0%b2%d1%88%d0%b0%d0%bd/">Aкція Cвічка Моління в Aвстралії та вшанування жертв Голодомору – Ґеноциду</a> <time class="pull-right post-list" datetime="2010-11-26T03:27:16Z">Fri, Nov 26, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/%d0%9f%d0%b5%d1%82%d0%b8%d1%86%d1%96%d1%8f-%d0%b4%d0%be-%d0%bf%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%92%d1%96%d0%ba%d1%82%d0%be%d1%80/">Петиція до президента України Віктора Януковича</a> <time class="pull-right post-list" datetime="2010-11-22T00:52:27Z">Mon, Nov 22, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/events/%d0%9f%d0%b5%d1%82%d0%b8%d1%86%d1%96%d1%8f-%d0%b4%d0%be-%d0%bf%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%92%d1%96%d0%ba%d1%82%d0%be%d1%80/">Петиція до президента України Віктора Януковича</a> <time class="pull-right post-list" datetime="2010-11-22T00:52:27Z">Mon, Nov 22, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ozeukes-com-the-voice-of-australian-ukrainians/">Ozeukes.com - &#34;The Voice of Australian Ukrainians&#34;</a> <time class="pull-right post-list" datetime="2010-08-21T15:35:24Z">Sat, Aug 21, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/community/ozeukes-com-the-voice-of-australian-ukrainians/">Ozeukes.com - &#34;The Voice of Australian Ukrainians&#34;</a> <time class="pull-right post-list" datetime="2010-08-21T15:35:24Z">Sat, Aug 21, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/cyoa-vision-for-connecting-ukrainians/">The AFUO Vision for Connecting Ukrainians </a> <time class="pull-right post-list" datetime="2010-06-25T13:45:12Z">Fri, Jun 25, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/community/cyoa-vision-for-connecting-ukrainians/">The AFUO Vision for Connecting Ukrainians </a> <time class="pull-right post-list" datetime="2010-06-25T13:45:12Z">Fri, Jun 25, 2010</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/new-website/">A New Website for the Australian Ukrainian Community</a> <time class="pull-right post-list" datetime="2010-05-18T13:32:35Z">Tue, May 18, 2010</time></span>
+    <span><a href="https://ukrainians.org.au/community/new-website/">A New Website for the Australian Ukrainian Community</a> <time class="pull-right post-list" datetime="2010-05-18T13:32:35Z">Tue, May 18, 2010</time></span>
   </li>
 </ul>
     </main>

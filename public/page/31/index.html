@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/stefan-romaniw-ukrainian-radio-4eb-brisba/">Інтерв&#39;ю зі Стефаном Романівим на Ukrainian Radio 4EB Brisbane</a>
+        <a href="https://ukrainians.org.au/finance/australia-ukraine-bilateral-relations-forum-ozuke2015/">AUSTRALIA-UKRAINE BILATERAL RELATIONS FORUM “OzUke2015”</a>
+      </h1>
+      <time datetime="2015-10-09T04:57:38Z" class="post-date">Fri, Oct 9, 2015</time>
+      October 8, 2015
+AUSTRALIA-UKRAINE BILATERAL RELATIONS FORUM “OzUke2015”
+Australia-Ukraine bilateral relations forum “OzUke2015” will be one of the most important events in the Australian –Ukrainian community in the last 25 years. The Forum will be held in Melbourne on 25 - 26 November 2015 at Rydges on Swanston, 701 Swanston Street, Melbourne.
+It will build bilateral cooperation between Ukraine and Australia.
+The Australia-Ukraine Chamber of Commerce (AUCC) was initiated by the Australian Federation of Ukrainian Organisations (AFUO) and is now a formally incorporated Association.
+      
+        <div class="read-more-link">
+          <a href="/finance/australia-ukraine-bilateral-relations-forum-ozuke2015/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/interviews/stefan-romaniw-ukrainian-radio-4eb-brisba/">Інтерв&#39;ю зі Стефаном Романівим на Ukrainian Radio 4EB Brisbane</a>
       </h1>
       <time datetime="2015-10-07T12:18:20Z" class="post-date">Wed, Oct 7, 2015</time>
       Інформація з перших вуст про здобутки останньої подорожі пана Романіва до Украіни, цікаві зустрічі, важливість етнічних суботніх шкіл та цілі на майбутнє.
@@ -60,7 +144,7 @@ http://ukranianradiobrisbane.podomatic.com/entry/2015-10-06T04_26_38-07_00
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/noviy-posol-ukrayini-v-avstraliyi-visokodostoyniy-mikola-kulinich/">НОВИЙ ПОСOЛ УКРАЇНИ В АВСТРАЛІЇ ВИСОКОДОСТОЙНИЙ МИКОЛA КУЛІНІЧ</a>
+        <a href="https://ukrainians.org.au/politics/noviy-posol-ukrayini-v-avstraliyi-visokodostoyniy-mikola-kulinich/">НОВИЙ ПОСOЛ УКРАЇНИ В АВСТРАЛІЇ ВИСОКОДОСТОЙНИЙ МИКОЛA КУЛІНІЧ</a>
       </h1>
       <time datetime="2015-10-07T12:06:25Z" class="post-date">Wed, Oct 7, 2015</time>
       Людмила Павленко веде розмову із Високодостойним Миколою Кулінічем, якого Президент України Високодостойний Петро Порошенко призначив на посаду Надзвичайного і Повноважного Посла України в Австралії. Незадовго пан Кулініч прибуде до Канберри&hellip;
@@ -68,7 +152,7 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/noviy-posol-ukrayini-v-a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-launches-multimedia-platform-telekanal-uatv/">ЗAПУCКAЄТЬCЯ  МУЛЬТИМЕДІЙНA  ПЛAТФОРМA ІНОМОВЛЕННЯ УКРAЇНИ ТЕЛЕКAНAЛ  UATV - UKRAINE LAUNCHES MULTIMEDIA PLATFORM - TELEKANAL UATV</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-launches-multimedia-platform-telekanal-uatv/">ЗAПУCКAЄТЬCЯ  МУЛЬТИМЕДІЙНA  ПЛAТФОРМA ІНОМОВЛЕННЯ УКРAЇНИ ТЕЛЕКAНAЛ  UATV - UKRAINE LAUNCHES MULTIMEDIA PLATFORM - TELEKANAL UATV</a>
       </h1>
       <time datetime="2015-10-02T21:43:45Z" class="post-date">Fri, Oct 2, 2015</time>
       2-го жовтня 2015
@@ -81,13 +165,13 @@ http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/noviy-posol-ukrayini-v-a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/jacka-the-musical-the-afuo-encourages-you-to-come-and-witness-this-production/">JACKA THE MUSICAL: The AFUO encourages you to come and witness this production</a>
+        <a href="https://ukrainians.org.au/culture/jacka-the-musical-the-afuo-encourages-you-to-come-and-witness-this-production/">JACKA THE MUSICAL: The AFUO encourages you to come and witness this production</a>
       </h1>
       <time datetime="2015-10-01T11:58:09Z" class="post-date">Thu, Oct 1, 2015</time>
       JACKA THE MUSICAL
 The AFUO encourages you to come and witness this production
-As many of you may be aware Prof Michael Lawriwsky wrote a book about Albert Jacka and his role in WWI. Jacka received Australia's first Victoria Cross of the war.
-“He was one of the first people among 300,000 plus Australians to volunteer,&quot;.
+As many of you may be aware Prof Michael Lawriwsky wrote a book about Albert Jacka and his role in WWI. Jacka received Australia&rsquo;s first Victoria Cross of the war.
+“He was one of the first people among 300,000 plus Australians to volunteer,&rdquo;.
 &ldquo;It was just that adventurous spirit he had.&quot;
 A private in the 14th Battalion, Jacka landed at Anzac Cove late in the day on April 25 and was soon on his way to the frontline.
       
@@ -97,7 +181,7 @@ A private in the 14th Battalion, Jacka landed at Anzac Cove late in the day on A
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ozuke-2015-avstraliya-ukrayina/">OzUke-2015: АВСТРАЛІЯ - УКРАЇНА</a>
+        <a href="https://ukrainians.org.au/politics/ozuke-2015-avstraliya-ukrayina/">OzUke-2015: АВСТРАЛІЯ - УКРАЇНА</a>
       </h1>
       <time datetime="2015-10-01T11:44:53Z" class="post-date">Thu, Oct 1, 2015</time>
       Богдан Рудницький веде розмову із Головою Управи Союзу Українських Організацій Австралії ( СУОА) п. Стефаном Романівим. Мова йде про майбутній австралійсько-український форум з питань підприємництва і співпраці (Melbourne at the Rydges on Swanston on Wednesday, November 25 and Thursday, November 26, 2015 and in Kyiv in May 2016). Також СУОА від імені українців Австралії вітає новопризначеного В-ш Посла України в Австралії Високодостойного п. Миколу Кулінича. Йде розмова і про ситуацію в Україні та допомогу воюючим сестрам і братам на рідних землях&hellip;
@@ -108,7 +192,7 @@ A private in the 14th Battalion, Jacka landed at Anzac Cove late in the day on A
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-4-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2015</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-4-2015/">Курс української мови для дорослих – Ukrainian language classes for adults – Term 4 2015</a>
       </h1>
       <time datetime="2015-09-29T22:19:56Z" class="post-date">Tue, Sep 29, 2015</time>
       Ukrainian language classes for adults 2015 – Term 4
@@ -123,7 +207,7 @@ Refer attachments for details.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australias-ukrainian-community-welcomes-appointment-of-mykola-kulinich-ambassador-of-ukraine-to-australia/">AUSTRALIA’S UKRAINIAN COMMUNITY WELCOMES APPOINTMENT OF  MYKOLA KULINICH - AMBASSADOR OF UKRAINE TO AUSTRALIA</a>
+        <a href="https://ukrainians.org.au/politics/australias-ukrainian-community-welcomes-appointment-of-mykola-kulinich-ambassador-of-ukraine-to-australia/">AUSTRALIA’S UKRAINIAN COMMUNITY WELCOMES APPOINTMENT OF  MYKOLA KULINICH - AMBASSADOR OF UKRAINE TO AUSTRALIA</a>
       </h1>
       <time datetime="2015-09-27T12:31:26Z" class="post-date">Sun, Sep 27, 2015</time>
       September 25, 2015
@@ -136,7 +220,7 @@ His Excellency currently holds the post of Rector of the Diplomatic Academy of U
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/religion/the-afuo-congratulates-malcolm-turnbull-on-becoming-the-29th-prime-minister-of-australia/">The AFUO congratulates Malcolm Turnbull on becoming the 29th Prime Minister of Australia</a>
+        <a href="https://ukrainians.org.au/religion/the-afuo-congratulates-malcolm-turnbull-on-becoming-the-29th-prime-minister-of-australia/">The AFUO congratulates Malcolm Turnbull on becoming the 29th Prime Minister of Australia</a>
       </h1>
       <time datetime="2015-09-16T11:16:29Z" class="post-date">Wed, Sep 16, 2015</time>
       September 16, 2015
@@ -150,21 +234,10 @@ Mr Stefan Romaniw OAM, President of the AFUO, said:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/24-anniversary-of-independence-of-ukraine-in-melbourne-radio-sbs/">24 річниця Незалежності України у Мельбурні - радіо-репортаж на SBS Ukrainian</a>
+        <a href="https://ukrainians.org.au/events/24-anniversary-of-independence-of-ukraine-in-melbourne-radio-sbs/">24 річниця Незалежності України у Мельбурні - радіо-репортаж на SBS Ukrainian</a>
       </h1>
       <time datetime="2015-09-15T11:27:08Z" class="post-date">Tue, Sep 15, 2015</time>
       http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/den-nezalezhnosti-u-viktoriyi?language=uk
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/24-anniversary-of-independence-of-ukraine-in-melbourne/">24 річниця Незалежності України у Мельбурні</a>
-      </h1>
-      <time datetime="2015-09-11T11:36:44Z" class="post-date">Fri, Sep 11, 2015</time>
-      Відзначення важливої дати української історії “День Незалежності України” українська спільнота штату Вікторії розпочала безпосередньо у День Незалежності, в понеділок, 24 серпня. Заходами членів клубу “Рідний Край” УГВ п-вом Лаґолат у святково прибраній залі Українського Народного Дому в Ессендоні відбулася святкова вечеря, коротка доповідь голови Управи УГВ М. Моравського та гостя з України, члена Збройних Сил України майора Тимура Пістрюги. У залі, де був повний аншлаг, зібралася українська спільнота різних хвиль еміґрації та прихильників українства, багато молоді та дітей, звучали українські мелодії i пісні під супровід акордеоніста В.
-      
-        <div class="read-more-link">
-          <a href="/culture/24-anniversary-of-independence-of-ukraine-in-melbourne/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1374,6 +1447,8 @@ Mr Stefan Romaniw OAM, President of the AFUO, said:
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

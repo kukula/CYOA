@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/andrii_kholomenyuk/">Андрій Холоменюк - військово-історичний та сучасний живопис</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/ukrainian-lives-saved-through-australian-assistance/">Ukrainian Lives Saved Through Australian Assistance</a>
+      </h1>
+      <time datetime="2015-04-27T07:53:07Z" class="post-date">Mon, Apr 27, 2015</time>
+      MEDIA RELEASE
+UKRAINIAN LIVES SAVED THROUGH AUSTRALIAN ASSISTANCE
+The Australian Government’s support for a project aimed at saving the lives of accident victims in Ukraine is very welcome, said the Australian Federation of Ukrainian Organisations (AFUO) today.
+“Patriot Defence” – a humanitarian initiative of the Ukrainian World Congress of which AFUO is a member – will use the support to introduce a comprehensive medical training course for the newly formed Kyiv Traffic Patrol.
+      
+        <div class="read-more-link">
+          <a href="/current-affairs/media-releases/ukrainian-lives-saved-through-australian-assistance/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/andrii_kholomenyuk/">Андрій Холоменюк - військово-історичний та сучасний живопис</a>
       </h1>
       <time datetime="2015-04-17T13:15:50Z" class="post-date">Fri, Apr 17, 2015</time>
       Андрій Холоменюк народився в 1957 р. у Чернівцях в родині художників:
@@ -67,7 +150,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/ukrainian-language-classes-adults-term-2-2015/">Курс української мови для дорослих - Ukrainian language classes for adults - Term 2 2015</a>
+        <a href="https://ukrainians.org.au/education/ukrainian-language-classes-adults-term-2-2015/">Курс української мови для дорослих - Ukrainian language classes for adults - Term 2 2015</a>
       </h1>
       <time datetime="2015-04-12T11:39:28Z" class="post-date">Sun, Apr 12, 2015</time>
       **Ukrainian language classes for adults 2015 - Term 2**
@@ -82,7 +165,7 @@ Refer attachments for details.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/diaspora_moge_spratsyuvati_efektivnishe_za_mzs/">Діаспора може спрацювати ефективніше за МЗС</a>
+        <a href="https://ukrainians.org.au/interviews/diaspora_moge_spratsyuvati_efektivnishe_za_mzs/">Діаспора може спрацювати ефективніше за МЗС</a>
       </h1>
       <time datetime="2015-04-07T11:49:26Z" class="post-date">Tue, Apr 7, 2015</time>
       Україна там, де ти живеш. Навіть якщо перевернути планету шкереберть. Це відчуття ставало все сильнішим під час розмови кореспондента &ldquo;Новин діаспори&rdquo; з головою Союзу українських організацій Австралії (CУОA), генеральним секретарем Світового конгресу українців (CКУ) й очільником Організації українських націоналістів (ОУН)p Стефаном Романівим. Він відвідував Київ із двохтижневим робочим візитом на чолі делегації австралійської діаспори.
@@ -90,7 +173,7 @@ http://www.ukrinform.ua/ukr/news/stefan_romaniv_diaspora_moge_spratsyuvati_efekt
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/litni-movni-tabory-ministerstvo-osviti-i-nauky-ukrayiny-shukaye-volonteriv/">Літні мовні табори - міністерство освіти і науки України шукає волонтерів</a>
+        <a href="https://ukrainians.org.au/education/litni-movni-tabory-ministerstvo-osviti-i-nauky-ukrayiny-shukaye-volonteriv/">Літні мовні табори - міністерство освіти і науки України шукає волонтерів</a>
       </h1>
       <time datetime="2015-04-04T06:41:53Z" class="post-date">Sat, Apr 4, 2015</time>
       Міністерство освіти і науки України шукає волонтерів, котрі володіють англійською мовою та зможуть присвятити від двох до трьох тижнів свого часу школі.
@@ -99,7 +182,7 @@ http://www.ukrinform.ua/ukr/news/stefan_romaniv_diaspora_moge_spratsyuvati_efekt
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/inaugural-ukraine-australia-bilateral-ngo-b2b-conference/">Inaugural Ukraine-Australia Bilateral NGO / B2B Conference Series to be held in late 2015 in Melbourne and Kyiv - OzUkes2015</a>
+        <a href="https://ukrainians.org.au/events/international-events/inaugural-ukraine-australia-bilateral-ngo-b2b-conference/">Inaugural Ukraine-Australia Bilateral NGO / B2B Conference Series to be held in late 2015 in Melbourne and Kyiv - OzUkes2015</a>
       </h1>
       <time datetime="2015-04-02T01:24:32Z" class="post-date">Thu, Apr 2, 2015</time>
       MEDIA RELEASE
@@ -114,7 +197,7 @@ Stefan Romaniw, President of AFUO, the peak body for the Ukrainian Australian co
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/doug-trappett-at-hromadske-tv/">Посол Австралії в Україні Doug Trappett в студії Громадського</a>
+        <a href="https://ukrainians.org.au/politics/doug-trappett-at-hromadske-tv/">Посол Австралії в Україні Doug Trappett в студії Громадського</a>
       </h1>
       <time datetime="2015-04-01T01:44:31Z" class="post-date">Wed, Apr 1, 2015</time>
       Надвичайний і повноважний посол Австралії в Україні Даг Траппетт в студії Громадського.
@@ -127,7 +210,7 @@ https://www.youtube.com/watch?v=pX2qzGBCTZQ
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/afuo-youtube-channel-2/">AFUO YouTube Channel</a>
+        <a href="https://ukrainians.org.au/events/international-events/afuo-youtube-channel-2/">AFUO YouTube Channel</a>
       </h1>
       <time datetime="2015-04-01T01:34:17Z" class="post-date">Wed, Apr 1, 2015</time>
       **AFUO met the Deputy Head of the foreign affairs committee **
@@ -139,11 +222,11 @@ The AFUO delegation and World Congress of Ukrainian representatives met Ms Hanna
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/afuo-youtube-channel/">AFUO YouTube Channel</a>
+        <a href="https://ukrainians.org.au/events/international-events/afuo-youtube-channel/">AFUO YouTube Channel</a>
       </h1>
       <time datetime="2015-03-29T21:57:14Z" class="post-date">Sun, Mar 29, 2015</time>
       From now, community members and our friends can follow news from AFUO on our new YouTube channel.
-This includes the latest updates and news from the AFUO's current delegation in Ukraine.
+This includes the latest updates and news from the AFUO&rsquo;s current delegation in Ukraine.
 AFUO started exchange program between Australian universities and Kyiv Mohyla Academy students
 [embed]https://www.youtube.com/watch?v=icAOXxh7wnI[/embed]
 **Meeting in the Ukrainian Chamber of commerce and industry **
@@ -158,21 +241,13 @@ https://www.youtube.com/watch?v=yrJI9cxsQbo
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/footy-tipping-catholicukes/">Footy tipping - Catholicukes</a>
+        <a href="https://ukrainians.org.au/sport/footy-tipping-catholicukes/">Footy tipping - Catholicukes</a>
       </h1>
       <time datetime="2015-03-29T21:29:06Z" class="post-date">Sun, Mar 29, 2015</time>
       Footy season is upon us - Footy tipping is back !
 Test your knowledge !
 Sign up and lead the pack !
 http://www.footytips.com.au/comps/Catholicukes
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/lehenda-legacy-program/">LEHENDA Legacy Program</a>
-      </h1>
-      <time datetime="2015-03-27T12:26:36Z" class="post-date">Fri, Mar 27, 2015</time>
-      Win 2 tickets to see KAZKA as part of the LEHENDA Legacy Program!
-[caption id=&rdquo;&rdquo; align=&quot;aligncenter&rdquo; width=&quot;750&rdquo;] LEHENDA Legacy Program[/caption]
       
     </article>
 
@@ -1382,6 +1457,8 @@ http://www.footytips.com.au/comps/Catholicukes
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

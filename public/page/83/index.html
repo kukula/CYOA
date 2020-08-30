@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,40 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/kovalenko-ukrainian-background-olympics-medal-maker-for-australia/">Kovalenko - Ukrainian Background - Olympics Medal Maker for Australia</a>
+        <a href="https://ukrainians.org.au/education/lets-learn-ukrainian/">Lets Learn Ukrainian</a>
+      </h1>
+      <time datetime="2012-08-12T10:11:25Z" class="post-date">Sun, Aug 12, 2012</time>
+      The Ukrainian Studies Foundation of Australia is sponsoring an adult refresher course entitled &ldquo;Let&rsquo;s Learn Ukrainian&rdquo;.
+The 15 week course will be conducted in Strathfield, NSW.
+
+Further Information: www.novashkola.webs.com
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/sport/kovalenko-ukrainian-background-olympics-medal-maker-for-australia/">Kovalenko - Ukrainian Background - Olympics Medal Maker for Australia</a>
       </h1>
       <time datetime="2012-08-12T09:46:57Z" class="post-date">Sun, Aug 12, 2012</time>
       Saturday August 11, 2012
 MEDIA RELEASE
-Victor Kovalenko Ukrainian Background Australian Olympics Medal Maker Australian sailing's coach, Victor Kovalenko has guided Australia to another gold medal at the London Olympics in the men's 470 sailing class. The race** ****was won by ****Mathew Belcher and Malcolm Page**.
+Victor Kovalenko Ukrainian Background Australian Olympics Medal Maker Australian sailing&rsquo;s coach, Victor Kovalenko has guided Australia to another gold medal at the London Olympics in the men&rsquo;s 470 sailing class. The race** ****was won by ****Mathew Belcher and Malcolm Page**.
 Kovalenko of Ukrainian background, who has made Australia home, has an outstanding record in training and leading Australian sailing teams to glory in the sport
       
         <div class="read-more-link">
@@ -66,7 +145,7 @@ Kovalenko of Ukrainian background, who has made Australia home, has an outstandi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/myroslav-boluch-rip/">MYROSLAV BOLUCH RIP</a>
+        <a href="https://ukrainians.org.au/community/myroslav-boluch-rip/">MYROSLAV BOLUCH RIP</a>
       </h1>
       <time datetime="2012-08-10T07:58:18Z" class="post-date">Fri, Aug 10, 2012</time>
       Ділимося сумною вісткою
@@ -89,12 +168,12 @@ Kovalenko of Ukrainian background, who has made Australia home, has an outstandi
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/ukraines-national-day-2012-australian-celebrations/">Ukraine&#39;s National Day 2012 – Australian Celebrations</a>
+        <a href="https://ukrainians.org.au/events/national-events/ukraines-national-day-2012-australian-celebrations/">Ukraine&#39;s National Day 2012 – Australian Celebrations</a>
       </h1>
       <time datetime="2012-08-09T10:07:29Z" class="post-date">Thu, Aug 9, 2012</time>
-      UKRAINE'S NATIONAL DAY Ukraine celebrates its 21st Anniversary of Independence on 24th August 2012
- Australia's Ukrainian community will also celebrate this occasion around that date with events in all States.
-Join your local Ukrainian Association to celebrate Ukraine's National Day (official date 24th August).
+      UKRAINE&rsquo;S NATIONAL DAY Ukraine celebrates its 21st Anniversary of Independence on 24th August 2012
+ Australia&rsquo;s Ukrainian community will also celebrate this occasion around that date with events in all States.
+Join your local Ukrainian Association to celebrate Ukraine&rsquo;s National Day (official date 24th August).
 For specific information on State celebrations and event information contact your local Ukrainian Association or check the OzeUkes website by clicking on the image (where available) adjoining the specific event.
       
         <div class="read-more-link">
@@ -103,7 +182,7 @@ For specific information on State celebrations and event information contact you
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/meeting-with-ambassador-fraser/">Meeting with Ambassador Fraser</a>
+        <a href="https://ukrainians.org.au/politics/meeting-with-ambassador-fraser/">Meeting with Ambassador Fraser</a>
       </h1>
       <time datetime="2012-08-09T01:31:04Z" class="post-date">Thu, Aug 9, 2012</time>
       August 9,2012
@@ -116,7 +195,7 @@ Ambassador Fraser and his staff are funded by the Canada Ukraine Foundation and 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/2012-elections-in-ukraine/">2012 Elections in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/international-events/2012-elections-in-ukraine/">2012 Elections in Ukraine</a>
       </h1>
       <time datetime="2012-08-08T03:46:07Z" class="post-date">Wed, Aug 8, 2012</time>
       2012 Elections in Ukraine The 2012 elections to the Ukrainian Parliament, Verkhovna Rada, are due to be held on October 28, 2012. The elections will use a mixed voting system (50% under party lists and 50% under simple-majority constituencies).
@@ -128,7 +207,7 @@ In accordance with previous elections held in Ukraine, observers from foreign st
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/latvian-ukrainians-greet-afuo/">Привіт ХХVI З&#39;їзду Cоюзу Укрaїнcьких Оргaнізaції Aвcтрaлії</a>
+        <a href="https://ukrainians.org.au/community/latvian-ukrainians-greet-afuo/">Привіт ХХVI З&#39;їзду Cоюзу Укрaїнcьких Оргaнізaції Aвcтрaлії</a>
       </h1>
       <time datetime="2012-08-08T03:30:55Z" class="post-date">Wed, Aug 8, 2012</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2012/08/latvia-tryzub-thumb1.jpg)Українська громада Латвії
@@ -140,7 +219,7 @@ _ІВАН НАЛИВАЙКО _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukrainian-central-school-council-protests-against-language-bill/">Лист протесту УЦШР проти Законопроекту «Про засади державної мовної політики»</a>
+        <a href="https://ukrainians.org.au/politics/ukrainian-central-school-council-protests-against-language-bill/">Лист протесту УЦШР проти Законопроекту «Про засади державної мовної політики»</a>
       </h1>
       <time datetime="2012-08-04T01:25:05Z" class="post-date">Sat, Aug 4, 2012</time>
       З’їзд учителів українських шкіл Австралії прийняв резолюцію про висловлення протесту проти прийняття Законопроекту «Про засади державної мовної політики». Подається отут повний текст відкритого листа до Президента України. Lyst-protest do Prezydenta vid UTsShR 2012
@@ -152,7 +231,7 @@ The recent congress of teachers in Ukrainian schools in Australia passed a resol
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/book-launch-silent-memories-traumatic-lives/">Book Launch “Silent Memories Traumatic Lives”</a>
+        <a href="https://ukrainians.org.au/events/western-australia/book-launch-silent-memories-traumatic-lives/">Book Launch “Silent Memories Traumatic Lives”</a>
       </h1>
       <time datetime="2012-08-03T07:17:18Z" class="post-date">Fri, Aug 3, 2012</time>
       The Australian Federation of Ukrainian Organisations
@@ -175,7 +254,7 @@ Victoria Quay, Fremantle.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/act/jubilee-celebrations-in-canberra/">Ювілейні Cвяткувaння в Кaнберрі</a>
+        <a href="https://ukrainians.org.au/events/act/jubilee-celebrations-in-canberra/">Ювілейні Cвяткувaння в Кaнберрі</a>
       </h1>
       <time datetime="2012-08-01T02:43:39Z" class="post-date">Wed, Aug 1, 2012</time>
       МAРІЧКA ГAЛAБУРДA – ЧИГРИН
@@ -184,20 +263,6 @@ Victoria Quay, Fremantle.
       
         <div class="read-more-link">
           <a href="/events/act/jubilee-celebrations-in-canberra/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/victorian-minister-meets-ukrainian-government-officials-in-kyiv/">Victorian Minister Meets Ukrainian Government Officials in Kyiv</a>
-      </h1>
-      <time datetime="2012-07-31T11:16:41Z" class="post-date">Tue, Jul 31, 2012</time>
-      Tuesday July 31, 2012
-For Immediate release
-MEDIA RELEASE VICTORIAN PLANNING MINISTER MATTHEW GUY MEETS WITH UKRAINIAN GOVERNMENT OFFICIALS IN KYIV ** **Kyiv - Victoria's State Planning Minister Matthew Guy and Australian Federation of Ukrainian Organisations Chairman Stefan Romaniw, today met with Ukraine's Deputy Foreign Minister Ruslan Demchenko and Deputy Minister for Culture Yurij Bohutski .
-[caption id=&quot;attachment_5506&rdquo; align=&quot;alignnone&rdquo; width=&quot;600&rdquo;] Left to right: Stefan Romaniw, Ruslan Demchenko, Matthew Guy, Yurij Bohutski[/caption]
-      
-        <div class="read-more-link">
-          <a href="/events/international-events/victorian-minister-meets-ukrainian-government-officials-in-kyiv/">Read More…</a>
         </div>
       
     </article>
@@ -1408,6 +1473,8 @@ MEDIA RELEASE VICTORIAN PLANNING MINISTER MATTHEW GUY MEETS WITH UKRAINIAN GOVER
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

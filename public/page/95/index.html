@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/64th-agm-of-auv/">64-ті звітно–виборчі загальні збори УГВ</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/christmas-greetings/">РІЗДВЯНЕ ПРИВІТАННЯ - CHRISTMAS GREETINGS</a>
+      </h1>
+      <time datetime="2011-12-23T08:17:55Z" class="post-date">Fri, Dec 23, 2011</time>
+      РІЗДВЯНЕ ПРИВІТАННЯ  Союз Українських Організацій Австралії (СУОА) щиро вітає усіх Iєрархів та духовенствo українських Церков, представників Дипломатичної служби України в Aвстралії, членів CУОA та організацій, та українців в Австралії, в Україні і в діаспорі зі світлим празником Різдва Христового та з Новим 2012 роком.
+ Різдво Христове відзначає народження Ісуса. Ми збираємося разом, щоб прославити Господа, подякувати Йому за дари та попросити ласки для себе, своїх родин та приятелів.
+      
+        <div class="read-more-link">
+          <a href="/current-affairs/media-releases/christmas-greetings/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/64th-agm-of-auv/">64-ті звітно–виборчі загальні збори УГВ</a>
       </h1>
       <time datetime="2011-12-23T08:05:59Z" class="post-date">Fri, Dec 23, 2011</time>
       Добігає до кінця 2011 рік і, як завжди, в цей час члени управи УГВ підводять підсумки зробленого за рік. З цієї причини в неділю, 18 грудня в Українському Народному Домі в Ессендоні відбулися звітно – виборчі збори Української Громади Вікторії.
@@ -65,7 +146,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/two-carol-singing-concerts-and-st-nicholas-in-sydney/">ДВІ КОЛЯДИ І ПРИХІД CВ. МИКОЛAЯ В CІДНЕЇ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/two-carol-singing-concerts-and-st-nicholas-in-sydney/">ДВІ КОЛЯДИ І ПРИХІД CВ. МИКОЛAЯ В CІДНЕЇ</a>
       </h1>
       <time datetime="2011-12-21T04:17:16Z" class="post-date">Wed, Dec 21, 2011</time>
       МAРІЧКA ГAЛAБУРДA - ЧИГРИН
@@ -81,7 +162,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/end-of-school-year-in-sydney/">ЗAКІНЧЕННЯ ШКІЛЬНОГО РОКУ В CІДНЕЇ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/end-of-school-year-in-sydney/">ЗAКІНЧЕННЯ ШКІЛЬНОГО РОКУ В CІДНЕЇ</a>
       </h1>
       <time datetime="2011-12-21T04:04:28Z" class="post-date">Wed, Dec 21, 2011</time>
       МAРІЧКA ГAЛAБУРДA – ЧИГРИН
@@ -96,7 +177,7 @@ CІДНЕЙ 14.12.2011
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/parish-feast-day-in-sydney-2/">ПAРAФІЯЛЬНЕ CВЯТО ПAРAФІЇ  ІМ. CВ. AНДРІЯ В CІДНЕЇ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/parish-feast-day-in-sydney-2/">ПAРAФІЯЛЬНЕ CВЯТО ПAРAФІЇ  ІМ. CВ. AНДРІЯ В CІДНЕЇ</a>
       </h1>
       <time datetime="2011-12-21T03:54:33Z" class="post-date">Wed, Dec 21, 2011</time>
       МAРІЧКA ГAЛAБУРДA – ЧИГРИН
@@ -110,11 +191,11 @@ CІДНЕЙ 14.12.2011
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ukrainian-foundations-institutions-offering-grants-or-sponsorships/">Ukrainian Foundations and Institutions Offering Grants or Sponsorships</a>
+        <a href="https://ukrainians.org.au/culture/ukrainian-foundations-institutions-offering-grants-or-sponsorships/">Ukrainian Foundations and Institutions Offering Grants or Sponsorships</a>
       </h1>
       <time datetime="2011-12-17T04:33:00Z" class="post-date">Sat, Dec 17, 2011</time>
       There are a small number of Ukrainian Foundations and Institutions in Australia who offer grants to organisations and individuals for various purposes, generally related to improving knowledge or awareness of things Ukrainian. To assist potential applicants in being aware of which such Foundations / Institutions currently exist and to whom they may apply for a grant/sponsorship, please refer to the list below.
- В Австралії є декілька українських фундацій і установ які дарують дотації та стипендії організаціям і одиницям на різні потреби, переважно пов'язані з удосконаленням українознавства.
+ В Австралії є декілька українських фундацій і установ які дарують дотації та стипендії організаціям і одиницям на різні потреби, переважно пов&rsquo;язані з удосконаленням українознавства.
       
         <div class="read-more-link">
           <a href="/culture/ukrainian-foundations-institutions-offering-grants-or-sponsorships/">Read More…</a>
@@ -122,7 +203,7 @@ CІДНЕЙ 14.12.2011
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-malanka-2012-3/">Melbourne Malanka 2012</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-malanka-2012-3/">Melbourne Malanka 2012</a>
       </h1>
       <time datetime="2011-12-17T03:30:14Z" class="post-date">Sat, Dec 17, 2011</time>
       The Association of Ukrainians in Victoria (AUV) is holding its Malanka 2012 on Saturday 14th January 2012 at the Melrose Reception Centre, corner of Melrose and Carrick Drives, Tullamarine.
@@ -135,7 +216,7 @@ UB is a modern high energy band inspired by their Ukrainian-Canadian roots. Thei
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d0%9f%d0%b5%d1%80%d0%b5%d0%b4%d1%80%d1%96%d0%b7%d0%b4%d0%b2%d1%8f%d0%bd%d0%b0-%d0%b7%d1%83%d1%81%d1%82%d1%80%d1%96%d1%87-%d0%b2%d1%96%d0%b4%d0%b4%d1%96%d0%bb%d1%83-%d0%a1%d0%be%d1%8e%d0%b7%d1%83/">Передріздвяна зустріч відділу Союзу Українок у Нобл Парку</a>
+        <a href="https://ukrainians.org.au/events/%d0%9f%d0%b5%d1%80%d0%b5%d0%b4%d1%80%d1%96%d0%b7%d0%b4%d0%b2%d1%8f%d0%bd%d0%b0-%d0%b7%d1%83%d1%81%d1%82%d1%80%d1%96%d1%87-%d0%b2%d1%96%d0%b4%d0%b4%d1%96%d0%bb%d1%83-%d0%a1%d0%be%d1%8e%d0%b7%d1%83/">Передріздвяна зустріч відділу Союзу Українок у Нобл Парку</a>
       </h1>
       <time datetime="2011-12-15T11:04:09Z" class="post-date">Thu, Dec 15, 2011</time>
       Відділ Союзу Українок ім. Лесі Українки запрошує Союзянок з родинами та шановне громадянство на
@@ -148,7 +229,7 @@ UB is a modern high energy band inspired by their Ukrainian-Canadian roots. Thei
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d0%9f%d1%80%d0%b5%d0%b7%d0%b5%d0%bd%d1%82%d0%b0%d1%86%d1%96%d1%8f-%d0%ba%d0%bd%d0%b8%d0%b6%d0%ba%d0%b8-%c2%ab%d0%9d%d0%b5%d0%bc%d0%b0%d1%94-%d0%b2%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d1%97-%d0%9f%d0%be/">Презентація книжки «Немає вільної Польщі без вільної України»</a>
+        <a href="https://ukrainians.org.au/events/%d0%9f%d1%80%d0%b5%d0%b7%d0%b5%d0%bd%d1%82%d0%b0%d1%86%d1%96%d1%8f-%d0%ba%d0%bd%d0%b8%d0%b6%d0%ba%d0%b8-%c2%ab%d0%9d%d0%b5%d0%bc%d0%b0%d1%94-%d0%b2%d1%96%d0%bb%d1%8c%d0%bd%d0%be%d1%97-%d0%9f%d0%be/">Презентація книжки «Немає вільної Польщі без вільної України»</a>
       </h1>
       <time datetime="2011-12-15T10:53:18Z" class="post-date">Thu, Dec 15, 2011</time>
       Шановні приятелі україністики в Монаші,
@@ -163,7 +244,7 @@ UB is a modern high energy band inspired by their Ukrainian-Canadian roots. Thei
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/monash-book-launch-no-free-poland-without-a-free-ukraine/">Monash Book Launch: No Free Poland Without a Free Ukraine </a>
+        <a href="https://ukrainians.org.au/events/monash-book-launch-no-free-poland-without-a-free-ukraine/">Monash Book Launch: No Free Poland Without a Free Ukraine </a>
       </h1>
       <time datetime="2011-12-15T10:49:33Z" class="post-date">Thu, Dec 15, 2011</time>
       Dear Friends of Ukrainian Studies at Monash,
@@ -173,19 +254,6 @@ Khrystyna Chushak, No free Poland without a free Ukraine: Ukraine and Ukrainians
       
         <div class="read-more-link">
           <a href="/events/monash-book-launch-no-free-poland-without-a-free-ukraine/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Нові інтерв’ю SBS Ukrainian</a>
-      </h1>
-      <time datetime="2011-12-14T03:47:05Z" class="post-date">Wed, Dec 14, 2011</time>
-      Нище є подані короткі дані і лінки до деяких нових інтерв’ю на Радіо SBS Ukrainian
- ЧИ ВИ ЗНАЄТЕ УСЕ ПРО СПЛАТУ ПОДАТКІВ?
-Інтерв'ю зі Світланою Новотарською з Австралійського податкового департаменту. Сьогодні ми розмовляємо про програму допомоги малому бізнесові та як податкова служба може допомогти саме Вам.. Ця розповідь подає тільки загальну інформацію. Податкове законодавство є складним, і навіть обставини, що трохи відрізняються, можуть призвести до зовсім інших податкових результатів.
-      
-        <div class="read-more-link">
-          <a href="/media/%d0%9d%d0%be%d0%b2%d1%96-%d1%96%d0%bd%d1%82%d0%b5%d1%80%d0%b2%e2%80%99%d1%8e-sbs-ukrainian/">Read More…</a>
         </div>
       
     </article>
@@ -1396,6 +1464,8 @@ Khrystyna Chushak, No free Poland without a free Ukraine: Ukraine and Ukrainians
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

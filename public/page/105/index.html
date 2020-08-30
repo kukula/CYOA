@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-accordion-orchestra-concert/">КОНЦЕРТ - Мельбурнський оркестр акордеоністів</a>
+        <a href="https://ukrainians.org.au/events/victoria/celebration-of-20th-anniversary-of-independence-day-of-ukraine-in-melbourne/">Celebration of 20th Anniversary of Independence Day of Ukraine in Melbourne</a>
+      </h1>
+      <time datetime="2011-07-13T03:41:30Z" class="post-date">Wed, Jul 13, 2011</time>
+      [ ](http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb2.jpg)Celebration of 20th Anniversary of Independence Day of Ukraine in Melbourne
+The Association of Ukrainians in Victoria (AUV) invites everyone to celebrate with them the 20th Anniversary of Independence Day of Ukraine. The celebrations will take place on Sunday 21st August 2011 in the centre of Melbourne – in the BMW Edge hall located in Federation Square.
+Enjoy Ukrainian dancing, folk art, exhibitions, workshops and a fashion parade.
+      
+        <div class="read-more-link">
+          <a href="/events/victoria/celebration-of-20th-anniversary-of-independence-day-of-ukraine-in-melbourne/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-accordion-orchestra-concert/">КОНЦЕРТ - Мельбурнський оркестр акордеоністів</a>
       </h1>
       <time datetime="2011-07-13T01:01:09Z" class="post-date">Wed, Jul 13, 2011</time>
       **Мельбурнський оркестр акордеоністів ** запрошує Вас на КОНЦЕРТ в Українському народному домі,** ****** ** **26 Chandler Rd., Noble Park ( Melways Ref: 89 H1) ** **у неділю 24–го липня 2011 р. о год. 1.00 п.п. Обід від год. 12.00 дня.   Репертуар мельбурнського оркестру акордеоністів складається з різних жанрів музики від легкої класичної до популярної. Музиканти – це професіонали та завзяті аматори, які грають не тільки на акордеонах, але також і на барабанах, бас–гітарі, ксилофоні, гітарі, клавіятурі та на ударних інструментах.
@@ -63,7 +145,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/20th-anniversary-of-independence-day-of-ukraine-in-nsw/">Відзначення 20-ої річниці Дня Незалежности України в НПВ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/20th-anniversary-of-independence-day-of-ukraine-in-nsw/">Відзначення 20-ої річниці Дня Незалежности України в НПВ</a>
       </h1>
       <time datetime="2011-07-12T00:34:05Z" class="post-date">Tue, Jul 12, 2011</time>
       Відзначення 20-ої річниці Дня Незалежности України в НПВ  Об’єднання Українських Громад НПВ запрошує все українське громадянство на Відзначення 20-ої річниці Дня Незалежности України яке відбудеться в неділю 28-го серпня, 2011р. в залі Дому Української Молоді в Лідкомбі.
@@ -76,10 +158,10 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/20th-anniversary-of-independence-day-of-ukraine-in-geelong/">20th Anniversary of Independence Day of Ukraine in Geelong</a>
+        <a href="https://ukrainians.org.au/events/victoria/20th-anniversary-of-independence-day-of-ukraine-in-geelong/">20th Anniversary of Independence Day of Ukraine in Geelong</a>
       </h1>
       <time datetime="2011-07-12T00:23:13Z" class="post-date">Tue, Jul 12, 2011</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2011/07/nezaleznist-geelong-web-2.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb.jpg) ](http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb.jpg)20th Anniversary of Independence Day of Ukraine in Geelong
+      [ ](http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb.jpg)20th Anniversary of Independence Day of Ukraine in Geelong
 The Geelong Branch of the Association of Ukrainians in Victoria (AUV) has issued an invitation to celebrate the 20th Anniversary of Independence Day of Ukraine. The celebration event which includes a mini expo, dance and other performances will take place on Sunday 28th August 2011 in the Ukrainian Hall in Geelong West.
 
 Відзначення 20-ої річниці Дня Незалежности України в Джілонґу Українська Громада Вікторії (УГВ)- відділ Джілонґ - запрошує все українське громадянство на Відзначення 20-ої річниці Дня Незалежности України яке відбудеться в неділю 28-го серпня, 2011р.
@@ -90,7 +172,7 @@ The Geelong Branch of the Association of Ukrainians in Victoria (AUV) has issued
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/open-appeal-to-the-government-of-ukraine/">Open Appeal to the Government of Ukraine</a>
+        <a href="https://ukrainians.org.au/events/international-events/open-appeal-to-the-government-of-ukraine/">Open Appeal to the Government of Ukraine</a>
       </h1>
       <time datetime="2011-07-11T12:53:43Z" class="post-date">Mon, Jul 11, 2011</time>
       Please read and sign the &ldquo;Open Appeal to the Government of Ukraine&rdquo;. Add your name to the Open Appeal by going to http://www.lucorg.com/signature.php?signature_id=9  The Open Appeal with all signatures will be transmitted to the Government of Ukraine and to the Government of Canada.
@@ -102,7 +184,7 @@ The Open Appeal is an initiative of the Canadian Conference in Support of Ukrain
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/ucspex-2011/">Виставка Колекціонерів (UCSPEX-2011 СІДНЕЙ)</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/ucspex-2011/">Виставка Колекціонерів (UCSPEX-2011 СІДНЕЙ)</a>
       </h1>
       <time datetime="2011-07-11T12:44:13Z" class="post-date">Mon, Jul 11, 2011</time>
       Об’єднання Українських Громад НПВ і Товариство Українських Колекціонерів запрошує все українське громадянство на 3-тю національну Виставку Колекціонерів (UCSPEX-2011 СІДНЕЙ) яка відбудеться в Суботу 27 Серпня 2011 та Неділю 28 Серпня 2011 в Клюбовій Залі Дому Української Молоді в Лідкомбі.
@@ -110,7 +192,7 @@ The Open Appeal is an initiative of the Canadian Conference in Support of Ukrain
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/marina-berezowsky-memorial-service/">Marina Berezowsky Memorial Service</a>
+        <a href="https://ukrainians.org.au/events/victoria/marina-berezowsky-memorial-service/">Marina Berezowsky Memorial Service</a>
       </h1>
       <time datetime="2011-07-08T13:42:17Z" class="post-date">Fri, Jul 8, 2011</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2011/07/MB-12.jpg)+
@@ -125,7 +207,7 @@ M: 0400 915 257
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/world-cadets-judo-championship/">World Cadets Judo Championship</a>
+        <a href="https://ukrainians.org.au/events/international-events/world-cadets-judo-championship/">World Cadets Judo Championship</a>
       </h1>
       <time datetime="2011-07-07T02:00:24Z" class="post-date">Thu, Jul 7, 2011</time>
       The 2nd World Judo Championship for Cadets (boys and girls under the age of 17 years) will be held in Kyiv, Ukraine, between the 11th and 14th of August 2011.
@@ -139,7 +221,7 @@ This is a truly all Australian team with athletes from:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/15th-anniversary-of-ukrainian-constitution/">15th Anniversary of Ukrainian Constitution / 15-та річниця Конституції України</a>
+        <a href="https://ukrainians.org.au/events/international-events/15th-anniversary-of-ukrainian-constitution/">15th Anniversary of Ukrainian Constitution / 15-та річниця Конституції України</a>
       </h1>
       <time datetime="2011-07-01T00:25:40Z" class="post-date">Fri, Jul 1, 2011</time>
       On June 28 2011 Ukraine celebrated the 15th anniversary of its constitution. Watch the last stages of the celebrations in Independence Square (Maidan Nezalezhnosti) in Kyiv.  28 червня 2011 в Україні відсвяткували 15-ту річницю Конституції України. Подивіться на заключну частину святкувань на Майдані Незалежності в Києві.
@@ -147,7 +229,7 @@ http://www.youtube.com/watch?v=ALMu324l2Rk
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/qld-flood-relief-fund-update/">Queensland Flood Relief Fund Update / Додатки до збірки на допомогу потерпілим від повені в Квінсленді</a>
+        <a href="https://ukrainians.org.au/community/qld-flood-relief-fund-update/">Queensland Flood Relief Fund Update / Додатки до збірки на допомогу потерпілим від повені в Квінсленді</a>
       </h1>
       <time datetime="2011-06-29T03:40:44Z" class="post-date">Wed, Jun 29, 2011</time>
       Подається оновлену версію списка жертводавців на крайову збірку допомоги Українській Громаді та yкраїнцям в Квінсленді, потерпілим від повені. Разом назбирано суму $21,313.70. Управа СУОА складає сердечну подяку всім одиницям і організаціям які склали щедру пожертву. Нище є поданий список жертводавців.
@@ -155,19 +237,6 @@ Released below is an updated list of contributors to the national Flood Relief F
       
         <div class="read-more-link">
           <a href="/community/qld-flood-relief-fund-update/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/dnister-annual-general-meeting-2011-%d0%97%d0%b0%d0%b3%d0%b0%d0%bb%d1%8c%d0%bd%d1%96-%d0%b7%d0%b1%d0%be%d1%80%d0%b8-%d0%94%d0%bd%d1%96%d1%81%d1%82%d1%80%d0%b0/">Dnister Annual general meeting 2011 / Загальні збори Дністра</a>
-      </h1>
-      <time datetime="2011-06-29T03:18:31Z" class="post-date">Wed, Jun 29, 2011</time>
-      ﻿The 2011 Annual General Meeting will be held on Sunday 13th.November 2011 at the Ukrainian Orthodox Church Hall - 91 Buckley Street, Essendon VIC 3040. Registration will commence at 1.00pm and the meeting will start at 1.30pm.
-
- Загальні збори кооперативи відбудуться в неділю, 13-го листопада 2011 року в залі Української Православної Церкви - Buckley Street, Essendon VIC 3040. Реєстрація почнеться о годині 1.00 пп., збори почнуться о 1.30 пп.
-      
-        <div class="read-more-link">
-          <a href="/events/national-events/dnister-annual-general-meeting-2011-%d0%97%d0%b0%d0%b3%d0%b0%d0%bb%d1%8c%d0%bd%d1%96-%d0%b7%d0%b1%d0%be%d1%80%d0%b8-%d0%94%d0%bd%d1%96%d1%81%d1%82%d1%80%d0%b0/">Read More…</a>
         </div>
       
     </article>
@@ -1378,6 +1447,8 @@ Released below is an updated list of contributors to the national Flood Relief F
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

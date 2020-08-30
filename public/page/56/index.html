@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,114 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/photos-prayer-for-peace-in-ukraine/">Знимки - Моління за мир в Україні / Photos - Prayer for Peace in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/victoria/meeting-with-dr-walter-zaryckyj/">Громадська зустріч з Д-р Володимиром Зарицьким</a>
+      </h1>
+      <time datetime="2014-03-01T01:54:45Z" class="post-date">Sat, Mar 1, 2014</time>
+      Українська Громада Вікторії (УГВ) запрошує на громадську зустріч з Д-р Володимиром Зарицьким з Ню Йорку, Екзекутивний Директор Центру Відносин США- УКРАЇНА.
+
+The Association of Ukrainians in Victoria (AUV) invites all for a meeting with Dr. Walter Zaryckyj from New York, Executive director of the Center for US-Ukrainian Relations (CUSUR).
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/photos-prayer-for-peace-in-ukraine/">Знимки - Моління за мир в Україні / Photos - Prayer for Peace in Ukraine</a>
       </h1>
       <time datetime="2014-02-28T09:23:14Z" class="post-date">Fri, Feb 28, 2014</time>
       Більше знимок із «Моління за мир в Україні» 26 лютого 2014 р. в Катедрі Св. Патрика.
@@ -60,14 +138,14 @@ More photos from the “Prayer for Peace in Ukraine**” **held on the 26th Febr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/shevchenko-concert-in-sydney/">Свято Шевченка в Сіднеї</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/shevchenko-concert-in-sydney/">Свято Шевченка в Сіднеї</a>
       </h1>
       <time datetime="2014-02-28T00:18:12Z" class="post-date">Fri, Feb 28, 2014</time>
       Об’єднання Українських Громад НПВ запрошує на Святочний Концерт для святкування 200-ліття з дня народження Тараса Шевченка.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/prayer-for-peace-in-ukraine-2/">Моління за мир в Україні / Prayer for Peace in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/victoria/prayer-for-peace-in-ukraine-2/">Моління за мир в Україні / Prayer for Peace in Ukraine</a>
       </h1>
       <time datetime="2014-02-28T00:06:46Z" class="post-date">Fri, Feb 28, 2014</time>
       26 лютого 2014 р. в Катедра Св. Патрика зібралося понад 400 людей різних віровизнань та різних народів разом з українською спільнотою помолитися за відновлення миру та справедливості в Україні.
@@ -77,13 +155,13 @@ Video:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/press-release-afuo-chairman-meets-with-canadian-foreign-minister/">Press Release: AFUO Chairman Meets with Canadian Foreign Minister</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/press-release-afuo-chairman-meets-with-canadian-foreign-minister/">Press Release: AFUO Chairman Meets with Canadian Foreign Minister</a>
       </h1>
       <time datetime="2014-02-26T00:41:34Z" class="post-date">Wed, Feb 26, 2014</time>
       Februray 25,2014
 MEDIA RELEASE AFUO CHAIRMAN MEETS WITH CANADIAN FOREIGN MINISTER JOHN BAIRD IN MELBOURNE Australian Federation of Ukrainian Organisations chair and General Secretary of the Ukrainian World Congress (UWC) , Stefan Romaniw today met with The Foreign Minister of Canada The Hon John Baird.
 Bob Onyschuk Chair of the Ukraine Canada Foundation also participated.
-Mr Romaniw expressed his gratitude on behalf of the UWC to Prime Minister Harper's Government and praised the individual efforts of The Hon John Baird for the leadership and resilient position in supporting Ukraine's towards democracy and in ending the current tyranny.
+Mr Romaniw expressed his gratitude on behalf of the UWC to Prime Minister Harper&rsquo;s Government and praised the individual efforts of The Hon John Baird for the leadership and resilient position in supporting Ukraine&rsquo;s towards democracy and in ending the current tyranny.
       
         <div class="read-more-link">
           <a href="/current-affairs/media-releases/press-release-afuo-chairman-meets-with-canadian-foreign-minister/">Read More…</a>
@@ -91,7 +169,7 @@ Mr Romaniw expressed his gratitude on behalf of the UWC to Prime Minister Harpe
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/maidan-and-ukrainians-what-next/">Майдан і українці: Що ж далі?</a>
+        <a href="https://ukrainians.org.au/politics/maidan-and-ukrainians-what-next/">Майдан і українці: Що ж далі?</a>
       </h1>
       <time datetime="2014-02-26T00:21:46Z" class="post-date">Wed, Feb 26, 2014</time>
       **МАЙДАН І УКРАЇНЦІ: ЩО Ж ДАЛІ?**
@@ -100,16 +178,16 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/320012/t/MAIDAN-A
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/interview-with-prof-marko-pavlyshyn/">Інтерв&#39;ю з професором Марком Павлишином</a>
+        <a href="https://ukrainians.org.au/politics/interview-with-prof-marko-pavlyshyn/">Інтерв&#39;ю з професором Марком Павлишином</a>
       </h1>
       <time datetime="2014-02-26T00:14:02Z" class="post-date">Wed, Feb 26, 2014</time>
       УНІВЕРСИТЕТ ім. МОНАША: ЯКИМ БУДЕ МАЙБУТНЄ УКРАЇНИ?
-Інтерв'ю з професором Марком Павлишином з Університету імені Монаша. 19 лютого Центр Європейських Студій і Лекторат україністики ім. Миколи Зерова провели дискусійний круглий стіл на теми майбутнього України з участю 100 осіб&hellip;
+Інтерв&rsquo;ю з професором Марком Павлишином з Університету імені Монаша. 19 лютого Центр Європейських Студій і Лекторат україністики ім. Миколи Зерова провели дискусійний круглий стіл на теми майбутнього України з участю 100 осіб&hellip;
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/319968/t/MONASH-UNIVERSITY-WHAT-FUTURE-FOR-UKRAINE
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/prayer-for-peace-in-ukraine/">Моління за мир в Україні / Prayer for Peace in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/victoria/prayer-for-peace-in-ukraine/">Моління за мир в Україні / Prayer for Peace in Ukraine</a>
       </h1>
       <time datetime="2014-02-23T08:48:42Z" class="post-date">Sun, Feb 23, 2014</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2014/02/Maidan1.jpg)
@@ -122,7 +200,7 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/319968/t/MONASH-U
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/freeze-the-assets-of-the-gang/">ЗАМОРОЖІТЬ ГРОШІ БАНДИ Й ОЛІГАРХІВ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/freeze-the-assets-of-the-gang/">ЗАМОРОЖІТЬ ГРОШІ БАНДИ Й ОЛІГАРХІВ</a>
       </h1>
       <time datetime="2014-02-23T02:01:54Z" class="post-date">Sun, Feb 23, 2014</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -139,35 +217,15 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/319968/t/MONASH-U
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australian-government-tells-yanukovych-australia-will-not-host-an-official-visit/">Australian Government Tells Yanukovych Australia Will NOT Host an Official Visit</a>
+        <a href="https://ukrainians.org.au/politics/australian-government-tells-yanukovych-australia-will-not-host-an-official-visit/">Australian Government Tells Yanukovych Australia Will NOT Host an Official Visit</a>
       </h1>
       <time datetime="2014-02-21T00:23:05Z" class="post-date">Fri, Feb 21, 2014</time>
       FEBRURAY 20, 2014
-MEDIA RELEASE AUSTRALIAN GOVERNMENT TELLS YANUKOVYCH AUSTRALIA WILL NOT HOST AN OFFICIAL VISIT As previously advised in late January 2014 senior Department of Foreign Affairs and Trade officials (DFAT) advised that Chargés d'Affaires** **of Ukraine in Australia Stanislav Stashevskyi was requested to meet with key officials to be provided with a direct Government-to-Government message.
+MEDIA RELEASE AUSTRALIAN GOVERNMENT TELLS YANUKOVYCH AUSTRALIA WILL NOT HOST AN OFFICIAL VISIT As previously advised in late January 2014 senior Department of Foreign Affairs and Trade officials (DFAT) advised that Chargés d&rsquo;Affaires** **of Ukraine in Australia Stanislav Stashevskyi was requested to meet with key officials to be provided with a direct Government-to-Government message.
 Part of that message was that if President Yanukovych was thinking of visiting Australia the Australian Government would not host an official visit.
       
         <div class="read-more-link">
           <a href="/politics/australian-government-tells-yanukovych-australia-will-not-host-an-official-visit/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/maidan-donations/">Збірка на Майдан</a>
-      </h1>
-      <time datetime="2014-02-21T00:11:12Z" class="post-date">Fri, Feb 21, 2014</time>
-      **[ ](http://www.ozeukes.com/wp-content/uploads/2014/02/Kyiv-Maidan1.jpg)Збірка на Майдан**
-На Майдані потрібно тепер допомогу. В грудні 2013р. управа CУОA проголосила збірку на Потреби Майдану.
-Всі пожертви пересилати на:
-Dnister Account AFUO
- **Закликаємо Вас не пересилати гроші на приватні адреси в Україні **
-** **
-Maidan Fund The Maidan needs your help.
-In December 2013 the AFUO committee announced a collection for the Needs of the Maidan.
-Please send your donations to:
-Dnister Account AFUO
-      
-        <div class="read-more-link">
-          <a href="/community/maidan-donations/">Read More…</a>
         </div>
       
     </article>
@@ -1378,6 +1436,8 @@ Dnister Account AFUO
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

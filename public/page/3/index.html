@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,119 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-new-president/">AFUO statement regarding Ukraine&#39;s election result</a>
+        <a href="https://ukrainians.org.au/current-affairs/russian-aggression-continues-2019/">Media Release: Putin commits another act of aggression against Ukraine</a>
+      </h1>
+      <time datetime="2019-04-25T01:21:41Z" class="post-date">Thu, Apr 25, 2019</time>
+      __
+MEDIA RELEASE
+Russian President Vladimir Putin has once again committed an act of aggression against Ukraine by signing a decree setting out which groups of people are, for humanitarian reasons, entitled to apply for Russian citizenship through a simplified procedure in the Ukrainian regions of Donetsk and Luhansk currently under occupation by the Russian Army.____
+According to the decree, the Russian president made the decision &ldquo;in order to protect human and citizen rights and freedoms&rdquo; based on &ldquo;commonly recognised principles and norms of international law&rdquo; in accordance with the Russian Law on citizenship from May 31, 2002.
+      
+        <div class="read-more-link">
+          <a href="/current-affairs/russian-aggression-continues-2019/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/ukraine-new-president/">AFUO statement regarding Ukraine&#39;s election result</a>
       </h1>
       <time datetime="2019-04-24T12:29:17Z" class="post-date">Wed, Apr 24, 2019</time>
       _The Australian Federation of Ukrainian Organisations sends a congratulatory message to President Elect Volodymyr Zelensky and recognises the efforts of outgoing President Poroshenko. _
@@ -66,7 +149,7 @@ The international community together with Ukrainian Electoral Commission report
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/thank-you-orthodox-church/">Фінансова допомога СУОА - подяка ПЦУ - Черкаська Епархія</a>
+        <a href="https://ukrainians.org.au/community/thank-you-orthodox-church/">Фінансова допомога СУОА - подяка ПЦУ - Черкаська Епархія</a>
       </h1>
       <time datetime="2019-04-23T12:28:23Z" class="post-date">Tue, Apr 23, 2019</time>
       Вельмишановний пане Стефане!
@@ -78,7 +161,7 @@ The international community together with Ukrainian Electoral Commission report
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/ukraine-above-all/">Закликаємо до участи в міжнародній кампанії #УкраїнаПонадУсе | Support the Campaign</a>
+        <a href="https://ukrainians.org.au/current-affairs/ukraine-above-all/">Закликаємо до участи в міжнародній кампанії #УкраїнаПонадУсе | Support the Campaign</a>
       </h1>
       <time datetime="2019-04-03T06:13:22Z" class="post-date">Wed, Apr 3, 2019</time>
       Закликаємо до участи в міжнародній кампанії #УкраїнаПонадУсе
@@ -95,7 +178,7 @@ The international community together with Ukrainian Electoral Commission report
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/holodomor-book-launch/"> Презентація книжки  “Голодомор&#34; | Holodomor Book Launch: Melbourne and Sydney</a>
+        <a href="https://ukrainians.org.au/events/holodomor-book-launch/"> Презентація книжки  “Голодомор&#34; | Holodomor Book Launch: Melbourne and Sydney</a>
       </h1>
       <time datetime="2019-03-17T11:30:04Z" class="post-date">Sun, Mar 17, 2019</time>
       SYDNEY
@@ -114,11 +197,11 @@ _Крайовий Комітет _Союзу Українських Орган�
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/show-your-support-for-dr-suprun/">Show your support for Dr Suprun</a>
+        <a href="https://ukrainians.org.au/current-affairs/show-your-support-for-dr-suprun/">Show your support for Dr Suprun</a>
       </h1>
       <time datetime="2019-02-07T08:43:08Z" class="post-date">Thu, Feb 7, 2019</time>
-      The Administrative Court in Kyiv issued a ruling endeavouring to ban Ukraine's acting health minister Dr. Ulana Suprun from performing her Ministerial functions.
-This is an outrageous and politically motivated act - against an individual who has done nothing but positive actions for Ukraine's reforms in Health care. See our letter to Ambassador Melissa O'Rourke below.
+      The Administrative Court in Kyiv issued a ruling endeavouring to ban Ukraine&rsquo;s acting health minister Dr. Ulana Suprun from performing her Ministerial functions.
+This is an outrageous and politically motivated act - against an individual who has done nothing but positive actions for Ukraine&rsquo;s reforms in Health care. See our letter to Ambassador Melissa O&rsquo;Rourke below.
  * A working group has been formed on the issue * This group has secured President, PM and many others to support (when up until Friday little interest) * Many Governments have taken a watchful position * We have sparked the international social media campaign and activity in a range of countries * A quick decision made after seeing support to put her up for vote in VR * A fraction headed via Andreij Levus MP have now posted on agenda for VR  You can show your support on social media for Dr Ulana Suprun by using the hashtag #SupportSuprun and sharing posts like:
       
         <div class="read-more-link">
@@ -127,7 +210,7 @@ This is an outrageous and politically motivated act - against an individual who 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/help-students-in-ukraine/">Help students in Ukraine: Fundraising events in Melbourne and Sydney</a>
+        <a href="https://ukrainians.org.au/community/help-students-in-ukraine/">Help students in Ukraine: Fundraising events in Melbourne and Sydney</a>
       </h1>
       <time datetime="2019-02-04T09:30:09Z" class="post-date">Mon, Feb 4, 2019</time>
       Раді повідомити, що Австралійські друзі Українського Католицького Університету (Львів) організовують перший Благодійний Вечір на підтримку УКУ в Мельбурні (24 лютого 2019) та Сіднеї (2 березня 2019). Події відбудуться на підтримку навчальних програм, студентських стипендій та розвитку нового академічного містечка Українського Католицького Університету.
@@ -143,7 +226,7 @@ The Ukrainian Catholic University in Lviv are having Fundraising dinners in Melb
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/record-donation-crisis-appeal/">Record donation efforts by Ukrainians in Australia for Crisis Appeal</a>
+        <a href="https://ukrainians.org.au/community/record-donation-crisis-appeal/">Record donation efforts by Ukrainians in Australia for Crisis Appeal</a>
       </h1>
       <time datetime="2019-01-06T02:36:54Z" class="post-date">Sun, Jan 6, 2019</time>
       This article is also available in Ukrainian.
@@ -155,14 +238,14 @@ In partnership with Rotary Australia (RAWCS), Caritas Ukraine and the Australian
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/record-donation-crisis-appeal-ukr/">СУОА Фонд  допомоги військовим та ветеранам України зібрав $128,000 AUD</a>
+        <a href="https://ukrainians.org.au/community/record-donation-crisis-appeal-ukr/">СУОА Фонд  допомоги військовим та ветеранам України зібрав $128,000 AUD</a>
       </h1>
       <time datetime="2019-01-06T02:30:43Z" class="post-date">Sun, Jan 6, 2019</time>
       4-го січня 2019
 Кризовий апеляційний фонд України –
 СУОА Фонд допомоги військовим та ветеранам України
 зібрав $ 128,000 AUD
-У партнерстві з благодійною організацією “Ротарі Австралія&rdquo; (RAWCS), Mіжнародним благодійним фондом “ Карітас України” та Союзом Українських Організацій Австралії (СУОА), створено кризовий апеляційний фонд для надання гуманітарної допомоги постраждалим від війни військовим та ветеранам і їх сім'ям.
+У партнерстві з благодійною організацією “Ротарі Австралія&rdquo; (RAWCS), Mіжнародним благодійним фондом “ Карітас України” та Союзом Українських Організацій Австралії (СУОА), створено кризовий апеляційний фонд для надання гуманітарної допомоги постраждалим від війни військовим та ветеранам і їх сім&rsquo;ям.
 Надзвичайні зусилля та заклик долучатися до цього проекту охопив всі стейтові громади, церкви, молодіжні організації та сотні індивідуальних жертводавців Австралії.
       
         <div class="read-more-link">
@@ -171,7 +254,7 @@ In partnership with Rotary Australia (RAWCS), Caritas Ukraine and the Australian
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/australia-not-fooled-propaganda/">Australians not fooled by Russia’s scandalous propaganda</a>
+        <a href="https://ukrainians.org.au/current-affairs/australia-not-fooled-propaganda/">Australians not fooled by Russia’s scandalous propaganda</a>
       </h1>
       <time datetime="2019-01-06T02:09:35Z" class="post-date">Sun, Jan 6, 2019</time>
       Despite most of the international community criticising Russia for its aggression in Ukraine and for flaunting international conventions, the country’s embassy in Canberra has paid for an advertisement in which it condemns Australia for contributing to “Russophobia”.____
@@ -179,19 +262,6 @@ In the advertisement, published in The Canberra Times, it also blames Russia’
       
         <div class="read-more-link">
           <a href="/current-affairs/australia-not-fooled-propaganda/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/canberra-times-publishes-afuo-protest-to-russian-ambassadors-paid-ad/">Canberra Times Publishes AFUO Protest to Russian Ambassador&#39;s Paid Ad.</a>
-      </h1>
-      <time datetime="2018-12-24T05:38:55Z" class="post-date">Mon, Dec 24, 2018</time>
-      Unacceptable ad
-At a time when Australia and the international community has joined in condemning the seizure of Ukrainian naval personnel and their vessels and reaffirmed world support for Ukraine's sovereignty and integrity, it is unacceptable for an Australian newspaper to carry a paid advertisement from Russia defending what are currently disputed war crimes (The Canberra Times, December 21, p15).
-The advertisement mocks the international findings that a Russian missile downed Malaysia Airlines flight MH17, killing 298 innocent souls including 38 Australians.
-      
-        <div class="read-more-link">
-          <a href="/current-affairs/canberra-times-publishes-afuo-protest-to-russian-ambassadors-paid-ad/">Read More…</a>
         </div>
       
     </article>
@@ -1396,6 +1466,8 @@ The advertisement mocks the international findings that a Russian missile downed
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

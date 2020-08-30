@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/skoropadskyi-grave/">МОГИЛА ГЕТЬМАНА ПАВЛА СКОРОПАДСЬКОГО В НІМЕЧЧИНІ</a>
+        <a href="https://ukrainians.org.au/events/victoria/meeting-in-vic-parliament-with-yurij-luhovy/">Зустріч у Парламенті Вікторії з Ю. Луговим</a>
+      </h1>
+      <time datetime="2012-11-29T10:06:49Z" class="post-date">Thu, Nov 29, 2012</time>
+      Зустріч у Парламенті Вікторії з продюсером
+док.фільму “Окрадена Земля”Ю.Луговим.
+В листопаді м–ці 2012 р. світове українство та їх прихильники відзначають 79 річницю Голодомору 1932–1933 рр, а разом з тим започатковують сумну акцію “Відзначення 80 річниці Голодомору”, страшного Ґеноциду українського народу, кульмінаційної точкою якого буде остання субота листопада 2013 року.
+Остання субота листопада міжнародно визнана, як День Скорботи, коли згадуємо жертв цього Голодомору.
+Цього року – це була субота, 24 листопада, коли українці всього світу вшанували жертв Голодомору хвилиною мовчання в 19.
+      
+        <div class="read-more-link">
+          <a href="/events/victoria/meeting-in-vic-parliament-with-yurij-luhovy/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/politics/skoropadskyi-grave/">МОГИЛА ГЕТЬМАНА ПАВЛА СКОРОПАДСЬКОГО В НІМЕЧЧИНІ</a>
       </h1>
       <time datetime="2012-11-29T09:55:27Z" class="post-date">Thu, Nov 29, 2012</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -65,7 +149,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/australian-commemorations-of-the-holodomor/">Відзнaчення 79-ої річниці Голодомору в Aвcтрaлії</a>
+        <a href="https://ukrainians.org.au/community/australian-commemorations-of-the-holodomor/">Відзнaчення 79-ої річниці Голодомору в Aвcтрaлії</a>
       </h1>
       <time datetime="2012-11-27T01:26:38Z" class="post-date">Tue, Nov 27, 2012</time>
       Відзнaчення 79-ої річниці Голодомору в Aвcтрaлії Australian Commemorations of the 79th Anniversary of the Holodomor 
@@ -79,11 +163,11 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/new-segment-on-sbs-radio-about-the-holodomor/">Новий сеґмент на СБС про Голодомор</a>
+        <a href="https://ukrainians.org.au/community/new-segment-on-sbs-radio-about-the-holodomor/">Новий сеґмент на СБС про Голодомор</a>
       </h1>
       <time datetime="2012-11-27T01:12:20Z" class="post-date">Tue, Nov 27, 2012</time>
-      **[ ](http://www.ozeukes.com/wp-content/uploads/2012/11/150px-SBS-Ukrainian3.jpg)ҐЕНОЦИД В УКРАЇНІ – МІЖНАРОДНИЙ ДЕНЬ ПАМ'ЯТІ І СКОРБОТИ**
-Україна пам'ятає – Світ визнає! Цього року українці світу вшановують жертв Голодоморів та Ґеноциду в Україні у 79ту річницю, а 80-ліття тієї трагедії українського народу відзначатиметься у 2013 році. У це страшне лихоліття загинуло від штучного голоду понад 10 млн дітей, жінок, чоловіків..
+      **[ ](http://www.ozeukes.com/wp-content/uploads/2012/11/150px-SBS-Ukrainian3.jpg)ҐЕНОЦИД В УКРАЇНІ – МІЖНАРОДНИЙ ДЕНЬ ПАМ&rsquo;ЯТІ І СКОРБОТИ**
+Україна пам&rsquo;ятає – Світ визнає! Цього року українці світу вшановують жертв Голодоморів та Ґеноциду в Україні у 79ту річницю, а 80-ліття тієї трагедії українського народу відзначатиметься у 2013 році. У це страшне лихоліття загинуло від штучного голоду понад 10 млн дітей, жінок, чоловіків..
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/243309/t/GENOCIDE-IN-UKRAINE&mdash;INTERNATIONAL-DAY-OF-REMEMBRANCE/
 GENOCIDE IN UKRAINE - INTERNATIONAL DAY OF REMEMBRANCE This year Ukrainians all over the free world are marking the mournful 79th anniversary of the man-made famine in Ukraine, in which over 10 million innocent Ukrainian men, women and children died of starvation or in places of penal exile&hellip;
       
@@ -93,14 +177,14 @@ GENOCIDE IN UKRAINE - INTERNATIONAL DAY OF REMEMBRANCE This year Ukrainians all 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/commemoration-in-ardeer-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Ардірі</a>
+        <a href="https://ukrainians.org.au/community/commemoration-in-ardeer-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Ардірі</a>
       </h1>
       <time datetime="2012-11-27T00:47:32Z" class="post-date">Tue, Nov 27, 2012</time>
       
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/commemoration-in-melbourne-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Мельбурні</a>
+        <a href="https://ukrainians.org.au/community/commemoration-in-melbourne-of-the-79th-anniversary-of-the-holodomor/">Відзначення 79 ої річниці Голодомору в Мельбурні</a>
       </h1>
       <time datetime="2012-11-27T00:24:00Z" class="post-date">Tue, Nov 27, 2012</time>
       Знимки з відзначення 79 ої річниці Голодомору в Катедрі Верх Aп Петра і Павла в Мельбурні.
@@ -108,7 +192,7 @@ Photographs of the Commemoration of the 79th Anniversary of the Holodomor in the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/genocide-revealed-shown-in-sydney/">&#34;ОКРАДЕНА ЗЕМЛЯ&#34; НА ПРЕМ’ЄРІ В СІДНЕЇ </a>
+        <a href="https://ukrainians.org.au/community/genocide-revealed-shown-in-sydney/">&#34;ОКРАДЕНА ЗЕМЛЯ&#34; НА ПРЕМ’ЄРІ В СІДНЕЇ </a>
       </h1>
       <time datetime="2012-11-25T05:40:10Z" class="post-date">Sun, Nov 25, 2012</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -123,14 +207,14 @@ Photographs of the Commemoration of the 79th Anniversary of the Holodomor in the
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/anniversary-of-the-1932-33-holodomor/">Anniversary of the 1932-33 Holodomor</a>
+        <a href="https://ukrainians.org.au/community/anniversary-of-the-1932-33-holodomor/">Anniversary of the 1932-33 Holodomor</a>
       </h1>
       <time datetime="2012-11-23T07:00:51Z" class="post-date">Fri, Nov 23, 2012</time>
       LIGHT A CANDLE ON SATURDAY NOVEMBER 24, 2012 IN EVERY HOUSEHOLD
 
 23 November 2012
 MEDIA RELEASE
-REMEMBERING THE MILLIONS WHO PERISHED IN UKRAINE'S 1932 -33 FAMINE - ACT OF GENOCIDE &hellip;&hellip;..Millions were children and infants &ldquo;The Ukrainian World Congress (UWC) calls upon the Australian and international community to commemorate the anniversary of the 1932-33 Holodomor on Saturday November 24, 2012, and duly pay respect to the innocent victims of this genocide of the Ukrainian people, &quot; General Secretary of the UWC and Chair of the International Coordinating Committee for Holodomor Recognition, Stefan Romaniw OAM said today
+REMEMBERING THE MILLIONS WHO PERISHED IN UKRAINE&rsquo;S 1932 -33 FAMINE - ACT OF GENOCIDE &hellip;&hellip;..Millions were children and infants &ldquo;The Ukrainian World Congress (UWC) calls upon the Australian and international community to commemorate the anniversary of the 1932-33 Holodomor on Saturday November 24, 2012, and duly pay respect to the innocent victims of this genocide of the Ukrainian people, &quot; General Secretary of the UWC and Chair of the International Coordinating Committee for Holodomor Recognition, Stefan Romaniw OAM said today
       
         <div class="read-more-link">
           <a href="/community/anniversary-of-the-1932-33-holodomor/">Read More…</a>
@@ -138,7 +222,7 @@ REMEMBERING THE MILLIONS WHO PERISHED IN UKRAINE'S 1932 -33 FAMINE - ACT OF GE
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/genocide-revealed-to-be-shown-at-victorian-parliament/">Genocide Revealed to be shown at Victorian Parliament</a>
+        <a href="https://ukrainians.org.au/events/victoria/genocide-revealed-to-be-shown-at-victorian-parliament/">Genocide Revealed to be shown at Victorian Parliament</a>
       </h1>
       <time datetime="2012-11-21T02:46:41Z" class="post-date">Wed, Nov 21, 2012</time>
       Australian Federation of Ukrainian Organisations Ukrainian Studies Foundation in Australia Association of Ukrainians in Victoria
@@ -153,7 +237,7 @@ Parliament House
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/act/screening-of-genocide-revealed-in-federal-parliament/">Screening of &#39;Genocide Revealed&#39; in Federal Parliament</a>
+        <a href="https://ukrainians.org.au/events/act/screening-of-genocide-revealed-in-federal-parliament/">Screening of &#39;Genocide Revealed&#39; in Federal Parliament</a>
       </h1>
       <time datetime="2012-11-21T02:21:21Z" class="post-date">Wed, Nov 21, 2012</time>
       INVITATION
@@ -164,19 +248,6 @@ Invites Senators, Members, and Staff to a short Screening of the award winning f
 ‘Genocide Revealed’  and Q&amp;A
  6:30-7:30PM 26 November 2012 – Committee Room 1S4
 RSVP to Senator Bilyk’s Office on 03 6229 4444 or scott.faulkner@aph.gov.au
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/media/sbs-interview-genocide-revealed/">SBS Interview - &#34;Genocide Revealed&#34;</a>
-      </h1>
-      <time datetime="2012-11-15T22:58:32Z" class="post-date">Thu, Nov 15, 2012</time>
-      **[ ](http://www.ozeukes.com/wp-content/uploads/2012/11/150px-SBS-Ukrainian2.jpg)_&quot;ОКРАДЕНА ЗЕМЛЯ &ldquo;_ – ОДИН ІЗ НАЙКРАШИХ ДОКУМЕНТАЛЬНИХ ТА ІСТОРИЧНИХ КІНОФІЛЬМІВ**
-ПРОДЮСЕР ЮРІЙ ЛУГОВИЙ БУДЕ НА ПРЕМ'ЄРАХ ФІЛЬМУ В АВСТРАЛІЇ У ЛИСТОПАДІ
-Відомий український та канадський кіонрежисер Юрій Луговий про фільми «Окрадена земля» та &ldquo;Genocide Revealed&rdquo;. Документальні фільми дають відповідь на запитання, чому терор голодом був спрямований проти українців, викриває механізм Голодомору, кваліфікує його відповідно до Конвенції ООН 1948 року як Ґеноцид. Фільм відзнято у 2008 році в Харківській, Донецькій та Дніпропетровській областях.
-      
-        <div class="read-more-link">
-          <a href="/media/sbs-interview-genocide-revealed/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1386,6 +1457,8 @@ RSVP to Senator Bilyk’s Office on 03 6229 4444 or scott.faulkner@aph.gov.au
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

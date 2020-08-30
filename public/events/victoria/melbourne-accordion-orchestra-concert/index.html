@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>КОНЦЕРТ - Мельбурнський оркестр акордеоністів &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -53,28 +118,28 @@
     
     <p><a href="http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb1.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2011/07/AUV-Colour-thumb1.jpg" alt="">
 </a></p>
-<h3 id="---">**Мельбурнський оркестр акордеоністів **</h3>
-<h3 id="--"><strong>запрошує Вас на</strong></h3>
-<h3 id="heading"><strong>КОНЦЕРТ</strong></h3>
-<h3 id="heading-1"><strong>в</strong></h3>
-<h3 id="----1"><strong>Українському народному домі,</strong>** ******</h3>
+<h3 id="мельбурнський-оркестр-акордеоністів-">**Мельбурнський оркестр акордеоністів **</h3>
+<h3 id="запрошує-вас-на"><strong>запрошує Вас на</strong></h3>
+<h3 id="концерт"><strong>КОНЦЕРТ</strong></h3>
+<h3 id="в"><strong>в</strong></h3>
+<h3 id="українському-народному-домі-"><strong>Українському народному домі,</strong>** ******</h3>
 <h3 id="26-chandler-rd-noble-park--melways-ref-89-h1">** **<strong>26 <strong><strong>Chandler</strong></strong> <strong><strong>Rd</strong></strong>., <strong><strong>Noble</strong></strong> <strong><strong>Park</strong></strong> <strong><strong>( Melways Ref: 89 H1</strong></strong>)</strong></h3>
-<h3 id="--24--2011----100-">** **<strong>у неділю 24–го липня 2011 р. о год. 1.00 п.п.</strong></h3>
-<h3 id="---1200-"><strong>Обід від год. 12.00 дня.</strong></h3>
+<h3 id="у-неділю-24го-липня-2011-р-о-год-100-пп">** **<strong>у неділю 24–го липня 2011 р. о год. 1.00 п.п.</strong></h3>
+<h3 id="обід-від-год-1200-дня"><strong>Обід від год. 12.00 дня.</strong></h3>
 <p> </p>
 <p> Репертуар мельбурнського оркестру акордеоністів складається з різних жанрів музики від легкої класичної до популярної. Музиканти – це професіонали та завзяті аматори, які грають не тільки на акордеонах, але також і на барабанах, бас–гітарі, ксилофоні, гітарі, клавіятурі та на ударних інструментах. Мельбурнський оркестр акордеоністів заснований 2002р., і від того часу захоплює і забавляє своїми цікавими виступами різноманітних слухачів. Оркестр, під мистецьким керівництвом Ірини Степко від 2006 р., здобув нагороди у Стейтових акордеонних конкурсах проведених Спілкою акордеоністів Австралії (Вікторії) три роки підряд від 2007 р.</p>
 <p>Мельбурнський оркестр акордеоністів запрошує в свої ряди нових музикантів та заохочує їх відвідати репетиції у Ґлен Айріс.</p>
 <p>Ви можете також заглянути на Мельбурнський оркестр акордеоністів на Фейсбук, де зможете більше познайомитись із оркестром, оглянути відеозаписи виступів та довідатись про майбутні концерти.</p>
 <p>Оркестр видав два компакт диски, які можна набути на їхних концертах.</p>
 <p>До зустрічі!</p>
-<h5 id="---15">Квитки - $15.</h5>
-<h5 id="--------10">Фінансові члени філії УГВ НП і пенсіонери – $10.</h5>
-<h5 id="--14--">Діти до 14 років безкоштовно****</h5>
-<h5 id="heading-2"> </h5>
-<h5 id="--------">Замовляйте квитки на концерт та на смачний обід в:</h5>
-<h5 id="----0422-737-404">Орисі Стефин – тел. 0422 737 404,</h5>
-<h5 id="---0417-115-096">Стефана Опара – 0417 115 096</h5>
-<h5 id="--auvnobleparkgmailcommailtoauvnobleparkgmailcom">або електронно: <a href="mailto:auvnoblepark@gmail.com">auvnoblepark@gmail.com</a></h5>
+<h5 id="квитки---15">Квитки - $15.</h5>
+<h5 id="фінансові-члени-філії-угв-нп-і-пенсіонери--10">Фінансові члени філії УГВ НП і пенсіонери – $10.</h5>
+<h5 id="діти-до-14-років-безкоштовно">Діти до 14 років безкоштовно****</h5>
+<h5 id="heading"> </h5>
+<h5 id="замовляйте-квитки-на-концерт-та-на-смачний-обід-в">Замовляйте квитки на концерт та на смачний обід в:</h5>
+<h5 id="орисі-стефин--тел-0422-737-404">Орисі Стефин – тел. 0422 737 404,</h5>
+<h5 id="стефана-опара--0417-115-096">Стефана Опара – 0417 115 096</h5>
+<h5 id="або-електронно-auvnobleparkgmailcommailtoauvnobleparkgmailcom">або електронно: <a href="mailto:auvnoblepark@gmail.com">auvnoblepark@gmail.com</a></h5>
 <p>[caption id=&quot;attachment_3595&rdquo; align=&quot;alignnone&rdquo; width=&quot;600&rdquo; caption=&quot;Мельбурнський оркестр акордеоністів - Диригент: Ірина Степко / Melbourne Accordion Orchestra - Conductor - Irina Stepko&rdquo;]<a href="http://www.ozeukes.com/wp-content/uploads/2011/07/Melbourne-Accordion-Orchestra.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2011/07/Melbourne-Accordion-Orchestra.jpg" alt="">
 </a>[/caption]</p>
 <p> </p>
@@ -93,12 +158,12 @@
 <h5 id="door-ticket-prices-15">DOOR TICKET PRICES: $15.</h5>
 <h5 id="children-under-14---free">Children under 14 - free.</h5>
 <h5 id="ukrainian-association-np-members--concession-card-holders-1000">Ukrainian Association N.P. members &amp; Concession Card Holders $10.00</h5>
-<h5 id="heading-3"> </h5>
+<h5 id="heading-1"> </h5>
 <h5 id="for-concert-tickets--lunch-reservations">For concert tickets &amp; lunch reservations</h5>
 <h5 id="telephone-orysia-on-0422-737-404">telephone Orysia on 0422 737 404</h5>
 <h5 id="or-steve-0417-115-096">or Steve 0417 115 096</h5>
 <h5 id="or-email-auvnobleparkgmailcommailtoauvnobleparkgmailcom">or email: <a href="mailto:auvnoblepark@gmail.com">auvnoblepark@gmail.com</a></h5>
-<h4 id="heading-4"> </h4>
+<h4 id="heading-2"> </h4>
 
   </div>
 

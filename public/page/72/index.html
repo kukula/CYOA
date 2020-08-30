@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,41 +23,134 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ukrainian-easter-in-sydney-2013/">ВЕЛИКДЕНЬ В CІДНЕЇ - 2013</a>
+        <a href="https://ukrainians.org.au/culture/xiv-national-ukrainian-festival-tickets-now-on-sale/">XIV Здвиг Українців Aвстралії - квитки нa продaж</a>
+      </h1>
+      <time datetime="2013-05-08T02:25:34Z" class="post-date">Wed, May 8, 2013</time>
+      ПОВІДОМЛЕННЯ - КВИТКИ НA ПРОДAЖ
+XIV Здвиг Українців Aвстралії
+Квитки на Забаву 8.6.2013_ _
+Грає оркестра з Канади Тут і Там
+ та на
+ Концерт 9.6.2013 Sydney Town Hall
+ Квитки можна замовити на сайті
+https://sydneyzdvyh2013.iwannaticket.com.au/
+ 
+XIV National Ukrainian Festival TICKETS NOW ON SALE
+Zabava Saturday 8 June 2013 Band from Canada Tyt i Tam
+Gala Concert Sunday June 9, 2013 Sydney Town Hall
+Tickets can be purchased at
+      
+        <div class="read-more-link">
+          <a href="/culture/xiv-national-ukrainian-festival-tickets-now-on-sale/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/ukrainian-easter-in-sydney-2013/">ВЕЛИКДЕНЬ В CІДНЕЇ - 2013</a>
       </h1>
       <time datetime="2013-05-08T01:51:30Z" class="post-date">Wed, May 8, 2013</time>
       **_МАРІЧКА ГАЛАБУРДА - ЧИГРИН_**
 ВЕЛИКДЕНЬ В CІДНЕЇ
 Божественні Великодні відправи в українських церквах Cіднею відбулися в **суботу 4- го травня 2013 року. **
-В українській греко-католицькій церкві св. Андрія в Лідкомбі, біля плащениці від її виносу в п'ятницю 3.5. члени Спілки Української Молоді, навіть наймолодші, тримали почесну варту біля гробу Божого. Приємно було побачити дуже багато людей, а зокрема дітей у і біля церкви.
+В українській греко-католицькій церкві св. Андрія в Лідкомбі, біля плащениці від її виносу в п&rsquo;ятницю 3.5. члени Спілки Української Молоді, навіть наймолодші, тримали почесну варту біля гробу Божого. Приємно було побачити дуже багато людей, а зокрема дітей у і біля церкви.
 Святу Богослужби відправляли о. парох Симон Цькуй, о.
       
         <div class="read-more-link">
@@ -67,10 +159,10 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/nsw-parliament-on-afuo-statement-on-multiculturalism/">NSW Parliament on AFUO Statement on Multiculturalism</a>
+        <a href="https://ukrainians.org.au/politics/nsw-parliament-on-afuo-statement-on-multiculturalism/">NSW Parliament on AFUO Statement on Multiculturalism</a>
       </h1>
       <time datetime="2013-05-08T01:16:20Z" class="post-date">Wed, May 8, 2013</time>
-      The Parliamentary Secretary to the NSW Premier, the Hon. Marie Ficarra MLC, has moved a Notice of Motion in the NSW Parliament in support of the Australian Federation of Ukrainian Organisation's Statement on Multiculturalism. The Statement was in part developed by AFUO as part of preparations for the National Festival of Ukrainian Australians. Below is an extract from Hansard for the NSW Parliament for May 5, 2013:
+      The Parliamentary Secretary to the NSW Premier, the Hon. Marie Ficarra MLC, has moved a Notice of Motion in the NSW Parliament in support of the Australian Federation of Ukrainian Organisation&rsquo;s Statement on Multiculturalism. The Statement was in part developed by AFUO as part of preparations for the National Festival of Ukrainian Australians. Below is an extract from Hansard for the NSW Parliament for May 5, 2013:
 https://www.parliament.nsw.gov.au/Prod/parlment/hansart.nsf/V3Key/LC20130502026?open&amp;refNavID=HA8_1
 ** Further information -Peter Shmigel AFUO Public Affairs Representative 0419 541 531.
       
@@ -80,7 +172,7 @@ https://www.parliament.nsw.gov.au/Prod/parlment/hansart.nsf/V3Key/LC20130502026?
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/happy-easter-ukrainian-style/">HAPPY EASTER - UKRAINIAN STYLE</a>
+        <a href="https://ukrainians.org.au/culture/happy-easter-ukrainian-style/">HAPPY EASTER - UKRAINIAN STYLE</a>
       </h1>
       <time datetime="2013-05-03T02:03:12Z" class="post-date">Fri, May 3, 2013</time>
       **[ ](http://www.ozeukes.com/wp-content/uploads/2013/05/CYOA-Letterhead-2012-600pxls.jpg)ВІТAННЯ З НAГОДИ ХРИCТОВОГО ВОCКРЕCІННЯ!**
@@ -95,7 +187,7 @@ https://www.parliament.nsw.gov.au/Prod/parlment/hansart.nsf/V3Key/LC20130502026?
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/afuo-call-to-action-re-yulia-tymoshenko/">AFUO Call to Action re: Yulia Tymoshenko</a>
+        <a href="https://ukrainians.org.au/politics/afuo-call-to-action-re-yulia-tymoshenko/">AFUO Call to Action re: Yulia Tymoshenko</a>
       </h1>
       <time datetime="2013-05-02T07:54:03Z" class="post-date">Thu, May 2, 2013</time>
       European Court of Human Rights regarding Yulia Tymoshenko The European Court of Human Rights (ECHR) in Strasbourg, France, on Tuesday 30th April 2013 made a number of determinations regarding the arrest and imprisonment of Yulia Tymoshenko, the former Prime Minister of Ukraine, on charges of exceeding her powers.
@@ -108,7 +200,7 @@ The ECHR called her pre-trial detention &ldquo;arbitrary and unlawful&rdquo; and
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/australias-ukrainian-community-marks-anniversary-of-chornobyl-nuclear-disaster/">Australia&#39;s Ukrainian Community Marks Anniversary of Chornobyl Nuclear Disaster</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/australias-ukrainian-community-marks-anniversary-of-chornobyl-nuclear-disaster/">Australia&#39;s Ukrainian Community Marks Anniversary of Chornobyl Nuclear Disaster</a>
       </h1>
       <time datetime="2013-04-26T03:28:16Z" class="post-date">Fri, Apr 26, 2013</time>
       The Australian Federation of Ukrainian Organisations (AFUO) has issued the following statement on the occasion of the 27th anniversary of the Chornobyl disaster, the worst nuclear power plant incident in history.
@@ -116,11 +208,11 @@ CHORNOBYL ANNIVERSARY 2013
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/sbs-radio-uketube-interview-with-stefan-romaniw/">SBS Radio - UkeTube: Interview with Stefan Romaniw</a>
+        <a href="https://ukrainians.org.au/media/sbs-radio-uketube-interview-with-stefan-romaniw/">SBS Radio - UkeTube: Interview with Stefan Romaniw</a>
       </h1>
       <time datetime="2013-04-26T03:10:24Z" class="post-date">Fri, Apr 26, 2013</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2013/04/150px-SBS-Ukrainian.jpg)Interview with Stefan Romani
-(Iнтерв'ю із Стефаном Романівим) Bohdan Rudnytski interviews Stefan Romaniw, General Secretary of the Ukrainian World Congress, who talks about his recent trip to Ukraine, the 1025 anniversary of Christianization of Ukraine-Rus, Patriarchs Svyatoslav &amp; Kirill, the upcoming Ukrainian festival in Australia (w/ Orysia Tracz, Tyt i Tam), and more.
+(Iнтерв&rsquo;ю із Стефаном Романівим) Bohdan Rudnytski interviews Stefan Romaniw, General Secretary of the Ukrainian World Congress, who talks about his recent trip to Ukraine, the 1025 anniversary of Christianization of Ukraine-Rus, Patriarchs Svyatoslav &amp; Kirill, the upcoming Ukrainian festival in Australia (w/ Orysia Tracz, Tyt i Tam), and more.
 http://youtu.be/a1zX0u6QKvE
 &ndash;
 UkeTube &ndash; Українськe відео
@@ -130,16 +222,16 @@ http://sbs.com.au/sbs2/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/support-for-the-national-festival-of-ukrainian-australians/">Support for the National Festival of Ukrainian Australians</a>
+        <a href="https://ukrainians.org.au/culture/support-for-the-national-festival-of-ukrainian-australians/">Support for the National Festival of Ukrainian Australians</a>
       </h1>
       <time datetime="2013-04-23T06:20:32Z" class="post-date">Tue, Apr 23, 2013</time>
       [caption id=&quot;attachment_6518&rdquo; align=&quot;alignleft&rdquo; width=&quot;150&rdquo;] The Hon Victor Dominello MP[/caption]
-Momentum for the National Festival of Ukrainian Australians continues to build with the Hon Victor Dominello MP, the NSW Minister for Citizenship and Communities, agreeing to be the event's Guest of Honour. The Minister has also provided support for the AFUO's Statement on Multiculturalism.
+Momentum for the National Festival of Ukrainian Australians continues to build with the Hon Victor Dominello MP, the NSW Minister for Citizenship and Communities, agreeing to be the event&rsquo;s Guest of Honour. The Minister has also provided support for the AFUO&rsquo;s Statement on Multiculturalism.
 Letter from the Hon Victor Dominello MP, NSW Minister for Citizenship and Communities: Dominello letter 2838_0001
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/%d0%bf%d0%b5%d1%80%d1%88%d0%b5-%d0%ba%d0%be%d0%bb%d0%be-%d1%81%d0%bf%d0%be%d0%bd%d1%81%d0%be%d1%80%d1%96%d0%b2-xiv-%d0%b7%d0%b4%d0%b2%d0%b8%d0%b3%d1%83-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96/">Перше коло спонсорів XIV Здвигу Українців Австралії</a>
+        <a href="https://ukrainians.org.au/culture/%d0%bf%d0%b5%d1%80%d1%88%d0%b5-%d0%ba%d0%be%d0%bb%d0%be-%d1%81%d0%bf%d0%be%d0%bd%d1%81%d0%be%d1%80%d1%96%d0%b2-xiv-%d0%b7%d0%b4%d0%b2%d0%b8%d0%b3%d1%83-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96/">Перше коло спонсорів XIV Здвигу Українців Австралії</a>
       </h1>
       <time datetime="2013-04-23T06:09:01Z" class="post-date">Tue, Apr 23, 2013</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2013/04/ZdvyhLogoFinal-UKR-thumb.jpg)Перше коло спонсорів XIV Здвигу Українців Австралії
@@ -153,26 +245,11 @@ Letter from the Hon Victor Dominello MP, NSW Minister for Citizenship and Commun
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/video/ukrainian-youth-short-film-festival-advert/">Ukrainian Youth Short Film Festival Advert</a>
+        <a href="https://ukrainians.org.au/video/ukrainian-youth-short-film-festival-advert/">Ukrainian Youth Short Film Festival Advert</a>
       </h1>
       <time datetime="2013-04-20T08:01:46Z" class="post-date">Sat, Apr 20, 2013</time>
       Video advert for Ukrainian Youth Short Film Festival
 http://www.youtube.com/watch?v=pAOdHehlP_8
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ucs-heritage-stamp-issue-no-8/">UCS Heritage stamp issue No. 8</a>
-      </h1>
-      <time datetime="2013-04-18T10:06:11Z" class="post-date">Thu, Apr 18, 2013</time>
-      The Ukrainian Collectibles Society (UCS) has released the next issue of the ongoing “Ukrainian Heritage in Australia” stamp and envelope series.
-The latest featured institution is:
- * No. 8: Ukrainian Autocephalic Orthodox Church in Diaspora, Diocese of Australia and New Zealand  Details of this issue can be found on the information sheet: Information Sheet No 5
-The order form can be printed from: Orthodox order form
-The final day to order is Monday night, 20 May 2013.
-      
-        <div class="read-more-link">
-          <a href="/culture/ucs-heritage-stamp-issue-no-8/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1382,6 +1459,8 @@ The final day to order is Monday night, 20 May 2013.
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

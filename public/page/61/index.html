@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,42 +23,125 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/act/canberra-malanka/">Canberra Malanka</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/funeral-of-fr-lulka/">Похорон бл. п. отця Володимира Люльки</a>
+      </h1>
+      <time datetime="2014-01-09T00:20:24Z" class="post-date">Thu, Jan 9, 2014</time>
+      МАРІЧКА ГАЛАБУРДА-ЧИГРИН СІДНЕЙ неділя 5.1.2014
+ПОХОРОН БЛ. П. ОТЦЯ ВОЛОДИМИРА ЛЮЛЬКИ «Ти [ ](http://www.ozeukes.com/wp-content/uploads/2014/01/Fr-Lulka.jpg)прощай, прощавай, Не сумуй, не чекай, І червону жоржину У саду не зривай.»
+Тяжко прощати близьку людину в вічність, у “засвіти”, бо смерть, зокрема священика, є справді невіджалованою втратою для нашої спільноти. А таких, яким був отець архипресвітер Володимир Люлька, у нас, вже на жаль, не залишилося. Віддійшов у вічність останний з тзв сіднейської «старої ґвардії» священиків.
+      
+        <div class="read-more-link">
+          <a href="/events/new-south-wales/funeral-of-fr-lulka/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/act/canberra-malanka/">Canberra Malanka</a>
       </h1>
       <time datetime="2014-01-02T23:32:44Z" class="post-date">Thu, Jan 2, 2014</time>
       The Ukrainian Community in Canberra will welcome in the Ukrainian New Year with its Malanka 2014 on Friday 17th January 2014 at St. Volodymyr’s Ukrainian Catholic Church Hall.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/theophany-eve-%d1%89%d0%b5%d0%b4%d1%80%d0%b8%d0%b9-%d0%b2%d0%b5%d1%87%d1%96%d1%80/">Theophany Eve - Щедрий Вечір </a>
+        <a href="https://ukrainians.org.au/events/victoria/theophany-eve-%d1%89%d0%b5%d0%b4%d1%80%d0%b8%d0%b9-%d0%b2%d0%b5%d1%87%d1%96%d1%80/">Theophany Eve - Щедрий Вечір </a>
       </h1>
       <time datetime="2013-12-31T00:00:40Z" class="post-date">Tue, Dec 31, 2013</time>
       **Щедрий Вечір / **Theophany Eve  Філія УГВ в Нобл Парку
@@ -77,10 +159,10 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-malanka-2014/">Melbourne Malanka 2014</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-malanka-2014/">Melbourne Malanka 2014</a>
       </h1>
       <time datetime="2013-12-28T02:35:32Z" class="post-date">Sat, Dec 28, 2013</time>
-      The Association of Ukrainians in Victoria (AUV) will celebrate the Ukrainian New Year at the 2014 Melbourne Malanka - in the Roaring 20's Gatsby Style!
+      The Association of Ukrainians in Victoria (AUV) will celebrate the Ukrainian New Year at the 2014 Melbourne Malanka - in the Roaring 20&rsquo;s Gatsby Style!
 **_VENUE: _****Melrose ****Reception **Centre, Tullamarine, Victoria 3043
 **_TIME: _**Saturday 11 January 2014(Doors open at 7.00 pm)
 _BOOKINGS / TICKETS ONLINE: _http://www.trybooking.com/Booking/BookingEventSummary.aspx?eid=65489
@@ -89,7 +171,7 @@ www.facebook.com/MelbourneMalanka** **
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/ukrainians-in-australia-call-on-australian-government-to-condemn-violent-ukrainian-government-actions/">Ukrainians in Australia call on Australian Government to condemn violent Ukrainian Government actions</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/ukrainians-in-australia-call-on-australian-government-to-condemn-violent-ukrainian-government-actions/">Ukrainians in Australia call on Australian Government to condemn violent Ukrainian Government actions</a>
       </h1>
       <time datetime="2013-12-28T02:27:02Z" class="post-date">Sat, Dec 28, 2013</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2013/12/zCYOA-LOGO-7-star-color-150pxls.jpg)Ukrainians in Australia call on Australian government to condemn violent attackі and ongoing reprisals
@@ -102,7 +184,7 @@ The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns th
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/christmas-play-and-carols-in-sydney/">Вертеп і Різдвяні Колядки в Сіднеї</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/christmas-play-and-carols-in-sydney/">Вертеп і Різдвяні Колядки в Сіднеї</a>
       </h1>
       <time datetime="2013-12-25T02:38:13Z" class="post-date">Wed, Dec 25, 2013</time>
       M****АРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -117,7 +199,7 @@ The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns th
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/call-for-sanctions-against-the-yanukovych-regime/">Заклик ввести санкції проти режиму Януковича</a>
+        <a href="https://ukrainians.org.au/events/international-events/call-for-sanctions-against-the-yanukovych-regime/">Заклик ввести санкції проти режиму Януковича</a>
       </h1>
       <time datetime="2013-12-19T02:04:36Z" class="post-date">Thu, Dec 19, 2013</time>
       Стефан Романів: Закликаємо Світ ввести санкції проти режиму Януковича «Світовий Конгрес Українців через українські громади в різних країнах ЄС, Америки, а також Австралії буде звертатися до урядовців цих країн з вимогою вводити персональні санкції до чиновників та бізнесменів, що вчинили незаконні дії щодо учасників Євромайданів в Україні».
@@ -129,14 +211,14 @@ The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns th
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/western-australia/perth-malanka-2014/">Perth Malanka 2014</a>
+        <a href="https://ukrainians.org.au/events/western-australia/perth-malanka-2014/">Perth Malanka 2014</a>
       </h1>
       <time datetime="2013-12-19T01:57:09Z" class="post-date">Thu, Dec 19, 2013</time>
       The Ukrainian Association of Western Australia will be holding its Malanka (New Year’s Eve Dance) on Saturday 11th January 2014.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/maidan-calls-on-australia-to-declare-yanukovych-persona-non-grata/">Майдан закликав уряд Австралії оголосити Януковича персоною нон-грата</a>
+        <a href="https://ukrainians.org.au/politics/maidan-calls-on-australia-to-declare-yanukovych-persona-non-grata/">Майдан закликав уряд Австралії оголосити Януковича персоною нон-грата</a>
       </h1>
       <time datetime="2013-12-19T01:50:49Z" class="post-date">Thu, Dec 19, 2013</time>
       Майдан закликав уряд Австралії оголосити Януковича персоною нон-грата _18 Грудня 2013 _
@@ -149,30 +231,16 @@ The Australian Federation of Ukrainian Organisations (AFUO) strongly condemns th
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/australian-ambassador-to-ukraine-afuo-president-meet-in-kyiv/">Australian Ambassador to Ukraine &amp; AFUO President meet in Kyiv</a>
+        <a href="https://ukrainians.org.au/politics/australian-ambassador-to-ukraine-afuo-president-meet-in-kyiv/">Australian Ambassador to Ukraine &amp; AFUO President meet in Kyiv</a>
       </h1>
       <time datetime="2013-12-17T09:42:09Z" class="post-date">Tue, Dec 17, 2013</time>
-      Australia's Ambassador with responsibility for Ukraine, Her Excellency Jean Dunn, who is based in the Australian Embassy in Warsaw, arrived in Kyiv and met with the President of the Australian Federation of Ukrainian Organisations (AFUO), Mr Stefan Romaniw OAM. The following is a statement resulting from this meeting:
+      Australia&rsquo;s Ambassador with responsibility for Ukraine, Her Excellency Jean Dunn, who is based in the Australian Embassy in Warsaw, arrived in Kyiv and met with the President of the Australian Federation of Ukrainian Organisations (AFUO), Mr Stefan Romaniw OAM. The following is a statement resulting from this meeting:
 
    MEDIA RELEASE
     AUSTRALIAN AMBASSADOR TO UKRAINE &amp; AFUO PRESIDENT MEET IN KYIV TO DISCUSS EUROMAIDAN ISSUES
       
         <div class="read-more-link">
           <a href="/politics/australian-ambassador-to-ukraine-afuo-president-meet-in-kyiv/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/what-ukraines-protest-is-about/">Чому українці вийшли на мирний протест / What Ukraine’s protest is about</a>
-      </h1>
-      <time datetime="2013-12-17T09:26:53Z" class="post-date">Tue, Dec 17, 2013</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2013/12/Ukraine-protest01.jpg)ЧОМУ УКРАЇНЦІ ВИЙШЛИ НА МИРНИЙ ПРОТЕСТ
-Організатори Євромайдану в Києві подали коротку інформацію про події в Україні для масового розповсюдження. Подається тут ці інформації українською мовою: Lystivka_UKR
-What Ukraine’s protest is about The organizers of the continuing mass protest movement “EuroMaidan” in Ukraine have issued a statement regarding the reasons for the actions. The English-language text of the statement can be read here: Lystivka_ENG
-Note: The term “EuroMaidan” is derived from two parts
-      
-        <div class="read-more-link">
-          <a href="/events/international-events/what-ukraines-protest-is-about/">Read More…</a>
         </div>
       
     </article>
@@ -1383,6 +1451,8 @@ Note: The term “EuroMaidan” is derived from two parts
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

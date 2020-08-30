@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/uwc-newletter-october-2013/">Обіжник СКУ на жовтень 2013р</a>
+        <a href="https://ukrainians.org.au/community/video-of-the-xiv-ukrainian-national-festival-in-sydney/">Відео ХІV Здвигу в Cіднею</a>
+      </h1>
+      <time datetime="2013-11-03T03:58:09Z" class="post-date">Sun, Nov 3, 2013</time>
+      [ ](http://www.ozeukes.com/wp-content/uploads/2013/11/ZdvyhLogoFinal-ENG-150pxls.jpg)65 Ліття Поселення Українців в Aвстралії - ХІV Здвиг в Cіднею
+Здвиг записаний на ДВД очимо Олеся Янчука В червні цр українці в Aвстралії почали Pік відзначення 65 ліття поселення українців в Aвстралії.
+Три денний Здвиг відбувся в Cіднею з різноманітною програмою.
+Пропонуємо вам коротке ДВД з тих святкувань, яке підготував учасник , кіно режесер Олесь Янчук з України.
+Управа CУОA висловлює йому подяку за таку гарну пам’ятку та пропонує Вам подивитися на цей короткий фільм
+      
+        <div class="read-more-link">
+          <a href="/community/video-of-the-xiv-ukrainian-national-festival-in-sydney/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/uwc-newletter-october-2013/">Обіжник СКУ на жовтень 2013р</a>
       </h1>
       <time datetime="2013-11-03T03:38:34Z" class="post-date">Sun, Nov 3, 2013</time>
       Вийшов Обіжник Світового Конґресу Українців (СКУ) на жовтень, 2013 р.
@@ -61,7 +145,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/book-launch-taste-of-ukraine/">Book Launch - Taste of Ukraine</a>
+        <a href="https://ukrainians.org.au/culture/book-launch-taste-of-ukraine/">Book Launch - Taste of Ukraine</a>
       </h1>
       <time datetime="2013-11-03T03:13:11Z" class="post-date">Sun, Nov 3, 2013</time>
       The Ukrainian Council of NSW,
@@ -84,7 +168,7 @@ The Ukrainian Youth Centre,
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/kozak-feastday-of-blessed-mary-the-protectress/">Свято Козацької Покрови</a>
+        <a href="https://ukrainians.org.au/culture/kozak-feastday-of-blessed-mary-the-protectress/">Свято Козацької Покрови</a>
       </h1>
       <time datetime="2013-10-23T01:49:07Z" class="post-date">Wed, Oct 23, 2013</time>
       В неділю 20-го жовтня 2013 р. 8-ий курінь Українського Вільного Козацтва (УВК) Австралії відзначив Свято Козацької Покрови Пресвятої Богородиці.
@@ -95,15 +179,15 @@ The Ukrainian Youth Centre,
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/nsw-parliamentary-motion-eightieth-anniversary-of-holodomor/">NSW Parliamentary Motion - Eightieth Anniversary of &#34;Holodomor&#34; </a>
+        <a href="https://ukrainians.org.au/politics/nsw-parliamentary-motion-eightieth-anniversary-of-holodomor/">NSW Parliamentary Motion - Eightieth Anniversary of &#34;Holodomor&#34; </a>
       </h1>
       <time datetime="2013-10-19T04:26:10Z" class="post-date">Sat, Oct 19, 2013</time>
       Extract from NSW Legislative Council Hansard and Papers Thursday 17 October 2013 (Proof).
 EIGHTIETH ANNIVERSARY OF &ldquo;HOLODOMOR&rdquo;
 Page: 2
 Motion by the Hon. MARIE FICARRA agreed to:
-(a) notes that 2013 is the eightieth anniversary of the &ldquo;Holodomor&rdquo;, an enforced famine in Ukraine caused by the deliberate actions of Stalin's Communist Government of the Union of Soviet Socialist Republic [USSR];
-(b) recalls that it is estimated up to seven million Ukrainians starved to death as a result of Stalin's policies in 1932 to 1933 alone;
+(a) notes that 2013 is the eightieth anniversary of the &ldquo;Holodomor&rdquo;, an enforced famine in Ukraine caused by the deliberate actions of Stalin&rsquo;s Communist Government of the Union of Soviet Socialist Republic [USSR];
+(b) recalls that it is estimated up to seven million Ukrainians starved to death as a result of Stalin&rsquo;s policies in 1932 to 1933 alone;
       
         <div class="read-more-link">
           <a href="/politics/nsw-parliamentary-motion-eightieth-anniversary-of-holodomor/">Read More…</a>
@@ -111,15 +195,15 @@ Motion by the Hon. MARIE FICARRA agreed to:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ukrainian-credit-union-dnister-and-the-community/">УКК “ДНІСТЕР“ I СПІЛЬНОТА: НАША СИЛА – У ЄДНОСТІ!</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-credit-union-dnister-and-the-community/">УКК “ДНІСТЕР“ I СПІЛЬНОТА: НАША СИЛА – У ЄДНОСТІ!</a>
       </h1>
       <time datetime="2013-10-19T04:12:26Z" class="post-date">Sat, Oct 19, 2013</time>
-      Інтерв'ю із головою дирекції Української Кредитової Кооперативи “ДНІСТЕР” Валентином Микитенком - важливі речі для спільноти.
+      Інтерв&rsquo;ю із головою дирекції Української Кредитової Кооперативи “ДНІСТЕР” Валентином Микитенком - важливі речі для спільноти.
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/294891/t/DNISTER-AND-COMMUNITY:&ndash;OUR-STRENGTH-IN-UNITY!/in/language
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/holodomor-2013-ucs-stamps-and-envelopes/">Holodomor 2013 - UCS stamps and envelopes</a>
+        <a href="https://ukrainians.org.au/culture/holodomor-2013-ucs-stamps-and-envelopes/">Holodomor 2013 - UCS stamps and envelopes</a>
       </h1>
       <time datetime="2013-10-14T02:22:10Z" class="post-date">Mon, Oct 14, 2013</time>
       The Ukrainian Collectibles Society, in recognition of the 80th Anniversary of the Holodomor (the artificial famine and genocide in Ukraine of 1932-1933), is releasing commercial and collectible souvenirs as a tangible and collectible philatelic record.
@@ -134,17 +218,17 @@ The very last day to order and pay is Monday night, 11 November 2013.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/australian-ukrainians-in-ukraine/">Українці Австралії в Україні</a>
+        <a href="https://ukrainians.org.au/community/australian-ukrainians-in-ukraine/">Українці Австралії в Україні</a>
       </h1>
       <time datetime="2013-10-09T00:40:20Z" class="post-date">Wed, Oct 9, 2013</time>
-      Інтерв'ю із Марусею Яроцькою, головою Пасторальної Ради Української Греко-Католицької Церкви в Австралії опісля мандрівки Україною&hellip;
+      Інтерв&rsquo;ю із Марусею Яроцькою, головою Пасторальної Ради Української Греко-Католицької Церкви в Австралії опісля мандрівки Україною&hellip;
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/293469/t/UKRAINIANS-FROM-AUSTRALIA-IN-UKRAINE
 
  
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/victor-kovalenko-into-the-sport-australia-hall-of-fame/">Victor Kovalenko into the Sport Australia Hall of Fame</a>
+        <a href="https://ukrainians.org.au/sport/victor-kovalenko-into-the-sport-australia-hall-of-fame/">Victor Kovalenko into the Sport Australia Hall of Fame</a>
       </h1>
       <time datetime="2013-10-04T08:10:16Z" class="post-date">Fri, Oct 4, 2013</time>
       Inductee Announcement - Victor Kovalenko OAM ‘Medal Maker’ Kovalenko sails into The Sport Australia Hall of Fame The man behind Australia’s most successful sport at the London Olympics, Victor Kovalenko OAM, will be honoured among Australia’s sporting elite when he is inducted into The Sport Australia Hall of Fame next week.
@@ -156,24 +240,11 @@ Kovalenko, who was head coach of the Australian sailing team that won three gold
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/holodomor-commemoration-in-canberra/">Відзначення річниці Голодомору в Канберрі</a>
+        <a href="https://ukrainians.org.au/community/holodomor-commemoration-in-canberra/">Відзначення річниці Голодомору в Канберрі</a>
       </h1>
       <time datetime="2013-10-02T03:31:34Z" class="post-date">Wed, Oct 2, 2013</time>
       Відзначення річниці Голодомору в Канберрі Жалібне відзначення 80-ої річниці Голодомору-Геноциду українського народу відбудеться в Канберрі в неділю 17-го листопада 2013 р. від години 10-ої ранку.
 Holodomor commemoration in Canberra The commemoration of the 80th anniversary of the Holodomor-Genocide against the Ukrainian people will take place in Canberra on Sunday 17th November 2013 from 10:0 am.
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/media/80th-anniversary-of-the-ukrainian-famine-genocide/">УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ</a>
-      </h1>
-      <time datetime="2013-10-02T03:26:32Z" class="post-date">Wed, Oct 2, 2013</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2012/12/150px-SBS-Ukrainian.jpg)УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ В УКРАЇНІ
-Інтерв’ю з головою Управи Союзу Українських Організацій Австралії та Генеральним Секретарем Світового Конґресу Українців Стефаном Романівим про деякі головні акценти напередодні відзначення у світі 80-ліття Ґеноциду в Україні, а також дещо про австралійсько-українські взаємини…
-UKRAINIANS AROUND THE WORLD AND THE 80TH ANNIVERSARY OF THE UKRAINIAN FAMINE-GENOCIDE Interview SBS with Stefan Romaniw, OAM, who is the Chairman of the Australian Federation of Ukrainians Organisations and General Secretary of the Ukrainian World Congress about the National commemoration events and relations between Australia and Ukraine…
-      
-        <div class="read-more-link">
-          <a href="/media/80th-anniversary-of-the-ukrainian-famine-genocide/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1383,6 +1454,8 @@ UKRAINIANS AROUND THE WORLD AND THE 80TH ANNIVERSARY OF THE UKRAINIAN FAMINE-GEN
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

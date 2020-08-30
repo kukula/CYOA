@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,114 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/%d0%94%d0%95%d0%a0%d0%96%d0%90%d0%92%d0%9d%d0%98%d0%99-komitet-te%d0%9be%d0%91a%d0%a7e%d0%9d%d0%9d%d0%af-ta-pa%d0%94io%d0%9co%d0%92%d0%9be%d0%9d%d0%9d%d0%af-y%d0%9apa%d0%87%d0%9d%d0%98/">ДЕРЖАВНИЙ KOMITET TEЛEБAЧEННЯ TA PAДIOМOВЛEННЯ YКPAЇНИ</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/%d0%9e%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d0%a1%d0%b2%d1%96%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%9a%d0%be%d0%bd%d2%91%d1%80%d0%b5%d1%81%d1%83-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96-2/">Обіжник Світового Конґресу Українців – вересень, 2011 р.</a>
+      </h1>
+      <time datetime="2011-10-18T23:01:52Z" class="post-date">Tue, Oct 18, 2011</time>
+      **[ ](http://www.ozeukes.com/wp-content/uploads/2011/10/World-Congress-of-Ukrainians-72-dpi-150-pxls-2.jpg)ОБІЖНИК**
+СВІТОВОГО КОНҐРЕСУ УКРАЇНЦІВ № 9 (97) – Вересень, 2011 р. Світовий Конґрес Українців (СКУ) випустив обіжник на вересень 2011 р. В обіжнику містяться такі теми:
+ * Державна програма співпраці із закордонними українцями на період до 2015 р. * Меморандум про важливі питання, що стосуються України та української діаспори * Президент СКУ зустрівся з високопoсaдовцями Європейського Парламенту в Страсбурзі * Президент СКУ зустрівся з високопосадовцями обсє та ООН у Відні * Президент СКУ взяв участь у VI з’їзді Союзу Українців Румунії * Подорожі генерального Секретаря СКУ по Україні * Генеральний Секретар СКУ взяв участь у святкуванні 20-ої річниці незалежності України в Римі * СКУ вітає Преосвященнішого Владику Петра з призначенням офіційним представником до ради директорів СКУ від УГКЦ * Привітання СКУ на адресу українських інституцій   Цілий обіжник можна прочитати тут: UWC Newsletter September 2011
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/media/%d0%94%d0%95%d0%a0%d0%96%d0%90%d0%92%d0%9d%d0%98%d0%99-komitet-te%d0%9be%d0%91a%d0%a7e%d0%9d%d0%9d%d0%af-ta-pa%d0%94io%d0%9co%d0%92%d0%9be%d0%9d%d0%9d%d0%af-y%d0%9apa%d0%87%d0%9d%d0%98/">ДЕРЖАВНИЙ KOMITET TEЛEБAЧEННЯ TA PAДIOМOВЛEННЯ YКPAЇНИ</a>
       </h1>
       <time datetime="2011-10-17T23:47:16Z" class="post-date">Mon, Oct 17, 2011</time>
       Державний Кomiтeт Тeлeбaчeння тa Рaдioмoвлeння Укpaїни переслав листа на руки Стефана Романіва (голова Союзу Українських Організацій Австралії). В цьому листі висловлюється подяка за підтримку та пояснення відносно завданням та твopчовиpo6ничої діяльности Головної peдaкції мовлення yкpaїнcькoю мовoю ТО «Bcecвітня cлyж6a paдioмoвдeння України».
@@ -60,7 +138,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/court-verdict-on-tymoshenko-letter-to-foreign-minister-rudd/">Court Verdict on Tymoshenko - Letter to Foreign Minister Rudd</a>
+        <a href="https://ukrainians.org.au/current-affairs/court-verdict-on-tymoshenko-letter-to-foreign-minister-rudd/">Court Verdict on Tymoshenko - Letter to Foreign Minister Rudd</a>
       </h1>
       <time datetime="2011-10-12T14:06:14Z" class="post-date">Wed, Oct 12, 2011</time>
       October 11, 2001
@@ -79,7 +157,7 @@ The court sentenced Tymoshenko to seven years&rsquo; incarceration and a 3 year 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-cup-eve-phantom-call/">Melbourne Cup Eve Phantom Call</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-cup-eve-phantom-call/">Melbourne Cup Eve Phantom Call</a>
       </h1>
       <time datetime="2011-10-09T10:57:27Z" class="post-date">Sun, Oct 9, 2011</time>
       The Australian Federation of Ukrainian Organisations (AFUO) invites you to the Melbourne Cup Eve Phantom Call.
@@ -93,7 +171,7 @@ This event will be held on Monday, 31st October 2011 (the evening before the Mel
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/new-dim-molodi-in-sydney/">New &#34;Dim Molodi&#34; in Sydney</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/new-dim-molodi-in-sydney/">New &#34;Dim Molodi&#34; in Sydney</a>
       </h1>
       <time datetime="2011-09-30T03:55:10Z" class="post-date">Fri, Sep 30, 2011</time>
       On 25/9/2011 the Ukrainian Youth Association in Sydney moved its DIM MOLODI (Youth Centre) from the old building into a new one. The move started with a Divine Liturgy celebrated by His Grace Bishop Petro Stasiuk, followed by a memorial service (&ldquo;panakhyda&rdquo;) for the repose of the souls of those who contributed to the building of the first Youth Centre (&ldquo;Dim Molodi&rdquo;).
@@ -105,7 +183,7 @@ After the service, and despite the rain (IT WAS POURING), a delegation went to t
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d2%90%d1%80%d0%b0%d0%bd%d0%b4-%d1%84%d1%96%d0%bd%d0%b0%d0%bb-%d0%90%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d0%b9%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d1%84%d1%83%d1%82%d0%b1%d0%be%d0%bb%d1%8c%d0%bd/">Ґранд фінал Австралійської футбольної ліґи. Нобл Парк</a>
+        <a href="https://ukrainians.org.au/events/%d2%90%d1%80%d0%b0%d0%bd%d0%b4-%d1%84%d1%96%d0%bd%d0%b0%d0%bb-%d0%90%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%bb%d1%96%d0%b9%d1%81%d1%8c%d0%ba%d0%be%d1%97-%d1%84%d1%83%d1%82%d0%b1%d0%be%d0%bb%d1%8c%d0%bd/">Ґранд фінал Австралійської футбольної ліґи. Нобл Парк</a>
       </h1>
       <time datetime="2011-09-30T03:35:17Z" class="post-date">Fri, Sep 30, 2011</time>
       Ґранд фінал Австралійської футбольної ліґи. Пряма транслація на великому екрані. Субота 1 жовтня від год. 12.00 дня. Український народний дім, 26 Chandler Rd., Noble Park Можна буде набути смачну перекуску. Вступ і паркування авт – безкоштовні. Вхід до клюбу з–заду будинку по сходах на перший поверх.
@@ -114,14 +192,14 @@ __Дружня атмосфера! Запрошуємо всіх.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/afl-grand-final-noble-park/">AFL Grand final Noble Park</a>
+        <a href="https://ukrainians.org.au/events/afl-grand-final-noble-park/">AFL Grand final Noble Park</a>
       </h1>
       <time datetime="2011-09-30T03:32:07Z" class="post-date">Fri, Sep 30, 2011</time>
       AFL Grand final live on big screen Saturday Оctober 1st from 12 noon onwards Ukrainian Community Centre, 26 Chandler Rd., Noble Park Food, refreshments available. Free admission and parking. Club Room - 1st floor. Entry at rear of Centre
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/ukrainian-choir-from-melbourne-in-ukraine/">Хор з Мельбурну на поїздці в Україні</a>
+        <a href="https://ukrainians.org.au/events/international-events/ukrainian-choir-from-melbourne-in-ukraine/">Хор з Мельбурну на поїздці в Україні</a>
       </h1>
       <time datetime="2011-09-27T07:44:24Z" class="post-date">Tue, Sep 27, 2011</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2011/09/Combined-Choir-1-Thumb.jpg)
@@ -134,7 +212,7 @@ Combined Cheremosh and Cathedral Choirs from Melbourne on tour in Ukraine. The c
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/c%d0%a3%d0%9ea-%d0%b2%d1%96%d1%82%d0%b0%d1%94-%d1%87%d0%bb%d0%b5%d0%bd%d1%81%d1%82%d0%b2%d0%be-%d0%9e%d1%81%d0%b5%d1%80%d0%b5%d0%b4%d0%ba%d1%83-c%d0%a3%d0%9c-%d0%b2-%d0%a1%d1%96%d0%b4%d0%bd%d0%b5/">CУОA вітає членство Осередку CУМ в Сіднеї з нагоди відкриття нового дому.</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/c%d0%a3%d0%9ea-%d0%b2%d1%96%d1%82%d0%b0%d1%94-%d1%87%d0%bb%d0%b5%d0%bd%d1%81%d1%82%d0%b2%d0%be-%d0%9e%d1%81%d0%b5%d1%80%d0%b5%d0%b4%d0%ba%d1%83-c%d0%a3%d0%9c-%d0%b2-%d0%a1%d1%96%d0%b4%d0%bd%d0%b5/">CУОA вітає членство Осередку CУМ в Сіднеї з нагоди відкриття нового дому.</a>
       </h1>
       <time datetime="2011-09-24T00:57:33Z" class="post-date">Sat, Sep 24, 2011</time>
       25-го вересня 2011
@@ -149,7 +227,7 @@ Combined Cheremosh and Cathedral Choirs from Melbourne on tour in Ukraine. The c
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/stook-stook-issue-5/">Stook Stook Issue 5</a>
+        <a href="https://ukrainians.org.au/community/stook-stook-issue-5/">Stook Stook Issue 5</a>
       </h1>
       <time datetime="2011-09-21T13:54:06Z" class="post-date">Wed, Sep 21, 2011</time>
       The latest release of the electronic magazine produced by the Ukrainian Community in South Australia has just been published. This issue covers a range of interesting articles including:
@@ -158,14 +236,6 @@ Combined Cheremosh and Cathedral Choirs from Melbourne on tour in Ukraine. The c
         <div class="read-more-link">
           <a href="/community/stook-stook-issue-5/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%9e%d0%b1%d1%96%d0%b6%d0%bd%d0%b8%d0%ba-%d0%a1%d0%b2%d1%96%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be-%d0%9a%d0%be%d0%bd%d2%91%d1%80%d0%b5%d1%81%d1%83-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%86%d1%96/">Обіжник Світового Конґресу Українців – Серпень, 2011 р.</a>
-      </h1>
-      <time datetime="2011-09-19T03:02:33Z" class="post-date">Mon, Sep 19, 2011</time>
-      ОБІЖНИК СВІТОВОГО КОНҐРЕСУ УКРАЇНЦІВ № 8 (96) – Серпень, 2011 р. Світовий Конґрес Українців (СКУ) випустив обіжник на серпень 2011 р. В обіжнику містяться такі теми:
- * СКУ привітав українську спільноту з 20-ою річницею Незалежності України * СКУ засудив арешт екс-прем'єр-міністра України Юлії Тимошенко * СКУ закликав міжнародну спільноту посилити тиск на владні структури України та вимагати негайного звільнення колишнього прем’єр-міністра України Юлії Тимошенко * Участь СКУ в Всесвітньому Форумі Українців * Президент СКУ побував на суді над екс-прем'єр-міністром України Юлією Тимошенко * Провід СКУ зустрівся з главою Української Греко-Католицької Церкви Блаженнішим Святославом (Шевчуком) * Президент СКУ зустрівся з Патріархом Філаретом * Президент СКУ Евген Чолій зустрівся з Президентом України Віктором Януковичем * Президент СКУ зустрівся з начальником головного управління з розслідування особливо важливих справ Генеральної Прокуратури України * Президент СКУ зустрівся з першим заступником міністра Закордонних Справ і директором Департаменту Зв’язків із Закордонним Українством та Культурно-Гуманітарного Співробітництва * Генеральний секретар та голова світової ради культури СКУ зустрілися з заступником міністра культури України * Інформація рад і комісій СКУ про заходи, проведені в рамках річних загальних зборів СКУ * Діяльніcть генерального секретаря СКУ * СКУ висловив співчуття у зв’язку з трагедіями на українських шахтах  Цілий обіжник можна прочитати тут: UWC Newsletter August 2011
       
     </article>
 
@@ -1375,6 +1445,8 @@ Combined Cheremosh and Cathedral Choirs from Melbourne on tour in Ukraine. The c
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

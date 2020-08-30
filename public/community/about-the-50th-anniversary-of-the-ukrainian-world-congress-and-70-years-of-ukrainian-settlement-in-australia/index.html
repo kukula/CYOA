@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ABOUT THE 50th ANNIVERSARY OF THE UKRAINIAN WORLD CONGRESS AND 70 YEARS OF UKRAINIAN SETTLEMENT IN AUSTRALIA &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -55,7 +120,7 @@
 </a></p>
 <h2 id="about-the-50th-anniversary-of-the-ukrainian-world-congress-and-70-years-of-ukrainian-settlement-in-australia">ABOUT THE 50th ANNIVERSARY OF THE UKRAINIAN WORLD CONGRESS AND 70 YEARS OF UKRAINIAN SETTLEMENT IN AUSTRALIA</h2>
 <p>Bogdan Rudnytski interviewed Stefan Romaniw, the President of the Australian Federation of Ukrainian Organisations and Secretary-General of the Ukrainian World Congress. This year marks 50 years of the Ukrainian World Congress (UWC), the international coordinating body for Ukrainian communities in the diaspora that represents the interests of over 20 million Ukrainians with a network of member organizations and ties with Ukrainians in 53 countries.To raise awareness of the work of the UWC, its history, present and plans for the future, in 2017 the UWC has planned a range of anniversary events in Ukraine and in the countries of the Ukrainian diaspora with the goal of engaging the participation of its network, Ukrainians in Ukraine, friends of Ukraine around the world, and the international community. Stay tuned for detailed programs in each country.
-The Australian Federation of Ukrainian Organisations proudly announces that all roads will lead to Melbourne this July as Ukrainians from all over Australia travel to the world's most liveable city for the XV National Ukrainian Festival - Zdvyh (7th - 9th July, Melbourne). Held every four years, the Zdvyh will bring together Australian Ukrainians of all ages and from all walks of life. They will come together to celebrate their language, culture and identity and to launch a two-year program of national celebrations commemorating 70 years of post-WW2 settlement in Australia. Although small in size relative to some other ethnic groups, the Ukrainian community is regarded as one of Australias multicultural success stories. It enjoys a significant level of goodwill and support for its promotion of Ukrainian culture and identity, whilst at the same time sharing a peaceful and harmonious co-existence within the broader Australian community. As the launching event for the celebrations marking 70 years of Ukrainian post-WW2 settlement in Australia, the Zdvyh will celebrate the Ukrainian community's own Migration Story, a story lived in the face of the brutalities of war, but written also in the courage and the fortitude displayed as each migration wave struggled to find and create a home for itself in this new land. As well as providing a platform for the celebration of the Ukrainian Migration Story, the Zdvyh will celebrate the myriad achievements of Australias Ukrainian community throughout the past seventy years.</p>
+The Australian Federation of Ukrainian Organisations proudly announces that all roads will lead to Melbourne this July as Ukrainians from all over Australia travel to the world&rsquo;s most liveable city for the XV National Ukrainian Festival - Zdvyh (7th - 9th July, Melbourne). Held every four years, the Zdvyh will bring together Australian Ukrainians of all ages and from all walks of life. They will come together to celebrate their language, culture and identity and to launch a two-year program of national celebrations commemorating 70 years of post-WW2 settlement in Australia. Although small in size relative to some other ethnic groups, the Ukrainian community is regarded as one of Australias multicultural success stories. It enjoys a significant level of goodwill and support for its promotion of Ukrainian culture and identity, whilst at the same time sharing a peaceful and harmonious co-existence within the broader Australian community. As the launching event for the celebrations marking 70 years of Ukrainian post-WW2 settlement in Australia, the Zdvyh will celebrate the Ukrainian community&rsquo;s own Migration Story, a story lived in the face of the brutalities of war, but written also in the courage and the fortitude displayed as each migration wave struggled to find and create a home for itself in this new land. As well as providing a platform for the celebration of the Ukrainian Migration Story, the Zdvyh will celebrate the myriad achievements of Australias Ukrainian community throughout the past seventy years.</p>
 <p><a href="http://www.sbs.com.au/yourlanguage/ukrainian/en/content/about-50th-anniversary-ukrainian-world-congress-and-70-years-ukrainian-settlement-australia?language=en">http://www.sbs.com.au/yourlanguage/ukrainian/en/content/about-50th-anniversary-ukrainian-world-congress-and-70-years-ukrainian-settlement-australia?language=en</a></p>
 
   </div>

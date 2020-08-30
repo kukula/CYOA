@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ПРЕЗЕНТAЦІЯ КНИЖОЧОК ДИТЯЧИХ КAЗОК &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -75,9 +140,9 @@
 </a>Згадані пані з України, дещо проживали в Франції, Aнглії, недавно приїхали до Aвстралії.</p>
 <p>Рекомендую книжечки всім українським дітям в Aвстралії й поза нею. Можливо ФУCA повинна закупити книжечки для всіх українських шкіл в Aвстралії і вислати дещо і в Україну. Що, ви панове на таку пропозицію?</p>
 <p>==============================</p>
-<p>On Saturday 3rd March 2012 in the Ukrainian Hall in Sydney Irena and Hanna Bilyk presented 3 of their new children's books - Watermelons, Train and Fly to the children of the Ukrainian Central School and to the Ukrainian Community.</p>
+<p>On Saturday 3rd March 2012 in the Ukrainian Hall in Sydney Irena and Hanna Bilyk presented 3 of their new children&rsquo;s books - Watermelons, Train and Fly to the children of the Ukrainian Central School and to the Ukrainian Community.</p>
 <p> The Watermelon portrays typical country life in Ukraine.  The Train is a funny poem about a train - it features day, night and the four seasons of the year.  The Fly (Mukha) was presented in the Ukrainian language  nearly a year ago. The English version was presented on Saturday. Watermelons and Train are in Ukrainian and English.</p>
-<p>What was a surprise: the heroes in the Watermelons, are my godson Andrijko Lylo, his sister Viktoria Volytska, with Jurasyk Sheremeta, Sofijka and Glorijka Bilyk, who are pupils of Roxolana Mishalow's New Ukrainian School also featuring.</p>
+<p>What was a surprise: the heroes in the Watermelons, are my godson Andrijko Lylo, his sister Viktoria Volytska, with Jurasyk Sheremeta, Sofijka and Glorijka Bilyk, who are pupils of Roxolana Mishalow&rsquo;s New Ukrainian School also featuring.</p>
 <p>There was a guest appearence of prof. Volodymyr Motyka from Newcastle, featured in the book as Uncle Juhim.  The books are very nicely illustrated.</p>
 <p><strong>==============================</strong></p>
 <p><strong>Приблизно рік тому відбулася презентація книжечки казки Муха авторства Ганни Білик. Знимки  з презентації на</strong></p>

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,43 +23,121 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/%d0%9f%d0%b5%d1%82%d0%b8%d1%86%d1%96%d1%8f-%d0%b4%d0%be-%d0%bf%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%92%d1%96%d0%ba%d1%82%d0%be%d1%80/">Петиція до президента України Віктора Януковича</a>
+        <a href="https://ukrainians.org.au/events/petition-to-ukraines-president-victor-yanukovych/">Petition to Ukraine&#39;s President Victor Yanukovych</a>
+      </h1>
+      <time datetime="2010-11-22T00:53:06Z" class="post-date">Mon, Nov 22, 2010</time>
+      The Ukrainian World Congress (UWC) calls upon all people of good will to sign a petition to the President of Ukraine demanding his public recognition of the Holodomor of 1932-33 as an act of genocide against the Ukrainian people.
+Sign the petition today!
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/%d0%9f%d0%b5%d1%82%d0%b8%d1%86%d1%96%d1%8f-%d0%b4%d0%be-%d0%bf%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d0%b8-%d0%92%d1%96%d0%ba%d1%82%d0%be%d1%80/">Петиція до президента України Віктора Януковича</a>
       </h1>
       <time datetime="2010-11-22T00:52:27Z" class="post-date">Mon, Nov 22, 2010</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2010/11/holodomor_b_en2.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2010/11/holodomor_b_ua.jpg) ](http://www.ozeukes.com/wp-content/uploads/2010/11/holodomor_b_ua.jpg)Світовий Конґрес Українців (СКУ) звертається до всіх людей доброї волі підписати петицію до президента України відносно визнання Голодомору 1932-33 років яко ґеноцидом українського народу.
+      Світовий Конґрес Українців (СКУ) звертається до всіх людей доброї волі підписати петицію до президента України відносно визнання Голодомору 1932-33 років яко ґеноцидом українського народу.
 Підпишіть петицію сьогодні!
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/%d0%9b%d0%b8%d1%81%d1%82-%d0%b4%d0%be-%d0%9f%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%af%d0%bd%d1%83%d0%ba%d0%be%d0%b2%d0%b8%d1%87%d0%b0/">Лист до Президента Януковича</a>
+        <a href="https://ukrainians.org.au/politics/%d0%9b%d0%b8%d1%81%d1%82-%d0%b4%d0%be-%d0%9f%d1%80%d0%b5%d0%b7%d0%b8%d0%b4%d0%b5%d0%bd%d1%82%d0%b0-%d0%af%d0%bd%d1%83%d0%ba%d0%be%d0%b2%d0%b8%d1%87%d0%b0/">Лист до Президента Януковича</a>
       </h1>
       <time datetime="2010-11-20T11:14:48Z" class="post-date">Sat, Nov 20, 2010</time>
       20-го листопада 2010
@@ -75,7 +152,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%9f%d0%bb%d0%b0%d1%81%d1%82%d0%be%d0%b2%d1%96-%d1%82%d0%b0%d0%b1%d0%be%d1%80%d0%b8-%d0%b2-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%96/">Пластові табори в Україні</a>
+        <a href="https://ukrainians.org.au/community/%d0%9f%d0%bb%d0%b0%d1%81%d1%82%d0%be%d0%b2%d1%96-%d1%82%d0%b0%d0%b1%d0%be%d1%80%d0%b8-%d0%b2-%d0%a3%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%96/">Пластові табори в Україні</a>
       </h1>
       <time datetime="2010-11-17T08:09:30Z" class="post-date">Wed, Nov 17, 2010</time>
       ТРК Люкс - Сюжет про КМТ та СВТ
@@ -84,7 +161,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/%d0%92%d1%96%d1%80%d1%88-%d1%82%d0%b0-%d1%96%d0%bd%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d1%96%d1%97-%d0%bf%d1%80%d0%be-%d0%93%d0%be%d0%bb%d0%be%d0%b4%d0%be%d0%bc%d0%be%d1%80/">Вірш та інформації про Голодомор</a>
+        <a href="https://ukrainians.org.au/community/%d0%92%d1%96%d1%80%d1%88-%d1%82%d0%b0-%d1%96%d0%bd%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d1%96%d1%97-%d0%bf%d1%80%d0%be-%d0%93%d0%be%d0%bb%d0%be%d0%b4%d0%be%d0%bc%d0%be%d1%80/">Вірш та інформації про Голодомор</a>
       </h1>
       <time datetime="2010-11-17T08:00:05Z" class="post-date">Wed, Nov 17, 2010</time>
       Полум’я скорботи
@@ -100,7 +177,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/%d0%9e%d0%b4%d0%b8%d0%bd%d0%b0%d0%b4%d1%86%d1%8f%d1%82%d0%b8%d0%b9-%e2%80%93-%d0%b2%d1%96%d0%b4%d0%ba%d1%80%d0%b8%d1%82%d0%be/">Одинадцятий – відкрито!</a>
+        <a href="https://ukrainians.org.au/education/%d0%9e%d0%b4%d0%b8%d0%bd%d0%b0%d0%b4%d1%86%d1%8f%d1%82%d0%b8%d0%b9-%e2%80%93-%d0%b2%d1%96%d0%b4%d0%ba%d1%80%d0%b8%d1%82%d0%be/">Одинадцятий – відкрито!</a>
       </h1>
       <time datetime="2010-11-17T07:45:42Z" class="post-date">Wed, Nov 17, 2010</time>
       Вперше за всі роки існування Міжнародного конкурсу з української мови ім. П. Яцика його врочисте відкриття відбувалося паралельно в двох місцях України. 9 листопада в День української писемності та мови виконавча дирекція Ліги українських меценатів та представники Львівської обласної влади, очолювані першим заступником голови державної адміністрації Мироном Янковим звершили цей святковий ритуал у Верхньому Синьовидному (Львівщина) – на батьківщині Петра Яцика та в народному домі міста Сколе, де яскраво &ldquo;засвітилися&rdquo; всі традиційні сюжети популярного і престижного мовного марафону.
@@ -111,7 +188,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/a-fine-hunter-red-returns-home/">A fine Hunter red returns home...</a>
+        <a href="https://ukrainians.org.au/events/a-fine-hunter-red-returns-home/">A fine Hunter red returns home...</a>
       </h1>
       <time datetime="2010-11-17T07:40:35Z" class="post-date">Wed, Nov 17, 2010</time>
       MARIKA AUBREY in
@@ -129,7 +206,7 @@ Rita Hayworth, Lucille Ball and Ethel Merman: REDHEAD is a celebration of some 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/verchovyna-dance-ensemble-presents-dance-without-strings/">Verchovyna Dance Ensemble presents &#34;Dance Without Strings</a>
+        <a href="https://ukrainians.org.au/events/verchovyna-dance-ensemble-presents-dance-without-strings/">Verchovyna Dance Ensemble presents &#34;Dance Without Strings</a>
       </h1>
       <time datetime="2010-11-11T00:31:03Z" class="post-date">Thu, Nov 11, 2010</time>
       Verchovyna Ukrainian Dance School and Ensemble Presents
@@ -138,7 +215,7 @@ Rita Hayworth, Lucille Ball and Ethel Merman: REDHEAD is a celebration of some 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/vystavka-symphony-of-light-and-flowers/">Виставка &#34;Symphony of Light and Flowers&#34;</a>
+        <a href="https://ukrainians.org.au/events/vystavka-symphony-of-light-and-flowers/">Виставка &#34;Symphony of Light and Flowers&#34;</a>
       </h1>
       <time datetime="2010-11-08T23:13:27Z" class="post-date">Mon, Nov 8, 2010</time>
       Ласкаво запрошуємо Вас на нашу художню виставку: &ldquo;Symphony of Light and Flowers&rdquo;, яка відбудеться з 18/11/2010 - 29/11/2010 в приміщенні Gallery Kinross House, Uniting Art Toorak, за адресою: 603 Toorak Rd, Toorak(opposite Irving road), Parking is available at the back of the Toorak Uniting Church.
@@ -148,25 +225,13 @@ Rita Hayworth, Lucille Ball and Ethel Merman: REDHEAD is a celebration of some 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/jacyk-competition-ochyma-uchasnyka/">Перший в Австралії конкурс з української мови ім. П. Яцика очима учасника</a>
+        <a href="https://ukrainians.org.au/education/jacyk-competition-ochyma-uchasnyka/">Перший в Австралії конкурс з української мови ім. П. Яцика очима учасника</a>
       </h1>
       <time datetime="2010-11-08T23:04:20Z" class="post-date">Mon, Nov 8, 2010</time>
       П’ятого червня на вулиці легенко крапав дощ і з запітнілих вікон машин тільки ледь-ледь було видно синьо-жовті кульки, які були прив’язані до дорожних знаків на в’їзді до універитету ім. Монаша. Для чогож хтось, полишивши тепло університету, повісив їх? Відповідь написана на листочку паперу, який тримає в руці дівчина, переходяча дорогу, щоб увійти в університет. На ньоми написано &ldquo;Міжнародний конкурс імені Петра Яцика в Австралії&rdquo; і зображено вінок і руки, які тримають свічку, а під ними дата - 5 червня.
       
         <div class="read-more-link">
           <a href="/education/jacyk-competition-ochyma-uchasnyka/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/peter-shirt-launches-his-book-among-the-ukrainians/">Peter Shirt launches his book, Among the Ukrainians</a>
-      </h1>
-      <time datetime="2010-11-08T22:44:52Z" class="post-date">Mon, Nov 8, 2010</time>
-      _Ukraine has more than a thousand years of history, but it is still a nation under construction. With global interest in Ukraine near an all time high, Peter’s book is a timely addition to the sparse library of books about this fascinating country. Bursting with anecdotes and information not found elsewhere Among the Ukrainians educates, entertains, and constantly surprises the reader._
-Ukraine - February 22, 2010 - Largely unknown to outsiders, Ukraine is the largest country entirely within Europe and the richest in natural resources.
-      
-        <div class="read-more-link">
-          <a href="/culture/peter-shirt-launches-his-book-among-the-ukrainians/">Read More…</a>
         </div>
       
     </article>
@@ -1377,6 +1442,8 @@ Ukraine - February 22, 2010 - Largely unknown to outsiders, Ukraine is the large
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

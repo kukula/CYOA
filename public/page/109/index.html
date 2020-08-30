@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,45 +23,129 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/sbs-radio-interviews/">SBS Радіопередачі</a>
+        <a href="https://ukrainians.org.au/events/international-events/national-radio-company-of-ukraine/">Національна радіокомпанія України - Заклкик до дії</a>
+      </h1>
+      <time datetime="2011-05-26T00:58:34Z" class="post-date">Thu, May 26, 2011</time>
+      26-го травня 2011
+ПРЕCОВЕ ПОВІДОМЛЕННЯ ДAЛЬШІ НACТУПИ на «Всесвітну службу радіомовлення України» Національної радіокомпанії України Заклкик до дії  Управа CУОA сьогодні отримала інформацію про дальші наступи на українську редакцію _Іномовлення _
+ Подаємо цю інформацію
+ _В Україні триває волюнтаристський наступ чиновників на українські ЗМІ. __25 __травня, о 12. 00, Гендиректор Національної радіокомпанії України Тарас Аврахов, без жодних попередніх пояснень чи то зауважень, одноосібно розпорядився припинити мовлення української редакції Всесвітньої служби радіомовлення України.
+      
+        <div class="read-more-link">
+          <a href="/events/international-events/national-radio-company-of-ukraine/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/media/sbs-radio-interviews/">SBS Радіопередачі</a>
       </h1>
       <time datetime="2011-05-25T12:02:09Z" class="post-date">Wed, May 25, 2011</time>
-      Раліостанція SBS в останніх часах передала два цікаві інтерв'ю:
+      Раліостанція SBS в останніх часах передала два цікаві інтерв&rsquo;ю:
  * *  СПІЛКА УКРАЇНСЬКОЇ МОЛОДІ НИНІ І ЗАВТРА *
 УКРАЇНСЬКИЙ ЖУРНАЛІСТ І ПИСЬМЕННИК В АВСТРАЛІЇ
 Їх, та інші передачі, можна почути на веб-сторінці SBS: http://www.sbs.com.au/yourlanguage/ukrainian/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/senate-resolution-on-25th-anniversary-of-chornobyl-disaster/">Senate Resolution on 25th Anniversary of Chornobyl Disaster</a>
+        <a href="https://ukrainians.org.au/events/national-events/senate-resolution-on-25th-anniversary-of-chornobyl-disaster/">Senate Resolution on 25th Anniversary of Chornobyl Disaster</a>
       </h1>
       <time datetime="2011-05-22T10:15:24Z" class="post-date">Sun, May 22, 2011</time>
       On May 11, 2011 the Senate of the Australian Parliament, on the initiative of Senator Catryna Bilyk, passed a resolution regarding the 25th anniversary of the Chornobyl disaster.
@@ -76,7 +159,7 @@ The resolution noted a number of important factors impacting the internationa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/afuo-support-letter-on-condemnation-instead-of-glorification-of-stalinism-and-the-communist-totalitarian-regime/">AFUO  support letter on Condemnation Instead of Glorification of Stalinism and the Communist Totalitarian Regime</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/afuo-support-letter-on-condemnation-instead-of-glorification-of-stalinism-and-the-communist-totalitarian-regime/">AFUO  support letter on Condemnation Instead of Glorification of Stalinism and the Communist Totalitarian Regime</a>
       </h1>
       <time datetime="2011-05-21T01:36:32Z" class="post-date">Sat, May 21, 2011</time>
       In a recent letter to senior office holders of various major European political institutions, the Ukrainian World Congress (UWC) has called on these officials to demand that the Ukrainian government authorities immediately condemn all forms of glorification of Stalinism and cease promoting symbols of the Communist totalitarian regime.
@@ -90,13 +173,13 @@ The office bearers who are recipients of this letter include:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/%d0%9f%d1%80%d0%b8%d0%bf%d0%b8%d0%bd%d0%b0%d0%bd%d0%be-%d0%b2%d0%b8%d0%b4%d0%b0%d1%87%d1%83-%d0%b2%d1%96%d0%b7-visa-issuance-suspended/">Припинано видачу віз / Visa issuance suspended </a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/%d0%9f%d1%80%d0%b8%d0%bf%d0%b8%d0%bd%d0%b0%d0%bd%d0%be-%d0%b2%d0%b8%d0%b4%d0%b0%d1%87%d1%83-%d0%b2%d1%96%d0%b7-visa-issuance-suspended/">Припинано видачу віз / Visa issuance suspended </a>
       </h1>
       <time datetime="2011-05-20T10:43:18Z" class="post-date">Fri, May 20, 2011</time>
       20.5.2011
 Управа CУОA повідомляє що отримано інформацію, що Посольство України в Aвстралії через технічні причини припинило видачу віз в Україну до 1-го червня 2011. Посольство вибачає за незручність, але причина поза контроль Посольства.
 http://www.mfa.gov.ua/australia/ua/news/top.htm
-[](http://www.mfa.gov.ua/australia/en/news/detail/58364.htm)
+
 The Australian Federation of Ukrainian Organisations has been informed that due to technical problems the Embassy of Ukraine in Australia is unable to issue visas to Ukraine until June 1, 2011.
 The Embassy of Ukraine in Australia apologizes for the inconvenience.
       
@@ -106,7 +189,7 @@ The Embassy of Ukraine in Australia apologizes for the inconvenience.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/in-defence-of-ukrainian-radio-programs/">В обороні «Всесвітної служби радіомовлення України»</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/in-defence-of-ukrainian-radio-programs/">В обороні «Всесвітної служби радіомовлення України»</a>
       </h1>
       <time datetime="2011-05-20T00:35:28Z" class="post-date">Fri, May 20, 2011</time>
       20-го травня 2011
@@ -119,12 +202,12 @@ Cоюз Українських Організацій Aвстралії (CУОA)
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/praise-for-hopak-in-the-park/">Praise for Hopak in the Park / Похвала Гопаку в Парку</a>
+        <a href="https://ukrainians.org.au/events/national-events/praise-for-hopak-in-the-park/">Praise for Hopak in the Park / Похвала Гопаку в Парку</a>
       </h1>
       <time datetime="2011-05-19T03:57:38Z" class="post-date">Thu, May 19, 2011</time>
-      [](http://www.ozeukes.com/wp-content/uploads/2011/05/blue-yellow-divider3.jpg)[![](http://www.ozeukes.com/wp-content/uploads/2011/05/Final-Hopak-in-the-Park-A4-v2-thumbnail1.jpg) ](http://www.ozeukes.com/wp-content/uploads/2011/05/Final-Hopak-in-the-Park-A4-v2-thumbnail1.jpg)A large number of letters, e-mails, etc have been received praising the inaugural _Hopak in the Park _event. Below is a small selection. Надійшла велика кількість листів, електронної пошти і т.д. з похвалою відносно першого представленню _Гопаку в Парку. _Нище є подані декілька таких висловів.
-﻿[](http://www.ozeukes.com/wp-content/uploads/2011/05/blue-yellow-divider.jpg)
-We found the event thoroughly entertaining and were pleased to meet with so many friendly members of Australia's Ukrainian community.﻿﻿﻿CATRYNA BILYK - Senator for Tasmania Full text: HitP0003
+      A large number of letters, e-mails, etc have been received praising the inaugural _Hopak in the Park _event. Below is a small selection. Надійшла велика кількість листів, електронної пошти і т.д. з похвалою відносно першого представленню _Гопаку в Парку. _Нище є подані декілька таких висловів.
+﻿
+We found the event thoroughly entertaining and were pleased to meet with so many friendly members of Australia&rsquo;s Ukrainian community.﻿﻿﻿CATRYNA BILYK - Senator for Tasmania Full text: HitP0003
       
         <div class="read-more-link">
           <a href="/events/national-events/praise-for-hopak-in-the-park/">Read More…</a>
@@ -132,10 +215,10 @@ We found the event thoroughly entertaining and were pleased to meet with so many
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/education/st-catherines-early-education-centre/">St. Catherine&#39;s Early Education Centre / Початкова Школа Св. Катерини</a>
+        <a href="https://ukrainians.org.au/education/st-catherines-early-education-centre/">St. Catherine&#39;s Early Education Centre / Початкова Школа Св. Катерини</a>
       </h1>
       <time datetime="2011-05-17T04:48:10Z" class="post-date">Tue, May 17, 2011</time>
-      Початкова Школа Св. Катерини при катедрі св. Петра і Павла в Мельбурні почне з роботою в червні місяця цього року. Можна вже записувати дітей на догладення. St. Catherine's Early Education Centre at the Ukrainian Catholic Cathedral of Sts. Peter and Paul in Melbourne will start operating in early June of this year. Children can now be registered for attendance.
+      Початкова Школа Св. Катерини при катедрі св. Петра і Павла в Мельбурні почне з роботою в червні місяця цього року. Можна вже записувати дітей на догладення. St. Catherine&rsquo;s Early Education Centre at the Ukrainian Catholic Cathedral of Sts. Peter and Paul in Melbourne will start operating in early June of this year. Children can now be registered for attendance.
   
 Живете або працюєте в центрі Мельбурну або неподалік?
       
@@ -145,7 +228,7 @@ We found the event thoroughly entertaining and were pleased to meet with so many
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/%d0%af%d0%ba%d1%89%d0%be-%d0%bd%d0%b0%d1%80%d0%be%d0%b4-%d0%b7%d0%b0%d0%b3%d0%be%d0%b2%d0%be%d1%80%d0%b8%d1%82%d1%8c-%d1%82%d0%be%d0%b4%d1%96-%d0%b1%d1%83%d0%b4%d0%b5%d0%bc%d0%be-%d0%bc%d0%b0%d1%82/">Якщо народ заговорить - тоді будемо мати майбутність</a>
+        <a href="https://ukrainians.org.au/interviews/%d0%af%d0%ba%d1%89%d0%be-%d0%bd%d0%b0%d1%80%d0%be%d0%b4-%d0%b7%d0%b0%d0%b3%d0%be%d0%b2%d0%be%d1%80%d0%b8%d1%82%d1%8c-%d1%82%d0%be%d0%b4%d1%96-%d0%b1%d1%83%d0%b4%d0%b5%d0%bc%d0%be-%d0%bc%d0%b0%d1%82/">Якщо народ заговорить - тоді будемо мати майбутність</a>
       </h1>
       <time datetime="2011-05-17T02:30:43Z" class="post-date">Tue, May 17, 2011</time>
       Якщо народ заговорить - тоді будемо мати майбутність  Інтерв**’****ю Голови Проводу Стефана Романіва під час XVIII Світового Конгресу Спілки української молоді**
@@ -159,7 +242,7 @@ We found the event thoroughly entertaining and were pleased to meet with so many
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/communique-cym-18th-congress/">Комунікат ХVIII Cвітового Конґресу CУМ</a>
+        <a href="https://ukrainians.org.au/events/international-events/communique-cym-18th-congress/">Комунікат ХVIII Cвітового Конґресу CУМ</a>
       </h1>
       <time datetime="2011-05-17T00:53:18Z" class="post-date">Tue, May 17, 2011</time>
       XVIII Світовий Конґрес СУМ відбувся від 13-го до 15-го травня 2011 року в домівці Осередку СУМ ім. полк. Дмитра Вітовського в Палатайн, США, недалеко від міста Чікаґо. Делеґати із десяти країн взяли участь в Конґресі.
@@ -168,27 +251,6 @@ We found the event thoroughly entertaining and were pleased to meet with so many
       
         <div class="read-more-link">
           <a href="/events/international-events/communique-cym-18th-congress/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/autumn-dance/">Autumn Dance / Осіння забава</a>
-      </h1>
-      <time datetime="2011-05-09T11:26:16Z" class="post-date">Mon, May 9, 2011</time>
-      The Australian Association of Ukrainians from former Yugoslavia is organising an Autumn Social Dance to be held on May 14th 2011 at the Ukrainian House, Essendon.
-Contact:
-Tel: 9367 3051
-Mob. 0434 330 645
-Tel: 9333 8269
-Mob. 0425 710 939
-
-Австралійська Спілка Укранців колишної Югославії влаштовує _Осінню Забаву _на 14-ого травня 2011 в Українському Народному Домі в Ессендоні.
-Звертатися до:
-тел: 9367 3051
-моб. 0434 330 645
-      
-        <div class="read-more-link">
-          <a href="/events/victoria/autumn-dance/">Read More…</a>
         </div>
       
     </article>
@@ -1399,6 +1461,8 @@ Mob. 0425 710 939
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

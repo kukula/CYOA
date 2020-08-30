@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/cultural-lesson-learned-well/">Cultural lesson learned well</a>
+        <a href="https://ukrainians.org.au/media/sbs-interview-genocide-revealed/">SBS Interview - &#34;Genocide Revealed&#34;</a>
+      </h1>
+      <time datetime="2012-11-15T22:58:32Z" class="post-date">Thu, Nov 15, 2012</time>
+      **[ ](http://www.ozeukes.com/wp-content/uploads/2012/11/150px-SBS-Ukrainian2.jpg)_&quot;ОКРАДЕНА ЗЕМЛЯ &ldquo;_ – ОДИН ІЗ НАЙКРАШИХ ДОКУМЕНТАЛЬНИХ ТА ІСТОРИЧНИХ КІНОФІЛЬМІВ**
+ПРОДЮСЕР ЮРІЙ ЛУГОВИЙ БУДЕ НА ПРЕМ&rsquo;ЄРАХ ФІЛЬМУ В АВСТРАЛІЇ У ЛИСТОПАДІ
+Відомий український та канадський кіонрежисер Юрій Луговий про фільми «Окрадена земля» та &ldquo;Genocide Revealed&rdquo;. Документальні фільми дають відповідь на запитання, чому терор голодом був спрямований проти українців, викриває механізм Голодомору, кваліфікує його відповідно до Конвенції ООН 1948 року як Ґеноцид. Фільм відзнято у 2008 році в Харківській, Донецькій та Дніпропетровській областях.
+      
+        <div class="read-more-link">
+          <a href="/media/sbs-interview-genocide-revealed/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/cultural-lesson-learned-well/">Cultural lesson learned well</a>
       </h1>
       <time datetime="2012-11-13T07:04:06Z" class="post-date">Tue, Nov 13, 2012</time>
       The local community newspaper, Hume Weekly, has published an article featuring Stefan Romaniw, the recently appointed state chairman of the Australia Day committee, expressing his views regarding the role of multiculturalism during celebrations of Australia Day.
@@ -60,11 +142,11 @@ Read the full article here: http://www.humeweekly.com.au/story/904149/cultural-l
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/genocide-revealed-screening-in-sydney/">“Genocide Revealed” screening in Sydney</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/genocide-revealed-screening-in-sydney/">“Genocide Revealed” screening in Sydney</a>
       </h1>
       <time datetime="2012-11-09T23:01:30Z" class="post-date">Fri, Nov 9, 2012</time>
       **_Genocide Revealed _**will be screened in Sydney at the Ukrainian Youth Centre (Dim Molodi) on Sunday 18 November 2012.
-**_Genocide Revealed_** is a historical documentary focusing on the 1932-1933 forced famine in Soviet Ukraine engineered by Stalin's regime. It depicts a human tragedy of unparalleled proportions. Based on moving testimonies of survivors; commentaries by historians and writers; rare historical film and photos of the period; Soviet archival documents; and examines the genocidal intent in the efforts to destroy Ukrainians as an independent nation.
+**_Genocide Revealed_** is a historical documentary focusing on the 1932-1933 forced famine in Soviet Ukraine engineered by Stalin&rsquo;s regime. It depicts a human tragedy of unparalleled proportions. Based on moving testimonies of survivors; commentaries by historians and writers; rare historical film and photos of the period; Soviet archival documents; and examines the genocidal intent in the efforts to destroy Ukrainians as an independent nation.
       
         <div class="read-more-link">
           <a href="/events/new-south-wales/genocide-revealed-screening-in-sydney/">Read More…</a>
@@ -72,11 +154,11 @@ Read the full article here: http://www.humeweekly.com.au/story/904149/cultural-l
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/sbs-radio-ukrainian-october-2012/">Радіопередача - SBS Radio жовтень 2012</a>
+        <a href="https://ukrainians.org.au/community/sbs-radio-ukrainian-october-2012/">Радіопередача - SBS Radio жовтень 2012</a>
       </h1>
       <time datetime="2012-11-07T00:07:49Z" class="post-date">Wed, Nov 7, 2012</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2012/11/150px-SBS-Ukrainian1.jpg)Радіопередача - SBS Radio жовтень 2012
-Богдан Рудницький веде інтерв'ю з Валентином Микитенком, головою Дирекції Української Кредитової Кооперативи “Дністер“ в Австралії. Український Кредитова Кооператива “Дністер“ почала свою діяльність в 1959 році, утвердившись з того часу як сильна фінансова установа, яка надає фінансові послуги і, головне, обслуговує своїх членів та клієнтів. Працює не задля прибутку й вигоди, а для виконання своєї кооперативної місії під незмінним гаслом “Наша сила - у єдності“ в ім’я членів кооперативи та української спільноти.
+Богдан Рудницький веде інтерв&rsquo;ю з Валентином Микитенком, головою Дирекції Української Кредитової Кооперативи “Дністер“ в Австралії. Український Кредитова Кооператива “Дністер“ почала свою діяльність в 1959 році, утвердившись з того часу як сильна фінансова установа, яка надає фінансові послуги і, головне, обслуговує своїх членів та клієнтів. Працює не задля прибутку й вигоди, а для виконання своєї кооперативної місії під незмінним гаслом “Наша сила - у єдності“ в ім’я членів кооперативи та української спільноти.
       
         <div class="read-more-link">
           <a href="/community/sbs-radio-ukrainian-october-2012/">Read More…</a>
@@ -84,10 +166,10 @@ Read the full article here: http://www.humeweekly.com.au/story/904149/cultural-l
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/genocide-revealed-screenings-in-australia/">&#34;Genocide Revealed&#34; - Screenings in Australia</a>
+        <a href="https://ukrainians.org.au/events/national-events/genocide-revealed-screenings-in-australia/">&#34;Genocide Revealed&#34; - Screenings in Australia</a>
       </h1>
       <time datetime="2012-11-05T02:01:15Z" class="post-date">Mon, Nov 5, 2012</time>
-      Documentary Genocide Revealed!  Screenings in Australia Genocide Revealed is a historical documentary focusing on the 1932-1933 forced famine in Soviet Ukraine engineered by Stalin's regime. It depicts a human tragedy of unparalleled proportions. Based on moving testimonies of survivors; commentaries by historians and writers; rare historical film and photos of the period; Soviet archival documents; and examines the genocidal intent in the efforts to destroy Ukrainians as an independent nation.
+      Documentary Genocide Revealed!  Screenings in Australia Genocide Revealed is a historical documentary focusing on the 1932-1933 forced famine in Soviet Ukraine engineered by Stalin&rsquo;s regime. It depicts a human tragedy of unparalleled proportions. Based on moving testimonies of survivors; commentaries by historians and writers; rare historical film and photos of the period; Soviet archival documents; and examines the genocidal intent in the efforts to destroy Ukrainians as an independent nation.
       
         <div class="read-more-link">
           <a href="/events/national-events/genocide-revealed-screenings-in-australia/">Read More…</a>
@@ -95,7 +177,7 @@ Read the full article here: http://www.humeweekly.com.au/story/904149/cultural-l
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/afuo-newsletter-3-2012-2015/">Обіжник 3  / 2012-2015</a>
+        <a href="https://ukrainians.org.au/community/afuo-newsletter-3-2012-2015/">Обіжник 3  / 2012-2015</a>
       </h1>
       <time datetime="2012-11-05T01:51:32Z" class="post-date">Mon, Nov 5, 2012</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2012/11/zCYOA-LOGO-7-star-color-150pxls.jpg)Обіжник 3 / 2012-2015
@@ -105,15 +187,15 @@ Newsletter 3 - 2012-2015 The last weekend on November Ukrainians internationally
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/the-age-on-the-ukrainian-holodomor/">“The Age” on the Ukrainian Holodomor </a>
+        <a href="https://ukrainians.org.au/media/the-age-on-the-ukrainian-holodomor/">“The Age” on the Ukrainian Holodomor </a>
       </h1>
       <time datetime="2012-11-05T01:35:05Z" class="post-date">Mon, Nov 5, 2012</time>
-      Ukrainian communities around the world are campaigning for global recognition of a horror that killed an estimated seven to 10 million Ukrainians during the Holodomor, the devastating famine that swept the nation during 1931-1932 as a direct result of Stalin's collectivisation and the Soviet Union's determination to wipe out Ukrainian nationalism.
+      Ukrainian communities around the world are campaigning for global recognition of a horror that killed an estimated seven to 10 million Ukrainians during the Holodomor, the devastating famine that swept the nation during 1931-1932 as a direct result of Stalin&rsquo;s collectivisation and the Soviet Union&rsquo;s determination to wipe out Ukrainian nationalism.
 _The Age _has published a multimedia article about this campaign at http://www.theage.com.au/multimedia/ukrainefamine/main.html
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ukrainian-band-from-canada-to-perform-in-sydney/">Ukrainian band from Canada to perform in Sydney</a>
+        <a href="https://ukrainians.org.au/culture/ukrainian-band-from-canada-to-perform-in-sydney/">Ukrainian band from Canada to perform in Sydney</a>
       </h1>
       <time datetime="2012-11-02T00:12:27Z" class="post-date">Fri, Nov 2, 2012</time>
       The Ukrainian Rock n&rsquo; roll band &lsquo;KLOOCH&rsquo; from Toronto, Canada will be performing in Sydney in December.
@@ -122,7 +204,7 @@ Tickets are available for purchase online at: http://brewhouse.eventix.com.au/2/
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/remember-the-victims-of-the-holodomor/">ВШАНУЙМО ПАМ’ЯТЬ ЖЕРТВ ГОЛОДОМОРУ</a>
+        <a href="https://ukrainians.org.au/community/remember-the-victims-of-the-holodomor/">ВШАНУЙМО ПАМ’ЯТЬ ЖЕРТВ ГОЛОДОМОРУ</a>
       </h1>
       <time datetime="2012-11-02T00:02:33Z" class="post-date">Fri, Nov 2, 2012</time>
       **[ ](http://www.ozeukes.com/wp-content/uploads/2012/11/World-Congress-of-Ukrainians-72-dpi-150-pxls-.jpg)ВШАНУЙМО ПАМ’ЯТЬ ЖЕРТВ ГОЛОДОМОРУ******
@@ -133,7 +215,7 @@ Media release: PR Nov 1 2012 (Eng )
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/melbourne-honours-upa-heroes/">У Мельборні вшанували пам’ять героїв УПА</a>
+        <a href="https://ukrainians.org.au/culture/melbourne-honours-upa-heroes/">У Мельборні вшанували пам’ять героїв УПА</a>
       </h1>
       <time datetime="2012-10-31T00:24:48Z" class="post-date">Wed, Oct 31, 2012</time>
       **[ ](http://www.ozeukes.com/wp-content/uploads/2012/10/Posters.jpg)У Мельборні вшанували пам’ять героїв УПА**** **
@@ -142,21 +224,6 @@ Media release: PR Nov 1 2012 (Eng )
       
         <div class="read-more-link">
           <a href="/culture/melbourne-honours-upa-heroes/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/community/worthy-commemoration-70-years-upa/">Гідно відзначили 70 Ліття УПA</a>
-      </h1>
-      <time datetime="2012-10-29T01:25:14Z" class="post-date">Mon, Oct 29, 2012</time>
-      _**Мельборн, Aвстралія**_****
-Гідно відзначили 70 Ліття УПA Неділя 28-го жовтня в Мельборні відбулося надзвичайно успішне відзначення 70 ліття УПA
-Програма почалася входом прапороносців, відтак Хор CУМ Черемош під диреґентурою проф В. Головка заспівали Марш Націоналiстів.
-Дружнинники CУМ відчитали Деколог. Фільм ,_ Воєнна Україна 1941 - 1945, _матеріял який підібрав Василь Яроцький , про УПA був висвітлений.
-Голова Проводу ОУН Cтефан Романів привітав присутних а особливо Упістів на залі. Відтак він відчитав програмову доповідь присвячена УПA.
-      
-        <div class="read-more-link">
-          <a href="/community/worthy-commemoration-70-years-upa/">Read More…</a>
         </div>
       
     </article>
@@ -1367,6 +1434,8 @@ Media release: PR Nov 1 2012 (Eng )
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

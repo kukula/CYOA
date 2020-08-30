@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Спільна коляда Союзу Українок в Сіднеї &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,38 +28,104 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
     <h1>Спільна коляда Союзу Українок в Сіднеї</h1>
     
     <p><strong><em>МАРІЧКА ГАЛАБУРДА-ЧИГРИН</em></strong></p>
-<h2 id="-----"><strong>СПІЛЬНА КОЛЯДА СОЮЗУ УКРАЇНОК в СІДНЕЇ</strong></h2>
+<h2 id="спільна-коляда-союзу-українок-в-сіднеї"><strong>СПІЛЬНА КОЛЯДА СОЮЗУ УКРАЇНОК в СІДНЕЇ</strong></h2>
 <!-- raw HTML omitted -->
-<p>Завершення Різдв'яниx Святкувань  в Сіднею закінчився в неділю 20.1.2013 року, в день після  свята Йордану, останнім концертом колядок в Народному Домі в Сіднеї.</p>
+<p>Завершення Різдв&rsquo;яниx Святкувань  в Сіднею закінчився в неділю 20.1.2013 року, в день після  свята Йордану, останнім концертом колядок в Народному Домі в Сіднеї.</p>
 <p>Імпрезу організував Союз Українок - Стейтова Управа з всіма відділами, ім. книгині Ольги, (голова Марта Менцінська) ім. Ольги Басараб (Голова Одарка Брецко) ім. Олени Пчілки (голова Христина Бейлі) , ім. Лесі Українки (Валя Домазар), суспільна Опіка відділ ім. Хариті Кононенко (голова Антоніна Війтович) ім. Анни Ярославни ( Анна Біланенко) !</p>
 <p>При вході до залі гостей вітали пані Катерина Атаманюк і пані Домна Даців.  Заля наповнялася людьми. Видно господині не сподівалися  аж так багато людей (через високу вологість, хоч спека-жара вже минула).  А люди заходили і з дітьми і треба було доставляти крісла і столи.  Похвально, що прийшли колядувати  старі, і старші і молодші і діти!</p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/DSCN1943.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/DSCN1943.jpg" alt="DSCN1943">
 </a><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/DSCN1931.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/DSCN1931.jpg" alt="DSCN1931">
 </a></p>
-<p>Голова Стейтової управи пані Оля Москв'як привітала присутніх з Йорданським святом, з Новим 2013 роком, взагалі з святочним періодом, який приблизився до його кінця, а який в Сіднею наша Громада велично відсвяткували.  Відбулося кілька імпрез концертів колядок в прицерковній залі УГКЦеркви, в громадській залі в Кабраматті, в прицерковній залі Св. Покровської Церкви УАПЦ.</p>
+<p>Голова Стейтової управи пані Оля Москв&rsquo;як привітала присутніх з Йорданським святом, з Новим 2013 роком, взагалі з святочним періодом, який приблизився до його кінця, а який в Сіднею наша Громада велично відсвяткували.  Відбулося кілька імпрез концертів колядок в прицерковній залі УГКЦеркви, в громадській залі в Кабраматті, в прицерковній залі Св. Покровської Церкви УАПЦ.</p>
 <p>Український Сідней колядує і вся земля, в небі ангели співають, прославляємо Христа.</p>
 <p>Пані Оля попросила до виголошення святкових вінчувань ветеранок, декляматорок нашої спільноти.  Першою виступила пі Люба Москаль, а відтак пані Пришляк.</p>
 <p>Ведучими свята були брат і сестра Галя і Павло Кравченко, які в короткій розповіді наводили традиції Різдва аж до Йордану.</p>
@@ -71,12 +136,12 @@
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/P1200134.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/P1200134.jpg" alt="P1200134">
 </a>Несподіванкою, радше чудовим дарунком для присутніх  був виступ Вікторії Волицької - Маланки і Маряна Римовського - Василя.  Гарною українською мовою вони вінчували, вітали з святами. І співали з публікою колядку &ldquo;Бог предвічний народився&rdquo;.  Після чого зірвалася буря оплесків. Багатьох присутніх не чули, як співає Вікторія.  Вона, 5-ти літня б&quot;є всі рекорди.  Виступає на кожнім громадськім і шкільнім святі й можливо буде солісткою-співачкою.  Марян, цьогорічний сіднейський Василь ще вінчував&hellip; і підійшла до нього і Вікторії дещо соромлива Софійка Бик з вінчуванням.  Діти своїм виступом подарували нам гарний настрій.  Всі троє учні Української Суботньої Школи ім. св. Андрія.  Їх вчителі, Преподобні сестри Василіянки, де Вікторія ходила до щоденного садочку, й батьки дітей - можуть бути гордими за таких малих артистів!  Було б прекрасно, якби діти школи які дуже гарно виступили перед парафіянами на Престольному Празнику УГКПарафії ім. св. Андрія з різдвяно-новорічним вертепом.</p>
 <p>Оскільки це було свято всіх відділів, то були святочні привіти від їх представників.</p>
-<p>Згадані пані на початку мого звідомлення виступили з Різдв'яними привітами.  Якщо не було присутньої голови відділу, читав хтось в заступництві - наприклад від відділу Лесі Українки - Тамара Базалицька, а від відділу Анни  Ярославни - Анна Біланенко.</p>
-<p>У свойому виступі Різдв'яному привіті, (нас було 9 членок відділу ім. Ольги Басараб), - я мала можливість сказати про смерть 13.1.  і похорони 15.1.2013 справжніх ГЕРОЇВ УКРАЇНИ Михайла Гориня, Павла Скочка - відомих правозахисників - шестидесятників і Михайла Зеленчука - голови КУ Вояків УПА в Україні ( помер 18.1., -незнаємо ще коли Його похорон відбудеться).  Кількома реченнями згадала про їх ув'язнення, Українську Гельсінську Групу, що роками згадувалося їх й інших політв'язнів в Сіднею підчас Дня Українського політв'язня, якого влаштовував 12.1.  Комітет Оборони Людських і Національних Прав України (голова Галя Яскевич, яка була присутньою і член комітету пі Таня Шухевич).</p>
-<p>З ініціятиви пі Наталії Ткал, попередньої голови Стейтової Управи, всі встали і 3 рази відспівали ВІЧНУЮ ПАМ'ЯТЬ!  Це було спонтанно і дуже зворушливо.  Бачила як у декого були сльози на очах, бо всі ми, далеко від України, на кінці світа, свідомі того, що відходять в засвіти справжні ГЕРОЇ нашої Батьківщини!</p>
+<p>Згадані пані на початку мого звідомлення виступили з Різдв&rsquo;яними привітами.  Якщо не було присутньої голови відділу, читав хтось в заступництві - наприклад від відділу Лесі Українки - Тамара Базалицька, а від відділу Анни  Ярославни - Анна Біланенко.</p>
+<p>У свойому виступі Різдв&rsquo;яному привіті, (нас було 9 членок відділу ім. Ольги Басараб), - я мала можливість сказати про смерть 13.1.  і похорони 15.1.2013 справжніх ГЕРОЇВ УКРАЇНИ Михайла Гориня, Павла Скочка - відомих правозахисників - шестидесятників і Михайла Зеленчука - голови КУ Вояків УПА в Україні ( помер 18.1., -незнаємо ще коли Його похорон відбудеться).  Кількома реченнями згадала про їх ув&rsquo;язнення, Українську Гельсінську Групу, що роками згадувалося їх й інших політв&rsquo;язнів в Сіднею підчас Дня Українського політв&rsquo;язня, якого влаштовував 12.1.  Комітет Оборони Людських і Національних Прав України (голова Галя Яскевич, яка була присутньою і член комітету пі Таня Шухевич).</p>
+<p>З ініціятиви пі Наталії Ткал, попередньої голови Стейтової Управи, всі встали і 3 рази відспівали ВІЧНУЮ ПАМ&rsquo;ЯТЬ!  Це було спонтанно і дуже зворушливо.  Бачила як у декого були сльози на очах, бо всі ми, далеко від України, на кінці світа, свідомі того, що відходять в засвіти справжні ГЕРОЇ нашої Батьківщини!</p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-023.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-023.jpg" alt="ZAKINCZENNIA RIZ TSYKLU 023">
 </a></p>
-<p>І присутні в розмовах за своїми столами продовжували спогади про ті страшні часи ув'язнення української інтеліґенції.  А було воно  недавно 1961 - 1980 ( до їх кінця).</p>
+<p>І присутні в розмовах за своїми столами продовжували спогади про ті страшні часи ув&rsquo;язнення української інтеліґенції.  А було воно  недавно 1961 - 1980 ( до їх кінця).</p>
 <p>Пан Володимир Карен від іменні присутніх подякував організаторкам КОЛЯДИ за гарне свято і заколядував козацьку старовинну колядку.  Просив нас співати з ним, що ми і зробили, повторюючy з ним рефрен.</p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-035.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-035.jpg" alt="ZAKINCZENNIA RIZ TSYKLU 035">
 </a><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-050.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-050.jpg" alt="ZAKINCZENNIA RIZ TSYKLU 050">
@@ -85,7 +150,7 @@
 <p>Це я вдячна долі й громаді, що можу при таких нагодах розповісти хоч коротко про деякі актуальні справи, бо в газеті друкується все з деяким спізненням. І присутні радо і з зацікавленням слухають.  Згадала  і про святкування в жовтні місяці 2012р. в Римі, зокрема наголосила на концертові, в якому  виконувався пролог опери композитора, героя України Мирослава Скорика &ldquo;Мойсей&rdquo;- твір частинно писався в Сіднеї.  А нас було присутніми лише двох з Австралії - Маруся Юрків Яроцька й я.  Згадала про відвідини могили гетьмана Павла Скоропадського.</p>
 <p><a href="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-087.jpg"><img src="http://www.ozeukes.com/wp-content/uploads/2013/01/ZAKINCZENNIA-RIZ-TSYKLU-087.jpg" alt="ZAKINCZENNIA RIZ TSYKLU 087">
 </a></p>
-<p>Переконана, що всі вийшли з залі задоволеними, з піднесеним настоєм. Імпреза випала чудовою, можливо і несподівано для самих організаторок, про що в заключному слові сказала пані Оля Москв'як, дякуючи за численну присутність, за допомогу тим, хто допомагав в залі, на кухні ( були подані канапки і печево) і за виступи. Нагородою за вкладену працю є зворушення громади.  Ясно, що громадяни хочуть сходитися, хочуть імпрез.</p>
+<p>Переконана, що всі вийшли з залі задоволеними, з піднесеним настоєм. Імпреза випала чудовою, можливо і несподівано для самих організаторок, про що в заключному слові сказала пані Оля Москв&rsquo;як, дякуючи за численну присутність, за допомогу тим, хто допомагав в залі, на кухні ( були подані канапки і печево) і за виступи. Нагородою за вкладену працю є зворушення громади.  Ясно, що громадяни хочуть сходитися, хочуть імпрез.</p>
 <!-- raw HTML omitted -->
 <p>До наступної коляди!</p>
 <p>Всі знимки з коляди тут: <a href="https://picasaweb.google.com/103027822885947798979/KOLIADASOUZUUKRAINOK#">https://picasaweb.google.com/103027822885947798979/KOLIADASOUZUUKRAINOK#</a></p>

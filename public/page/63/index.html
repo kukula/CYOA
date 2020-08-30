@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,112 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/blacksmiths-tree-unveiled/">Blacksmith&#39;s tree unveiled</a>
+        <a href="https://ukrainians.org.au/events/victoria/geelong-malanka-2014/">Geelong Malanka 2014</a>
+      </h1>
+      <time datetime="2013-12-09T03:22:42Z" class="post-date">Mon, Dec 9, 2013</time>
+      Geelong will be holding its 2014 Malanka on 10th January 2014 at The Pier, Geelong.
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/blacksmiths-tree-unveiled/">Blacksmith&#39;s tree unveiled</a>
       </h1>
       <time datetime="2013-12-09T03:14:02Z" class="post-date">Mon, Dec 9, 2013</time>
       Saturday 30 November 2013 saw the unveiling of the “Blacksmith’s Tree” in Whittlesea, just north of Melbourne, Victoria.
@@ -65,7 +141,7 @@ The 9 metre tall forged stainless steel and copper gum tree spanning nearly five
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/melbourne-prayer-vigil-video-clips/">Melbourne Prayer Vigil - Video clips</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-prayer-vigil-video-clips/">Melbourne Prayer Vigil - Video clips</a>
       </h1>
       <time datetime="2013-12-07T08:19:47Z" class="post-date">Sat, Dec 7, 2013</time>
       Short video clips of parts of Prayer Vigil held in Melbourne, Australia on 7th December 2013 in support of protesters in Ukraine.
@@ -74,7 +150,7 @@ Prayer
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/press-release-melbourne-prayer-vigil-for-ukraine/">Press Release: Melbourne Prayer Vigil for Ukraine</a>
+        <a href="https://ukrainians.org.au/current-affairs/press-release-melbourne-prayer-vigil-for-ukraine/">Press Release: Melbourne Prayer Vigil for Ukraine</a>
       </h1>
       <time datetime="2013-12-06T03:26:56Z" class="post-date">Fri, Dec 6, 2013</time>
       The Association of Ukrainians in Victoria (AUV) has issued a press release regarding a Prayer Vigil to be held in Melbourne in support of the protestors in Kyiv and other Ukrainian cities.
@@ -88,14 +164,14 @@ The following is a Prayer for Ukraine (Molytva za Ukrayinu) - in Ukrainian:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/holodomor-sydney-centennial-parklands-tree-commemoration-2013/">Holodomor – Sydney Centennial Parklands Tree Commemoration 2013</a>
+        <a href="https://ukrainians.org.au/community/holodomor-sydney-centennial-parklands-tree-commemoration-2013/">Holodomor – Sydney Centennial Parklands Tree Commemoration 2013</a>
       </h1>
       <time datetime="2013-12-06T03:05:46Z" class="post-date">Fri, Dec 6, 2013</time>
       
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/stefan-romaniw-from-kyiv-4-dec-2013/">Cтефан Романів - Київ 4-го грудня</a>
+        <a href="https://ukrainians.org.au/politics/stefan-romaniw-from-kyiv-4-dec-2013/">Cтефан Романів - Київ 4-го грудня</a>
       </h1>
       <time datetime="2013-12-05T00:10:38Z" class="post-date">Thu, Dec 5, 2013</time>
       Стефан Романів, голова СУОА, пише із Євромайдану в Києві.
@@ -108,7 +184,7 @@ The following is a Prayer for Ukraine (Molytva za Ukrayinu) - in Ukrainian:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/prayer-vigil-in-melbourne/">Prayer Vigil in Melbourne</a>
+        <a href="https://ukrainians.org.au/events/victoria/prayer-vigil-in-melbourne/">Prayer Vigil in Melbourne</a>
       </h1>
       <time datetime="2013-12-04T23:37:24Z" class="post-date">Wed, Dec 4, 2013</time>
       A prayer vigil in support of the Ukrainian people’s movement in Ukraine will be held on: SATURDAY 7TH DECEMBER 1.00PM UKRAINIAN CATHOLIC CHURCH - STS PETER AND PAUL CATHEDRAL 35 CANNING STREET NORTH MELBOURNE
@@ -117,11 +193,11 @@ Whether you are of Ukrainian or other background, join in prayer as concerned Au
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/holodomor-motion-passed-in-the-australian-senate/">Holodomor  motion passed in the Australian Senate</a>
+        <a href="https://ukrainians.org.au/politics/holodomor-motion-passed-in-the-australian-senate/">Holodomor  motion passed in the Australian Senate</a>
       </h1>
       <time datetime="2013-12-04T23:20:46Z" class="post-date">Wed, Dec 4, 2013</time>
       At the instigation of Senator Catryna Bilyk, the following motion was passed in the Australian Senate on 4th December 2013.
-a) notes that 2013 is the eightieth anniversary of Holodomor, an enforced famine in Ukraine caused by the deliberate actions of Stalin's Communist Government of the Union of Soviet Socialist Republics [USSR];
+a) notes that 2013 is the eightieth anniversary of Holodomor, an enforced famine in Ukraine caused by the deliberate actions of Stalin&rsquo;s Communist Government of the Union of Soviet Socialist Republics [USSR];
 b) recalls that it is estimated up to seven million Ukrainians starved to death as a result of Stalin’s policies in 1932 to 1933 alone;
       
         <div class="read-more-link">
@@ -130,7 +206,7 @@ b) recalls that it is estimated up to seven million Ukrainians starved to death
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/sydney-prayer-vigil-for-ukraine/">Sydney: Prayer Vigil for Ukraine</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/sydney-prayer-vigil-for-ukraine/">Sydney: Prayer Vigil for Ukraine</a>
       </h1>
       <time datetime="2013-12-04T23:03:56Z" class="post-date">Wed, Dec 4, 2013</time>
       A Prayer Vigil for peace and positive change in Ukraine was be held on Wednesday, December 4th 2013 at Martin Place in Sydney’s CBD. A keynote speech was delivered by Jerry Duma who was present in Kyiv, Ukraine at the start of the protest movement.
@@ -143,7 +219,7 @@ Speech by Jaroslav Duma OAM – delivered at Prayer Vigil, Martin Place, Sydney 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/press-release-australians-to-pray-for-peaceful-change-in-ukraine/">Press Release: Australians to Pray for Peaceful Change in Ukraine</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/press-release-australians-to-pray-for-peaceful-change-in-ukraine/">Press Release: Australians to Pray for Peaceful Change in Ukraine</a>
       </h1>
       <time datetime="2013-12-03T06:36:37Z" class="post-date">Tue, Dec 3, 2013</time>
       An inter-faith prayer vigil for peace and positive change in Ukraine will be held on Wednesday, December 4th at 12.45pm at Martin Place in Sydney’s CBD.
@@ -157,14 +233,6 @@ Media Release:
         <div class="read-more-link">
           <a href="/events/new-south-wales/press-release-australians-to-pray-for-peaceful-change-in-ukraine/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/womens-day-in-victori/">День Союзянки Союзу Українок Вікторії</a>
-      </h1>
-      <time datetime="2013-12-03T05:59:55Z" class="post-date">Tue, Dec 3, 2013</time>
-      В неділю, 1-го грудня в Клюбі УГВ відбувся День Союзянки СУВ з нагоди 100-річчя від дня смерти Лесі Українки. Гостей та союзянок вітала голова СУ Вікторії п.Наталка Гриневич. Програму вела Ірина Андреєва.
-У відзначенні приймали участь союзянки відділів СУ Вікторії союзянки новоствореного відділу &ldquo;Мальви&rdquo; Союзу Українок.
       
     </article>
 
@@ -1374,6 +1442,8 @@ Media Release:
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

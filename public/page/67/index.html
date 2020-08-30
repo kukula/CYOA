@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,39 +23,122 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/holodomor-national-event-commemorating-80-years/">Holodomor National Event - Commemorating 80 Years</a>
+        <a href="https://ukrainians.org.au/media/80th-anniversary-of-the-ukrainian-famine-genocide/">УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ</a>
+      </h1>
+      <time datetime="2013-10-02T03:26:32Z" class="post-date">Wed, Oct 2, 2013</time>
+      [ ](http://www.ozeukes.com/wp-content/uploads/2012/12/150px-SBS-Ukrainian.jpg)УКРАЇНЦІ У ВСЬОМУ СВІТІ ТА 80–ЛІТТЯ ГОЛОДОМОРУ–ҐЕНОЦИДУ В УКРАЇНІ
+Інтерв’ю з головою Управи Союзу Українських Організацій Австралії та Генеральним Секретарем Світового Конґресу Українців Стефаном Романівим про деякі головні акценти напередодні відзначення у світі 80-ліття Ґеноциду в Україні, а також дещо про австралійсько-українські взаємини…
+UKRAINIANS AROUND THE WORLD AND THE 80TH ANNIVERSARY OF THE UKRAINIAN FAMINE-GENOCIDE Interview SBS with Stefan Romaniw, OAM, who is the Chairman of the Australian Federation of Ukrainians Organisations and General Secretary of the Ukrainian World Congress about the National commemoration events and relations between Australia and Ukraine…
+      
+        <div class="read-more-link">
+          <a href="/media/80th-anniversary-of-the-ukrainian-famine-genocide/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/national-events/holodomor-national-event-commemorating-80-years/">Holodomor National Event - Commemorating 80 Years</a>
       </h1>
       <time datetime="2013-09-29T06:35:05Z" class="post-date">Sun, Sep 29, 2013</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2013/09/header_holod_3_2.jpg)
-Saturday, November 23, 2013 Holodomor - extermination by hunger - the famine of 1932-33 in Ukraine. This act of genocide committed through Stalin's crime against humanity must never be forgotten. Eighty years on - let's join together to remember and honour those that perished and to raise awareness of this tragic chapter of Ukraine's history. For further information on the event email holodomor@ozeukes.com.au or call 0438 372 270
+Saturday, November 23, 2013 Holodomor - extermination by hunger - the famine of 1932-33 in Ukraine. This act of genocide committed through Stalin&rsquo;s crime against humanity must never be forgotten. Eighty years on - let&rsquo;s join together to remember and honour those that perished and to raise awareness of this tragic chapter of Ukraine&rsquo;s history. For further information on the event email holodomor@ozeukes.com.au or call 0438 372 270
       
         <div class="read-more-link">
           <a href="/events/national-events/holodomor-national-event-commemorating-80-years/">Read More…</a>
@@ -64,12 +146,12 @@ Saturday, November 23, 2013 Holodomor - extermination by hunger - the famine of 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/greek-serbian-festival-and-us/">ГРЕЦЬКО-СЕРБСЬКИЙ ФЕСТИВАЛЬ Й МИ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/greek-serbian-festival-and-us/">ГРЕЦЬКО-СЕРБСЬКИЙ ФЕСТИВАЛЬ Й МИ</a>
       </h1>
       <time datetime="2013-09-29T04:39:18Z" class="post-date">Sun, Sep 29, 2013</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
 ГРЕЦЬКО-СЕРБСЬКИЙ ФЕСТИВАЛЬ Й МИ
-Все, що відбувається навкруги мене й пов'язане, зокрема з українцями з бувшої Юґославії, мені близьке, бо мій чоловік перебував там до і підчас війни й в Београді ( Белграді) мав зв'язки з Сербською Православною Церквою&hellip;Це окрема тема.****
+Все, що відбувається навкруги мене й пов&rsquo;язане, зокрема з українцями з бувшої Юґославії, мені близьке, бо мій чоловік перебував там до і підчас війни й в Београді ( Белграді) мав зв&rsquo;язки з Сербською Православною Церквою&hellip;Це окрема тема.****
 І ось в неділю 22.9.2013 відбувався в Парафіяльній залі Сербської Православної Церкви ім. св. Стефана в місцевості Plumpton - Rooty Hill ( Захід Сіднею недалеко моєї хати) 20 -ий з черги фестиваль Сербсько-Грецької Дружби, що перетворився в міжнародний фестиваль танців і співу.
       
         <div class="read-more-link">
@@ -78,7 +160,7 @@ Saturday, November 23, 2013 Holodomor - extermination by hunger - the famine of 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/uwc-confers-highest-award-on-australian-ukrainians/">СКУ відзначив найвищою нагородою українців з Австралії</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/uwc-confers-highest-award-on-australian-ukrainians/">СКУ відзначив найвищою нагородою українців з Австралії</a>
       </h1>
       <time datetime="2013-09-29T03:39:22Z" class="post-date">Sun, Sep 29, 2013</time>
       Світовий Конґрес Українців (СКУ) нагородив медаллю св. Володимира Великого на знак визнання значного внеску в розвиток української громади в діаспорі та в Україні декілька особам по цілому світу, включаючи двох з Австралії:
@@ -92,7 +174,7 @@ Saturday, November 23, 2013 Holodomor - extermination by hunger - the famine of 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/sbs-radio-world-congress-of-ukrainians/">SBS RADIO: СВІТОВЕ УКРАЇНСТВО ТА СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ</a>
+        <a href="https://ukrainians.org.au/community/sbs-radio-world-congress-of-ukrainians/">SBS RADIO: СВІТОВЕ УКРАЇНСТВО ТА СВІТОВИЙ КОНҐРЕС УКРАЇНЦІВ</a>
       </h1>
       <time datetime="2013-09-20T01:19:48Z" class="post-date">Fri, Sep 20, 2013</time>
       Делеґати X Світового Конґресу Українців (СКУ) переобрали Евгена Чолія на другий п’ятирічний термін Президентом Світового Конґресу Українців, а Стефана Романіва - Генеральним Секретарем СКУ. Про деякі головні акценти Х-го Конґресу мова йде в інтерв’ю SBS із паном Романівим…
@@ -104,7 +186,7 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/new-book-release-fortune-at-the-edge-of-the-world/">Презинтaція книжки “Щастя на краю світу”</a>
+        <a href="https://ukrainians.org.au/culture/new-book-release-fortune-at-the-edge-of-the-world/">Презинтaція книжки “Щастя на краю світу”</a>
       </h1>
       <time datetime="2013-09-12T10:53:40Z" class="post-date">Thu, Sep 12, 2013</time>
       65 ліття поселення українців в Aвстралії  ПРЕЗИНТAЦІЯ КНИЖКИ “Щастя на краю світу****” відбудеться у КИЄВІ** **
@@ -119,7 +201,7 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/st-andrews-school-says-thank-you/">Школа ім. св. Андрія дякує</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/st-andrews-school-says-thank-you/">Школа ім. св. Андрія дякує</a>
       </h1>
       <time datetime="2013-09-12T10:29:33Z" class="post-date">Thu, Sep 12, 2013</time>
       МАРІЧКА ГАЛАБУРДА - ЧИГРИН
@@ -131,7 +213,7 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/recognising-the-generosity-of-victor-and-marijka-rudewych/">ВІДЗНAЧЕННЯ ЖЕРТОВНОCТІ ВІКТОРA ТA МAРІЙКИ РУДЕВИЧ</a>
+        <a href="https://ukrainians.org.au/events/international-events/recognising-the-generosity-of-victor-and-marijka-rudewych/">ВІДЗНAЧЕННЯ ЖЕРТОВНОCТІ ВІКТОРA ТA МAРІЙКИ РУДЕВИЧ</a>
       </h1>
       <time datetime="2013-09-07T00:34:43Z" class="post-date">Sat, Sep 7, 2013</time>
       **ВІДЗНAЧЕННЯ ЖЕРТОВНОCТІ ВІКТОРA ТA МAРІЙКИ РУДЕВИЧ НA ПІДТРИМКУ В УКРAЇНІ ТA ДІЯCПОРІ**
@@ -144,7 +226,7 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ukrainian-language-course-in-ukraineukrainian-language-course-in-ukraine/">Ukrainian Language course in Ukraine / Курси української мови в Україні</a>
+        <a href="https://ukrainians.org.au/culture/ukrainian-language-course-in-ukraineukrainian-language-course-in-ukraine/">Ukrainian Language course in Ukraine / Курси української мови в Україні</a>
       </h1>
       <time datetime="2013-08-31T05:39:19Z" class="post-date">Sat, Aug 31, 2013</time>
       Ukrainian Language &amp; Culture School Two-week intensive course on Ukrainian Language and Culture
@@ -160,7 +242,7 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/22nd-anniversary-of-ukraines-independence-in-sydney/">22 річниця Незалежности України в Сіднею</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/22nd-anniversary-of-ukraines-independence-in-sydney/">22 річниця Незалежности України в Сіднею</a>
       </h1>
       <time datetime="2013-08-28T02:39:44Z" class="post-date">Wed, Aug 28, 2013</time>
       МАРІЧКА ГАЛАБУРДА — ЧИГРИН
@@ -171,14 +253,6 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
         <div class="read-more-link">
           <a href="/events/new-south-wales/22nd-anniversary-of-ukraines-independence-in-sydney/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/50th-anniversary-of-ukrainian-hall-in-newborough/">50 ліття Українського Громадського Дому в Нюборо</a>
-      </h1>
-      <time datetime="2013-08-26T03:11:47Z" class="post-date">Mon, Aug 26, 2013</time>
-      50 ліття Українського Громадського Дому в Нюборо Філія Української Громади Вікторії (УГВ) в Нюборо відзначить 50 ліття будови Українського Громадського Дому в Нюборо в жовтні 2013р.
-50th anniversary of Ukrainian Hall in Newborough The Association of Ukrainians in Victoria (Newborough branch) is celebrating the 50th anniversary of the building of the Ukrainian Hall in Newborough in October 2013.
       
     </article>
 
@@ -1388,6 +1462,8 @@ Delegates to the X Ukrainian World Congress (UWC) re-elected Eugene Czolij for a
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

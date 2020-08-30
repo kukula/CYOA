@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,38 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/photos-from-the-ukrainian-festival-hopak-in-the-park-ukrainian-dance-spectacular/">Photos from the Ukrainian Festival ‘Hopak in the Park’ Ukrainian Dance Spectacular</a>
+        <a href="https://ukrainians.org.au/events/victoria/ukrainian-school-noble-park-60th-anniversary/">Ukrainian School Noble Park 60th Anniversary</a>
+      </h1>
+      <time datetime="2014-05-02T01:58:42Z" class="post-date">Fri, May 2, 2014</time>
+      The Ukrainian Community School in Noble Park is celebrating its 60th anniversary on Sunday, May 18th 2014.
+
+Українська школа ім. Лесі Українки в Нобл Парку святкує своє 60-ліття у неділю 18-го травня 2014р.
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/photos-from-the-ukrainian-festival-hopak-in-the-park-ukrainian-dance-spectacular/">Photos from the Ukrainian Festival ‘Hopak in the Park’ Ukrainian Dance Spectacular</a>
       </h1>
       <time datetime="2014-04-29T01:52:37Z" class="post-date">Tue, Apr 29, 2014</time>
-      Hundreds of Australia's best Ukrainian dancers took part in the Ukrainian Dance Festival on Saturday 26th April 2014 at the Sidney Myer Music Bowl in Melbourne. Supporting this show were dance ensembles from the Irish, Spanish and Greek communities, and the highly acclaimed Ukrainian band “Zirka” from Toronto, Canada.
+      Hundreds of Australia&rsquo;s best Ukrainian dancers took part in the Ukrainian Dance Festival on Saturday 26th April 2014 at the Sidney Myer Music Bowl in Melbourne. Supporting this show were dance ensembles from the Irish, Spanish and Greek communities, and the highly acclaimed Ukrainian band “Zirka” from Toronto, Canada.
 A full album of photos, courtesy of Taras and Sonja Moravski, can be viewed at: https://www.flickr.com/photos/moravski/sets/72157644354135471/
 A small selection is presented here
       
@@ -65,7 +143,7 @@ A small selection is presented here
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-under-attack-issue-14/">Ukraine Under Attack – Issue 14</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-under-attack-issue-14/">Ukraine Under Attack – Issue 14</a>
       </h1>
       <time datetime="2014-04-29T01:27:46Z" class="post-date">Tue, Apr 29, 2014</time>
       Issue #14 of the bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, is now available. This issue summarises the most recent happenings regarding the pro-Russian separatist movements in eastern Ukraine and Russia’s continuing failure to abide by the recent Geneva Agreement.
@@ -73,7 +151,7 @@ Ukraine Under Attack #14
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-under-attack-issue-13/">Ukraine Under Attack – Issue 13</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-under-attack-issue-13/">Ukraine Under Attack – Issue 13</a>
       </h1>
       <time datetime="2014-04-25T10:41:58Z" class="post-date">Fri, Apr 25, 2014</time>
       Issue #13 of the bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, is now available. This issue provides updates on the lack of progress of the 4-party Geneva Agreement signed in mid April, provides a little insight into some of the personalities assuming puppet powers in Crimea, and has a facsimile of the anti-Jewish letter being circulated by the pro-Russian separatists in eastern Ukraine.
@@ -81,7 +159,7 @@ Ukraine Under Attack #13
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/easter-service-at-the-ukrainian-catholic-church/">Пасхальна Богослужба Парафії УГКЦ ім св Андрія</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/easter-service-at-the-ukrainian-catholic-church/">Пасхальна Богослужба Парафії УГКЦ ім св Андрія</a>
       </h1>
       <time datetime="2014-04-21T04:41:38Z" class="post-date">Mon, Apr 21, 2014</time>
       **_МАРІЧКА ГАЛАБУРДА-ЧИГРИН_**
@@ -95,7 +173,7 @@ Ukraine Under Attack #13
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/blessing-of-easter-baskets-at-the-orthodox-church/">Посвячення Паскальних Кошиків в Св. Покровській Парафії, УАПЦ</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/blessing-of-easter-baskets-at-the-orthodox-church/">Посвячення Паскальних Кошиків в Св. Покровській Парафії, УАПЦ</a>
       </h1>
       <time datetime="2014-04-21T04:25:24Z" class="post-date">Mon, Apr 21, 2014</time>
       МАРІЧКА ГАЛАБУРДА-ЧИГРИН
@@ -110,7 +188,7 @@ Ukraine Under Attack #13
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-under-attack-issues-11-and-12/">Ukraine Under Attack – Issues 11 and 12</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-under-attack-issues-11-and-12/">Ukraine Under Attack – Issues 11 and 12</a>
       </h1>
       <time datetime="2014-04-18T01:47:45Z" class="post-date">Fri, Apr 18, 2014</time>
       Issues #11 and #12 of the bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, are now available. These issues provide updates on the ongoing aggressive nature of the Russian government towards Ukraine and more international reaction to the continuing destabilisation attempts in Ukraine.
@@ -119,7 +197,7 @@ Ukraine Under Attack #12
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/pysanky-for-ukraine-sydney/">Писанки для України - Сідней</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/pysanky-for-ukraine-sydney/">Писанки для України - Сідней</a>
       </h1>
       <time datetime="2014-04-15T07:49:50Z" class="post-date">Tue, Apr 15, 2014</time>
       МАРІЧКА ГАЛАБУРДА-ЧИГРИН
@@ -134,7 +212,7 @@ Ukraine Under Attack #12
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-10/">Crimea Bulletin 10</a>
+        <a href="https://ukrainians.org.au/politics/crimea-bulletin-10/">Crimea Bulletin 10</a>
       </h1>
       <time datetime="2014-04-14T02:45:33Z" class="post-date">Mon, Apr 14, 2014</time>
       Issue #10 of the Crimea bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, has now been released by the Ukrainian Embassy in Canberra. This issue reviews further international reaction to the ongoing destabilisation attempts in Ukraine.
@@ -142,7 +220,7 @@ crimea bulletin #10
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/afuo-media-release-putin-grabs-more-of-ukraine-australia-needs-to-do-more/">AFUO Media Release: Putin grabs more of Ukraine / Australia needs to do more</a>
+        <a href="https://ukrainians.org.au/events/international-events/afuo-media-release-putin-grabs-more-of-ukraine-australia-needs-to-do-more/">AFUO Media Release: Putin grabs more of Ukraine / Australia needs to do more</a>
       </h1>
       <time datetime="2014-04-14T02:41:41Z" class="post-date">Mon, Apr 14, 2014</time>
       The Australian Federation of Ukrainian Organisations (AFUO) has issued a media release regarding the latest attempts by the Putin regime to make further aggressive incursions into Ukraine. The statement also calls upon the Australian government to make more concerted actions to condemn these internationally illegal activities by the Russian government.  Media statement: AFUO Media Release on Donetsk intervention
@@ -151,14 +229,6 @@ In addition, the AFUO has written directly to the Minister for Foreign Affairs, 
         <div class="read-more-link">
           <a href="/events/international-events/afuo-media-release-putin-grabs-more-of-ukraine-australia-needs-to-do-more/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/crimea-bulletin-9/">Crimea Bulletin 9</a>
-      </h1>
-      <time datetime="2014-04-14T02:21:04Z" class="post-date">Mon, Apr 14, 2014</time>
-      Issue #9 of the Crimea bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, is now available. This issue summarises some of the international reactions to the illegal actions of the Russian government, and further destabilisation attempts in eastern Ukraine.
-crimea bulletin 9
       
     </article>
 
@@ -1368,6 +1438,8 @@ crimea bulletin 9
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

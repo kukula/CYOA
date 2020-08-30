@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Invitation to hear Dr. Phillip Karber - Reflecting on Ukraine’s Current &#34;War in the East&#34; &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -57,18 +122,18 @@
 <p>to meet with Australia’s Ukrainian community during his stay and commitments with Australia’ Defence Forces.</p>
 <p><img src="http://www.ozeukes.com/wp-content/uploads/2016/11/Karber.jpg" alt="karber">
 Dr Karber an international authority from the USA, has undertaken 25 Frontline and Command visits to Donbas war region and is an internationally recognised expert in defence and national security matters.</p>
-<p>He is President of the Potomac Foundation; he was named to this position in 2012, having been a Senior Fellow since the Foundation’s inception in 1988. Dr. Karber is an internationally recognized expert in defence and national security matters; an accomplished business executive; and an academic. He has prepared studies on defence strategy for the highest levels of the U.S. government; advised major NATO governments on defence issues; headed BDM Corporation’s International Division; and taught courses in national security and military affairs at Georgetown University, where he also was founding director of the Asian Arms Control Project. He has travelled 25  times to the frontline of the &lsquo;hybrid war&rsquo; Russia has carrying on in Ukraine's Donbas region during the last two years; he is considered the West's leading expert on the said subject.</p>
+<p>He is President of the Potomac Foundation; he was named to this position in 2012, having been a Senior Fellow since the Foundation’s inception in 1988. Dr. Karber is an internationally recognized expert in defence and national security matters; an accomplished business executive; and an academic. He has prepared studies on defence strategy for the highest levels of the U.S. government; advised major NATO governments on defence issues; headed BDM Corporation’s International Division; and taught courses in national security and military affairs at Georgetown University, where he also was founding director of the Asian Arms Control Project. He has travelled 25  times to the frontline of the &lsquo;hybrid war&rsquo; Russia has carrying on in Ukraine&rsquo;s Donbas region during the last two years; he is considered the West&rsquo;s leading expert on the said subject.</p>
 <p>Dr. Karber will speak to the issue of:</p>
 <h3 id="reflecting-on-ukraines-current-war-in-the-east">Reflecting on Ukraine’s Current ‘War in the East’</h3>
 <h3 id="divining-its-possibleoutcomes-taking-measure-of-the-more-global-repercussions">Divining its Possible Outcomes; Taking Measure of the &lsquo;More Global&rsquo; Repercussions</h3>
 <p>The AFUO in cooperation with Ukrainian Community of Queensland (inc), Association of Ukrainians in Victoria, Ukrainian Council of NSW, Embassy of Ukraine in Australia, Ukraine Democratic Initiative our academics at Ukrainian Studies Monash University and ANU and are in the process of finalising dates for his community presentations.</p>
 <h3 id="brisbane">Brisbane</h3>
-<h3 id="-sunday-20-november-at-400-pm-"><em>Sunday 20 November at 4.00 pm</em></h3>
+<h3 id="_sunday-20-november-at-400-pm_"><em>Sunday 20 November at 4.00 pm</em></h3>
 <p>Ukrainian Catholic Church Hall
 40 Broadway Street
 Woolloongabba</p>
 <h3 id="melbourne">Melbourne</h3>
-<h3 id="-friday-25-november-at-630-pm-"><em>Friday 25 November at 6.30 pm</em></h3>
+<h3 id="_friday-25-november-at-630-pm_"><em>Friday 25 November at 6.30 pm</em></h3>
 <p>Ukrainian Community Centre
 3 Russell Street
 Essendon</p>

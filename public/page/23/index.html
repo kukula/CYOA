@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/30th-anniversary-of-the-chornobyl-disaster-light-a-candle-in-memory/">30th anniversary of the Chornobyl Disaster - Light a Candle in memory</a>
+        <a href="https://ukrainians.org.au/media/30-littya-katastrofi-u-chornobili-interview-sbs-ukrainian/">30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ - Інтерв’ю на SBS Ukrainian Radio</a>
+      </h1>
+      <time datetime="2016-04-26T07:40:28Z" class="post-date">Tue, Apr 26, 2016</time>
+      [ ](http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/30-littya-katastrofi-u-chornobili-vidznachayut-v-avstraliyi)30-ЛІТТЯ КАТАСТРОФИ У ЧОРНОБИЛІ ВІДЗНАЧАЮТЬ В АВСТРАЛІЇ
+26-го квітня 1986-го року найбільша у світі за всю історію ядерна катастрофа сталася на ЧАЕС, неподалік Припяті в Україні, яка була окупована і перебувала у складі тодішнього Радянського Союзу&hellip;
+http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/30-littya-katastrofi-u-chornobili-vidznachayut-v-avstraliyi
+  [ ](http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/roman-korchev-pro-yadernu-katastrofu-u-chornobili)РОМАН КОРЧЕВ ПРО ЯДЕРНУ КАТАСТРОФУ У ЧОРНОБИЛІ
+Богдан Рудницький розмовляє із очевидцем трагедії з Києва Романом Корчевим, котрий уже понад 20 років проживає у Мельбурні&hellip;
+http://www.sbs.com.au/yourlanguage/ukrainian/uk/content/roman-korchev-pro-yadernu-katastrofu-u-chornobili
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/community/30th-anniversary-of-the-chornobyl-disaster-light-a-candle-in-memory/">30th anniversary of the Chornobyl Disaster - Light a Candle in memory</a>
       </h1>
       <time datetime="2016-04-26T07:13:52Z" class="post-date">Tue, Apr 26, 2016</time>
       April 26, 2016
@@ -66,7 +147,7 @@ Today, 26 April 2016 marks the 30th Anniversary of Chornobyl Nuclear Disaster in
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/australias-ukrainian-community-pays-to-respect-to-our-anzac-war-veterans/">AUSTRALIA’S UKRAINIAN COMMUNITY PAYS TO RESPECT TO OUR ANZAC WAR VETERANS</a>
+        <a href="https://ukrainians.org.au/community/australias-ukrainian-community-pays-to-respect-to-our-anzac-war-veterans/">AUSTRALIA’S UKRAINIAN COMMUNITY PAYS TO RESPECT TO OUR ANZAC WAR VETERANS</a>
       </h1>
       <time datetime="2016-04-25T02:24:55Z" class="post-date">Mon, Apr 25, 2016</time>
       April 25, 2016
@@ -79,7 +160,7 @@ On this ANZAC DAY we especially note the commitment and dedication of our Vietna
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/victor-rudewych-receives-his-o-a-m/">Victor Rudewych receives his O.A.M.</a>
+        <a href="https://ukrainians.org.au/community/victor-rudewych-receives-his-o-a-m/">Victor Rudewych receives his O.A.M.</a>
       </h1>
       <time datetime="2016-04-22T07:13:49Z" class="post-date">Fri, Apr 22, 2016</time>
       (Re-posted from http://catholicukes.org.au/victor-rudewych-receives-o-m/)
@@ -93,15 +174,15 @@ Victor’s wife, Marijka and his children Juliana and Timothy were present as we
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/connecting-communities-dnister-conference-and-focus-group/">Connecting Communities - Dnister Conference and Focus Group</a>
+        <a href="https://ukrainians.org.au/events/connecting-communities-dnister-conference-and-focus-group/">Connecting Communities - Dnister Conference and Focus Group</a>
       </h1>
       <time datetime="2016-04-21T07:34:28Z" class="post-date">Thu, Apr 21, 2016</time>
       Together with support from the Australia-Ukraine Chamber of Commerce, Dnister Ukrainian Credit Co-operative is hosting a discussion forum in Queensland on Friday 6th May 2016, at the Hilton Brisbane, to discuss Dnister’s current strategic initiatives and explore avenues for mutual growth and collaboration with the Queensland community.
-For more information please refer to Dnister's page dedicated to the event.
+For more information please refer to Dnister&rsquo;s page dedicated to the event.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/uis-digest-1/">Перший інформаційний бюлетень Української Інформаційної Служби (УІС)</a>
+        <a href="https://ukrainians.org.au/politics/uis-digest-1/">Перший інформаційний бюлетень Української Інформаційної Служби (УІС)</a>
       </h1>
       <time datetime="2016-04-19T09:43:39Z" class="post-date">Tue, Apr 19, 2016</time>
       Перший інформаційний бюлетень Української Інформаційної Служби (УІС) присячений 70-й річниці створення Антибільшовицького Блоку Народів – АБН, міжнародної організації, що постала завдяки Організації Українських Націоналістів (бандерівців) і об’єднала нації, безпосередньо поневолені радянською Росією та нації, що входили до складу так званого «соціалістичного табору».
@@ -109,7 +190,7 @@ UIS_digest
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/ourcommunity-campaign/">#ourcommunity campaign</a>
+        <a href="https://ukrainians.org.au/community/ourcommunity-campaign/">#ourcommunity campaign</a>
       </h1>
       <time datetime="2016-04-17T13:30:57Z" class="post-date">Sun, Apr 17, 2016</time>
       17-го квітня 2016
@@ -123,7 +204,7 @@ UIS_digest
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/eco-echo-chornobyl/">Eco Echo Chornobyl / Еко Відголос Чорнобилю</a>
+        <a href="https://ukrainians.org.au/events/eco-echo-chornobyl/">Eco Echo Chornobyl / Еко Відголос Чорнобилю</a>
       </h1>
       <time datetime="2016-04-17T11:27:20Z" class="post-date">Sun, Apr 17, 2016</time>
       We would like to invite you to a multimedia concert to commemorate 30 years since the nuclear disaster in Chornobyl, Ukraine.
@@ -138,7 +219,7 @@ CONCERT PROGRAMME
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/folknery-help-support-hospital-costs-of-their-newly-arrived-son-ukr/">«ФОЛЬКНЕРИ» - ФОНД ПОКРИТТЯ ЛІКАРСЬКИХ ВИТРАТ ПРИ НАРОДЖЕННІ СИНА</a>
+        <a href="https://ukrainians.org.au/culture/folknery-help-support-hospital-costs-of-their-newly-arrived-son-ukr/">«ФОЛЬКНЕРИ» - ФОНД ПОКРИТТЯ ЛІКАРСЬКИХ ВИТРАТ ПРИ НАРОДЖЕННІ СИНА</a>
       </h1>
       <time datetime="2016-04-17T11:18:18Z" class="post-date">Sun, Apr 17, 2016</time>
       14-го квітня 2016
@@ -152,7 +233,7 @@ CONCERT PROGRAMME
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/folknery-help-support-hospital-costs-of-their-newly-arrived-son/">FOLKNERY: help support hospital costs of their newly arrived son</a>
+        <a href="https://ukrainians.org.au/culture/folknery-help-support-hospital-costs-of-their-newly-arrived-son/">FOLKNERY: help support hospital costs of their newly arrived son</a>
       </h1>
       <time datetime="2016-04-14T06:27:48Z" class="post-date">Thu, Apr 14, 2016</time>
       As you may be aware our guests from Ukraine, Folknery - Voloymyr Muliar and Iryna Havrylets are now the proud parents of a newly arrived son Marko.
@@ -162,15 +243,6 @@ Iryna and Volodymyr had tickets booked to Argentina on May 2, 2016, but the unex
         <div class="read-more-link">
           <a href="/culture/folknery-help-support-hospital-costs-of-their-newly-arrived-son/">Read More…</a>
         </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/gallery/strengthening-ties-with-the-ukrainian-embassy/">Strengthening ties with the Ukrainian Embassy</a>
-      </h1>
-      <time datetime="2016-04-11T07:25:16Z" class="post-date">Mon, Apr 11, 2016</time>
-      Dnister team members had the pleasure of meeting with His Excellency, Ukrainian Ambassador to Australia, The Honourable Dr Mykola Kulinich and his Embassy team in Canberra this past week, 6th April 2016.
-Read the full story here.
-View the photos from the event here.
       
     </article>
 
@@ -1380,6 +1452,8 @@ View the photos from the event here.
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Invictus Games &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,54 +23,120 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/tags/invictus-games/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/tags/invictus-games/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <ul class="posts">
 <li>
-    <span><a href="https://ozeukes.com/community/record-donation-crisis-appeal/">Record donation efforts by Ukrainians in Australia for Crisis Appeal</a> <time class="pull-right post-list" datetime="2019-01-06T02:36:54Z">Sun, Jan 6, 2019</time></span>
+    <span><a href="https://ukrainians.org.au/community/record-donation-crisis-appeal/">Record donation efforts by Ukrainians in Australia for Crisis Appeal</a> <time class="pull-right post-list" datetime="2019-01-06T02:36:54Z">Sun, Jan 6, 2019</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/international-events/invictus-games-wrap-one/">Invictus Games Sydney Team Ukraine: Day One to Four Summary</a> <time class="pull-right post-list" datetime="2018-10-24T02:50:07Z">Wed, Oct 24, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/events/international-events/invictus-games-wrap-one/">Invictus Games Sydney Team Ukraine: Day One to Four Summary</a> <time class="pull-right post-list" datetime="2018-10-24T02:50:07Z">Wed, Oct 24, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/politics/foley-motion-sentsov-invictus/">Luke Foley raises Sentsov plight and Team Ukraine in NSW Parliament</a> <time class="pull-right post-list" datetime="2018-10-24T00:06:14Z">Wed, Oct 24, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/politics/foley-motion-sentsov-invictus/">Luke Foley raises Sentsov plight and Team Ukraine in NSW Parliament</a> <time class="pull-right post-list" datetime="2018-10-24T00:06:14Z">Wed, Oct 24, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/video-greeting-ukraine/">Greetings from Ukraine!</a> <time class="pull-right post-list" datetime="2018-10-17T00:14:26Z">Wed, Oct 17, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/video-greeting-ukraine/">Greetings from Ukraine!</a> <time class="pull-right post-list" datetime="2018-10-17T00:14:26Z">Wed, Oct 17, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/ukrainian-community-welcomes-team-ukraine/">УКРАЇНСЬКА ГРОМАДА АВСТРАЛІЇ ВІТАЄ  НАЦІОНАЛЬНУ ЗБІРНУ КОМАНДУ -   “ІГРИ НЕСКОРЕНИХ&#34;</a> <time class="pull-right post-list" datetime="2018-10-16T09:34:35Z">Tue, Oct 16, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/ukrainian-community-welcomes-team-ukraine/">УКРАЇНСЬКА ГРОМАДА АВСТРАЛІЇ ВІТАЄ  НАЦІОНАЛЬНУ ЗБІРНУ КОМАНДУ -   “ІГРИ НЕСКОРЕНИХ&#34;</a> <time class="pull-right post-list" datetime="2018-10-16T09:34:35Z">Tue, Oct 16, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/afuo-gold-patron-crisis-appeal/">AFUO becomes Gold Patron of Invictus Games - Ukraine Crisis Appeal</a> <time class="pull-right post-list" datetime="2018-10-11T10:50:56Z">Thu, Oct 11, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/afuo-gold-patron-crisis-appeal/">AFUO becomes Gold Patron of Invictus Games - Ukraine Crisis Appeal</a> <time class="pull-right post-list" datetime="2018-10-11T10:50:56Z">Thu, Oct 11, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/cabramatta-fairfield-supports-ukraine/">Ukraine&#39;s Veterans receive major support from Cabramatta-Fairfield</a> <time class="pull-right post-list" datetime="2018-10-10T05:41:20Z">Wed, Oct 10, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/cabramatta-fairfield-supports-ukraine/">Ukraine&#39;s Veterans receive major support from Cabramatta-Fairfield</a> <time class="pull-right post-list" datetime="2018-10-10T05:41:20Z">Wed, Oct 10, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/invictus-games-ukraine-guide/">Invictus Games | Your Guide to Team Ukraine Activities</a> <time class="pull-right post-list" datetime="2018-10-03T10:26:45Z">Wed, Oct 3, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/events/invictus-games-ukraine-guide/">Invictus Games | Your Guide to Team Ukraine Activities</a> <time class="pull-right post-list" datetime="2018-10-03T10:26:45Z">Wed, Oct 3, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/events/team-ukraine-meet-invictus/">Team Ukraine Meet &amp; Greet |  Зустріч з командою Україна</a> <time class="pull-right post-list" datetime="2018-09-28T09:53:15Z">Fri, Sep 28, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/events/team-ukraine-meet-invictus/">Team Ukraine Meet &amp; Greet |  Зустріч з командою Україна</a> <time class="pull-right post-list" datetime="2018-09-28T09:53:15Z">Fri, Sep 28, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/community/join-the-invictus-flag-presentation-in-sydney/">Join the Invictus Flag Presentation in Sydney!</a> <time class="pull-right post-list" datetime="2018-08-22T11:47:40Z">Wed, Aug 22, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/community/join-the-invictus-flag-presentation-in-sydney/">Join the Invictus Flag Presentation in Sydney!</a> <time class="pull-right post-list" datetime="2018-08-22T11:47:40Z">Wed, Aug 22, 2018</time></span>
   </li><li>
-    <span><a href="https://ozeukes.com/sport/less-than-100-days-until-the-invictus-games-in-sydney/">Less than 100 days until the Invictus Games in Sydney!</a> <time class="pull-right post-list" datetime="2018-07-13T10:46:22Z">Fri, Jul 13, 2018</time></span>
+    <span><a href="https://ukrainians.org.au/sport/less-than-100-days-until-the-invictus-games-in-sydney/">Less than 100 days until the Invictus Games in Sydney!</a> <time class="pull-right post-list" datetime="2018-07-13T10:46:22Z">Fri, Jul 13, 2018</time></span>
   </li>
 </ul>
     </main>

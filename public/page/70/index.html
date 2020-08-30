@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ucs-heritage-issue-no-8/">UCS Heritage issue no. 8</a>
+        <a href="https://ukrainians.org.au/community/ukrainian-catholic-church-now-a-recognised-denomination-in-australia/">Ukrainian Catholic Church now a recognised denomination in Australia</a>
+      </h1>
+      <time datetime="2013-07-01T05:02:58Z" class="post-date">Mon, Jul 1, 2013</time>
+      [ ](http://www.ozeukes.com/wp-content/uploads/2013/07/EparchyCrest_thumb.jpg)
+Governor-General proclaims Ukrainian Catholic Church in Australia a recognised denomination. Since its inception over 50 years ago, the Ukrainian Greek-Catholic Eparchy in Australia has been regarded by the Commonwealth government as a part of the Roman Catholic Church for the purposes of registration as a religious entity. Such registration brings with it certain authority and responsibilities, and particularly the power to nominate ministers of religion as authorised marriage celebrants.
+      
+        <div class="read-more-link">
+          <a href="/community/ukrainian-catholic-church-now-a-recognised-denomination-in-australia/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/ucs-heritage-issue-no-8/">UCS Heritage issue no. 8</a>
       </h1>
       <time datetime="2013-07-01T04:34:59Z" class="post-date">Mon, Jul 1, 2013</time>
       The Ukrainian Collectibles Society (UCS) of Australia has issued a Press Release announcing the eighth stamp and envelope in the Ukrainian Heritage in Australia Personalised Stamp™ and souvenir first day of issue envelope series on 1 June 2013. The new stamp is dedicated to the Ukrainian Autocephalic Orthodox Church (UAOC) in Diaspora, Diocese of Australia and New Zealand.
@@ -61,7 +142,7 @@ The full Press Release, including purchase details, can be read here: 08 - UCS 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/national-festival-2013-part-3/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 3</a>
+        <a href="https://ukrainians.org.au/culture/national-festival-2013-part-3/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 3</a>
       </h1>
       <time datetime="2013-06-27T03:02:44Z" class="post-date">Thu, Jun 27, 2013</time>
       МАРІЧКА ГАЛАБУРДА-ЧИГРИН
@@ -76,7 +157,7 @@ The full Press Release, including purchase details, can be read here: 08 - UCS 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/national-festival-2013-part-2a/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 2a</a>
+        <a href="https://ukrainians.org.au/culture/national-festival-2013-part-2a/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 2a</a>
       </h1>
       <time datetime="2013-06-19T02:08:00Z" class="post-date">Wed, Jun 19, 2013</time>
       ДРУГИЙ ДЕНЬ ЗДВИГУ** ****– ****ПРОДОВЖЕННЯ******
@@ -92,7 +173,7 @@ The full Press Release, including purchase details, can be read here: 08 - UCS 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/national-festival-2013-part-2/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 2</a>
+        <a href="https://ukrainians.org.au/culture/national-festival-2013-part-2/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ – Ч. 2</a>
       </h1>
       <time datetime="2013-06-17T06:48:47Z" class="post-date">Mon, Jun 17, 2013</time>
       ДРУГИЙ ДЕНЬ ЗДВИГУ
@@ -108,7 +189,7 @@ The full Press Release, including purchase details, can be read here: 08 - UCS 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/national-festival-2013-part-1/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ - Ч. 1</a>
+        <a href="https://ukrainians.org.au/culture/national-festival-2013-part-1/">ХІV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ - Ч. 1</a>
       </h1>
       <time datetime="2013-06-17T05:58:36Z" class="post-date">Mon, Jun 17, 2013</time>
       МАРІЧКА ГАЛАБУРДА – ЧИГРИН
@@ -123,7 +204,7 @@ The full Press Release, including purchase details, can be read here: 08 - UCS 
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/current-affairs/media-releases/annual-business-conference-abc-ukraine-partners/">Annual Business Conference “ABC: Ukraine &amp; Partners”</a>
+        <a href="https://ukrainians.org.au/current-affairs/media-releases/annual-business-conference-abc-ukraine-partners/">Annual Business Conference “ABC: Ukraine &amp; Partners”</a>
       </h1>
       <time datetime="2013-06-15T05:23:16Z" class="post-date">Sat, Jun 15, 2013</time>
       The first International Annual Business Conference “ABC: Ukraine &amp; Partners” took place on June 13 – 14, 2013 in Kyiv with the participation of the Prime Minister of Ukraine Mykola Azarov and other members of the Ukrainian Government. A wide range of governmental representatives, business and academia, financial, banking and investment institutions, diplomatic missions and media were invited to the conference.
@@ -135,7 +216,7 @@ Some press releases were made available after the conference.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/65-years-of-ukrainian-settlement-in-australia/">65–ЛІТТЯ ПОСЕЛЕННЯ УКРАЇНЦІВ В АВСТРАЛІЇ</a>
+        <a href="https://ukrainians.org.au/community/65-years-of-ukrainian-settlement-in-australia/">65–ЛІТТЯ ПОСЕЛЕННЯ УКРАЇНЦІВ В АВСТРАЛІЇ</a>
       </h1>
       <time datetime="2013-06-15T04:49:24Z" class="post-date">Sat, Jun 15, 2013</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2013/04/150px-SBS-Ukrainian.jpg)XIV ЗДВИГ УКРАЇНЦІВ В АВСТРАЛІЇ - СІДНЕЙ, 7 - 9 ЧЕРВНЯ 2013.
@@ -148,14 +229,14 @@ Some press releases were made available after the conference.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/open-forum-with-orysia-tracz/">Open Forum with Orysia Tracz</a>
+        <a href="https://ukrainians.org.au/culture/open-forum-with-orysia-tracz/">Open Forum with Orysia Tracz</a>
       </h1>
       <time datetime="2013-06-13T10:56:38Z" class="post-date">Thu, Jun 13, 2013</time>
       [[[](http://www.ozeukes.com/wp-content/uploads/2013/06/CYM_Emblema-150x150-72dpi.jpg)](http://www.ozeukes.com/wp-content/uploads/2013/06/UECA-logo-thumb.jpg)](http://www.ozeukes.com/wp-content/uploads/2013/06/AUV-Colour-thumb.jpg)
 **Australian Federation of Ukrainian Organisations Association of Ukrainians in Victoria Ukrainian Council of Education in Australia CYM Ukrainian Youth Association in Melbourne Plast Ukrainian Youth Association in Victoria **
 ** **
 Invitation to our Young Families, Mixed marriages, Youth and Young Adults and all other members and friends of the community ** **
-Open Forum and discussion &lsquo;Let's have a heart to heart !' ** **
+Open Forum and discussion &lsquo;Let&rsquo;s have a heart to heart !' ** **
 Ukrainian ! Being a part of it - What does it mean ?
       
         <div class="read-more-link">
@@ -164,7 +245,7 @@ Ukrainian ! Being a part of it - What does it mean ?
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/video/film-festival-2013-entries/">Film Festival 2013 Entries</a>
+        <a href="https://ukrainians.org.au/video/film-festival-2013-entries/">Film Festival 2013 Entries</a>
       </h1>
       <time datetime="2013-06-13T07:13:41Z" class="post-date">Thu, Jun 13, 2013</time>
       Below are video clips submitted to the AFUO Film Festival 2013. Young people were invited to interpret this phrase by making a short film to express how they saw their Ukrainian identity and heritage.
@@ -175,21 +256,6 @@ Category 1: 9-13 yrs of age (30-60secs length) Submitted by Irynka Loboda / Ір
       
         <div class="read-more-link">
           <a href="/video/film-festival-2013-entries/">Read More…</a>
-        </div>
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/successful-national-ukrainian-festival-in-australia/">Гідно проведено Здвиг Укрaїнців Aвcтрaлії</a>
-      </h1>
-      <time datetime="2013-06-13T00:48:01Z" class="post-date">Thu, Jun 13, 2013</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2013/06/ZdvyhLogoFinal-ENG-thumb.jpg)Successful National Ukrainian Festival in Australia
-The Australian Federation of Ukrainian Organisations (AFUO) has announced that an extremely successful and enjoyable XIV National Festival of Ukrainians in Australia has come to a close.
-The full text of the press release (in English) can be read here: UKRAINIAN NATIONAL FESTIVAL IN AUSTRALIA A HUGE SUCCESS Eng
-Photos of the events may be viewed on the following sites: http://zdvyh2013.shutterfly.com/ http://www.flickr.com/photos/moravski/sets/72157634053852860/
-[ ](http://www.
-      
-        <div class="read-more-link">
-          <a href="/culture/successful-national-ukrainian-festival-in-australia/">Read More…</a>
         </div>
       
     </article>
@@ -1400,6 +1466,8 @@ Photos of the events may be viewed on the following sites: http://zdvyh2013.shut
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ukrainian-dance-national-winter-workshop/">Ukrainian Dance National Winter Workshop</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/national-rally-in-support-of-ukraine-from-sydney/">National Rally in Support of Ukraine - from Sydney</a>
+      </h1>
+      <time datetime="2014-05-18T04:18:07Z" class="post-date">Sun, May 18, 2014</time>
+      AFUO-UCNSW Canberra Rally Sydney Bus May 25th 
+Bookings for Sydney Bus to Canberra Rally and Ukrainian Elections Sunday May 25th 8.00am, St Andrew&rsquo;s Ukrainian Catholic Church, 57 Church St, Lidcombe. $25 Employed Adults, $10 pensioners/ students/ children + $1.50 booking fee each. Bus will also be picking up from Cabramatta Ukrainian Hall. Queries 0410 866 820.
+Замовлення на автобус з Сіднею на акцію і на украінські вибори в Канберрі 25-го травня.
+      
+        <div class="read-more-link">
+          <a href="/events/new-south-wales/national-rally-in-support-of-ukraine-from-sydney/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/culture/ukrainian-dance-national-winter-workshop/">Ukrainian Dance National Winter Workshop</a>
       </h1>
       <time datetime="2014-05-13T07:09:03Z" class="post-date">Tue, May 13, 2014</time>
       The Lehenda Ukrainian Dance Company is organising a Ukrainian Dance workshop over the period Thursday 10th – Sunday 13th July 2014. The workshop will include 4 days of intense training in Ukrainian technique, Ukrainian repertoire and ballet for the Ukrainian dancer, with an occasional taster class thrown in!
@@ -61,7 +143,7 @@ Further info &amp; enquiries: info@lehenda.com.au
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-rally-in-support-of-ukraine/">National Rally in Support of Ukraine</a>
+        <a href="https://ukrainians.org.au/events/national-rally-in-support-of-ukraine/">National Rally in Support of Ukraine</a>
       </h1>
       <time datetime="2014-05-13T01:18:23Z" class="post-date">Tue, May 13, 2014</time>
       The Australian Federation of Ukrainian Organisations (AFUO) calls on all concerned Australians to participate in a National Rally in Support of Ukraine.
@@ -74,7 +156,7 @@ The final stage of the rally will be culminate at the Embassy of the Russian Fed
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-under-attack-issue-16/">Ukraine Under Attack – Issue 16</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-under-attack-issue-16/">Ukraine Under Attack – Issue 16</a>
       </h1>
       <time datetime="2014-05-12T05:32:26Z" class="post-date">Mon, May 12, 2014</time>
       Issue #16 of the bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, is now available. This issue provides summaries of events in Ukraine last week (5th-10th May 2014), including the tragic events in Odessa.
@@ -82,7 +164,7 @@ Ukraine Under Attack #16
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/joint-statement-of-peak-councils-of-nsw-on-the-escalating-violence-in-ukraine/">Joint Statement of Peak Councils of NSW on the escalating violence in Ukraine</a>
+        <a href="https://ukrainians.org.au/politics/joint-statement-of-peak-councils-of-nsw-on-the-escalating-violence-in-ukraine/">Joint Statement of Peak Councils of NSW on the escalating violence in Ukraine</a>
       </h1>
       <time datetime="2014-05-10T05:16:46Z" class="post-date">Sat, May 10, 2014</time>
       Following a meeting of representatives of Peak Councils of a number of New South Wales Eastern and Central European communities on 5 May 2014, at which serious concerns were raised and affirmed on the alarming situation in Ukraine, a statement was released.
@@ -90,7 +172,7 @@ Text of statement: Joint Statement of Peak Councils 5 May 2014 - FINAL
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/call-to-action-a-national-rally/">Зaклик до дії - Крaйовa Мaніфеcтaція</a>
+        <a href="https://ukrainians.org.au/events/national-events/call-to-action-a-national-rally/">Зaклик до дії - Крaйовa Мaніфеcтaція</a>
       </h1>
       <time datetime="2014-05-10T02:51:06Z" class="post-date">Sat, May 10, 2014</time>
       CALL TO ACTION - A National Rally in support of Ukraine and Opposition to Putin’s Russian Aggression in Ukraine – Sunday May 25, 2014 Canberra.
@@ -105,7 +187,7 @@ Text of statement: Joint Statement of Peak Councils 5 May 2014 - FINAL
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/media-release-2014-ukrainian-presidential-elections-election-observers-from-australia/">Преcове Повідомлення: Спостерігачі на Президентській вибори 2014р.</a>
+        <a href="https://ukrainians.org.au/politics/media-release-2014-ukrainian-presidential-elections-election-observers-from-australia/">Преcове Повідомлення: Спостерігачі на Президентській вибори 2014р.</a>
       </h1>
       <time datetime="2014-05-10T01:47:37Z" class="post-date">Sat, May 10, 2014</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2014/05/Emblem_of_the_Central_Election_Commission_of_Ukraine.jpg)Media Release: 2014 Ukrainian Presidential Elections - election observers from Australia
@@ -120,11 +202,11 @@ May 8, 2014
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/media/sbs-radio-two-interviews-may-2014/">SBS Radio – Два інтерв&#39;ю – травень 2014р.</a>
+        <a href="https://ukrainians.org.au/media/sbs-radio-two-interviews-may-2014/">SBS Radio – Два інтерв&#39;ю – травень 2014р.</a>
       </h1>
       <time datetime="2014-05-10T01:10:20Z" class="post-date">Sat, May 10, 2014</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2014/04/150px-SBS-Ukrainian.jpg)ЄВРОБАЧЕННЯ-2014: МАРІЯ ЯРЕМЧУК
-СБС провело інтерв'ю із відомою співачкою Марією Яремчук‚ яка представляє Україну на пісенному конкурсі &ldquo;Євробачення-2014&rdquo;&hellip;
+СБС провело інтерв&rsquo;ю із відомою співачкою Марією Яремчук‚ яка представляє Україну на пісенному конкурсі &ldquo;Євробачення-2014&rdquo;&hellip;
 АВСТРАЛІЯ ВІТАЄ ТЕБЕ, МАРІЄ, З ПЕРШОЮ ПЕРЕМОГОЮ! Тримайся!!! Буде і друга, і третя!!!
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/333810/t/EUROVISION-2014:-MARIYA-YAREMCHUK/
  XIV МІЖНАРОДНИЙ КОНКУРС З УКРАЇНСЬКОЇ МОВИ ІМ. П. ЯЦИКА В АВСТРАЛІЇ Інтерв’ю із др. Яною Остапенко з Української Центральної Шкільної Ради та Організаційного комітету з проведення ХІV Міжнародного конкурсу з української мови ім. П. Яцика в Австралії&hellip;
@@ -135,7 +217,7 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/333810/t/EUROVISI
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/ukraine-under-attack-issue-15/">Ukraine Under Attack – Issue 15</a>
+        <a href="https://ukrainians.org.au/politics/ukraine-under-attack-issue-15/">Ukraine Under Attack – Issue 15</a>
       </h1>
       <time datetime="2014-05-05T05:43:25Z" class="post-date">Mon, May 5, 2014</time>
       Issue #15 of the bulletin “Ukraine Under Attack”, produced by the Ukrainian Ministry of Foreign Affairs, is now available. This issue mentions increasing sanctions imposed by both western and eastern powers against Putin’s inner circle, and identifies some of the main conspirators in Russia’s ongoing expansionist campaign.
@@ -143,20 +225,11 @@ Ukraine Under Attack #15
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/interviews/from-ukraine-around-the-world-on-a-motorbike/">SBS Radio - З УКРАЇНИ ПО ВСЬОМУ СВІТОВІ ШИРОКОМУ... НА МОТОЦИКЛІ</a>
+        <a href="https://ukrainians.org.au/interviews/from-ukraine-around-the-world-on-a-motorbike/">SBS Radio - З УКРАЇНИ ПО ВСЬОМУ СВІТОВІ ШИРОКОМУ... НА МОТОЦИКЛІ</a>
       </h1>
       <time datetime="2014-05-02T02:21:02Z" class="post-date">Fri, May 2, 2014</time>
-      АНЯ ГРЕЧИШКІНА В АВСТРАЛІЇ: &quot; Я МАЮ МРІЮ&hellip;&rdquo; У липні 2013-го українська леді Аня Гречишкіна почала свою сольну подорож навколо світу мотоциклем. Будучи першою в Україні і одною із небагатьох у світі, Аня перетнула уже межі більше ніж 20-ти країн&hellip; A ось тепер весь маршрут по п'яти континентах займе більше 100 тисяч кілометрів: їх дівчина планує проїхати за 2 роки…
+      АНЯ ГРЕЧИШКІНА В АВСТРАЛІЇ: &quot; Я МАЮ МРІЮ&hellip;&rdquo; У липні 2013-го українська леді Аня Гречишкіна почала свою сольну подорож навколо світу мотоциклем. Будучи першою в Україні і одною із небагатьох у світі, Аня перетнула уже межі більше ніж 20-ти країн&hellip; A ось тепер весь маршрут по п&rsquo;яти континентах займе більше 100 тисяч кілометрів: їх дівчина планує проїхати за 2 роки…
 http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/332482/t/FROM-UKRAINE-AROUND-THE-WORLD&hellip;-ON-MOTORCYCLE
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/ukrainian-school-noble-park-60th-anniversary/">Ukrainian School Noble Park 60th Anniversary</a>
-      </h1>
-      <time datetime="2014-05-02T01:58:42Z" class="post-date">Fri, May 2, 2014</time>
-      The Ukrainian Community School in Noble Park is celebrating its 60th anniversary on Sunday, May 18th 2014.
-
-Українська школа ім. Лесі Українки в Нобл Парку святкує своє 60-ліття у неділю 18-го травня 2014р.
       
     </article>
 
@@ -1366,6 +1439,8 @@ http://www.sbs.com.au/yourlanguage/ukrainian/highlight/page/id/332482/t/FROM-UKR
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

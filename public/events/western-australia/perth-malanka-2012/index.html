@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Perth Malanka 2012 &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -56,10 +121,10 @@
 <h3 id="ukrainian-association-of-west-australia-inc-uawa"><strong>Ukrainian Association of West Australia Inc. (UAWA)</strong></h3>
 <p> <strong>The committee of the Ukrainian Association take this belated opportunity to wish everyone a Joyous Christmas and a Happy New Year and look forward to doing it again with on January 14 for our Malanka</strong></p>
 <p> Whatever you call it Malanka ~ The Old New Year ~ Старый Новый год ~ Старий Новий рік ~ is the New Year according to the Julian Calendar!</p>
-<p> The tradition of the Old New Year has been kept in Ukraine (<a href="http://en.wikipedia.org/wiki/Malanka">Malanka</a>), Armenia, Moldova, Georgia, Belarus, Kazakhstan, Serbia, Bosnia and Herzegovina, Montenegro and the Republic of Macedonia. In the first half of the 20th century, segments of the Scottish Gaelic community still observed the feast and today, groups such as Edinburgh's Am Bothan see this as a convenient date for Gaelic events._ (extract from Wikipedia)_</p>
+<p> The tradition of the Old New Year has been kept in Ukraine (<a href="http://en.wikipedia.org/wiki/Malanka">Malanka</a>), Armenia, Moldova, Georgia, Belarus, Kazakhstan, Serbia, Bosnia and Herzegovina, Montenegro and the Republic of Macedonia. In the first half of the 20th century, segments of the Scottish Gaelic community still observed the feast and today, groups such as Edinburgh&rsquo;s Am Bothan see this as a convenient date for Gaelic events._ (extract from Wikipedia)_</p>
 <p> So if you know anyone from these countries ask them to join you at this year’s Malanka !!!</p>
 <p> The buffet meal is extravagantly catered featuring cuisines from Italy, India and Australia and will go from 7:30pm to 10:00pm</p>
-<p>For your entertainment and pleasure we have secured one of Perth's great Rock'n'Roll Bands - Chain Reaction and floorshow by the famous Western Australian - Roztiazhka Cossack Dancers.</p>
+<p>For your entertainment and pleasure we have secured one of Perth&rsquo;s great Rock&rsquo;n&rsquo;Roll Bands - Chain Reaction and floorshow by the famous Western Australian - Roztiazhka Cossack Dancers.</p>
 <p> Visit  <a href="http://malanka2012.webs.com/"> malanka2012.webs.com</a>  for other information or ring Gabby on 0412 228 057  or 9375 1704 to book your tickets.</p>
 <p>  Please note:</p>
 <p> **Tickets must be booked 1 week before Jan 14 (for catering purposes) and there will be no door sales. **</p>

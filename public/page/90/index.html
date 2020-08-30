@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,123 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/shevchenko-commemoration-2012-melbourne/">Свято Шевченка у Мельборні</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/funeral-of-fr-ivan-szewciw/">The Funeral Liturgy of the Late Rt Rev. Father Ivan Szewciw / Похорон Бл. П. о. Мітрата Івана Шевціва</a>
+      </h1>
+      <time datetime="2012-03-29T08:21:04Z" class="post-date">Thu, Mar 29, 2012</time>
+      The Funeral Liturgy of the Late
+**Rt Rev. Father Ivan Szewciw **
+will take place in Saint Andrew’s Ukrainian Catholic Church on
+Monday 2 April 2012 at 6.30 Priestly Parastas
+Tuesday 3 April 2012 at 10.00 Pontifical Divine Liturgy
+followed by internment in the Ukrainian Catholic Mausoleum, Rookwood.
+Following the Funeral all are invited to Pomynky at Lidcombe Catholic Club
+We invite members of CYM and Plast to attend in full uniform and together with all children and youth to form a guard of honour.
+      
+        <div class="read-more-link">
+          <a href="/events/new-south-wales/funeral-of-fr-ivan-szewciw/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/victoria/shevchenko-commemoration-2012-melbourne/">Свято Шевченка у Мельборні</a>
       </h1>
       <time datetime="2012-03-28T09:47:25Z" class="post-date">Wed, Mar 28, 2012</time>
       Свято Шевченка у Мельборні. Свято Шевченка в Австралії або Шевченківські Дні в Україні – це традиційне щорічне вшанування генія нашого народу у місяці березні.
@@ -64,7 +151,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/shevchenko-art-competition-melbourne/">Виставка-конкурс дитячого малюнку &#34;Читаючи поезію Шевченка&#34;</a>
+        <a href="https://ukrainians.org.au/events/victoria/shevchenko-art-competition-melbourne/">Виставка-конкурс дитячого малюнку &#34;Читаючи поезію Шевченка&#34;</a>
       </h1>
       <time datetime="2012-03-28T01:35:10Z" class="post-date">Wed, Mar 28, 2012</time>
       Виставка-конкурс дитячого малюнку &ldquo;Читаючи поезію Шевченка&rdquo;.  У цьому році Шевченківське свято у Мельбурні вперше прикрасила залю Українського Народного Дому Виставка-Конкурс дитячого малюнку &ldquo;Читаючи поезію Шевченка&rdquo;. У цій мистецькій акції взяли участь 30 дітей українських шкіл Мельбурну школи імені Лесі Українки та Братської школи імені Митрополита Андрея Шептицького. Мета нашого конкурсу - через власний малюнок проявити креативність та уяву, допомогти дітям відчути та глибше пізнати красу поезії Великого Кобзаря. Такий конкурс дає змогу знайти нові таланти і показати нам дорослим як діти відчувають поезію і тим самим любов до України.
@@ -75,7 +162,7 @@
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/karpaty-foundation-press-release/">Karpaty Foundation Press Release</a>
+        <a href="https://ukrainians.org.au/culture/karpaty-foundation-press-release/">Karpaty Foundation Press Release</a>
       </h1>
       <time datetime="2012-03-24T03:32:02Z" class="post-date">Sat, Mar 24, 2012</time>
       The Board &amp; Trustees of The Karpaty Foundation recently held its fourth meeting to review applications for grants and scholarships submitted within the scope of the purpose for which the Foundation was established.
@@ -83,7 +170,7 @@ A Press Release announcing scholarships and grants has been provided: The Karpa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/in-memory-of-yosyf-slipyi/">В пам’ять Патріярха ЙОCИПA CЛІПОГО</a>
+        <a href="https://ukrainians.org.au/community/in-memory-of-yosyf-slipyi/">В пам’ять Патріярха ЙОCИПA CЛІПОГО</a>
       </h1>
       <time datetime="2012-03-24T01:59:22Z" class="post-date">Sat, Mar 24, 2012</time>
       ** **МAРІЧКA ГAЛAБУРДA–ЧИГРИН
@@ -97,12 +184,12 @@ A Press Release announcing scholarships and grants has been provided: The Karpa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/most-rev-fr-ivan-szewciw-rip/">Most Rev  Fr Ivan Szewciw RIP</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/most-rev-fr-ivan-szewciw-rip/">Most Rev  Fr Ivan Szewciw RIP</a>
       </h1>
       <time datetime="2012-03-22T04:45:56Z" class="post-date">Thu, Mar 22, 2012</time>
       Зі святими упокій
 Ділимося з вами сумною вісткою, що у середу 21-го березня, прийнявши Святі Тайни, на 86 році життя упокоївся у Господі сл. п. о. митр. Іван Шевців, довголітний парох парафії св. Андрія Первозваного в Сіднеї.
-Отець Іван Шевців народився 1 листопада 1926 року в селі Гарбузів на Львівщині. Свої студії розпочав в Українській Малій Семінарії у Львові (1942-44) та продовжив у Папській Семінарії св. Йосафата та Папському Універсететі Урбаніанум в Римі де він отримав ступінь бакалавра в галузі філософії та лецензіят з богослов'я.
+Отець Іван Шевців народився 1 листопада 1926 року в селі Гарбузів на Львівщині. Свої студії розпочав в Українській Малій Семінарії у Львові (1942-44) та продовжив у Папській Семінарії св. Йосафата та Папському Універсететі Урбаніанум в Римі де він отримав ступінь бакалавра в галузі філософії та лецензіят з богослов&rsquo;я.
       
         <div class="read-more-link">
           <a href="/events/new-south-wales/most-rev-fr-ivan-szewciw-rip/">Read More…</a>
@@ -110,7 +197,7 @@ A Press Release announcing scholarships and grants has been provided: The Karpa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/comedy-festival-danny-mcginlay-learns-ukrainian/">Comedy Festival - Danny McGinlay Learns Ukrainian</a>
+        <a href="https://ukrainians.org.au/events/victoria/comedy-festival-danny-mcginlay-learns-ukrainian/">Comedy Festival - Danny McGinlay Learns Ukrainian</a>
       </h1>
       <time datetime="2012-03-20T02:14:14Z" class="post-date">Tue, Mar 20, 2012</time>
       The 2012 Melbourne International Comedy Festival starts soon for four weeks - from 28 March to 22 April 2012. The festival includes a comedy skit featuring Danny McGinlay. Danny is about to marry his Ukrainian girlfriend and to prove his worthiness to her and her family, he has enrolled in night school to learn a new language - Ukrainian - including a new alphabet and a new way of speaking.
@@ -121,7 +208,7 @@ A Press Release announcing scholarships and grants has been provided: The Karpa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/honouring-taras-shevhenko-in-sydney/">В Чеcть Тараса Шевченка в Сіднеї</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/honouring-taras-shevhenko-in-sydney/">В Чеcть Тараса Шевченка в Сіднеї</a>
       </h1>
       <time datetime="2012-03-20T01:57:55Z" class="post-date">Tue, Mar 20, 2012</time>
       МАРІЧКА ГАЛАБУРДА—ЧИГРИН
@@ -134,7 +221,7 @@ A Press Release announcing scholarships and grants has been provided: The Karpa
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/community/radio-sbs-ukrainian/">Radio SBS Ukrainian</a>
+        <a href="https://ukrainians.org.au/community/radio-sbs-ukrainian/">Radio SBS Ukrainian</a>
       </h1>
       <time datetime="2012-03-20T01:30:24Z" class="post-date">Tue, Mar 20, 2012</time>
       Подаємо короткі дані і лінки до деяких найновіших інтерв’ю на Радіо SBS Ukrainian.
@@ -149,39 +236,13 @@ John Demjanjuk Jr**. (DW).
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/ucs-heritage-series-plast/">UCS Heritage series - PLAST</a>
+        <a href="https://ukrainians.org.au/culture/ucs-heritage-series-plast/">UCS Heritage series - PLAST</a>
       </h1>
       <time datetime="2012-03-19T00:20:05Z" class="post-date">Mon, Mar 19, 2012</time>
       The Ukrainian Collectibles Society UCS) has issued an Information Sheet for the next issue of the ongoing “Ukrainian Heritage in Australia” stamp and envelope series.
 The latest featured organisation is:
  * · **No. 7: Ukrainian Scouting Organisation PLAST**   Information sheet: Information Sheet No. 4
 Order form: UCS - PLAST order form
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/meeting-ukrainian-womens-association/">Товариська зустріч з Союзом Українок Австралії</a>
-      </h1>
-      <time datetime="2012-03-07T04:24:21Z" class="post-date">Wed, Mar 7, 2012</time>
-      ** **
-Крайова Управа Союзу Українок Австралії
- Запрошує
- всіх жінок штату Вікторія, а зокрема
-жінок Нової хвилі, Ліґи Католицьких жінок та
-всіх прихильників Союзу Українок Вікторії
-** ****на **
-товариську зустріч ** **з головою та членами Крайової Управи
-Союзу Українок Австралії,
-** **яка відбудеться
- в неділю, 25–го березня
-в Українському Народному Домі в Ессендоні,
-відразу
-після мистецької програми Свята Шевченка.
-** У програмі:**** ******
- * **Ознайомлення з діяльністю СУА та плянами праці КУ** * **Зацікавлення до членства Союзу українок Вікторії** * **Смачна перекуска, чай, кава**  Маємо надію, що ця зустріч стане новим етапом на шляху розвитку співпраці жіноцтва Вікторії.
-      
-        <div class="read-more-link">
-          <a href="/events/victoria/meeting-ukrainian-womens-association/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1391,6 +1452,8 @@ Order form: UCS - PLAST order form
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

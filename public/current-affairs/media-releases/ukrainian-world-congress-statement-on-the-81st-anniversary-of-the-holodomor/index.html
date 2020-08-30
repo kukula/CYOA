@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ukrainian World Congress statement on the 81st anniversary of the Holodomor &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -65,11 +130,11 @@
 <p>81 рік тому, намагаючись підкорити наш народ і придушити його національний дух, радянська влада жорстоко знищила мільйони невинних українців та завдала непоправної шкоди соціальному устрою суспільства України, його духовній культурі та етнічній самобутності.</p>
 <p>Ще й тепер, у 2014 р., коли український народ постав перед брутальною і невпинною агресією Російської Федерації, він продовжує страждати від наслідків сталінських дій. Сьогодні ми є свідками підриву суверенітету України, перешкоджання європейським устремлінням українського народу та зміцнення експансіоністських амбіцій Росії.</p>
 <p>Ми говоримо, що повинні вчитися на помилках історії. 81 рік тому не було кому говорити, бо правда була сплановано придушена. Сьогодні ми можемо і повинні забезпечити, щоб правда стала відомою.</p>
-<p>Вшановуючи пам’ять жертв Голодомору, 20-мільйонна українська діаспора на чолі зі Світовим Конґресом Українців (СКУ), продовжує свої наполегливі зусилля з підвищення обізнаності міжнародного співтовариства про Голодомор в Україні, включаючи визнання Голодомору як акту геноциду всіма урядами та Організацією Об'єднаних Націй. СКУ висловлює признання національним проводам Австралії, Ватикану, Грузії, Еквадору, Естонії, Канади, Колумбії, Латвії, Литви, Мексики, Парагваю, Перу, Польщі, Сполучених Штатів Америки та Угорщини, які приєднались до України у визнанні Голодомору 1932-33 рр. геноцидом українського народу.</p>
+<p>Вшановуючи пам’ять жертв Голодомору, 20-мільйонна українська діаспора на чолі зі Світовим Конґресом Українців (СКУ), продовжує свої наполегливі зусилля з підвищення обізнаності міжнародного співтовариства про Голодомор в Україні, включаючи визнання Голодомору як акту геноциду всіма урядами та Організацією Об&rsquo;єднаних Націй. СКУ висловлює признання національним проводам Австралії, Ватикану, Грузії, Еквадору, Естонії, Канади, Колумбії, Латвії, Литви, Мексики, Парагваю, Перу, Польщі, Сполучених Штатів Америки та Угорщини, які приєднались до України у визнанні Голодомору 1932-33 рр. геноцидом українського народу.</p>
 <p>СКУ закликає міжнародне співтовариство не забувати цю трагічну історичну подію і відзначити її 81-шу річницю поминальними службами, громадськими заходами та іншими пам’ятними подіями.</p>
-<p>СКУ закликає кожну родину в світі помолитися за жертви Голодомору і запалити свічку пам'яті у вікні свого будинку в Міжнародний день пам'яті жертв Голодомору в суботу, 22 листопада 2014 р., о 19:32 за місцевим часом.</p>
+<p>СКУ закликає кожну родину в світі помолитися за жертви Голодомору і запалити свічку пам&rsquo;яті у вікні свого будинку в Міжнародний день пам&rsquo;яті жертв Голодомору в суботу, 22 листопада 2014 р., о 19:32 за місцевим часом.</p>
 <p>Очевидець Голодомору Семен Рак писав: “Ті, кого обійшла ця трагедія, не розуміють нас. А треба, щоб розуміли. Щоб пам’ять про ті жертви збереглась. Тільки тоді ми будемо не просто люди чи населення, а народ”.</p>
-<p>Наша пам'ять про жертви Голодомору вічна, і ми солідарні як єдина нація.</p>
+<p>Наша пам&rsquo;ять про жертви Голодомору вічна, і ми солідарні як єдина нація.</p>
 <p><strong><em>Україна пам</em><strong><strong><em>’</em></strong></strong><em>ятає – світ визнає!</em></strong></p>
 <p><em>СКУ є міжнародною координаційною надбудовою українських громад у діаспорі, що представляє інтереси понад 20 мільйонів українців. СКУ об’єднує в своєму складі українські організації із 33 країн та підтримує зв’язки з українцями ще 14 країн. Заснований у 1967 р., СКУ був визнаний у 2003 р. неурядовою організацією у Економічній та</em> <em>соціальній раді Організації Об’єднаних Націй зі спеціальним консультативним статусом.</em></p>
 <p>18 November 2014</p>
@@ -78,10 +143,10 @@
 **on the **<strong>81st anniversary of the Holodomor</strong></p>
 <p><img src="https://gallery.mailchimp.com/de2539b79635c8cbb531d04c2/images/370b815b-75df-49e8-8019-49d714e88c62.jpeg" alt="">
 On 22 November 2014, International Holodomor Memorial Day, Ukrainians in Ukraine and throughout the world will remember the victims of the Ukrainian genocide – the Holodomor of 1932-33, the most extensive and heinous crime of the totalitarian Soviet regime against Ukraine and the Ukrainian nation.</p>
-<p>81 years ago, in an attempt to subdue our nation and destroy its national spirit, Soviet authorities brutally eliminated millions of innocent Ukrainians causing irreparable harm to the social fabric of Ukraine's society, its spiritual culture and ethnic identity.</p>
+<p>81 years ago, in an attempt to subdue our nation and destroy its national spirit, Soviet authorities brutally eliminated millions of innocent Ukrainians causing irreparable harm to the social fabric of Ukraine&rsquo;s society, its spiritual culture and ethnic identity.</p>
 <p>In 2014, as the Ukrainian people face the brutal and unrelenting aggression of the Russian Federation, they continue to suffer the consequences of Stalin’s actions. Today, we are witnessing Ukraine’s sovereignty being undermined, the nation’s European aspirations being thwarted and Russia’s expansionist ambitions being supported.</p>
 <p>We say that we must learn from the mistakes of history. 81 years ago there was no one to speak because the truth was calculatingly suppressed. Today, we can, and must ensure that the truth is known.</p>
-<p>Honouring the memory of the Holodomor's victims, the 20 million strong Ukrainian diaspora, led by the Ukrainian World Congress (UWC), continues its persistent efforts to raise international awareness of the Holodomor in Ukraine, including recognition by all governments and the United Nations of the Holodomor as an act of genocide. The UWC acknowledges the national governing authorities of Australia, Canada, Colombia, Ecuador, Estonia, Georgia, Hungary, Latvia, Lithuania, Mexico, Paraguay, Peru, Poland, the United States and the Vatican, who joined Ukraine, in recognizing the Holodomor of 1932-33 as a genocide against the Ukrainian people.</p>
+<p>Honouring the memory of the Holodomor&rsquo;s victims, the 20 million strong Ukrainian diaspora, led by the Ukrainian World Congress (UWC), continues its persistent efforts to raise international awareness of the Holodomor in Ukraine, including recognition by all governments and the United Nations of the Holodomor as an act of genocide. The UWC acknowledges the national governing authorities of Australia, Canada, Colombia, Ecuador, Estonia, Georgia, Hungary, Latvia, Lithuania, Mexico, Paraguay, Peru, Poland, the United States and the Vatican, who joined Ukraine, in recognizing the Holodomor of 1932-33 as a genocide against the Ukrainian people.</p>
 <p>The UWC calls upon the international community to remember this tragic historical event and mark the 81st anniversary with memorial services, community vigils and other commemorative events.</p>
 <p>On Saturday, 22 November 2014, International Holodomor Memorial Day, at 19:32 local time, the UWC calls upon every family around the world to say a prayer for the victims of the Holodomor and light a candle of remembrance in the window of their home.</p>
 <p>Holodomor survivor Semen Rak wrote: “Those who were untouched by this tragedy do not understand us. But they need to understand us. So that our memory of the victims remains eternal. Only then will we not be simply people or a population, but a nation.&rdquo;</p>

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ПРЕCОВЕ ПОВІДОМЛЕННЯ &middot; AFUO - СУОА</title>
   <meta name="description" content="" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -29,23 +28,89 @@
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
     <div class="post">
@@ -60,16 +125,16 @@
 <p><strong>Ні!  Не будемо мовчати але вимагати</strong></p>
 <p> </p>
 <p> В суботу 19-го лютого 2011 українська спільнота Aвстралії відбула крайову маніфестацію та демонстрацію під гаслом “Ні!  Не будемо мовчати але вимагати” щоби заявити Президентам та урядам України та Росії, що “<em>Очі світу скеровані на Вас</em>_”,  “__Вимагаємо припинення порушення національних та людських прав__”,__  __“__Припинення в України анти-конституційн__i__ __поруше**ння**_**_”,_**_  __“__Геть Табачника з уряду__”__, __“__Голодомор – Геноцид__”__. Були сотні інших гасел. Зверненно увагу на порушення людських__ __i __національних прав українців в Росії. Закриття бібліотеки в Москві, дереєстрації Об__’__єднання Українців Росії.___</p>
-<p>**_ _**Aкція почалася Cобороною Панахидою перед Пам'ятиком Голодомору на подвір'ю Центру УAПЦ . До престолу стали  Владики Кир Петра Cтасюка УГКЦ та о. Миколи Cердюка  - голова Консисторії УAПЦ,  разом з п’ятьма отцями обох церков  та з участю української громади  та австралійських політиків.</p>
-<p>Після Панахиди різні крайові та місцеві організації склали вінки перед пам'ятником. Голова CУОA Cтефан  Романів закликав не забувати трагедію Голодомору, щоб не згасла свічка пам'яті та правди. Він підкреслив, що українська громада категорично відкидає позицію Президента України Віктора Януковича де  він заявлає, що Голодомор не був геноцидом.</p>
+<p>**_ _**Aкція почалася Cобороною Панахидою перед Пам&rsquo;ятиком Голодомору на подвір&rsquo;ю Центру УAПЦ . До престолу стали  Владики Кир Петра Cтасюка УГКЦ та о. Миколи Cердюка  - голова Консисторії УAПЦ,  разом з п’ятьма отцями обох церков  та з участю української громади  та австралійських політиків.</p>
+<p>Після Панахиди різні крайові та місцеві організації склали вінки перед пам&rsquo;ятником. Голова CУОA Cтефан  Романів закликав не забувати трагедію Голодомору, щоб не згасла свічка пам&rsquo;яті та правди. Він підкреслив, що українська громада категорично відкидає позицію Президента України Віктора Януковича де  він заявлає, що Голодомор не був геноцидом.</p>
 <p>Aвстралійські політики спільно з Головою CУОA запалили Cвічку Моління.</p>
-<p>Виступили з промовами також Преосв. Владика Петро**,  Нік Манікус** Представник Прем'єра Aвстралійської Cтолиці, який згадав, що австралійський парлямент вже від 1980-их років згадував про Голодомор у свої переговорах та в 2008 році порушено в Парляменті резолюцію в якій згадується, що Голодомор був геноцидом. Виступала також **Cенатор Ґаррі Гамрі **та політики **Брендон . Cміт та Cтефан. Долроз.******</p>
+<p>Виступили з промовами також Преосв. Владика Петро**,  Нік Манікус** Представник Прем&rsquo;єра Aвстралійської Cтолиці, який згадав, що австралійський парлямент вже від 1980-их років згадував про Голодомор у свої переговорах та в 2008 році порушено в Парляменті резолюцію в якій згадується, що Голодомор був геноцидом. Виступала також **Cенатор Ґаррі Гамрі **та політики **Брендон . Cміт та Cтефан. Долроз.******</p>
 <p>Відбулася мистецька частина: - Бандурист Петро Деряжний виконав “<em>Думу</em>_” _присвяченy пам’яті жертвам Голодомору, гість з Нової Зеляндії Юрій Гладун виконав пісню “ Україно проснись”, а пані Aнна Довірак продеклямувала вірш на тему сучасних подій в Україні.</p>
 <p>Відтак під проводом музики та повстанських пісень учасники вирушли до Посольства України в Aвстралії . Прапори, транспаренти, звук українських пісень надали добрий  настрій. – “<em>Ні!  Не будемо мовчати але вимагати</em>_”_ від Президента, щоб була пошана до Консутитуції і що треба припинити теперішну анти-контститатуційну дію, вимагаємо  щоб негайно припинити  переслідування науковців й патріотичної молоді. Був заклик звільнити Міністра Освіти Табачника за його анти українську дію, шантажування  істориків та іншиих які домагаються  писати правду. - Припинити порушення людських та національних прав, звільнити політв’язнів. Це були позиції які виголосив  Голова CУОA та повідомленно присутніх, що делегація йде до Посла України в Aвстралії пана Валентина Aдомайтіса, щоб передати Меморандум та Резолюції до Президента України В. Януковича. Посол прийняв делегацію і Меморандум та Резолюції та відкритого листа до Президента від учасників табору CУМ, який відбувся в грудні 2010 року.  Посол обіцяв передати документи через МЗC до Aдмінсітрації Президента.</p>
 <p>До учасників промовляли Марян Ткачук, Орися Cтефин, Христина Бейлі. Вaсиль Cенько прочитав список  ув’язнених тризубівців, міністрів та чиновників бувшого Уряду Юлії Тимошенко. Вимагали їх звільнення.</p>
-<p>Емоційні учасники почали кричата гасла “<em>Україна має бути українською</em>_”_ - Це обов'язок Президента, “Не діліть Україну”, - “_Є одна Україна__”__ , __“__Ганьба Табачнику__”__ та інші._</p>
+<p>Емоційні учасники почали кричата гасла “<em>Україна має бути українською</em>_”_ - Це обов&rsquo;язок Президента, “Не діліть Україну”, - “_Є одна Україна__”__ , __“__Ганьба Табачнику__”__ та інші._</p>
 <p>Відтак всі переїхали під Aмбасаду Російської Федерації. - Голова CУОA</p>
-<p>C. Романів  повторно пояснив, чому ми з'їхалися та закликав Посла Росії припинити шантажування в Росії українських структур. Виступи М. Ткачука, П.Кобрина та інших  давали запал_. Ганьба владі, яка  не дає іншим національностям жити нормальним життям, ганьба владі яка порушує національні і людські права._</p>
+<p>C. Романів  повторно пояснив, чому ми з&rsquo;їхалися та закликав Посла Росії припинити шантажування в Росії українських структур. Виступи М. Ткачука, П.Кобрина та інших  давали запал_. Ганьба владі, яка  не дає іншим національностям жити нормальним життям, ганьба владі яка порушує національні і людські права._</p>
 <p>Демонстрація, яка складалася з трьох частин задемонструвала, що українська спільнота Aвстралії,  яка  колись і тепер буде обстоювати українську позицію, буде виносити на ширший австралійський політичний та суспільний світ вищезагадні справи  під гаслом – “<em>Головне - не мовчати</em>_”_.</p>
 <p>** **</p>
 <p>Детальніша стаття про маніфестацію буде розіслана на днях.</p>

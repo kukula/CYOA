@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,118 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/zabava-one-night-with-hrim/">Zabava - &#34;One Night with HRIM&#34;</a>
+        <a href="https://ukrainians.org.au/events/victoria/melbourne-auv-meeting-with-dr-kvit/">Melbourne AUV - Meeting with Dr Kvit / Зустріч із д-р Квітом</a>
+      </h1>
+      <time datetime="2012-04-11T02:12:29Z" class="post-date">Wed, Apr 11, 2012</time>
+      ЗАПРОШУЄМО ВСІХ УКРАЇНЦІВ НА ЗУСТРІЧ З Д-р СЕРГІЄМ КВІТОМ Президентом Національного Університету “Києво-Могилянської Академії”
+та
+Президентом “Центру Реформи Медії” в Україні ********************************** В програмі: Доповідь на тему “Стан і розвиток Академії у сучасні політичні ситуації в Україні та ролю Академії в реформах медії в Україні****” Буде час на питання та особисту розмову з прелеґентом**.** ************************************************* ЗУСТРІЧ ВІДБУДЕТЬСЯ У ФОРМІ “КОКТЕЙЛ” в клюбовому приміщенні УГВ в Ессендоні, в пятницю 27 квітня 2012 о годині 6.
+      
+        <div class="read-more-link">
+          <a href="/events/victoria/melbourne-auv-meeting-with-dr-kvit/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/zabava-one-night-with-hrim/">Zabava - &#34;One Night with HRIM&#34;</a>
       </h1>
       <time datetime="2012-04-09T08:46:26Z" class="post-date">Mon, Apr 9, 2012</time>
       The Ukrainian Federation of Ukrainian Organsations (AFUO) invites all to a &ldquo;zabava&rdquo; (dance) - &ldquo;One Night with ГРІМ-HRIM&rdquo; on Saturday 28 April 2012, after the Hopak in the Park spectacular.
@@ -60,7 +142,7 @@ The &ldquo;zabava&rdquo; will start at 7:30 pm at the Ukrainian Hall in Essendon
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/dr-serhiy-kvit-at-monash-university/">Д-р Сергій Квіт в Університеті ім. Монаша / Dr Serhiy Kvit at Monash University</a>
+        <a href="https://ukrainians.org.au/events/victoria/dr-serhiy-kvit-at-monash-university/">Д-р Сергій Квіт в Університеті ім. Монаша / Dr Serhiy Kvit at Monash University</a>
       </h1>
       <time datetime="2012-04-09T08:35:40Z" class="post-date">Mon, Apr 9, 2012</time>
       Шановні Друзі!
@@ -76,15 +158,15 @@ _З найкращими побажаннями, _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/farewell-to-john-demianiuk/">На прощання Івана Дем&#39;янюка</a>
+        <a href="https://ukrainians.org.au/politics/farewell-to-john-demianiuk/">На прощання Івана Дем&#39;янюка</a>
       </h1>
       <time datetime="2012-04-09T08:16:41Z" class="post-date">Mon, Apr 9, 2012</time>
-      Д-р Ульріх Буш, адвокат по кримінальних справах у Німеччині, написав прощального листа Іванові («Джонові») Дем'янюкові після його смерти і поховання в США.
-Текст цього листа, на українському перекладі, можна прочитати тут: На пошану_Дем'янюка_Bush_120331_Ukr
+      Д-р Ульріх Буш, адвокат по кримінальних справах у Німеччині, написав прощального листа Іванові («Джонові») Дем&rsquo;янюкові після його смерти і поховання в США.
+Текст цього листа, на українському перекладі, можна прочитати тут: На пошану_Дем&rsquo;янюка_Bush_120331_Ukr
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/dr-kvit-coming-to-australia/">Д-р Сергій Квіт приїде до Австралії</a>
+        <a href="https://ukrainians.org.au/events/national-events/dr-kvit-coming-to-australia/">Д-р Сергій Квіт приїде до Австралії</a>
       </h1>
       <time datetime="2012-04-08T07:01:51Z" class="post-date">Sun, Apr 8, 2012</time>
       Союз Українських Організацій Австралії (CYOA) має приємність повідомити все українське громадянство що 20-го квітня до Австралії приїде Д-р Сергій Квіт, президент Українського Національного Університету “Києво-Могилянської Академії”.
@@ -97,11 +179,11 @@ _З найкращими побажаннями, _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/funeral-of-the-late-rt-rev-father-ivan-szewciw/">Funeral of the Late Rt Rev. Father Ivan Szewciw / Похорон Бл. П. о. Мітрата Івана Шевціва</a>
+        <a href="https://ukrainians.org.au/events/new-south-wales/funeral-of-the-late-rt-rev-father-ivan-szewciw/">Funeral of the Late Rt Rev. Father Ivan Szewciw / Похорон Бл. П. о. Мітрата Івана Шевціва</a>
       </h1>
       <time datetime="2012-04-06T03:29:11Z" class="post-date">Fri, Apr 6, 2012</time>
       Величавий похорон бл.п.отця мітрата Івана Шевціва відбувся 3.4.2012. в Cіднею. Було присутніх 14 священників УГКЦ, 3 священників УAПЦ, Преосвященний Владика Петро Cтасюк, один диякон. ( 19 всі разом ). Cпівав молодечий хор під дириґентурою Марійки Думи.
-Яка велика шана і честь була мені бути запрошеною робити знимки.і висловити співчуття з рамен Об'єднання Українських Громад НПB. Я наголосила на тому, що отець мітрат був і громадсько політйчним діячем, і радо вітав всіх громадсько-політичних діячів діяспори й України, які відвідували Aвстралію, від Президента Леоніда Кравчука, др.
+Яка велика шана і честь була мені бути запрошеною робити знимки.і висловити співчуття з рамен Об&rsquo;єднання Українських Громад НПB. Я наголосила на тому, що отець мітрат був і громадсько політйчним діячем, і радо вітав всіх громадсько-політичних діячів діяспори й України, які відвідували Aвстралію, від Президента Леоніда Кравчука, др.
       
         <div class="read-more-link">
           <a href="/events/new-south-wales/funeral-of-the-late-rt-rev-father-ivan-szewciw/">Read More…</a>
@@ -109,7 +191,7 @@ _З найкращими побажаннями, _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/dr-serhiy-kvit-to-visit-australia/">Dr Serhiy Kvit to visit Australia</a>
+        <a href="https://ukrainians.org.au/events/national-events/dr-serhiy-kvit-to-visit-australia/">Dr Serhiy Kvit to visit Australia</a>
       </h1>
       <time datetime="2012-04-05T03:42:23Z" class="post-date">Thu, Apr 5, 2012</time>
       Dr Serhiy Kvit to visit Australia At the invitation of the Australia Federation of Ukrainian Organisations (AFUO), Dr Serhiy Kvit, the Chancellor of the National University &ldquo;Kyiv Mohyla Academy&rdquo; in Ukraine will be visiting Australia and undertaking a lecture tour in late April – early May 2012. He will also avail himself of the opportunity to visit several universities and meet with the Ukrainian communities, politicians and other dignitaries.
@@ -120,14 +202,14 @@ _З найкращими побажаннями, _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/victoria/cym-debutante-ball/">CYM Debutante Ball / Баль Дебютантів</a>
+        <a href="https://ukrainians.org.au/events/victoria/cym-debutante-ball/">CYM Debutante Ball / Баль Дебютантів</a>
       </h1>
       <time datetime="2012-04-05T03:27:44Z" class="post-date">Thu, Apr 5, 2012</time>
       Lvivski Vechernytsi / Львівські Вечерниці
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/international-events/easter-webcast/">Easter Webcast</a>
+        <a href="https://ukrainians.org.au/events/international-events/easter-webcast/">Easter Webcast</a>
       </h1>
       <time datetime="2012-04-05T03:12:16Z" class="post-date">Thu, Apr 5, 2012</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2012/04/JS05-17-thumb.jpg)
@@ -142,29 +224,11 @@ _З найкращими побажаннями, _
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/national-events/sbs-radio-schedule-review/">SBS Radio Schedule Review</a>
+        <a href="https://ukrainians.org.au/events/national-events/sbs-radio-schedule-review/">SBS Radio Schedule Review</a>
       </h1>
       <time datetime="2012-04-02T04:58:18Z" class="post-date">Mon, Apr 2, 2012</time>
       SBS is reviewing its radio schedule to ensure it reflects today’s Australia.
 To find out more and provide your feedback, visit http://www.sbs.com.au/consultation by April 30 2012.
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/new-south-wales/funeral-of-fr-ivan-szewciw/">The Funeral Liturgy of the Late Rt Rev. Father Ivan Szewciw / Похорон Бл. П. о. Мітрата Івана Шевціва</a>
-      </h1>
-      <time datetime="2012-03-29T08:21:04Z" class="post-date">Thu, Mar 29, 2012</time>
-      The Funeral Liturgy of the Late
-**Rt Rev. Father Ivan Szewciw **
-will take place in Saint Andrew’s Ukrainian Catholic Church on
-Monday 2 April 2012 at 6.30 Priestly Parastas
-Tuesday 3 April 2012 at 10.00 Pontifical Divine Liturgy
-followed by internment in the Ukrainian Catholic Mausoleum, Rookwood.
-Following the Funeral all are invited to Pomynky at Lidcombe Catholic Club
-We invite members of CYM and Plast to attend in full uniform and together with all children and youth to form a guard of honour.
-      
-        <div class="read-more-link">
-          <a href="/events/new-south-wales/funeral-of-fr-ivan-szewciw/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1374,6 +1438,8 @@ We invite members of CYM and Plast to attend in full uniform and together with a
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-au" lang="en-au">
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AFUO - СУОА</title>
   <meta name="description" content="The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://ozeukes.com/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://ukrainians.org.au/css/cyoa.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -24,35 +23,117 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ozeukes.com/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
+  <link href="https://ukrainians.org.au/index.xml" rel="alternate" type="application/rss+xml" title="AFUO - СУОА" />
   
 </head>
 
   <body class=" ">
   <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://ozeukes.com/"><h1 id="logo">AFUO - СУОА</h1></a>
-      <p class="lead">
-       The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
-      </p>
+      <a href="https://ukrainians.org.au/"><h1 id="logo">AFUO - СУОА</h1></a>
     </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="/about/"> About </a></li><li><a href="/"> Blog </a></li><li><a href="/contact-us/"> Contact us </a></li><li><a href="/about/member-organisations/"> Organisations </a></li><li><a href="/welcome-to-australia/"> Ласкаво просимо до Австралії </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; Copyright 2020</p>
   </div>
+  <div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+          <a href="/about/" class="menu__link r-link"> About </a>
+        </li><li class="menu__group">
+          <a href="/" class="menu__link r-link"> Blog </a>
+        </li><li class="menu__group">
+          <a href="/contact-us/" class="menu__link r-link"> Contact us </a>
+        </li><li class="menu__group">
+          <a href="/about/member-organisations/" class="menu__link r-link"> Organisations </a>
+        </li><li class="menu__group">
+          <a href="/welcome-to-australia/" class="menu__link r-link"> Ласкаво просимо до Австралії </a>
+        </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </aside>
+<script charset="utf-8">
+
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+      this.state = false;
+      this.menuStateTextNode = settings.menuStateTextNode || this.menuNode.querySelector('.menu__screen-reader');
+      this.menuOpenedText = settings.menuOpenedText || 'Open menu';
+      this.menuClosedText = settings.menuClosedText || 'Close menu';
+    }
+
+    changeState(state) {
+      return this.state = !state;
+    }
+
+    changeStateText(state, node) {
+      let text = (state !== true) ? this.menuOpenedText : this.menuClosedText;
+
+      node.textContent = text;
+      return text; 
+    }
+
+    toggleMenuState(className) {   
+
+      let state;
+
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for the toggleState function');
+      }
+
+      state = this.changeState(this.state);
+
+      this.changeStateText(state, this.menuStateTextNode);
+      this.menuNode.classList.toggle(className);
+
+      return state;  
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 
     <main class="content container">
-    <div class="posts">
+    <h2 class="lead">
+   The Australian Federation of Ukrainian Organisations – Союз Українських Організацій Австралії 
+</h2>
+
+<div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/plast-melbourne-cup-sviato-pokrovy-camp-2010/">Plast Melbourne Cup-Sviato Pokrovy Camp 2010</a>
+        <a href="https://ukrainians.org.au/culture/peter-shirt-launches-his-book-among-the-ukrainians/">Peter Shirt launches his book, Among the Ukrainians</a>
+      </h1>
+      <time datetime="2010-11-08T22:44:52Z" class="post-date">Mon, Nov 8, 2010</time>
+      _Ukraine has more than a thousand years of history, but it is still a nation under construction. With global interest in Ukraine near an all time high, Peter’s book is a timely addition to the sparse library of books about this fascinating country. Bursting with anecdotes and information not found elsewhere Among the Ukrainians educates, entertains, and constantly surprises the reader._
+Ukraine - February 22, 2010 - Largely unknown to outsiders, Ukraine is the largest country entirely within Europe and the richest in natural resources.
+      
+        <div class="read-more-link">
+          <a href="/culture/peter-shirt-launches-his-book-among-the-ukrainians/">Read More…</a>
+        </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ukrainians.org.au/events/plast-melbourne-cup-sviato-pokrovy-camp-2010/">Plast Melbourne Cup-Sviato Pokrovy Camp 2010</a>
       </h1>
       <time datetime="2010-10-25T10:47:25Z" class="post-date">Mon, Oct 25, 2010</time>
       _Дорогі cтарші пластуни та прихильники!_
@@ -70,7 +151,7 @@ to be held at Sokil from 30-31 October 2010.
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/cym-camp-20102011/">CYM Camp 2010/2011</a>
+        <a href="https://ukrainians.org.au/events/cym-camp-20102011/">CYM Camp 2010/2011</a>
       </h1>
       <time datetime="2010-10-25T10:30:17Z" class="post-date">Mon, Oct 25, 2010</time>
       **CYM Melbourne &amp; Geelong are pleased to invite all members, families and friends to our annual Camp. We have secured a wonderful facility at Phillip Island YMCA Discovery Camp as our temporary venue pending the rebuild of our bushfire affected oselya at Buxton “Karpaty “.**
@@ -84,7 +165,7 @@ Bookings &amp; Registrations (essential as this is a leased facility with capaci
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/culture/%e2%80%9cukrainian-heritage%e2%80%9d-personalised-stamp%e2%84%a2-orders-close-monday-11th-october/">“Ukrainian Heritage” Personalised Stamp™ - ORDERS CLOSE MONDAY 11TH OCTOBER</a>
+        <a href="https://ukrainians.org.au/culture/%e2%80%9cukrainian-heritage%e2%80%9d-personalised-stamp%e2%84%a2-orders-close-monday-11th-october/">“Ukrainian Heritage” Personalised Stamp™ - ORDERS CLOSE MONDAY 11TH OCTOBER</a>
       </h1>
       <time datetime="2010-10-08T11:07:53Z" class="post-date">Fri, Oct 8, 2010</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2010/10/ucs-logo.jpg)Ukrainian Heritage Personalised Stamp orders close Monday 11th October.
@@ -92,21 +173,21 @@ Click here to view details and order forms
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/democratic-initiatives-foundation-report-focus-on-ukraine-ukrainian-version/">Фонд Демократичні Ініціятиви Україна у Фокусі</a>
+        <a href="https://ukrainians.org.au/politics/democratic-initiatives-foundation-report-focus-on-ukraine-ukrainian-version/">Фонд Демократичні Ініціятиви Україна у Фокусі</a>
       </h1>
       <time datetime="2010-10-08T10:35:17Z" class="post-date">Fri, Oct 8, 2010</time>
       Download full report – Focus on Ukraine September 27 – October 1, 2010 - Ukrainian Version
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/democratic-initiatives-foundation-report-focus-on-ukraine/">Democratic Initiatives Foundation Report - Focus on Ukraine </a>
+        <a href="https://ukrainians.org.au/politics/democratic-initiatives-foundation-report-focus-on-ukraine/">Democratic Initiatives Foundation Report - Focus on Ukraine </a>
       </h1>
       <time datetime="2010-10-08T10:31:01Z" class="post-date">Fri, Oct 8, 2010</time>
       Download full report - Focus on Ukraine September 27 - October 1, 2010
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/sport/rukopash-hopak/">Rukopash Hopak</a>
+        <a href="https://ukrainians.org.au/sport/rukopash-hopak/">Rukopash Hopak</a>
       </h1>
       <time datetime="2010-09-29T12:39:08Z" class="post-date">Wed, Sep 29, 2010</time>
       We are proud to announce the introduction of Rukopash Hopak into Australia.
@@ -120,7 +201,7 @@ The following workshops are currently planned:
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/politics/press-freedom-in-ukraine-temptation-to-control/">Press Freedom in Ukraine: Temptation to Control</a>
+        <a href="https://ukrainians.org.au/politics/press-freedom-in-ukraine-temptation-to-control/">Press Freedom in Ukraine: Temptation to Control</a>
       </h1>
       <time datetime="2010-09-22T01:06:58Z" class="post-date">Wed, Sep 22, 2010</time>
       Report by Jean-François Julliard and Elsa Vidal - August 2010
@@ -133,7 +214,7 @@ At the end of this initial visit, Reporters Without Borders gave a news conferen
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/righton-russell-the-official-launch-sunday-19th-september/">Righton Russell - The Official Launch - Sunday 19th September</a>
+        <a href="https://ukrainians.org.au/events/righton-russell-the-official-launch-sunday-19th-september/">Righton Russell - The Official Launch - Sunday 19th September</a>
       </h1>
       <time datetime="2010-09-15T14:10:38Z" class="post-date">Wed, Sep 15, 2010</time>
       [ ](http://www.ozeukes.com/wp-content/uploads/2010/09/righton-russell-invitation1.jpg)Dear Friends,
@@ -146,28 +227,10 @@ Project Overview: Located within 10km of Melbourne’s CBD, Righton Russell aims
       
     </article><article class="post">
       <h1 class="post-title">
-        <a href="https://ozeukes.com/events/2010-uci-road-world-championships/">2010 UCI Road World Championships</a>
+        <a href="https://ukrainians.org.au/events/2010-uci-road-world-championships/">2010 UCI Road World Championships</a>
       </h1>
       <time datetime="2010-09-14T12:12:07Z" class="post-date">Tue, Sep 14, 2010</time>
       2010 UCI Road World Championships
-      
-    </article><article class="post">
-      <h1 class="post-title">
-        <a href="https://ozeukes.com/events/text-as-spiritual-imagery/">&#34;Text as Spiritual Imagery&#34;</a>
-      </h1>
-      <time datetime="2010-09-14T11:45:42Z" class="post-date">Tue, Sep 14, 2010</time>
-      [ ](http://www.ozeukes.com/wp-content/uploads/2010/09/text-as-spiritual-image.jpg)McGlade Gallery - &ldquo;Text as Spiritual Imagery&rdquo;
-To be opened by: The Hon. Virginia Judge M.P. B.Ed.
-Member for Strathfield
-Minister for the Arts and
-Minister for Fair Trading
-The Artists:  * Haji Noor Deen * Leonid Denysenko * Jeannette Siebols * Liang Xiao Ping * Megan McDonald * Phaptawan Suwannakudt * Elaine Witton  Australian Catholic University, Strathfield
-Wednesday 15th September 2010, 6:30- 8pm,
-to Saturday 2nd October
-      
-        <div class="read-more-link">
-          <a href="/events/text-as-spiritual-imagery/">Read More…</a>
-        </div>
       
     </article>
 
@@ -1377,6 +1440,8 @@ to Saturday 2nd October
 
 
 </div>
+
+<p>&copy; Copyright 2020</p>
     </main>
 
     
