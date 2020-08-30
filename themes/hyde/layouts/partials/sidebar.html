@@ -1,9 +1,9 @@
 <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="sidebar-sticky">
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1 id="logo">{{ .Site.Title }}</h1></a>
       <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}<3{{end}}
+        {{ with .Site.Params.description }} {{.}} {{ else }}<3{{end}}
       </p>
     </div>
 

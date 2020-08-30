@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/uploads"
+public_folder: "uploads"
+
+collections:
+  - name: "page"
+    label: "Page"
+    folder: "content/_posts"
+    create: true
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "URL", name: "url", widget: "url"}
+      - {label: "Draft?", name: "draft", widget: "boolean"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}

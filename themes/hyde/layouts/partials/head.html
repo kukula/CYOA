@@ -14,12 +14,11 @@
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{- end }}
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <!-- CSS -->
   <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/cyoa.css">
   {{ partial "head_fonts.html" . }}
 
   <!-- Icons -->
